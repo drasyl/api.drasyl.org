@@ -33,7 +33,7 @@ jobs:
       - name: Commit Files
         run: |
           git config --local user.email "bot@drasyl.org"
-          git config --local user-name "drasyl Bot"
+          git config --local user.name "drasyl Bot"
           git add ./index.html
           git commit -m "Updated index.html"
       - name: Push Index
