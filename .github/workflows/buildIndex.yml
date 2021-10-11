@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - 'main'
+    paths-ignore:
+      - './index.html'
 
 jobs:
   build:
@@ -13,7 +15,27 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build Index
-        run: ./generateIndex.sh
+        run: |
+          LATEST_FOLDER=$(find . -maxdepth 1 -mindepth 1 -type d -exec basename {}  \; | sort --version-sort | tail -1)
+          touch index.html
+          cat > index.html << EOF
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <title>drasyl JavaDoc – You will be redirected...</title>
+            <meta http-equiv="refresh" content="0; URL=https://api.drasyl.org/${LATEST_FOLDER}" />
+          </head>
+          <body>
+            <p>If you are not redirected, <a href="https://api.drasyl.org/${LATEST_FOLDER}">click here</a>.</p>
+          </body>
+          </html>
+          EOF
+      - name: Commit Files
+        run: |
+          git config --local user.email "bot@drasyl.org"
+          git config --local user-name "drasyl Bot"
+          git add ./index.html
+          git commit -m "Updated index.html"
       - name: Push Index
         uses: ad-m/github-push-action@master
         with:
