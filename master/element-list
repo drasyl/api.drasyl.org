@@ -7,6 +7,7 @@ org.drasyl.handler.arq.stopandwait
 org.drasyl.handler.codec
 org.drasyl.handler.discovery
 org.drasyl.handler.logging
+org.drasyl.handler.monitoring
 org.drasyl.handler.remote
 org.drasyl.handler.remote.crypto
 org.drasyl.handler.remote.internet
