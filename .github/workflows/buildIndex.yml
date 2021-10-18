@@ -35,7 +35,7 @@ jobs:
           git config --local user.email "drasyl-bot@drasyl.org"
           git config --local user.name "drasyl-bot"
           git add ./index.html
-          git commit -m "Updated index.html"
+          git commit -m "Updated index.html" || true
       - name: Push Index
         uses: ad-m/github-push-action@master
         with:
