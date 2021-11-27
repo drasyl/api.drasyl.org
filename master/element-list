@@ -4,7 +4,7 @@ org.drasyl.channel.embedded
 org.drasyl.crypto
 org.drasyl.crypto.loader
 org.drasyl.crypto.sodium
-org.drasyl.handler.arq.gbn
+org.drasyl.handler.arq.gobackn
 org.drasyl.handler.arq.stopandwait
 org.drasyl.handler.codec
 org.drasyl.handler.discovery
