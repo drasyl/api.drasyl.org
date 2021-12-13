@@ -29,7 +29,6 @@ org.drasyl.node.handler.plugin
 org.drasyl.node.handler.serialization
 org.drasyl.node.handler.timeout
 org.drasyl.node.identity
-org.drasyl.node.identity.serialization
 org.drasyl.node.plugin.groups.client
 org.drasyl.node.plugin.groups.client.event
 org.drasyl.node.plugin.groups.client.message
