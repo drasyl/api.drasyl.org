@@ -75,7 +75,7 @@ loadScripts(document, 'script');</script>
 <div class="inheritance">io.netty.channel.ChannelHandlerAdapter
 <div class="inheritance">io.netty.channel.ChannelInboundHandlerAdapter
 <div class="inheritance">io.netty.channel.ChannelDuplexHandler
-<div class="inheritance">io.netty.handler.codec.MessageToMessageCodec&lt;<a href="../../../channel/OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;io.netty.buffer.ByteBuf&gt;,<wbr><a href="../../../channel/OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;org.drasyl.handler.membership.cyclon.CyclonMessage&gt;&gt;
+<div class="inheritance">io.netty.handler.codec.MessageToMessageCodec&lt;<a href="../../../channel/OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;io.netty.buffer.ByteBuf&gt;,<wbr><a href="../../../channel/OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;<a href="CyclonMessage.html" title="interface in org.drasyl.handler.membership.cyclon">CyclonMessage</a>&gt;&gt;
 <div class="inheritance">org.drasyl.handler.membership.cyclon.CyclonCodec</div>
 </div>
 </div>
@@ -90,8 +90,8 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="annotations">@Sharable
 </span><span class="modifiers">public class </span><span class="element-name type-name-label">CyclonCodec</span>
-<span class="extends-implements">extends io.netty.handler.codec.MessageToMessageCodec&lt;<a href="../../../channel/OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;io.netty.buffer.ByteBuf&gt;,<wbr><a href="../../../channel/OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;org.drasyl.handler.membership.cyclon.CyclonMessage&gt;&gt;</span></div>
-<div class="block">Encodes <code>CyclonMessage</code> messages to <code>ByteBuf</code>s and vice versa.</div>
+<span class="extends-implements">extends io.netty.handler.codec.MessageToMessageCodec&lt;<a href="../../../channel/OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;io.netty.buffer.ByteBuf&gt;,<wbr><a href="../../../channel/OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;<a href="CyclonMessage.html" title="interface in org.drasyl.handler.membership.cyclon">CyclonMessage</a>&gt;&gt;</span></div>
+<div class="block">Encodes <a href="CyclonMessage.html" title="interface in org.drasyl.handler.membership.cyclon"><code>CyclonMessage</code></a> messages to <code>ByteBuf</code>s and vice versa.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -156,7 +156,7 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#encode(io.netty.channel.ChannelHandlerContext,org.drasyl.channel.OverlayAddressedMessage,java.util.List)" class="member-name-link">encode</a><wbr>(io.netty.channel.ChannelHandlerContext&nbsp;ctx,
- <a href="../../../channel/OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;org.drasyl.handler.membership.cyclon.CyclonMessage&gt;&nbsp;msg,
+ <a href="../../../channel/OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;<a href="CyclonMessage.html" title="interface in org.drasyl.handler.membership.cyclon">CyclonMessage</a>&gt;&nbsp;msg,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;&nbsp;out)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
@@ -259,12 +259,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="encode(io.netty.channel.ChannelHandlerContext,org.drasyl.channel.OverlayAddressedMessage,java.util.List)">
 <h3>encode</h3>
 <div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">encode</span><wbr><span class="parameters">(io.netty.channel.ChannelHandlerContext&nbsp;ctx,
- <a href="../../../channel/OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;org.drasyl.handler.membership.cyclon.CyclonMessage&gt;&nbsp;msg,
+ <a href="../../../channel/OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;<a href="CyclonMessage.html" title="interface in org.drasyl.handler.membership.cyclon">CyclonMessage</a>&gt;&nbsp;msg,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;&nbsp;out)</span>
                throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Exception.html" title="class or interface in java.lang" class="external-link">Exception</a></span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code>encode</code>&nbsp;in class&nbsp;<code>io.netty.handler.codec.MessageToMessageCodec&lt;<a href="../../../channel/OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;io.netty.buffer.ByteBuf&gt;,<wbr><a href="../../../channel/OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;org.drasyl.handler.membership.cyclon.CyclonMessage&gt;&gt;</code></dd>
+<dd><code>encode</code>&nbsp;in class&nbsp;<code>io.netty.handler.codec.MessageToMessageCodec&lt;<a href="../../../channel/OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;io.netty.buffer.ByteBuf&gt;,<wbr><a href="../../../channel/OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;<a href="CyclonMessage.html" title="interface in org.drasyl.handler.membership.cyclon">CyclonMessage</a>&gt;&gt;</code></dd>
 <dt>Throws:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Exception.html" title="class or interface in java.lang" class="external-link">Exception</a></code></dd>
 </dl>
@@ -279,7 +279,7 @@ loadScripts(document, 'script');</script>
                throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Exception.html" title="class or interface in java.lang" class="external-link">Exception</a></span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code>decode</code>&nbsp;in class&nbsp;<code>io.netty.handler.codec.MessageToMessageCodec&lt;<a href="../../../channel/OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;io.netty.buffer.ByteBuf&gt;,<wbr><a href="../../../channel/OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;org.drasyl.handler.membership.cyclon.CyclonMessage&gt;&gt;</code></dd>
+<dd><code>decode</code>&nbsp;in class&nbsp;<code>io.netty.handler.codec.MessageToMessageCodec&lt;<a href="../../../channel/OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;io.netty.buffer.ByteBuf&gt;,<wbr><a href="../../../channel/OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;<a href="CyclonMessage.html" title="interface in org.drasyl.handler.membership.cyclon">CyclonMessage</a>&gt;&gt;</code></dd>
 <dt>Throws:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Exception.html" title="class or interface in java.lang" class="external-link">Exception</a></code></dd>
 </dl>

@@ -1,4 +1,3 @@
-org.drasyl.annotation
 org.drasyl.channel
 org.drasyl.channel.embedded
 org.drasyl.crypto
@@ -45,6 +44,7 @@ org.drasyl.node.plugin.groups.manager.data
 org.drasyl.node.plugin.groups.manager.database
 org.drasyl.node.plugin.groups.manager.database.jdbc
 org.drasyl.util
+org.drasyl.util.internal
 org.drasyl.util.logging
 org.drasyl.util.network
 org.drasyl.util.protocol

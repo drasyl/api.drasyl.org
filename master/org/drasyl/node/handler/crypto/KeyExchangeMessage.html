@@ -72,14 +72,12 @@ loadScripts(document, 'script');</script>
 <h1 title="Class KeyExchangeMessage" class="title">Class KeyExchangeMessage</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
-<div class="inheritance"><a href="ArmMessage.html" title="class in org.drasyl.node.handler.crypto">org.drasyl.node.handler.crypto.ArmMessage</a>
 <div class="inheritance">org.drasyl.node.handler.crypto.KeyExchangeMessage</div>
-</div>
 </div>
 <section class="class-description" id="class-description">
 <hr>
 <div class="type-signature"><span class="modifiers">public abstract class </span><span class="element-name type-name-label">KeyExchangeMessage</span>
-<span class="extends-implements">extends <a href="ArmMessage.html" title="class in org.drasyl.node.handler.crypto">ArmMessage</a></span></div>
+<span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -122,24 +120,28 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract <a href="../../../identity/KeyAgreementPublicKey.html" title="class in org.drasyl.identity">KeyAgreementPublicKey</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getSessionKey()" class="member-name-link">getSessionKey</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="KeyExchangeMessage.html" title="class in org.drasyl.node.handler.crypto">KeyExchangeMessage</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#of(io.netty.buffer.ByteBuf)" class="member-name-link">of</a><wbr>(io.netty.buffer.ByteBuf&nbsp;byteBuf)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="KeyExchangeMessage.html" title="class in org.drasyl.node.handler.crypto">KeyExchangeMessage</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#of(org.drasyl.identity.KeyAgreementPublicKey)" class="member-name-link">of</a><wbr>(<a href="../../../identity/KeyAgreementPublicKey.html" title="class in org.drasyl.identity">KeyAgreementPublicKey</a>&nbsp;sessionKey)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#fromApplication(io.netty.buffer.ByteBuf,io.netty.buffer.ByteBuf)" class="member-name-link">fromApplication</a><wbr>(io.netty.buffer.ByteBuf&nbsp;msg,
+ io.netty.buffer.ByteBuf&nbsp;out)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract <a href="../../../identity/KeyAgreementPublicKey.html" title="class in org.drasyl.identity">KeyAgreementPublicKey</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getSessionKey()" class="member-name-link">getSessionKey</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="KeyExchangeMessage.html" title="class in org.drasyl.node.handler.crypto">KeyExchangeMessage</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#of(io.netty.buffer.ByteBuf)" class="member-name-link">of</a><wbr>(io.netty.buffer.ByteBuf&nbsp;byteBuf)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="KeyExchangeMessage.html" title="class in org.drasyl.node.handler.crypto">KeyExchangeMessage</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#of(org.drasyl.identity.KeyAgreementPublicKey)" class="member-name-link">of</a><wbr>(<a href="../../../identity/KeyAgreementPublicKey.html" title="class in org.drasyl.identity">KeyAgreementPublicKey</a>&nbsp;sessionKey)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writeBody(io.netty.buffer.ByteBuf)" class="member-name-link">writeBody</a><wbr>(io.netty.buffer.ByteBuf&nbsp;byteBuf)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writeBody(io.netty.buffer.ByteBuf)" class="member-name-link">writeBody</a><wbr>(io.netty.buffer.ByteBuf&nbsp;byteBuf)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo</a><wbr>(io.netty.buffer.ByteBuf&nbsp;out)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
-<div class="inherited-list">
-<h3 id="methods-inherited-from-class-org.drasyl.node.handler.crypto.ArmMessage">Methods inherited from class&nbsp;org.drasyl.node.handler.crypto.<a href="ArmMessage.html" title="class in org.drasyl.node.handler.crypto">ArmMessage</a></h3>
-<code><a href="ArmMessage.html#fromApplication(io.netty.buffer.ByteBuf,io.netty.buffer.ByteBuf)">fromApplication</a>, <a href="ArmMessage.html#getType()">getType</a>, <a href="ArmMessage.html#writeTo(io.netty.buffer.ByteBuf)">writeTo</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
 <code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#clone()" title="class or interface in java.lang" class="external-link">clone</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)" title="class or interface in java.lang" class="external-link">equals</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#finalize()" title="class or interface in java.lang" class="external-link">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#getClass()" title="class or interface in java.lang" class="external-link">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#hashCode()" title="class or interface in java.lang" class="external-link">hashCode</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#notify()" title="class or interface in java.lang" class="external-link">notify</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#notifyAll()" title="class or interface in java.lang" class="external-link">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#toString()" title="class or interface in java.lang" class="external-link">toString</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#wait()" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#wait(long)" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#wait(long,int)" title="class or interface in java.lang" class="external-link">wait</a></code></div>
@@ -200,10 +202,6 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="writeBody(io.netty.buffer.ByteBuf)">
 <h3>writeBody</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">writeBody</span><wbr><span class="parameters">(io.netty.buffer.ByteBuf&nbsp;byteBuf)</span></div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code><a href="ArmMessage.html#writeBody(io.netty.buffer.ByteBuf)">writeBody</a></code>&nbsp;in class&nbsp;<code><a href="ArmMessage.html" title="class in org.drasyl.node.handler.crypto">ArmMessage</a></code></dd>
-</dl>
 </section>
 </li>
 <li>
@@ -221,6 +219,19 @@ loadScripts(document, 'script');</script>
 <dt>Throws:</dt>
 <dd><code><a href="../../../handler/remote/protocol/InvalidMessageFormatException.html" title="class in org.drasyl.handler.remote.protocol">InvalidMessageFormatException</a></code></dd>
 </dl>
+</section>
+</li>
+<li>
+<section class="detail" id="writeTo(io.netty.buffer.ByteBuf)">
+<h3>writeTo</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">writeTo</span><wbr><span class="parameters">(io.netty.buffer.ByteBuf&nbsp;out)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="fromApplication(io.netty.buffer.ByteBuf,io.netty.buffer.ByteBuf)">
+<h3>fromApplication</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">fromApplication</span><wbr><span class="parameters">(io.netty.buffer.ByteBuf&nbsp;msg,
+ io.netty.buffer.ByteBuf&nbsp;out)</span></div>
 </section>
 </li>
 </ul>
