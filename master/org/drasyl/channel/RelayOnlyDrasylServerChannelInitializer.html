@@ -90,7 +90,8 @@ loadScripts(document, 'script');</script>
 <dd><code><a href="TraversingDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">TraversingDrasylServerChannelInitializer</a></code></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">RelayOnlyDrasylServerChannelInitializer</span>
+<div class="type-signature"><span class="annotations"><a href="../util/internal/UnstableApi.html" title="annotation in org.drasyl.util.internal">@UnstableApi</a>
+</span><span class="modifiers">public class </span><span class="element-name type-name-label">RelayOnlyDrasylServerChannelInitializer</span>
 <span class="extends-implements">extends io.netty.channel.ChannelInitializer&lt;<a href="DrasylServerChannel.html" title="class in org.drasyl.channel">DrasylServerChannel</a>&gt;</span></div>
 <div class="block">A <code>ChannelInitializer</code> for <a href="DrasylServerChannel.html" title="class in org.drasyl.channel"><code>DrasylServerChannel</code></a>s that relays all messages through
  super peers.</div>
@@ -174,31 +175,31 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.nio.NioEventLoopGroup)" class="member-name-link">RelayOnlyDrasylServerChannelInitializer</a><wbr>(<a href="../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
- io.netty.channel.nio.NioEventLoopGroup&nbsp;udpServerGroup)</code></div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.EventLoopGroup)" class="member-name-link">RelayOnlyDrasylServerChannelInitializer</a><wbr>(<a href="../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
+ io.netty.channel.EventLoopGroup&nbsp;udpServerGroup)</code></div>
 <div class="col-last even-row-color">
 <div class="block">Creates a new channel initializer with default values for <code>bindPort</code>,
  <code>networkId</code>, <code>superPeers</code>, <code>pingIntervalMillis</code>, <code>pingTimeoutMillis</code>,
  <code>maxTimeOffsetMillis</code>, <code>maxPeers</code>, and enabled control plane message arming.</div>
 </div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.nio.NioEventLoopGroup,int)" class="member-name-link">RelayOnlyDrasylServerChannelInitializer</a><wbr>(<a href="../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
- io.netty.channel.nio.NioEventLoopGroup&nbsp;udpServerGroup,
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.EventLoopGroup,int)" class="member-name-link">RelayOnlyDrasylServerChannelInitializer</a><wbr>(<a href="../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
+ io.netty.channel.EventLoopGroup&nbsp;udpServerGroup,
  int&nbsp;bindPort)</code></div>
 <div class="col-last odd-row-color">
 <div class="block">Creates a new channel initializer with default values for <code>networkId</code>,
  <code>superPeers</code>, <code>pingIntervalMillis</code>, <code>pingTimeoutMillis</code>,
  <code>maxTimeOffsetMillis</code>, <code>maxPeers</code>, and enabled control plane message arming.</div>
 </div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.nio.NioEventLoopGroup,java.net.InetSocketAddress)" class="member-name-link">RelayOnlyDrasylServerChannelInitializer</a><wbr>(<a href="../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
- io.netty.channel.nio.NioEventLoopGroup&nbsp;udpServerGroup,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.EventLoopGroup,java.net.InetSocketAddress)" class="member-name-link">RelayOnlyDrasylServerChannelInitializer</a><wbr>(<a href="../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
+ io.netty.channel.EventLoopGroup&nbsp;udpServerGroup,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&nbsp;bindAddress)</code></div>
 <div class="col-last even-row-color">
 <div class="block">Creates a new channel initializer with default values for <code>networkId</code>,
  <code>superPeers</code>, <code>pingIntervalMillis</code>, <code>pingTimeoutMillis</code>,
  <code>maxTimeOffsetMillis</code>, <code>maxPeers</code>, and enabled control plane message arming.</div>
 </div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.nio.NioEventLoopGroup,java.net.InetSocketAddress,int,java.util.Map)" class="member-name-link">RelayOnlyDrasylServerChannelInitializer</a><wbr>(<a href="../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
- io.netty.channel.nio.NioEventLoopGroup&nbsp;udpServerGroup,
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.EventLoopGroup,java.net.InetSocketAddress,int,java.util.Map)" class="member-name-link">RelayOnlyDrasylServerChannelInitializer</a><wbr>(<a href="../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
+ io.netty.channel.EventLoopGroup&nbsp;udpServerGroup,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&nbsp;bindAddress,
  int&nbsp;networkId,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;superPeers)</code></div>
@@ -207,8 +208,8 @@ loadScripts(document, 'script');</script>
  <code>pingTimeoutMillis</code>, <code>maxTimeOffsetMillis</code>, <code>maxPeers</code>, and enabled control
  plane message arming.</div>
 </div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.nio.NioEventLoopGroup,java.net.InetSocketAddress,int,java.util.Map,boolean)" class="member-name-link">RelayOnlyDrasylServerChannelInitializer</a><wbr>(<a href="../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
- io.netty.channel.nio.NioEventLoopGroup&nbsp;udpServerGroup,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.EventLoopGroup,java.net.InetSocketAddress,int,java.util.Map,boolean)" class="member-name-link">RelayOnlyDrasylServerChannelInitializer</a><wbr>(<a href="../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
+ io.netty.channel.EventLoopGroup&nbsp;udpServerGroup,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&nbsp;bindAddress,
  int&nbsp;networkId,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;superPeers,
@@ -217,8 +218,8 @@ loadScripts(document, 'script');</script>
 <div class="block">Creates a new channel initializer with default values for <code>pingIntervalMillis</code>,
  <code>pingTimeoutMillis</code>, <code>maxTimeOffsetMillis</code>, and <code>maxPeers</code>.</div>
 </div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.nio.NioEventLoopGroup,java.net.InetSocketAddress,int,java.util.Map,boolean,int,int,int,int)" class="member-name-link">RelayOnlyDrasylServerChannelInitializer</a><wbr>(<a href="../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
- io.netty.channel.nio.NioEventLoopGroup&nbsp;udpServerGroup,
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.EventLoopGroup,java.net.InetSocketAddress,int,java.util.Map,boolean,int,int,int,int)" class="member-name-link">RelayOnlyDrasylServerChannelInitializer</a><wbr>(<a href="../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
+ io.netty.channel.EventLoopGroup&nbsp;udpServerGroup,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&nbsp;bindAddress,
  int&nbsp;networkId,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;superPeers,
@@ -424,10 +425,10 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(org.drasyl.identity.Identity,io.netty.channel.nio.NioEventLoopGroup,java.net.InetSocketAddress,int,java.util.Map,boolean,int,int,int,int)">
+<section class="detail" id="&lt;init&gt;(org.drasyl.identity.Identity,io.netty.channel.EventLoopGroup,java.net.InetSocketAddress,int,java.util.Map,boolean,int,int,int,int)">
 <h3>RelayOnlyDrasylServerChannelInitializer</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">RelayOnlyDrasylServerChannelInitializer</span><wbr><span class="parameters">(<a href="../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
- io.netty.channel.nio.NioEventLoopGroup&nbsp;udpServerGroup,
+ io.netty.channel.EventLoopGroup&nbsp;udpServerGroup,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&nbsp;bindAddress,
  int&nbsp;networkId,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;superPeers,
@@ -460,10 +461,10 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="&lt;init&gt;(org.drasyl.identity.Identity,io.netty.channel.nio.NioEventLoopGroup,java.net.InetSocketAddress,int,java.util.Map,boolean)">
+<section class="detail" id="&lt;init&gt;(org.drasyl.identity.Identity,io.netty.channel.EventLoopGroup,java.net.InetSocketAddress,int,java.util.Map,boolean)">
 <h3>RelayOnlyDrasylServerChannelInitializer</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">RelayOnlyDrasylServerChannelInitializer</span><wbr><span class="parameters">(<a href="../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
- io.netty.channel.nio.NioEventLoopGroup&nbsp;udpServerGroup,
+ io.netty.channel.EventLoopGroup&nbsp;udpServerGroup,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&nbsp;bindAddress,
  int&nbsp;networkId,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;superPeers,
@@ -486,10 +487,10 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="&lt;init&gt;(org.drasyl.identity.Identity,io.netty.channel.nio.NioEventLoopGroup,java.net.InetSocketAddress,int,java.util.Map)">
+<section class="detail" id="&lt;init&gt;(org.drasyl.identity.Identity,io.netty.channel.EventLoopGroup,java.net.InetSocketAddress,int,java.util.Map)">
 <h3>RelayOnlyDrasylServerChannelInitializer</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">RelayOnlyDrasylServerChannelInitializer</span><wbr><span class="parameters">(<a href="../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
- io.netty.channel.nio.NioEventLoopGroup&nbsp;udpServerGroup,
+ io.netty.channel.EventLoopGroup&nbsp;udpServerGroup,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&nbsp;bindAddress,
  int&nbsp;networkId,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;superPeers)</span></div>
@@ -509,10 +510,10 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="&lt;init&gt;(org.drasyl.identity.Identity,io.netty.channel.nio.NioEventLoopGroup,java.net.InetSocketAddress)">
+<section class="detail" id="&lt;init&gt;(org.drasyl.identity.Identity,io.netty.channel.EventLoopGroup,java.net.InetSocketAddress)">
 <h3>RelayOnlyDrasylServerChannelInitializer</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">RelayOnlyDrasylServerChannelInitializer</span><wbr><span class="parameters">(<a href="../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
- io.netty.channel.nio.NioEventLoopGroup&nbsp;udpServerGroup,
+ io.netty.channel.EventLoopGroup&nbsp;udpServerGroup,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&nbsp;bindAddress)</span></div>
 <div class="block">Creates a new channel initializer with default values for <code>networkId</code>,
  <code>superPeers</code>, <code>pingIntervalMillis</code>, <code>pingTimeoutMillis</code>,
@@ -527,10 +528,10 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="&lt;init&gt;(org.drasyl.identity.Identity,io.netty.channel.nio.NioEventLoopGroup,int)">
+<section class="detail" id="&lt;init&gt;(org.drasyl.identity.Identity,io.netty.channel.EventLoopGroup,int)">
 <h3>RelayOnlyDrasylServerChannelInitializer</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">RelayOnlyDrasylServerChannelInitializer</span><wbr><span class="parameters">(<a href="../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
- io.netty.channel.nio.NioEventLoopGroup&nbsp;udpServerGroup,
+ io.netty.channel.EventLoopGroup&nbsp;udpServerGroup,
  int&nbsp;bindPort)</span></div>
 <div class="block">Creates a new channel initializer with default values for <code>networkId</code>,
  <code>superPeers</code>, <code>pingIntervalMillis</code>, <code>pingTimeoutMillis</code>,
@@ -544,10 +545,10 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="&lt;init&gt;(org.drasyl.identity.Identity,io.netty.channel.nio.NioEventLoopGroup)">
+<section class="detail" id="&lt;init&gt;(org.drasyl.identity.Identity,io.netty.channel.EventLoopGroup)">
 <h3>RelayOnlyDrasylServerChannelInitializer</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">RelayOnlyDrasylServerChannelInitializer</span><wbr><span class="parameters">(<a href="../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
- io.netty.channel.nio.NioEventLoopGroup&nbsp;udpServerGroup)</span></div>
+ io.netty.channel.EventLoopGroup&nbsp;udpServerGroup)</span></div>
 <div class="block">Creates a new channel initializer with default values for <code>bindPort</code>,
  <code>networkId</code>, <code>superPeers</code>, <code>pingIntervalMillis</code>, <code>pingTimeoutMillis</code>,
  <code>maxTimeOffsetMillis</code>, <code>maxPeers</code>, and enabled control plane message arming.</div>

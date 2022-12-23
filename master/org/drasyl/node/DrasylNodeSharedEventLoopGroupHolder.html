@@ -76,7 +76,8 @@ loadScripts(document, 'script');</script>
 </div>
 <section class="class-description" id="class-description">
 <hr>
-<div class="type-signature"><span class="modifiers">public final class </span><span class="element-name type-name-label">DrasylNodeSharedEventLoopGroupHolder</span>
+<div class="type-signature"><span class="annotations"><a href="../util/internal/UnstableApi.html" title="annotation in org.drasyl.util.internal">@UnstableApi</a>
+</span><span class="modifiers">public final class </span><span class="element-name type-name-label">DrasylNodeSharedEventLoopGroupHolder</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
 <div class="block">Holds parent and child <code>EventLoop</code>s that are shared across all
  <a href="DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>s.
@@ -123,10 +124,10 @@ loadScripts(document, 'script');</script>
 <div class="block">Use this <code>EventLoopGroup</code> for the <a href="DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>'s
  <code>ServerChannel</code>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static io.netty.channel.nio.NioEventLoopGroup</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static io.netty.channel.EventLoopGroup</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getNetworkGroup()" class="member-name-link">getNetworkGroup</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Use this <code>NioEventLoopGroup</code> for the <a href="DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>'s network based
+<div class="block">Use this <code>EventLoopGroup</code> for the <a href="DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>'s network based
  <code>Channel</code>s (udp server, tcp client, etc.).</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static io.netty.channel.EventLoopGroup</code></div>
@@ -214,9 +215,9 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="getNetworkGroup()">
 <h3>getNetworkGroup</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">io.netty.channel.nio.NioEventLoopGroup</span>&nbsp;<span class="element-name">getNetworkGroup</span>()</div>
-<div class="block">Use this <code>NioEventLoopGroup</code> for the <a href="DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>'s network based
- <code>Channel</code>s (udp server, tcp client, etc.). By default the group has
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">io.netty.channel.EventLoopGroup</span>&nbsp;<span class="element-name">getNetworkGroup</span>()</div>
+<div class="block">Use this <code>EventLoopGroup</code> for the <a href="DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>'s network based
+ <code>Channel</code>s (udp server, tcp client, etc.). By default, the group has
  <a href="#NETWORK_DEFAULT_THREADS"><code>NETWORK_DEFAULT_THREADS</code></a> threads. This number can  be changed by using the java
  system property <code>org.drasyl.event-loop.network</code>.</div>
 <dl class="notes">

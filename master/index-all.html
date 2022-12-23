@@ -1622,7 +1622,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Initialize the <a href="org/drasyl/channel/DrasylServerChannel.html" title="class in org.drasyl.channel"><code>DrasylServerChannel</code></a> used by <a href="org/drasyl/node/DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>.</div>
 </dd>
-<dt><a href="org/drasyl/node/channel/DrasylNodeServerChannelInitializer.html#%3Cinit%3E(org.drasyl.node.DrasylConfig,org.drasyl.identity.Identity,org.drasyl.node.DrasylNode,io.netty.channel.nio.NioEventLoopGroup)" class="member-name-link">DrasylNodeServerChannelInitializer(DrasylConfig, Identity, DrasylNode, NioEventLoopGroup)</a> - Constructor for class org.drasyl.node.channel.<a href="org/drasyl/node/channel/DrasylNodeServerChannelInitializer.html" title="class in org.drasyl.node.channel">DrasylNodeServerChannelInitializer</a></dt>
+<dt><a href="org/drasyl/node/channel/DrasylNodeServerChannelInitializer.html#%3Cinit%3E(org.drasyl.node.DrasylConfig,org.drasyl.identity.Identity,org.drasyl.node.DrasylNode,io.netty.channel.EventLoopGroup)" class="member-name-link">DrasylNodeServerChannelInitializer(DrasylConfig, Identity, DrasylNode, EventLoopGroup)</a> - Constructor for class org.drasyl.node.channel.<a href="org/drasyl/node/channel/DrasylNodeServerChannelInitializer.html" title="class in org.drasyl.node.channel">DrasylNodeServerChannelInitializer</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/DrasylNodeSharedEventLoopGroupHolder.html" class="type-name-link" title="class in org.drasyl.node">DrasylNodeSharedEventLoopGroupHolder</a> - Class in <a href="org/drasyl/node/package-summary.html">org.drasyl.node</a></dt>
 <dd>
@@ -1922,6 +1922,10 @@ loadScripts(document, 'script');</script>
 <div class="block">Returns a default, shared <code>EventLoopGroup</code> instance intended for <a href="org/drasyl/node/behaviour/Behavior.html" title="class in org.drasyl.node.behaviour"><code>Behavior</code></a>
  scheduling.</div>
 </dd>
+<dt><a href="org/drasyl/util/EventLoopGroupUtil.html" class="type-name-link" title="class in org.drasyl.util">EventLoopGroupUtil</a> - Class in <a href="org/drasyl/util/package-summary.html">org.drasyl.util</a></dt>
+<dd>
+<div class="block">Utility class for operations on <code>EventLoopGroup</code>s.</div>
+</dd>
 <dt><a href="org/drasyl/util/EvictingQueue.html" class="type-name-link" title="class in org.drasyl.util">EvictingQueue</a>&lt;<a href="org/drasyl/util/EvictingQueue.html" title="type parameter in EvictingQueue">E</a>&gt; - Class in <a href="org/drasyl/util/package-summary.html">org.drasyl.util</a></dt>
 <dd>
 <div class="block">A <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html" title="class or interface in java.util" class="external-link"><code>Queue</code></a> that evicts head elements to ensure that the queue will not exceed its capacity
@@ -2175,6 +2179,26 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/plugin/groups/manager/database/jdbc/SingleConnectionWrapper.html#getAutoCommit()" class="member-name-link">getAutoCommit()</a> - Method in class org.drasyl.node.plugin.groups.manager.database.jdbc.<a href="org/drasyl/node/plugin/groups/manager/database/jdbc/SingleConnectionWrapper.html" title="class in org.drasyl.node.plugin.groups.manager.database.jdbc">SingleConnectionWrapper</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/drasyl/util/EventLoopGroupUtil.html#getBestDatagramChannel()" class="member-name-link">getBestDatagramChannel()</a> - Static method in class org.drasyl.util.<a href="org/drasyl/util/EventLoopGroupUtil.html" title="class in org.drasyl.util">EventLoopGroupUtil</a></dt>
+<dd>
+<div class="block">Returns a <code>DatagramChannel</code> that fits best to the current platform (epoll, kqueue, or
+ nio).</div>
+</dd>
+<dt><a href="org/drasyl/util/EventLoopGroupUtil.html#getBestDatagramChannel(io.netty.channel.socket.InternetProtocolFamily)" class="member-name-link">getBestDatagramChannel(InternetProtocolFamily)</a> - Static method in class org.drasyl.util.<a href="org/drasyl/util/EventLoopGroupUtil.html" title="class in org.drasyl.util">EventLoopGroupUtil</a></dt>
+<dd>
+<div class="block">Returns a <code>DatagramChannel</code> that fits best to the current platform (epoll, kqueue, or
+ nio).</div>
+</dd>
+<dt><a href="org/drasyl/util/EventLoopGroupUtil.html#getBestEventLoopGroup(int)" class="member-name-link">getBestEventLoopGroup(int)</a> - Static method in class org.drasyl.util.<a href="org/drasyl/util/EventLoopGroupUtil.html" title="class in org.drasyl.util">EventLoopGroupUtil</a></dt>
+<dd>
+<div class="block">Returns a <code>EventLoopGroup</code> that fits best to the current platform (epoll, kqueue, or
+ nio).</div>
+</dd>
+<dt><a href="org/drasyl/util/EventLoopGroupUtil.html#getBestEventLoopGroup(int,java.util.concurrent.ThreadFactory)" class="member-name-link">getBestEventLoopGroup(int, ThreadFactory)</a> - Static method in class org.drasyl.util.<a href="org/drasyl/util/EventLoopGroupUtil.html" title="class in org.drasyl.util">EventLoopGroupUtil</a></dt>
+<dd>
+<div class="block">Returns a <code>EventLoopGroup</code> that fits best to the current platform (epoll, kqueue, or
+ nio).</div>
+</dd>
 <dt><a href="org/drasyl/handler/remote/tcp/TcpServer.TcpServerBound.html#getBindAddress()" class="member-name-link">getBindAddress()</a> - Method in class org.drasyl.handler.remote.tcp.<a href="org/drasyl/handler/remote/tcp/TcpServer.TcpServerBound.html" title="class in org.drasyl.handler.remote.tcp">TcpServer.TcpServerBound</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/UdpServer.UdpServerBound.html#getBindAddress()" class="member-name-link">getBindAddress()</a> - Method in class org.drasyl.handler.remote.<a href="org/drasyl/handler/remote/UdpServer.UdpServerBound.html" title="class in org.drasyl.handler.remote">UdpServer.UdpServerBound</a></dt>
@@ -2502,7 +2526,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/DrasylNodeSharedEventLoopGroupHolder.html#getNetworkGroup()" class="member-name-link">getNetworkGroup()</a> - Static method in class org.drasyl.node.<a href="org/drasyl/node/DrasylNodeSharedEventLoopGroupHolder.html" title="class in org.drasyl.node">DrasylNodeSharedEventLoopGroupHolder</a></dt>
 <dd>
-<div class="block">Use this <code>NioEventLoopGroup</code> for the <a href="org/drasyl/node/DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>'s network based
+<div class="block">Use this <code>EventLoopGroup</code> for the <a href="org/drasyl/node/DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>'s network based
  <code>Channel</code>s (udp server, tcp client, etc.).</div>
 </dd>
 <dt><a href="org/drasyl/handler/remote/protocol/PublicHeader.html#getNetworkId()" class="member-name-link">getNetworkId()</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/PublicHeader.html" title="class in org.drasyl.handler.remote.protocol">PublicHeader</a></dt>
@@ -6200,36 +6224,36 @@ loadScripts(document, 'script');</script>
 <div class="block">A <code>ChannelInitializer</code> for <a href="org/drasyl/channel/DrasylServerChannel.html" title="class in org.drasyl.channel"><code>DrasylServerChannel</code></a>s that relays all messages through
  super peers.</div>
 </dd>
-<dt><a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.nio.NioEventLoopGroup)" class="member-name-link">RelayOnlyDrasylServerChannelInitializer(Identity, NioEventLoopGroup)</a> - Constructor for class org.drasyl.channel.<a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">RelayOnlyDrasylServerChannelInitializer</a></dt>
+<dt><a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.EventLoopGroup)" class="member-name-link">RelayOnlyDrasylServerChannelInitializer(Identity, EventLoopGroup)</a> - Constructor for class org.drasyl.channel.<a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">RelayOnlyDrasylServerChannelInitializer</a></dt>
 <dd>
 <div class="block">Creates a new channel initializer with default values for <code>bindPort</code>,
  <code>networkId</code>, <code>superPeers</code>, <code>pingIntervalMillis</code>, <code>pingTimeoutMillis</code>,
  <code>maxTimeOffsetMillis</code>, <code>maxPeers</code>, and enabled control plane message arming.</div>
 </dd>
-<dt><a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.nio.NioEventLoopGroup,int)" class="member-name-link">RelayOnlyDrasylServerChannelInitializer(Identity, NioEventLoopGroup, int)</a> - Constructor for class org.drasyl.channel.<a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">RelayOnlyDrasylServerChannelInitializer</a></dt>
+<dt><a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.EventLoopGroup,int)" class="member-name-link">RelayOnlyDrasylServerChannelInitializer(Identity, EventLoopGroup, int)</a> - Constructor for class org.drasyl.channel.<a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">RelayOnlyDrasylServerChannelInitializer</a></dt>
 <dd>
 <div class="block">Creates a new channel initializer with default values for <code>networkId</code>,
  <code>superPeers</code>, <code>pingIntervalMillis</code>, <code>pingTimeoutMillis</code>,
  <code>maxTimeOffsetMillis</code>, <code>maxPeers</code>, and enabled control plane message arming.</div>
 </dd>
-<dt><a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.nio.NioEventLoopGroup,java.net.InetSocketAddress)" class="member-name-link">RelayOnlyDrasylServerChannelInitializer(Identity, NioEventLoopGroup, InetSocketAddress)</a> - Constructor for class org.drasyl.channel.<a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">RelayOnlyDrasylServerChannelInitializer</a></dt>
+<dt><a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.EventLoopGroup,java.net.InetSocketAddress)" class="member-name-link">RelayOnlyDrasylServerChannelInitializer(Identity, EventLoopGroup, InetSocketAddress)</a> - Constructor for class org.drasyl.channel.<a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">RelayOnlyDrasylServerChannelInitializer</a></dt>
 <dd>
 <div class="block">Creates a new channel initializer with default values for <code>networkId</code>,
  <code>superPeers</code>, <code>pingIntervalMillis</code>, <code>pingTimeoutMillis</code>,
  <code>maxTimeOffsetMillis</code>, <code>maxPeers</code>, and enabled control plane message arming.</div>
 </dd>
-<dt><a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.nio.NioEventLoopGroup,java.net.InetSocketAddress,int,java.util.Map)" class="member-name-link">RelayOnlyDrasylServerChannelInitializer(Identity, NioEventLoopGroup, InetSocketAddress, int, Map&lt;IdentityPublicKey, InetSocketAddress&gt;)</a> - Constructor for class org.drasyl.channel.<a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">RelayOnlyDrasylServerChannelInitializer</a></dt>
+<dt><a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.EventLoopGroup,java.net.InetSocketAddress,int,java.util.Map)" class="member-name-link">RelayOnlyDrasylServerChannelInitializer(Identity, EventLoopGroup, InetSocketAddress, int, Map&lt;IdentityPublicKey, InetSocketAddress&gt;)</a> - Constructor for class org.drasyl.channel.<a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">RelayOnlyDrasylServerChannelInitializer</a></dt>
 <dd>
 <div class="block">Creates a new channel initializer with default values for <code>pingIntervalMillis</code>,
  <code>pingTimeoutMillis</code>, <code>maxTimeOffsetMillis</code>, <code>maxPeers</code>, and enabled control
  plane message arming.</div>
 </dd>
-<dt><a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.nio.NioEventLoopGroup,java.net.InetSocketAddress,int,java.util.Map,boolean)" class="member-name-link">RelayOnlyDrasylServerChannelInitializer(Identity, NioEventLoopGroup, InetSocketAddress, int, Map&lt;IdentityPublicKey, InetSocketAddress&gt;, boolean)</a> - Constructor for class org.drasyl.channel.<a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">RelayOnlyDrasylServerChannelInitializer</a></dt>
+<dt><a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.EventLoopGroup,java.net.InetSocketAddress,int,java.util.Map,boolean)" class="member-name-link">RelayOnlyDrasylServerChannelInitializer(Identity, EventLoopGroup, InetSocketAddress, int, Map&lt;IdentityPublicKey, InetSocketAddress&gt;, boolean)</a> - Constructor for class org.drasyl.channel.<a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">RelayOnlyDrasylServerChannelInitializer</a></dt>
 <dd>
 <div class="block">Creates a new channel initializer with default values for <code>pingIntervalMillis</code>,
  <code>pingTimeoutMillis</code>, <code>maxTimeOffsetMillis</code>, and <code>maxPeers</code>.</div>
 </dd>
-<dt><a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.nio.NioEventLoopGroup,java.net.InetSocketAddress,int,java.util.Map,boolean,int,int,int,int)" class="member-name-link">RelayOnlyDrasylServerChannelInitializer(Identity, NioEventLoopGroup, InetSocketAddress, int, Map&lt;IdentityPublicKey, InetSocketAddress&gt;, boolean, int, int, int, int)</a> - Constructor for class org.drasyl.channel.<a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">RelayOnlyDrasylServerChannelInitializer</a></dt>
+<dt><a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.EventLoopGroup,java.net.InetSocketAddress,int,java.util.Map,boolean,int,int,int,int)" class="member-name-link">RelayOnlyDrasylServerChannelInitializer(Identity, EventLoopGroup, InetSocketAddress, int, Map&lt;IdentityPublicKey, InetSocketAddress&gt;, boolean, int, int, int, int)</a> - Constructor for class org.drasyl.channel.<a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">RelayOnlyDrasylServerChannelInitializer</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/protocol/ApplicationMessage.html#release()" class="member-name-link">release()</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/ApplicationMessage.html" title="class in org.drasyl.handler.remote.protocol">ApplicationMessage</a></dt>
 <dd>&nbsp;</dd>
@@ -7769,40 +7793,40 @@ loadScripts(document, 'script');</script>
 <div class="block">A <code>ChannelInitializer</code> for <a href="org/drasyl/channel/DrasylServerChannel.html" title="class in org.drasyl.channel"><code>DrasylServerChannel</code></a>s that tries to traverse (if any)
  NATs with a fallback to relaying all messages through super peers.</div>
 </dd>
-<dt><a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.nio.NioEventLoopGroup)" class="member-name-link">TraversingDrasylServerChannelInitializer(Identity, NioEventLoopGroup)</a> - Constructor for class org.drasyl.channel.<a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">TraversingDrasylServerChannelInitializer</a></dt>
+<dt><a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.EventLoopGroup)" class="member-name-link">TraversingDrasylServerChannelInitializer(Identity, EventLoopGroup)</a> - Constructor for class org.drasyl.channel.<a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">TraversingDrasylServerChannelInitializer</a></dt>
 <dd>
 <div class="block">Creates a new channel initializer with default values for <code>bindPort</code>,
  <code>networkId</code>, <code>superPeers</code>, <code>pingIntervalMillis</code>, <code>pingTimeoutMillis</code>,
  <code>maxTimeOffsetMillis</code>, <code>maxPeers</code>, <code>pingCommunicationTimeoutMillis</code>, and
  enabled control plane message arming.</div>
 </dd>
-<dt><a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.nio.NioEventLoopGroup,int)" class="member-name-link">TraversingDrasylServerChannelInitializer(Identity, NioEventLoopGroup, int)</a> - Constructor for class org.drasyl.channel.<a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">TraversingDrasylServerChannelInitializer</a></dt>
+<dt><a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.EventLoopGroup,int)" class="member-name-link">TraversingDrasylServerChannelInitializer(Identity, EventLoopGroup, int)</a> - Constructor for class org.drasyl.channel.<a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">TraversingDrasylServerChannelInitializer</a></dt>
 <dd>
 <div class="block">Creates a new channel initializer with default values for <code>networkId</code>,
  <code>superPeers</code>, <code>pingIntervalMillis</code>, <code>pingTimeoutMillis</code>,
  <code>maxTimeOffsetMillis</code>, <code>maxPeers</code>, <code>pingCommunicationTimeoutMillis</code>, and
  enabled control plane message arming.</div>
 </dd>
-<dt><a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.nio.NioEventLoopGroup,java.net.InetSocketAddress)" class="member-name-link">TraversingDrasylServerChannelInitializer(Identity, NioEventLoopGroup, InetSocketAddress)</a> - Constructor for class org.drasyl.channel.<a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">TraversingDrasylServerChannelInitializer</a></dt>
+<dt><a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.EventLoopGroup,java.net.InetSocketAddress)" class="member-name-link">TraversingDrasylServerChannelInitializer(Identity, EventLoopGroup, InetSocketAddress)</a> - Constructor for class org.drasyl.channel.<a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">TraversingDrasylServerChannelInitializer</a></dt>
 <dd>
 <div class="block">Creates a new channel initializer with default values for <code>networkId</code>,
  <code>superPeers</code>, <code>pingIntervalMillis</code>, <code>pingTimeoutMillis</code>,
  <code>maxTimeOffsetMillis</code>, <code>maxPeers</code>, <code>pingCommunicationTimeoutMillis</code>, and
  enabled control plane message arming.</div>
 </dd>
-<dt><a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.nio.NioEventLoopGroup,java.net.InetSocketAddress,int,java.util.Map)" class="member-name-link">TraversingDrasylServerChannelInitializer(Identity, NioEventLoopGroup, InetSocketAddress, int, Map&lt;IdentityPublicKey, InetSocketAddress&gt;)</a> - Constructor for class org.drasyl.channel.<a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">TraversingDrasylServerChannelInitializer</a></dt>
+<dt><a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.EventLoopGroup,java.net.InetSocketAddress,int,java.util.Map)" class="member-name-link">TraversingDrasylServerChannelInitializer(Identity, EventLoopGroup, InetSocketAddress, int, Map&lt;IdentityPublicKey, InetSocketAddress&gt;)</a> - Constructor for class org.drasyl.channel.<a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">TraversingDrasylServerChannelInitializer</a></dt>
 <dd>
 <div class="block">Creates a new channel initializer with default values for <code>pingIntervalMillis</code>,
  <code>pingTimeoutMillis</code>, <code>maxTimeOffsetMillis</code>, <code>maxPeers</code>,
  <code>pingCommunicationTimeoutMillis</code>, and enabled control plane message arming.</div>
 </dd>
-<dt><a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.nio.NioEventLoopGroup,java.net.InetSocketAddress,int,java.util.Map,boolean)" class="member-name-link">TraversingDrasylServerChannelInitializer(Identity, NioEventLoopGroup, InetSocketAddress, int, Map&lt;IdentityPublicKey, InetSocketAddress&gt;, boolean)</a> - Constructor for class org.drasyl.channel.<a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">TraversingDrasylServerChannelInitializer</a></dt>
+<dt><a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.EventLoopGroup,java.net.InetSocketAddress,int,java.util.Map,boolean)" class="member-name-link">TraversingDrasylServerChannelInitializer(Identity, EventLoopGroup, InetSocketAddress, int, Map&lt;IdentityPublicKey, InetSocketAddress&gt;, boolean)</a> - Constructor for class org.drasyl.channel.<a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">TraversingDrasylServerChannelInitializer</a></dt>
 <dd>
 <div class="block">Creates a new channel initializer with default values for <code>pingIntervalMillis</code>,
  <code>pingTimeoutMillis</code>, <code>maxTimeOffsetMillis</code>, <code>maxPeers</code>, and
  <code>pingCommunicationTimeoutMillis</code>.</div>
 </dd>
-<dt><a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.nio.NioEventLoopGroup,java.net.InetSocketAddress,int,java.util.Map,boolean,int,int,int,int,int)" class="member-name-link">TraversingDrasylServerChannelInitializer(Identity, NioEventLoopGroup, InetSocketAddress, int, Map&lt;IdentityPublicKey, InetSocketAddress&gt;, boolean, int, int, int, int, int)</a> - Constructor for class org.drasyl.channel.<a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">TraversingDrasylServerChannelInitializer</a></dt>
+<dt><a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.channel.EventLoopGroup,java.net.InetSocketAddress,int,java.util.Map,boolean,int,int,int,int,int)" class="member-name-link">TraversingDrasylServerChannelInitializer(Identity, EventLoopGroup, InetSocketAddress, int, Map&lt;IdentityPublicKey, InetSocketAddress&gt;, boolean, int, int, int, int, int)</a> - Constructor for class org.drasyl.channel.<a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">TraversingDrasylServerChannelInitializer</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/internet/TraversingInternetDiscoveryChildrenHandler.html" class="type-name-link" title="class in org.drasyl.handler.remote.internet">TraversingInternetDiscoveryChildrenHandler</a> - Class in <a href="org/drasyl/handler/remote/internet/package-summary.html">org.drasyl.handler.remote.internet</a></dt>
 <dd>
@@ -7846,14 +7870,14 @@ loadScripts(document, 'script');</script>
 <div class="block">Starts an UDP broadcast server and together with the <a href="org/drasyl/handler/remote/LocalNetworkDiscovery.html" title="class in org.drasyl.handler.remote"><code>LocalNetworkDiscovery</code></a> is responsible
  for discovering other nodes in the local network.</div>
 </dd>
-<dt><a href="org/drasyl/handler/remote/UdpBroadcastServer.html#%3Cinit%3E(io.netty.channel.nio.NioEventLoopGroup)" class="member-name-link">UdpBroadcastServer(NioEventLoopGroup)</a> - Constructor for class org.drasyl.handler.remote.<a href="org/drasyl/handler/remote/UdpBroadcastServer.html" title="class in org.drasyl.handler.remote">UdpBroadcastServer</a></dt>
+<dt><a href="org/drasyl/handler/remote/UdpBroadcastServer.html#%3Cinit%3E(io.netty.channel.EventLoopGroup)" class="member-name-link">UdpBroadcastServer(EventLoopGroup)</a> - Constructor for class org.drasyl.handler.remote.<a href="org/drasyl/handler/remote/UdpBroadcastServer.html" title="class in org.drasyl.handler.remote">UdpBroadcastServer</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/UdpMulticastServer.html" class="type-name-link" title="class in org.drasyl.handler.remote">UdpMulticastServer</a> - Class in <a href="org/drasyl/handler/remote/package-summary.html">org.drasyl.handler.remote</a></dt>
 <dd>
 <div class="block">Starts an UDP server which joins a IP multicast group and together with the
  <a href="org/drasyl/handler/remote/LocalNetworkDiscovery.html" title="class in org.drasyl.handler.remote"><code>LocalNetworkDiscovery</code></a> is responsible for discovering other nodes in the local network.</div>
 </dd>
-<dt><a href="org/drasyl/handler/remote/UdpMulticastServer.html#%3Cinit%3E(io.netty.channel.nio.NioEventLoopGroup)" class="member-name-link">UdpMulticastServer(NioEventLoopGroup)</a> - Constructor for class org.drasyl.handler.remote.<a href="org/drasyl/handler/remote/UdpMulticastServer.html" title="class in org.drasyl.handler.remote">UdpMulticastServer</a></dt>
+<dt><a href="org/drasyl/handler/remote/UdpMulticastServer.html#%3Cinit%3E(io.netty.channel.EventLoopGroup)" class="member-name-link">UdpMulticastServer(EventLoopGroup)</a> - Constructor for class org.drasyl.handler.remote.<a href="org/drasyl/handler/remote/UdpMulticastServer.html" title="class in org.drasyl.handler.remote">UdpMulticastServer</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/UdpServer.html" class="type-name-link" title="class in org.drasyl.handler.remote">UdpServer</a> - Class in <a href="org/drasyl/handler/remote/package-summary.html">org.drasyl.handler.remote</a></dt>
 <dd>

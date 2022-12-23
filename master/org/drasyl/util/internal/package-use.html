@@ -54,21 +54,30 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Package</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><a href="#org.drasyl.crypto.loader">org.drasyl.crypto.loader</a></div>
+<div class="col-first even-row-color"><a href="#org.drasyl.channel">org.drasyl.channel</a></div>
 <div class="col-last even-row-color">
+<div class="block"><a href="https://netty.io/">netty</a> <code>Channel</code> for the drasyl overlay
+ network.</div>
+</div>
+<div class="col-first odd-row-color"><a href="#org.drasyl.crypto.loader">org.drasyl.crypto.loader</a></div>
+<div class="col-last odd-row-color">
 <div class="block">Helper to load resources from (nested) JARs or file system</div>
 </div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.crypto.sodium">org.drasyl.crypto.sodium</a></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><a href="#org.drasyl.crypto.sodium">org.drasyl.crypto.sodium</a></div>
+<div class="col-last even-row-color">
 <div class="block">Libsodium wrappers for the crypto operations of drasyl</div>
 </div>
-<div class="col-first even-row-color"><a href="#org.drasyl.handler.codec">org.drasyl.handler.codec</a></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><a href="#org.drasyl.handler.codec">org.drasyl.handler.codec</a></div>
+<div class="col-last odd-row-color">
 <div class="block">For message decoding and encoding (like serialization).</div>
 </div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.handler.discovery">org.drasyl.handler.discovery</a></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><a href="#org.drasyl.handler.discovery">org.drasyl.handler.discovery</a></div>
+<div class="col-last even-row-color">
 <div class="block">Different methods to discover peers.</div>
+</div>
+<div class="col-first odd-row-color"><a href="#org.drasyl.handler.remote">org.drasyl.handler.remote</a></div>
+<div class="col-last odd-row-color">
+<div class="block">Handlers used to communicate with remote nodes.</div>
 </div>
 <div class="col-first even-row-color"><a href="#org.drasyl.handler.remote.protocol">org.drasyl.handler.remote.protocol</a></div>
 <div class="col-last even-row-color">
@@ -88,26 +97,43 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">Describes <a href="../../node/DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>s as finite state machines.</div>
 </div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.node.event">org.drasyl.node.event</a></div>
+<div class="col-first odd-row-color"><a href="#org.drasyl.node.channel">org.drasyl.node.channel</a></div>
 <div class="col-last odd-row-color">
+<div class="block"><a href="https://netty.io/">netty</a> <code>Channel</code> for the <a href="../../node/DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>.</div>
+</div>
+<div class="col-first even-row-color"><a href="#org.drasyl.node.event">org.drasyl.node.event</a></div>
+<div class="col-last even-row-color">
 <div class="block">Contains events that inform about various states of the <a href="../../node/DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>
  (started, stopped, etc.) or overlay network events (messages, peer discovery, etc.)</div>
 </div>
-<div class="col-first even-row-color"><a href="#org.drasyl.node.handler.serialization">org.drasyl.node.handler.serialization</a></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><a href="#org.drasyl.node.handler.serialization">org.drasyl.node.handler.serialization</a></div>
+<div class="col-last odd-row-color">
 <div class="block">Serialization of java objects to byte arrays and vice versa.</div>
 </div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.util">org.drasyl.util</a></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><a href="#org.drasyl.util">org.drasyl.util</a></div>
+<div class="col-last even-row-color">
 <div class="block">Utility classes used across multiple packages.</div>
 </div>
-<div class="col-first even-row-color"><a href="#org.drasyl.util.logging">org.drasyl.util.logging</a></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><a href="#org.drasyl.util.logging">org.drasyl.util.logging</a></div>
+<div class="col-last odd-row-color">
 <div class="block">Logging API (for internal use only).</div>
 </div>
 </div>
 <section class="package-uses">
 <ul class="block-list">
+<li>
+<section class="detail" id="org.drasyl.channel">
+<div class="caption"><span>Classes in <a href="package-summary.html">org.drasyl.util.internal</a> used by <a href="../../channel/package-summary.html">org.drasyl.channel</a></span></div>
+<div class="summary-table two-column-summary">
+<div class="table-header col-first">Class</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><a href="class-use/UnstableApi.html#org.drasyl.channel">UnstableApi</a></div>
+<div class="col-last even-row-color">
+<div class="block">Indicates a public API that can change at any time (even in minor/bugfix releases).</div>
+</div>
+</div>
+</section>
+</li>
 <li>
 <section class="detail" id="org.drasyl.crypto.loader">
 <div class="caption"><span>Classes in <a href="package-summary.html">org.drasyl.util.internal</a> used by <a href="../../crypto/loader/package-summary.html">org.drasyl.crypto.loader</a></span></div>
@@ -157,6 +183,19 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">A common annotation to declare that annotated elements can be <code>null</code> under some
  circumstance.</div>
+</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="org.drasyl.handler.remote">
+<div class="caption"><span>Classes in <a href="package-summary.html">org.drasyl.util.internal</a> used by <a href="../../handler/remote/package-summary.html">org.drasyl.handler.remote</a></span></div>
+<div class="summary-table two-column-summary">
+<div class="table-header col-first">Class</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><a href="class-use/UnstableApi.html#org.drasyl.handler.remote">UnstableApi</a></div>
+<div class="col-last even-row-color">
+<div class="block">Indicates a public API that can change at any time (even in minor/bugfix releases).</div>
 </div>
 </div>
 </section>
@@ -220,6 +259,10 @@ loadScripts(document, 'script');</script>
 <div class="block">A common annotation to declare that annotated elements can be <code>null</code> under some
  circumstance.</div>
 </div>
+<div class="col-first even-row-color"><a href="class-use/UnstableApi.html#org.drasyl.node">UnstableApi</a></div>
+<div class="col-last even-row-color">
+<div class="block">Indicates a public API that can change at any time (even in minor/bugfix releases).</div>
+</div>
 </div>
 </section>
 </li>
@@ -232,6 +275,19 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color"><a href="class-use/NonNull.html#org.drasyl.node.behaviour">NonNull</a></div>
 <div class="col-last even-row-color">
 <div class="block">A common annotation to declare that annotated elements cannot be <code>null</code>.</div>
+</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="org.drasyl.node.channel">
+<div class="caption"><span>Classes in <a href="package-summary.html">org.drasyl.util.internal</a> used by <a href="../../node/channel/package-summary.html">org.drasyl.node.channel</a></span></div>
+<div class="summary-table two-column-summary">
+<div class="table-header col-first">Class</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><a href="class-use/UnstableApi.html#org.drasyl.node.channel">UnstableApi</a></div>
+<div class="col-last even-row-color">
+<div class="block">Indicates a public API that can change at any time (even in minor/bugfix releases).</div>
 </div>
 </div>
 </section>
