@@ -468,7 +468,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/crypto/PendingAgreement.html#buildAgreement(org.drasyl.crypto.Crypto,long)" class="member-name-link">buildAgreement(Crypto, long)</a> - Method in class org.drasyl.node.handler.crypto.<a href="org/drasyl/node/handler/crypto/PendingAgreement.html" title="class in org.drasyl.node.handler.crypto">PendingAgreement</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/drasyl/handler/remote/protocol/PublicHeader.html#buildAuthTag()" class="member-name-link">buildAuthTag()</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/PublicHeader.html" title="class in org.drasyl.handler.remote.protocol">PublicHeader</a></dt>
+<dt><a href="org/drasyl/handler/remote/protocol/PublicHeader.html#buildAuthTag(io.netty.buffer.ByteBufAllocator)" class="member-name-link">buildAuthTag(ByteBufAllocator)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/PublicHeader.html" title="class in org.drasyl.handler.remote.protocol">PublicHeader</a></dt>
 <dd>
 <div class="block">Builds the authentication tag from this public header.</div>
 </dd>
@@ -2048,7 +2048,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/util/protocol/PcpPortUtil.ResultCode.html#from(short)" class="member-name-link">from(short)</a> - Static method in enum org.drasyl.util.protocol.<a href="org/drasyl/util/protocol/PcpPortUtil.ResultCode.html" title="enum in org.drasyl.util.protocol">PcpPortUtil.ResultCode</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/drasyl/node/handler/crypto/KeyExchangeMessage.html#fromApplication(io.netty.buffer.ByteBuf,io.netty.buffer.ByteBuf)" class="member-name-link">fromApplication(ByteBuf, ByteBuf)</a> - Static method in class org.drasyl.node.handler.crypto.<a href="org/drasyl/node/handler/crypto/KeyExchangeMessage.html" title="class in org.drasyl.node.handler.crypto">KeyExchangeMessage</a></dt>
+<dt><a href="org/drasyl/node/handler/crypto/KeyExchangeMessage.html#fromApplication(io.netty.buffer.ByteBuf,io.netty.buffer.ByteBufAllocator)" class="member-name-link">fromApplication(ByteBuf, ByteBufAllocator)</a> - Static method in class org.drasyl.node.handler.crypto.<a href="org/drasyl/node/handler/crypto/KeyExchangeMessage.html" title="class in org.drasyl.node.handler.crypto">KeyExchangeMessage</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/serialization/ByteSerializer.html#fromByteArray(byte%5B%5D,java.lang.Class)" class="member-name-link">fromByteArray(byte[], Class&lt;T&gt;)</a> - Method in class org.drasyl.node.handler.serialization.<a href="org/drasyl/node/handler/serialization/ByteSerializer.html" title="class in org.drasyl.node.handler.serialization">ByteSerializer</a></dt>
 <dd>&nbsp;</dd>
@@ -2449,6 +2449,22 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">If this runnable is invoked the group will be left.</div>
 </dd>
+<dt><a href="org/drasyl/handler/remote/protocol/AcknowledgementMessage.html#getLength()" class="member-name-link">getLength()</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/AcknowledgementMessage.html" title="class in org.drasyl.handler.remote.protocol">AcknowledgementMessage</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/remote/protocol/ApplicationMessage.html#getLength()" class="member-name-link">getLength()</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/ApplicationMessage.html" title="class in org.drasyl.handler.remote.protocol">ApplicationMessage</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/remote/protocol/ArmedProtocolMessage.html#getLength()" class="member-name-link">getLength()</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/ArmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">ArmedProtocolMessage</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/remote/protocol/HelloMessage.html#getLength()" class="member-name-link">getLength()</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/HelloMessage.html" title="class in org.drasyl.handler.remote.protocol">HelloMessage</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/remote/protocol/RemoteMessage.html#getLength()" class="member-name-link">getLength()</a> - Method in interface org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/RemoteMessage.html" title="interface in org.drasyl.handler.remote.protocol">RemoteMessage</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/remote/protocol/UnarmedProtocolMessage.html#getLength()" class="member-name-link">getLength()</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/UnarmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">UnarmedProtocolMessage</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/remote/protocol/UniteMessage.html#getLength()" class="member-name-link">getLength()</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/UniteMessage.html" title="class in org.drasyl.handler.remote.protocol">UniteMessage</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/node/handler/crypto/ArmHeader.html#getLength()" class="member-name-link">getLength()</a> - Method in class org.drasyl.node.handler.crypto.<a href="org/drasyl/node/handler/crypto/ArmHeader.html" title="class in org.drasyl.node.handler.crypto">ArmHeader</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/util/protocol/NatPmpUtil.MappingUdpResponseMessage.html#getLifetime()" class="member-name-link">getLifetime()</a> - Method in class org.drasyl.util.protocol.<a href="org/drasyl/util/protocol/NatPmpUtil.MappingUdpResponseMessage.html" title="class in org.drasyl.util.protocol">NatPmpUtil.MappingUdpResponseMessage</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/util/protocol/PcpPortUtil.MappingResponseMessage.html#getLifetime()" class="member-name-link">getLifetime()</a> - Method in class org.drasyl.util.protocol.<a href="org/drasyl/util/protocol/PcpPortUtil.MappingResponseMessage.html" title="class in org.drasyl.util.protocol">PcpPortUtil.MappingResponseMessage</a></dt>
@@ -4313,6 +4329,8 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/drasyl/node/plugin/groups/client/GroupsClientMessageEncoder.html#MAGIC_NUMBER_LEAVE" class="member-name-link">MAGIC_NUMBER_LEAVE</a> - Static variable in class org.drasyl.node.plugin.groups.client.<a href="org/drasyl/node/plugin/groups/client/GroupsClientMessageEncoder.html" title="class in org.drasyl.node.plugin.groups.client">GroupsClientMessageEncoder</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/plugin/groups/client/GroupsServerMessageEncoder.html#MAGIC_NUMBER_LEFT" class="member-name-link">MAGIC_NUMBER_LEFT</a> - Static variable in class org.drasyl.node.plugin.groups.client.<a href="org/drasyl/node/plugin/groups/client/GroupsServerMessageEncoder.html" title="class in org.drasyl.node.plugin.groups.client">GroupsServerMessageEncoder</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/remote/protocol/RemoteMessage.html#MAGIC_NUMBER_LEN" class="member-name-link">MAGIC_NUMBER_LEN</a> - Static variable in interface org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/RemoteMessage.html" title="interface in org.drasyl.handler.remote.protocol">RemoteMessage</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/membership/cyclon/CyclonCodec.html#MAGIC_NUMBER_REQUEST" class="member-name-link">MAGIC_NUMBER_REQUEST</a> - Static variable in class org.drasyl.handler.membership.cyclon.<a href="org/drasyl/handler/membership/cyclon/CyclonCodec.html" title="class in org.drasyl.handler.membership.cyclon">CyclonCodec</a></dt>
 <dd>&nbsp;</dd>
@@ -8392,6 +8410,8 @@ the order they are declared.</div>
 <div class="block">Writes this message to the buffer <code>out</code>.</div>
 </dd>
 <dt><a href="org/drasyl/handler/remote/protocol/UnarmedProtocolMessage.html#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo(ByteBuf)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/UnarmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">UnarmedProtocolMessage</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/node/handler/crypto/ArmHeader.html#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo(ByteBuf)</a> - Method in class org.drasyl.node.handler.crypto.<a href="org/drasyl/node/handler/crypto/ArmHeader.html" title="class in org.drasyl.node.handler.crypto">ArmHeader</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/crypto/KeyExchangeMessage.html#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo(ByteBuf)</a> - Method in class org.drasyl.node.handler.crypto.<a href="org/drasyl/node/handler/crypto/KeyExchangeMessage.html" title="class in org.drasyl.node.handler.crypto">KeyExchangeMessage</a></dt>
 <dd>&nbsp;</dd>

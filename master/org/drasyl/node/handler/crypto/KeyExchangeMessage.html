@@ -76,7 +76,8 @@ loadScripts(document, 'script');</script>
 </div>
 <section class="class-description" id="class-description">
 <hr>
-<div class="type-signature"><span class="modifiers">public abstract class </span><span class="element-name type-name-label">KeyExchangeMessage</span>
+<div class="type-signature"><span class="annotations"><a href="../../../util/internal/UnstableApi.html" title="annotation in org.drasyl.util.internal">@UnstableApi</a>
+</span><span class="modifiers">public abstract class </span><span class="element-name type-name-label">KeyExchangeMessage</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
 </section>
 <section class="summary">
@@ -120,9 +121,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#fromApplication(io.netty.buffer.ByteBuf,io.netty.buffer.ByteBuf)" class="member-name-link">fromApplication</a><wbr>(io.netty.buffer.ByteBuf&nbsp;msg,
- io.netty.buffer.ByteBuf&nbsp;out)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static io.netty.buffer.ByteBuf</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#fromApplication(io.netty.buffer.ByteBuf,io.netty.buffer.ByteBufAllocator)" class="member-name-link">fromApplication</a><wbr>(io.netty.buffer.ByteBuf&nbsp;msg,
+ io.netty.buffer.ByteBufAllocator&nbsp;alloc)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract <a href="../../../identity/KeyAgreementPublicKey.html" title="class in org.drasyl.identity">KeyAgreementPublicKey</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getSessionKey()" class="member-name-link">getSessionKey</a>()</code></div>
@@ -228,10 +229,10 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="fromApplication(io.netty.buffer.ByteBuf,io.netty.buffer.ByteBuf)">
+<section class="detail" id="fromApplication(io.netty.buffer.ByteBuf,io.netty.buffer.ByteBufAllocator)">
 <h3>fromApplication</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">fromApplication</span><wbr><span class="parameters">(io.netty.buffer.ByteBuf&nbsp;msg,
- io.netty.buffer.ByteBuf&nbsp;out)</span></div>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">io.netty.buffer.ByteBuf</span>&nbsp;<span class="element-name">fromApplication</span><wbr><span class="parameters">(io.netty.buffer.ByteBuf&nbsp;msg,
+ io.netty.buffer.ByteBufAllocator&nbsp;alloc)</span></div>
 </section>
 </li>
 </ul>

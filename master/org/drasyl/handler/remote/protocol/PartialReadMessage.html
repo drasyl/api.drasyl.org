@@ -81,7 +81,8 @@ loadScripts(document, 'script');</script>
 <dd><code><a href="ArmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">ArmedProtocolMessage</a></code>, <code><a href="UnarmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">UnarmedProtocolMessage</a></code></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">PartialReadMessage</span><span class="extends-implements">
+<div class="type-signature"><span class="annotations"><a href="../../../util/internal/UnstableApi.html" title="annotation in org.drasyl.util.internal">@UnstableApi</a>
+</span><span class="modifiers">public interface </span><span class="element-name type-name-label">PartialReadMessage</span><span class="extends-implements">
 extends <a href="RemoteMessage.html" title="interface in org.drasyl.handler.remote.protocol">RemoteMessage</a>, io.netty.util.ReferenceCounted, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/AutoCloseable.html" title="class or interface in java.lang" class="external-link">AutoCloseable</a></span></div>
 <div class="block">Describes a message whose content has been read partially. This is the case for encrypted
  messages, chunks or messages that do not need to be read completely.</div>
@@ -102,7 +103,7 @@ extends <a href="RemoteMessage.html" title="interface in org.drasyl.handler.remo
 <h2>Field Summary</h2>
 <div class="inherited-list">
 <h3 id="fields-inherited-from-class-org.drasyl.handler.remote.protocol.RemoteMessage">Fields inherited from interface&nbsp;org.drasyl.handler.remote.protocol.<a href="RemoteMessage.html" title="interface in org.drasyl.handler.remote.protocol">RemoteMessage</a></h3>
-<code><a href="RemoteMessage.html#MAGIC_NUMBER">MAGIC_NUMBER</a></code></div>
+<code><a href="RemoteMessage.html#MAGIC_NUMBER">MAGIC_NUMBER</a>, <a href="RemoteMessage.html#MAGIC_NUMBER_LEN">MAGIC_NUMBER_LEN</a></code></div>
 </section>
 </li>
 <!-- ========== METHOD SUMMARY =========== -->
@@ -145,7 +146,7 @@ extends <a href="RemoteMessage.html" title="interface in org.drasyl.handler.remo
 <code>refCnt, release, release, retain, retain, touch, touch</code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.drasyl.handler.remote.protocol.RemoteMessage">Methods inherited from interface&nbsp;org.drasyl.handler.remote.protocol.<a href="RemoteMessage.html" title="interface in org.drasyl.handler.remote.protocol">RemoteMessage</a></h3>
-<code><a href="RemoteMessage.html#getArmed()">getArmed</a>, <a href="RemoteMessage.html#getHopCount()">getHopCount</a>, <a href="RemoteMessage.html#getNetworkId()">getNetworkId</a>, <a href="RemoteMessage.html#getNonce()">getNonce</a>, <a href="RemoteMessage.html#getProofOfWork()">getProofOfWork</a>, <a href="RemoteMessage.html#getRecipient()">getRecipient</a>, <a href="RemoteMessage.html#getSender()">getSender</a>, <a href="RemoteMessage.html#incrementHopCount()">incrementHopCount</a>, <a href="RemoteMessage.html#writeTo(io.netty.buffer.ByteBuf)">writeTo</a></code></div>
+<code><a href="RemoteMessage.html#getArmed()">getArmed</a>, <a href="RemoteMessage.html#getHopCount()">getHopCount</a>, <a href="RemoteMessage.html#getLength()">getLength</a>, <a href="RemoteMessage.html#getNetworkId()">getNetworkId</a>, <a href="RemoteMessage.html#getNonce()">getNonce</a>, <a href="RemoteMessage.html#getProofOfWork()">getProofOfWork</a>, <a href="RemoteMessage.html#getRecipient()">getRecipient</a>, <a href="RemoteMessage.html#getSender()">getSender</a>, <a href="RemoteMessage.html#incrementHopCount()">incrementHopCount</a>, <a href="RemoteMessage.html#writeTo(io.netty.buffer.ByteBuf)">writeTo</a></code></div>
 </section>
 </li>
 </ul>

@@ -99,7 +99,7 @@ implements io.netty.util.ReferenceCounted, <a href="https://docs.oracle.com/en/j
 <h2>Field Summary</h2>
 <div class="inherited-list">
 <h3 id="fields-inherited-from-class-org.drasyl.handler.remote.protocol.RemoteMessage">Fields inherited from interface&nbsp;org.drasyl.handler.remote.protocol.<a href="RemoteMessage.html" title="interface in org.drasyl.handler.remote.protocol">RemoteMessage</a></h3>
-<code><a href="RemoteMessage.html#MAGIC_NUMBER">MAGIC_NUMBER</a></code></div>
+<code><a href="RemoteMessage.html#MAGIC_NUMBER">MAGIC_NUMBER</a>, <a href="RemoteMessage.html#MAGIC_NUMBER_LEN">MAGIC_NUMBER_LEN</a></code></div>
 </section>
 </li>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -139,28 +139,31 @@ implements io.netty.util.ReferenceCounted, <a href="https://docs.oracle.com/en/j
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Calls <a href="#release()"><code>release()</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract io.netty.buffer.ByteBuf</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getPayload()" class="member-name-link">getPayload</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLength()" class="member-name-link">getLength</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract io.netty.buffer.ByteBuf</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getPayload()" class="member-name-link">getPayload</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Returns the payload.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="ApplicationMessage.html" title="class in org.drasyl.handler.remote.protocol">ApplicationMessage</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#incrementHopCount()" class="member-name-link">incrementHopCount</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="ApplicationMessage.html" title="class in org.drasyl.handler.remote.protocol">ApplicationMessage</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#incrementHopCount()" class="member-name-link">incrementHopCount</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns this message with incremented hop count.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="ApplicationMessage.html" title="class in org.drasyl.handler.remote.protocol">ApplicationMessage</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#of(int,org.drasyl.identity.IdentityPublicKey,org.drasyl.identity.IdentityPublicKey,org.drasyl.identity.ProofOfWork,io.netty.buffer.ByteBuf)" class="member-name-link">of</a><wbr>(int&nbsp;networkId,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="ApplicationMessage.html" title="class in org.drasyl.handler.remote.protocol">ApplicationMessage</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#of(int,org.drasyl.identity.IdentityPublicKey,org.drasyl.identity.IdentityPublicKey,org.drasyl.identity.ProofOfWork,io.netty.buffer.ByteBuf)" class="member-name-link">of</a><wbr>(int&nbsp;networkId,
  <a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>&nbsp;recipient,
  <a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>&nbsp;sender,
  <a href="../../../identity/ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;proofOfWork,
  io.netty.buffer.ByteBuf&nbsp;payload)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates new application message with random <a href="Nonce.html" title="class in org.drasyl.handler.remote.protocol"><code>Nonce</code></a>, and minimal <a href="HopCount.html" title="class in org.drasyl.handler.remote.protocol"><code>HopCount</code></a>
  value.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="ApplicationMessage.html" title="class in org.drasyl.handler.remote.protocol">ApplicationMessage</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#of(org.drasyl.handler.remote.protocol.HopCount,boolean,int,org.drasyl.handler.remote.protocol.Nonce,org.drasyl.identity.DrasylAddress,org.drasyl.identity.DrasylAddress,org.drasyl.identity.ProofOfWork,io.netty.buffer.ByteBuf)" class="member-name-link">of</a><wbr>(<a href="HopCount.html" title="class in org.drasyl.handler.remote.protocol">HopCount</a>&nbsp;hopCount,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="ApplicationMessage.html" title="class in org.drasyl.handler.remote.protocol">ApplicationMessage</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#of(org.drasyl.handler.remote.protocol.HopCount,boolean,int,org.drasyl.handler.remote.protocol.Nonce,org.drasyl.identity.DrasylAddress,org.drasyl.identity.DrasylAddress,org.drasyl.identity.ProofOfWork,io.netty.buffer.ByteBuf)" class="member-name-link">of</a><wbr>(<a href="HopCount.html" title="class in org.drasyl.handler.remote.protocol">HopCount</a>&nbsp;hopCount,
  boolean&nbsp;isArmed,
  int&nbsp;networkId,
  <a href="Nonce.html" title="class in org.drasyl.handler.remote.protocol">Nonce</a>&nbsp;nonce,
@@ -168,42 +171,42 @@ implements io.netty.util.ReferenceCounted, <a href="https://docs.oracle.com/en/j
  <a href="../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;sender,
  <a href="../../../identity/ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;proofOfWork,
  io.netty.buffer.ByteBuf&nbsp;payload)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates new application message.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#refCnt()" class="member-name-link">refCnt</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#release()" class="member-name-link">release</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#refCnt()" class="member-name-link">refCnt</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#release(int)" class="member-name-link">release</a><wbr>(int&nbsp;decrement)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#release()" class="member-name-link">release</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>io.netty.util.ReferenceCounted</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#retain()" class="member-name-link">retain</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#release(int)" class="member-name-link">release</a><wbr>(int&nbsp;decrement)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>io.netty.util.ReferenceCounted</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#retain(int)" class="member-name-link">retain</a><wbr>(int&nbsp;increment)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#retain()" class="member-name-link">retain</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>io.netty.util.ReferenceCounted</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#touch()" class="member-name-link">touch</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#retain(int)" class="member-name-link">retain</a><wbr>(int&nbsp;increment)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>io.netty.util.ReferenceCounted</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#touch(java.lang.Object)" class="member-name-link">touch</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;hint)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#touch()" class="member-name-link">touch</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writeBodyTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeBodyTo</a><wbr>(io.netty.buffer.ByteBuf&nbsp;out)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>io.netty.util.ReferenceCounted</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#touch(java.lang.Object)" class="member-name-link">touch</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;hint)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writePrivateHeaderTo(io.netty.buffer.ByteBuf)" class="member-name-link">writePrivateHeaderTo</a><wbr>(io.netty.buffer.ByteBuf&nbsp;out)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writeBodyTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeBodyTo</a><wbr>(io.netty.buffer.ByteBuf&nbsp;out)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writePublicHeaderTo(io.netty.buffer.ByteBuf)" class="member-name-link">writePublicHeaderTo</a><wbr>(io.netty.buffer.ByteBuf&nbsp;out)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writePrivateHeaderTo(io.netty.buffer.ByteBuf)" class="member-name-link">writePrivateHeaderTo</a><wbr>(io.netty.buffer.ByteBuf&nbsp;out)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo</a><wbr>(io.netty.buffer.ByteBuf&nbsp;out)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writePublicHeaderTo(io.netty.buffer.ByteBuf)" class="member-name-link">writePublicHeaderTo</a><wbr>(io.netty.buffer.ByteBuf&nbsp;out)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo</a><wbr>(io.netty.buffer.ByteBuf&nbsp;out)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Writes this message to the buffer <code>out</code>.</div>
 </div>
 </div>
@@ -336,6 +339,16 @@ implements io.netty.util.ReferenceCounted, <a href="https://docs.oracle.com/en/j
 <section class="detail" id="writeBodyTo(io.netty.buffer.ByteBuf)">
 <h3>writeBodyTo</h3>
 <div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">writeBodyTo</span><wbr><span class="parameters">(io.netty.buffer.ByteBuf&nbsp;out)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="getLength()">
+<h3>getLength</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getLength</span>()</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="RemoteMessage.html#getLength()">getLength</a></code>&nbsp;in interface&nbsp;<code><a href="RemoteMessage.html" title="interface in org.drasyl.handler.remote.protocol">RemoteMessage</a></code></dd>
+</dl>
 </section>
 </li>
 <li>

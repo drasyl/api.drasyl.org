@@ -106,7 +106,7 @@ loadScripts(document, 'script');</script>
 </div>
 <div class="inherited-list">
 <h3 id="fields-inherited-from-class-org.drasyl.handler.remote.protocol.RemoteMessage">Fields inherited from interface&nbsp;org.drasyl.handler.remote.protocol.<a href="RemoteMessage.html" title="interface in org.drasyl.handler.remote.protocol">RemoteMessage</a></h3>
-<code><a href="RemoteMessage.html#MAGIC_NUMBER">MAGIC_NUMBER</a></code></div>
+<code><a href="RemoteMessage.html#MAGIC_NUMBER">MAGIC_NUMBER</a>, <a href="RemoteMessage.html#MAGIC_NUMBER_LEN">MAGIC_NUMBER_LEN</a></code></div>
 </section>
 </li>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -141,27 +141,30 @@ loadScripts(document, 'script');</script>
 <div class="block">Returns an armed version (<a href="ArmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol"><code>ArmedProtocolMessage</code></a>) of this message for sending it
  through untrustworthy channels.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract long</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getTime()" class="member-name-link">getTime</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLength()" class="member-name-link">getLength</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract long</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getTime()" class="member-name-link">getTime</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Returns the <a href="HelloMessage.html#getTime()"><code>HelloMessage.getTime()</code></a> value of the corresponding <a href="HelloMessage.html" title="class in org.drasyl.handler.remote.protocol"><code>HelloMessage</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="AcknowledgementMessage.html" title="class in org.drasyl.handler.remote.protocol">AcknowledgementMessage</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#incrementHopCount()" class="member-name-link">incrementHopCount</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="AcknowledgementMessage.html" title="class in org.drasyl.handler.remote.protocol">AcknowledgementMessage</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#incrementHopCount()" class="member-name-link">incrementHopCount</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns this message with incremented hop count.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="AcknowledgementMessage.html" title="class in org.drasyl.handler.remote.protocol">AcknowledgementMessage</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#of(int,org.drasyl.identity.DrasylAddress,org.drasyl.identity.IdentityPublicKey,org.drasyl.identity.ProofOfWork,long)" class="member-name-link">of</a><wbr>(int&nbsp;networkId,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="AcknowledgementMessage.html" title="class in org.drasyl.handler.remote.protocol">AcknowledgementMessage</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#of(int,org.drasyl.identity.DrasylAddress,org.drasyl.identity.IdentityPublicKey,org.drasyl.identity.ProofOfWork,long)" class="member-name-link">of</a><wbr>(int&nbsp;networkId,
  <a href="../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;recipient,
  <a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>&nbsp;sender,
  <a href="../../../identity/ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;proofOfWork,
  long&nbsp;time)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates new acknowledgement message with random <a href="Nonce.html" title="class in org.drasyl.handler.remote.protocol"><code>Nonce</code></a>, and minimal <a href="HopCount.html" title="class in org.drasyl.handler.remote.protocol"><code>HopCount</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="AcknowledgementMessage.html" title="class in org.drasyl.handler.remote.protocol">AcknowledgementMessage</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#of(org.drasyl.handler.remote.protocol.HopCount,boolean,int,org.drasyl.handler.remote.protocol.Nonce,org.drasyl.identity.DrasylAddress,org.drasyl.identity.DrasylAddress,org.drasyl.identity.ProofOfWork,long)" class="member-name-link">of</a><wbr>(<a href="HopCount.html" title="class in org.drasyl.handler.remote.protocol">HopCount</a>&nbsp;hopCount,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="AcknowledgementMessage.html" title="class in org.drasyl.handler.remote.protocol">AcknowledgementMessage</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#of(org.drasyl.handler.remote.protocol.HopCount,boolean,int,org.drasyl.handler.remote.protocol.Nonce,org.drasyl.identity.DrasylAddress,org.drasyl.identity.DrasylAddress,org.drasyl.identity.ProofOfWork,long)" class="member-name-link">of</a><wbr>(<a href="HopCount.html" title="class in org.drasyl.handler.remote.protocol">HopCount</a>&nbsp;hopCount,
  boolean&nbsp;isArmed,
  int&nbsp;networkId,
  <a href="Nonce.html" title="class in org.drasyl.handler.remote.protocol">Nonce</a>&nbsp;nonce,
@@ -169,21 +172,21 @@ loadScripts(document, 'script');</script>
  <a href="../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;sender,
  <a href="../../../identity/ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;proofOfWork,
  long&nbsp;time)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates new acknowledgement message.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writeBodyTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeBodyTo</a><wbr>(io.netty.buffer.ByteBuf&nbsp;out)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writePrivateHeaderTo(io.netty.buffer.ByteBuf)" class="member-name-link">writePrivateHeaderTo</a><wbr>(io.netty.buffer.ByteBuf&nbsp;out)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writeBodyTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeBodyTo</a><wbr>(io.netty.buffer.ByteBuf&nbsp;out)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writePublicHeaderTo(io.netty.buffer.ByteBuf)" class="member-name-link">writePublicHeaderTo</a><wbr>(io.netty.buffer.ByteBuf&nbsp;out)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writePrivateHeaderTo(io.netty.buffer.ByteBuf)" class="member-name-link">writePrivateHeaderTo</a><wbr>(io.netty.buffer.ByteBuf&nbsp;out)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo</a><wbr>(io.netty.buffer.ByteBuf&nbsp;out)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writePublicHeaderTo(io.netty.buffer.ByteBuf)" class="member-name-link">writePublicHeaderTo</a><wbr>(io.netty.buffer.ByteBuf&nbsp;out)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo</a><wbr>(io.netty.buffer.ByteBuf&nbsp;out)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Writes this message to the buffer <code>out</code>.</div>
 </div>
 </div>
@@ -323,6 +326,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="writeBodyTo(io.netty.buffer.ByteBuf)">
 <h3>writeBodyTo</h3>
 <div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">writeBodyTo</span><wbr><span class="parameters">(io.netty.buffer.ByteBuf&nbsp;out)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="getLength()">
+<h3>getLength</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getLength</span>()</div>
 </section>
 </li>
 <li>
