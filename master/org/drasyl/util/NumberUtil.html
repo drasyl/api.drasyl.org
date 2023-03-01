@@ -93,6 +93,36 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static double</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#max(double...)" class="member-name-link">max</a><wbr>(double...&nbsp;numbers)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Returns the largest given number.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#max(int...)" class="member-name-link">max</a><wbr>(int...&nbsp;numbers)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Returns the largest given number.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static long</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#max(long...)" class="member-name-link">max</a><wbr>(long...&nbsp;numbers)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Returns the largest given number.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static double</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#min(double...)" class="member-name-link">min</a><wbr>(double...&nbsp;numbers)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Returns the smallest given number.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#min(int...)" class="member-name-link">min</a><wbr>(int...&nbsp;numbers)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Returns the smallest given number.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static long</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#min(long...)" class="member-name-link">min</a><wbr>(long...&nbsp;numbers)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Returns the smallest given number.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#numberToHumanData(java.lang.Number)" class="member-name-link">numberToHumanData</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html" title="class or interface in java.lang" class="external-link">Number</a>&nbsp;number)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
@@ -350,6 +380,84 @@ loadScripts(document, 'script');</script>
 <div class="block">Returns the
  <a href="http://en.wikipedia.org/wiki/Standard_deviation#Corrected_sample_standard_deviation">
  corrected sample standard deviation</a> of given <code>values</code>.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="min(int...)">
+<h3>min</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">min</span><wbr><span class="parameters">(int...&nbsp;numbers)</span></div>
+<div class="block">Returns the smallest given number.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the smallest number in <code>numbers</code>.</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NoSuchElementException.html" title="class or interface in java.util" class="external-link">NoSuchElementException</a></code> - if no numbers were given</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="min(long...)">
+<h3>min</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">long</span>&nbsp;<span class="element-name">min</span><wbr><span class="parameters">(long...&nbsp;numbers)</span></div>
+<div class="block">Returns the smallest given number.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the smallest number in <code>numbers</code>.</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NoSuchElementException.html" title="class or interface in java.util" class="external-link">NoSuchElementException</a></code> - if no numbers were given</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="min(double...)">
+<h3>min</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">min</span><wbr><span class="parameters">(double...&nbsp;numbers)</span></div>
+<div class="block">Returns the smallest given number.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the smallest number in <code>numbers</code>.</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NoSuchElementException.html" title="class or interface in java.util" class="external-link">NoSuchElementException</a></code> - if no numbers were given</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="max(int...)">
+<h3>max</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">max</span><wbr><span class="parameters">(int...&nbsp;numbers)</span></div>
+<div class="block">Returns the largest given number.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the largest number in <code>numbers</code>.</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NoSuchElementException.html" title="class or interface in java.util" class="external-link">NoSuchElementException</a></code> - if no numbers were given</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="max(long...)">
+<h3>max</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">long</span>&nbsp;<span class="element-name">max</span><wbr><span class="parameters">(long...&nbsp;numbers)</span></div>
+<div class="block">Returns the largest given number.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the largest number in <code>numbers</code>.</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NoSuchElementException.html" title="class or interface in java.util" class="external-link">NoSuchElementException</a></code> - if no numbers were given</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="max(double...)">
+<h3>max</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">max</span><wbr><span class="parameters">(double...&nbsp;numbers)</span></div>
+<div class="block">Returns the largest given number.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the largest number in <code>numbers</code>.</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NoSuchElementException.html" title="class or interface in java.util" class="external-link">NoSuchElementException</a></code> - if no numbers were given</dd>
+</dl>
 </section>
 </li>
 </ul>
