@@ -86,8 +86,7 @@ loadScripts(document, 'script');</script>
  for a peer we want to directly communicate. The message's body is structured as follows:
  <ul>
  <li><b>Address</b>: The <a href="../../../identity/DrasylAddress.html" title="class in org.drasyl.identity"><code>DrasylAddress</code></a> to which this message contains routing information (32 bytes).</li>
- <li><b>Port</b>: The UDP port through which the node can be reached (2 bytes).</li>
- <li><b>InetAddress</b>: The IP address which the node can be reached. IPv4 addresses will be mapped to IPv6 addresses (16 bytes).</li>
+ <li><b>Endpoints</b>: UDP-port-IP-address-combinations were the peer can be reached. IPv4 addresses will be mapped to IPv6 addresses (2 + 16 bytes per endpoint)</li>
  </ul>
  <p>
  This is an immutable object.</div>
@@ -150,9 +149,9 @@ loadScripts(document, 'script');</script>
 <div class="block">Returns the public key of the peer.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getInetAddresses()" class="member-name-link">getInetAddresses</a>()</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getEndpoints()" class="member-name-link">getEndpoints</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Returns the ip address of the peer.</div>
+<div class="block">Returns the UDP-port-IP-address-combinations were the peer can be reached.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLength()" class="member-name-link">getLength</a>()</code></div>
@@ -168,7 +167,7 @@ loadScripts(document, 'script');</script>
  <a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>&nbsp;sender,
  <a href="../../../identity/ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;proofOfWork,
  <a href="../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;address,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;inetAddresses)</code></div>
+ <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;endpoints)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates new unit message with random <a href="Nonce.html" title="class in org.drasyl.handler.remote.protocol"><code>Nonce</code></a>, and minimal <a href="HopCount.html" title="class in org.drasyl.handler.remote.protocol"><code>HopCount</code></a> value.</div>
 </div>
@@ -181,7 +180,7 @@ loadScripts(document, 'script');</script>
  <a href="../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;sender,
  <a href="../../../identity/ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;proofOfWork,
  <a href="../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;address,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;inetAddresses)</code></div>
+ <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;endpoints)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates new unit message.</div>
 </div>
@@ -269,7 +268,7 @@ loadScripts(document, 'script');</script>
  <a href="../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;sender,
  <a href="../../../identity/ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;proofOfWork,
  <a href="../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;address,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;inetAddresses)</span></div>
+ <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;endpoints)</span></div>
 <div class="block">Creates new unit message.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -281,7 +280,7 @@ loadScripts(document, 'script');</script>
 <dd><code>sender</code> - the public key of the sender</dd>
 <dd><code>proofOfWork</code> - the proof of work of <code>sender</code></dd>
 <dd><code>address</code> - the public key of the peer</dd>
-<dd><code>inetAddresses</code> - the internet addresses of the peer</dd>
+<dd><code>endpoints</code> - the UDP-port-IP-address-combinations were the peer can be reached</dd>
 <dt>Throws:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/NullPointerException.html" title="class or interface in java.lang" class="external-link">NullPointerException</a></code> - if <code>nonce</code>,  <code>sender</code>, <code>proofOfWork</code>,
                                   <code>recipient</code>, <code>hopCount</code>, <code>address</code>, or
@@ -298,7 +297,7 @@ loadScripts(document, 'script');</script>
  <a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>&nbsp;sender,
  <a href="../../../identity/ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;proofOfWork,
  <a href="../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;address,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;inetAddresses)</span></div>
+ <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;endpoints)</span></div>
 <div class="block">Creates new unit message with random <a href="Nonce.html" title="class in org.drasyl.handler.remote.protocol"><code>Nonce</code></a>, and minimal <a href="HopCount.html" title="class in org.drasyl.handler.remote.protocol"><code>HopCount</code></a> value.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -307,7 +306,7 @@ loadScripts(document, 'script');</script>
 <dd><code>sender</code> - the public key of the sender</dd>
 <dd><code>proofOfWork</code> - the proof of work of <code>sender</code></dd>
 <dd><code>address</code> - the public key of the peer</dd>
-<dd><code>inetAddresses</code> - the ip inetAddress and port of the peer</dd>
+<dd><code>endpoints</code> - the UDP-port-IP-address-combinations were the peer can be reached.</dd>
 <dt>Throws:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/NullPointerException.html" title="class or interface in java.lang" class="external-link">NullPointerException</a></code> - if <code>sender</code>, <code>proofOfWork</code>, <code>recipient</code>,
                                   <code>address</code>, or <code>inetAddress.getAddress()</code> is
@@ -328,13 +327,13 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="getInetAddresses()">
-<h3>getInetAddresses</h3>
-<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;</span>&nbsp;<span class="element-name">getInetAddresses</span>()</div>
-<div class="block">Returns the ip address of the peer.</div>
+<section class="detail" id="getEndpoints()">
+<h3>getEndpoints</h3>
+<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;</span>&nbsp;<span class="element-name">getEndpoints</span>()</div>
+<div class="block">Returns the UDP-port-IP-address-combinations were the peer can be reached.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>the ip address of the peer.</dd>
+<dd>the UDP-port-IP-address-combinations were the peer can be reached.</dd>
 </dl>
 </section>
 </li>
