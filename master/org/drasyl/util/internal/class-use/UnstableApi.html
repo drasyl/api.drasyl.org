@@ -67,17 +67,17 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">Libsodium wrappers for the crypto operations of drasyl</div>
 </div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.handler">org.drasyl.handler</a></div>
+<div class="col-first odd-row-color"><a href="#org.drasyl.handler.codec">org.drasyl.handler.codec</a></div>
 <div class="col-last odd-row-color">
-<div class="block">Handlers used to run a drasyl node.</div>
-</div>
-<div class="col-first even-row-color"><a href="#org.drasyl.handler.codec">org.drasyl.handler.codec</a></div>
-<div class="col-last even-row-color">
 <div class="block">For message decoding and encoding (like serialization).</div>
 </div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.handler.monitoring">org.drasyl.handler.monitoring</a></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><a href="#org.drasyl.handler.monitoring">org.drasyl.handler.monitoring</a></div>
+<div class="col-last even-row-color">
 <div class="block">Logs channel events/messages for monitoring purpose.</div>
+</div>
+<div class="col-first odd-row-color"><a href="#org.drasyl.handler.peers">org.drasyl.handler.peers</a></div>
+<div class="col-last odd-row-color">
+<div class="block">Information about peers.</div>
 </div>
 <div class="col-first even-row-color"><a href="#org.drasyl.handler.remote">org.drasyl.handler.remote</a></div>
 <div class="col-last even-row-color">
@@ -204,24 +204,6 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="org.drasyl.handler">
-<h2>Uses of <a href="../UnstableApi.html" title="annotation in org.drasyl.util.internal">UnstableApi</a> in <a href="../../../handler/package-summary.html">org.drasyl.handler</a></h2>
-<div class="caption"><span>Classes in <a href="../../../handler/package-summary.html">org.drasyl.handler</a> with annotations of type <a href="../UnstableApi.html" title="annotation in org.drasyl.util.internal">UnstableApi</a></span></div>
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier and Type</div>
-<div class="table-header col-second">Class</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>class&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="../../../handler/PeersRttHandler.html" class="type-name-link" title="class in org.drasyl.handler">PeersRttHandler</a></code></div>
-<div class="col-last even-row-color">
-<div class="block">A <code>ChannelHandler</code> that tracks all <a href="../../../handler/discovery/PathEvent.html" title="interface in org.drasyl.handler.discovery"><code>PathEvent</code></a>s containing RTT
- information and generates some statistics that are periodically passed to the channel as an
- <a href="../../../handler/PeersRttHandler.PeersRttReport.html" title="class in org.drasyl.handler"><code>PeersRttHandler.PeersRttReport</code></a> event.</div>
-</div>
-</div>
-</section>
-</li>
-<li>
 <section class="detail" id="org.drasyl.handler.codec">
 <h2>Uses of <a href="../UnstableApi.html" title="annotation in org.drasyl.util.internal">UnstableApi</a> in <a href="../../../handler/codec/package-summary.html">org.drasyl.handler.codec</a></h2>
 <div class="caption"><span>Constructors in <a href="../../../handler/codec/package-summary.html">org.drasyl.handler.codec</a> with annotations of type <a href="../UnstableApi.html" title="annotation in org.drasyl.util.internal">UnstableApi</a></span></div>
@@ -250,6 +232,23 @@ loadScripts(document, 'script');</script>
 <div class="block">This handler measures the execution time of
  <code>ChannelInboundHandler.channelRead(ChannelHandlerContext, Object)</code> for every
  <code>ChannelInboundHandler</code>.</div>
+</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="org.drasyl.handler.peers">
+<h2>Uses of <a href="../UnstableApi.html" title="annotation in org.drasyl.util.internal">UnstableApi</a> in <a href="../../../handler/peers/package-summary.html">org.drasyl.handler.peers</a></h2>
+<div class="caption"><span>Classes in <a href="../../../handler/peers/package-summary.html">org.drasyl.handler.peers</a> with annotations of type <a href="../UnstableApi.html" title="annotation in org.drasyl.util.internal">UnstableApi</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Class</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>class&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="../../../handler/peers/PeersHandler.html" class="type-name-link" title="class in org.drasyl.handler.peers">PeersHandler</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">A <code>ChannelHandler</code> that tracks all emitted <a href="../../../handler/discovery/PathEvent.html" title="interface in org.drasyl.handler.discovery"><code>PathEvent</code></a>s and
+ generates a list of all peers retrievable through <a href="../../../handler/peers/PeersHandler.html#getPeers()"><code>PeersHandler.getPeers()</code></a>.</div>
 </div>
 </div>
 </section>

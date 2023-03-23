@@ -15,11 +15,7 @@
 <script type="text/javascript" src="../../../script-dir/jquery-ui.min.js"></script>
 </head>
 <body class="package-declaration-page">
-<script type="text/javascript">var evenRowColor = "even-row-color";
-var oddRowColor = "odd-row-color";
-var tableTab = "table-tab";
-var activeTableTab = "active-table-tab";
-var pathtoroot = "../../../";
+<script type="text/javascript">var pathtoroot = "../../../";
 loadScripts(document, 'script');</script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -95,21 +91,25 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">Logs channel events/messages for monitoring purpose.</div>
 </div>
-<div class="col-first odd-row-color"><a href="pubsub/package-summary.html">org.drasyl.handler.pubsub</a></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><a href="remote/package-summary.html">org.drasyl.handler.remote</a></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><a href="peers/package-summary.html">org.drasyl.handler.peers</a></div>
+<div class="col-last odd-row-color">
+<div class="block">Information about peers.</div>
+</div>
+<div class="col-first even-row-color"><a href="pubsub/package-summary.html">org.drasyl.handler.pubsub</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><a href="remote/package-summary.html">org.drasyl.handler.remote</a></div>
+<div class="col-last odd-row-color">
 <div class="block">Handlers used to communicate with remote nodes.</div>
 </div>
-<div class="col-first odd-row-color"><a href="rmi/package-summary.html">org.drasyl.handler.rmi</a></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><a href="stream/package-summary.html">org.drasyl.handler.stream</a></div>
-<div class="col-last even-row-color">
+<div class="col-first even-row-color"><a href="rmi/package-summary.html">org.drasyl.handler.rmi</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><a href="stream/package-summary.html">org.drasyl.handler.stream</a></div>
+<div class="col-last odd-row-color">
 <div class="block">Codecs, Channel Handlers, and Messages for sending large data streams asynchronously neither
  spending a lot of memory nor getting <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/OutOfMemoryError.html" title="class or interface in java.lang" class="external-link"><code>OutOfMemoryError</code></a></div>
 </div>
-<div class="col-first odd-row-color"><a href="traffic/package-summary.html">org.drasyl.handler.traffic</a></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><a href="traffic/package-summary.html">org.drasyl.handler.traffic</a></div>
+<div class="col-last even-row-color">
 <div class="block">Handler for traffic shaping.</div>
 </div>
 </div>
@@ -117,27 +117,13 @@ loadScripts(document, 'script');</script>
 </li>
 <li>
 <div id="class-summary">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="class-summary-tab0" role="tab" aria-selected="true" aria-controls="class-summary.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('class-summary', 'class-summary', 2)" class="active-table-tab">All Classes and Interfaces</button><button id="class-summary-tab2" role="tab" aria-selected="false" aria-controls="class-summary.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('class-summary', 'class-summary-tab2', 2)" class="table-tab">Classes</button><button id="class-summary-tab3" role="tab" aria-selected="false" aria-controls="class-summary.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('class-summary', 'class-summary-tab3', 2)" class="table-tab">Enums</button></div>
-<div id="class-summary.tabpanel" role="tabpanel">
-<div class="summary-table two-column-summary" aria-labelledby="class-summary-tab0">
+<div class="caption"><span>Classes</span></div>
+<div class="summary-table two-column-summary">
 <div class="table-header col-first">Class</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color class-summary class-summary-tab2"><a href="LoopbackHandler.html" title="class in org.drasyl.handler">LoopbackHandler</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab2">
 <div class="block">Converts outbound messages addresses to us into inbound messages.</div>
-</div>
-<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="PeersRttHandler.html" title="class in org.drasyl.handler">PeersRttHandler</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab2">
-<div class="block">A <code>ChannelHandler</code> that tracks all <a href="discovery/PathEvent.html" title="interface in org.drasyl.handler.discovery"><code>PathEvent</code></a>s containing RTT
- information and generates some statistics that are periodically passed to the channel as an
- <a href="PeersRttHandler.PeersRttReport.html" title="class in org.drasyl.handler"><code>PeersRttHandler.PeersRttReport</code></a> event.</div>
-</div>
-<div class="col-first even-row-color class-summary class-summary-tab2"><a href="PeersRttHandler.PeerRtt.html" title="class in org.drasyl.handler">PeersRttHandler.PeerRtt</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab2">&nbsp;</div>
-<div class="col-first odd-row-color class-summary class-summary-tab3"><a href="PeersRttHandler.PeerRtt.Role.html" title="enum in org.drasyl.handler">PeersRttHandler.PeerRtt.Role</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab3">&nbsp;</div>
-<div class="col-first even-row-color class-summary class-summary-tab2"><a href="PeersRttHandler.PeersRttReport.html" title="class in org.drasyl.handler">PeersRttHandler.PeersRttReport</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab2">&nbsp;</div>
 </div>
 </div>
 </div>

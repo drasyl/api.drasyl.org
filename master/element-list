@@ -13,6 +13,7 @@ org.drasyl.handler.discovery
 org.drasyl.handler.logging
 org.drasyl.handler.membership.cyclon
 org.drasyl.handler.monitoring
+org.drasyl.handler.peers
 org.drasyl.handler.pubsub
 org.drasyl.handler.remote
 org.drasyl.handler.remote.crypto
