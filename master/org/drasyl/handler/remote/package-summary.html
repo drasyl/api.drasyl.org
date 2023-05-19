@@ -118,67 +118,78 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color class-summary class-summary-tab2">
 <div class="block">This codec converts <code>ByteBuf</code>s to <a href="protocol/RemoteMessage.html" title="interface in org.drasyl.handler.remote.protocol"><code>RemoteMessage</code></a>s an vice versa.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab2"><a href="InvalidProofOfWorkFilter.html" title="class in org.drasyl.handler.remote">InvalidProofOfWorkFilter</a></div>
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="DatagramCodec.html" title="class in org.drasyl.handler.remote">DatagramCodec</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="block">Encodes <code>DatagramPacket</code>s to <a href="../../channel/InetAddressedMessage.html" title="class in org.drasyl.channel"><code>InetAddressedMessage</code></a>s and vice versa.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="InvalidProofOfWorkFilter.html" title="class in org.drasyl.handler.remote">InvalidProofOfWorkFilter</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
 <div class="block">This handler filters out all messages received with invalid proof of work.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab5"><a href="InvalidProofOfWorkFilter.InvalidProofOfWorkException.html" title="class in org.drasyl.handler.remote">InvalidProofOfWorkFilter.InvalidProofOfWorkException</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab5">
+<div class="col-first even-row-color class-summary class-summary-tab5"><a href="InvalidProofOfWorkFilter.InvalidProofOfWorkException.html" title="class in org.drasyl.handler.remote">InvalidProofOfWorkFilter.InvalidProofOfWorkException</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab5">
 <div class="block">Signals that a message was received with an invalid <a href="../../identity/ProofOfWork.html" title="class in org.drasyl.identity"><code>ProofOfWork</code></a>
  and was dropped.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab2"><a href="LocalHostDiscovery.html" title="class in org.drasyl.handler.remote">LocalHostDiscovery</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="LocalHostDiscovery.html" title="class in org.drasyl.handler.remote">LocalHostDiscovery</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
 <div class="block">Uses the file system to discover other drasyl nodes running on the local computer.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="LocalHostPeerInformation.html" title="class in org.drasyl.handler.remote">LocalHostPeerInformation</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab2">&nbsp;</div>
-<div class="col-first even-row-color class-summary class-summary-tab2"><a href="LocalNetworkDiscovery.html" title="class in org.drasyl.handler.remote">LocalNetworkDiscovery</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="LocalHostPeerInformation.html" title="class in org.drasyl.handler.remote">LocalHostPeerInformation</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">&nbsp;</div>
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="LocalNetworkDiscovery.html" title="class in org.drasyl.handler.remote">LocalNetworkDiscovery</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
 <div class="block">This handler, along with the <a href="UdpMulticastServer.html" title="class in org.drasyl.handler.remote"><code>UdpMulticastServer</code></a> or <a href="UdpBroadcastServer.html" title="class in org.drasyl.handler.remote"><code>UdpBroadcastServer</code></a>, is used to
  discover other nodes on the local network via IP multicast or broadcast.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="OtherNetworkFilter.html" title="class in org.drasyl.handler.remote">OtherNetworkFilter</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="OtherNetworkFilter.html" title="class in org.drasyl.handler.remote">OtherNetworkFilter</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
 <div class="block">This handler filters out all messages received from other networks.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab5"><a href="OtherNetworkFilter.OtherNetworkException.html" title="class in org.drasyl.handler.remote">OtherNetworkFilter.OtherNetworkException</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab5">
+<div class="col-first odd-row-color class-summary class-summary-tab5"><a href="OtherNetworkFilter.OtherNetworkException.html" title="class in org.drasyl.handler.remote">OtherNetworkFilter.OtherNetworkException</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab5">
 <div class="block">Signals that a message was received from another network and was dropped.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="RateLimiter.html" title="class in org.drasyl.handler.remote">RateLimiter</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="RateLimiter.html" title="class in org.drasyl.handler.remote">RateLimiter</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
 <div class="block">This handler rate limits <a href="protocol/AcknowledgementMessage.html" title="class in org.drasyl.handler.remote.protocol"><code>AcknowledgementMessage</code></a>, <a href="protocol/HelloMessage.html" title="class in org.drasyl.handler.remote.protocol"><code>HelloMessage</code></a>, and <a href="protocol/UniteMessage.html" title="class in org.drasyl.handler.remote.protocol"><code>UniteMessage</code></a> messages addressed to us.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab2"><a href="StaticRoutesHandler.html" title="class in org.drasyl.handler.remote">StaticRoutesHandler</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="StaticRoutesHandler.html" title="class in org.drasyl.handler.remote">StaticRoutesHandler</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
 <div class="block">This handler uses preconfigured static routes to deliver messages.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="UdpBroadcastServer.html" title="class in org.drasyl.handler.remote">UdpBroadcastServer</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="UdpBroadcastServer.html" title="class in org.drasyl.handler.remote">UdpBroadcastServer</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
 <div class="block">Starts an UDP broadcast server and together with the <a href="LocalNetworkDiscovery.html" title="class in org.drasyl.handler.remote"><code>LocalNetworkDiscovery</code></a> is responsible
  for discovering other nodes in the local network.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab2"><a href="UdpMulticastServer.html" title="class in org.drasyl.handler.remote">UdpMulticastServer</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="UdpMulticastServer.html" title="class in org.drasyl.handler.remote">UdpMulticastServer</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
 <div class="block">Starts an UDP server which joins a IP multicast group and together with the
  <a href="LocalNetworkDiscovery.html" title="class in org.drasyl.handler.remote"><code>LocalNetworkDiscovery</code></a> is responsible for discovering other nodes in the local network.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="UdpServer.html" title="class in org.drasyl.handler.remote">UdpServer</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="UdpServer.html" title="class in org.drasyl.handler.remote">UdpServer</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
 <div class="block">Binds to an udp port, sends outgoing messages via udp, and sends received udp packets to the
  <code>Channel</code>.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab5"><a href="UdpServer.UdpServerBindFailedException.html" title="class in org.drasyl.handler.remote">UdpServer.UdpServerBindFailedException</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab5">
+<div class="col-first odd-row-color class-summary class-summary-tab5"><a href="UdpServer.UdpServerBindFailedException.html" title="class in org.drasyl.handler.remote">UdpServer.UdpServerBindFailedException</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab5">
 <div class="block">Signals that the <a href="UdpServer.html" title="class in org.drasyl.handler.remote"><code>UdpServer</code></a> was unable to bind to given address.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="UdpServer.UdpServerBound.html" title="class in org.drasyl.handler.remote">UdpServer.UdpServerBound</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="UdpServer.UdpServerBound.html" title="class in org.drasyl.handler.remote">UdpServer.UdpServerBound</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
 <div class="block">Signals that the <a href="UdpServer.html" title="class in org.drasyl.handler.remote"><code>UdpServer</code></a> is bound to <a href="UdpServer.UdpServerBound.html#getBindAddress()"><code>UdpServer.UdpServerBound.getBindAddress()</code></a>.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab2"><a href="UnresolvedOverlayMessageHandler.html" title="class in org.drasyl.handler.remote">UnresolvedOverlayMessageHandler</a></div>
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="UdpServerChannelInitializer.html" title="class in org.drasyl.handler.remote">UdpServerChannelInitializer</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">&nbsp;</div>
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="UdpServerToDrasylHandler.html" title="class in org.drasyl.handler.remote">UdpServerToDrasylHandler</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="block">This handler passes messages from the <code>DatagramChannel</code> to the
+ <a href="../../channel/DrasylServerChannel.html" title="class in org.drasyl.channel"><code>DrasylServerChannel</code></a>'s context.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="UnresolvedOverlayMessageHandler.html" title="class in org.drasyl.handler.remote">UnresolvedOverlayMessageHandler</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
 <div class="block">This handler fails and drops all outbound <a href="../../channel/OverlayAddressedMessage.html" title="class in org.drasyl.channel"><code>OverlayAddressedMessage</code></a>s.</div>
 </div>
 </div>
