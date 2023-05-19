@@ -128,6 +128,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/DatagramCodec.html#acceptOutboundMessage(java.lang.Object)" class="member-name-link">acceptOutboundMessage(Object)</a> - Method in class org.drasyl.handler.remote.<a href="org/drasyl/handler/remote/DatagramCodec.html" title="class in org.drasyl.handler.remote">DatagramCodec</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/remote/tcp/ByteBufCodec.html#acceptOutboundMessage(java.lang.Object)" class="member-name-link">acceptOutboundMessage(Object)</a> - Method in class org.drasyl.handler.remote.tcp.<a href="org/drasyl/handler/remote/tcp/ByteBufCodec.html" title="class in org.drasyl.handler.remote.tcp">ByteBufCodec</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/rmi/RmiCodec.html#acceptOutboundMessage(java.lang.Object)" class="member-name-link">acceptOutboundMessage(Object)</a> - Method in class org.drasyl.handler.rmi.<a href="org/drasyl/handler/rmi/RmiCodec.html" title="class in org.drasyl.handler.rmi">RmiCodec</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/stream/LargeByteBufToChunkedMessageEncoder.html#acceptOutboundMessage(java.lang.Object)" class="member-name-link">acceptOutboundMessage(Object)</a> - Method in class org.drasyl.handler.stream.<a href="org/drasyl/handler/stream/LargeByteBufToChunkedMessageEncoder.html" title="class in org.drasyl.handler.stream">LargeByteBufToChunkedMessageEncoder</a></dt>
@@ -564,6 +566,12 @@ loadScripts(document, 'script');</script>
 <div class="block">This Serializer (de)serializes byte arrays (just returns the byte array unchanged/uncopied).</div>
 </dd>
 <dt><a href="org/drasyl/node/handler/serialization/ByteArraySerializer.html#%3Cinit%3E()" class="member-name-link">ByteArraySerializer()</a> - Constructor for class org.drasyl.node.handler.serialization.<a href="org/drasyl/node/handler/serialization/ByteArraySerializer.html" title="class in org.drasyl.node.handler.serialization">ByteArraySerializer</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/remote/tcp/ByteBufCodec.html" class="type-name-link" title="class in org.drasyl.handler.remote.tcp">ByteBufCodec</a> - Class in <a href="org/drasyl/handler/remote/tcp/package-summary.html">org.drasyl.handler.remote.tcp</a></dt>
+<dd>
+<div class="block">Encodes <code>ByteBuf</code>s to <a href="org/drasyl/channel/InetAddressedMessage.html" title="class in org.drasyl.channel"><code>InetAddressedMessage</code></a>s and vice versa.</div>
+</dd>
+<dt><a href="org/drasyl/handler/remote/tcp/ByteBufCodec.html#%3Cinit%3E()" class="member-name-link">ByteBufCodec()</a> - Constructor for class org.drasyl.handler.remote.tcp.<a href="org/drasyl/handler/remote/tcp/ByteBufCodec.html" title="class in org.drasyl.handler.remote.tcp">ByteBufCodec</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/serialization/ByteSerializer.html" class="type-name-link" title="class in org.drasyl.node.handler.serialization">ByteSerializer</a> - Class in <a href="org/drasyl/node/handler/serialization/package-summary.html">org.drasyl.node.handler.serialization</a></dt>
 <dd>
@@ -1430,6 +1438,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/connection/ConnectionHandshakeCodec.html#decode(io.netty.channel.ChannelHandlerContext,io.netty.buffer.ByteBuf,java.util.List)" class="member-name-link">decode(ChannelHandlerContext, ByteBuf, List&lt;Object&gt;)</a> - Method in class org.drasyl.handler.connection.<a href="org/drasyl/handler/connection/ConnectionHandshakeCodec.html" title="class in org.drasyl.handler.connection">ConnectionHandshakeCodec</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/remote/tcp/ByteBufCodec.html#decode(io.netty.channel.ChannelHandlerContext,io.netty.buffer.ByteBuf,java.util.List)" class="member-name-link">decode(ChannelHandlerContext, ByteBuf, List&lt;Object&gt;)</a> - Method in class org.drasyl.handler.remote.tcp.<a href="org/drasyl/handler/remote/tcp/ByteBufCodec.html" title="class in org.drasyl.handler.remote.tcp">ByteBufCodec</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/stream/MessageChunkDecoder.html#decode(io.netty.channel.ChannelHandlerContext,io.netty.buffer.ByteBuf,java.util.List)" class="member-name-link">decode(ChannelHandlerContext, ByteBuf, List&lt;Object&gt;)</a> - Method in class org.drasyl.handler.stream.<a href="org/drasyl/handler/stream/MessageChunkDecoder.html" title="class in org.drasyl.handler.stream">MessageChunkDecoder</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/crypto/ArmHeaderCodec.html#decode(io.netty.channel.ChannelHandlerContext,io.netty.buffer.ByteBuf,java.util.List)" class="member-name-link">decode(ChannelHandlerContext, ByteBuf, List&lt;Object&gt;)</a> - Method in class org.drasyl.node.handler.crypto.<a href="org/drasyl/node/handler/crypto/ArmHeaderCodec.html" title="class in org.drasyl.node.handler.crypto">ArmHeaderCodec</a></dt>
@@ -1719,6 +1729,8 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/drasyl/node/handler/serialization/MessageSerializer.html#encode(io.netty.channel.ChannelHandlerContext,java.lang.Object,java.util.List)" class="member-name-link">encode(ChannelHandlerContext, Object, List&lt;Object&gt;)</a> - Method in class org.drasyl.node.handler.serialization.<a href="org/drasyl/node/handler/serialization/MessageSerializer.html" title="class in org.drasyl.node.handler.serialization">MessageSerializer</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/DatagramCodec.html#encode(io.netty.channel.ChannelHandlerContext,org.drasyl.channel.InetAddressedMessage,java.util.List)" class="member-name-link">encode(ChannelHandlerContext, InetAddressedMessage&lt;ByteBuf&gt;, List&lt;Object&gt;)</a> - Method in class org.drasyl.handler.remote.<a href="org/drasyl/handler/remote/DatagramCodec.html" title="class in org.drasyl.handler.remote">DatagramCodec</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/remote/tcp/ByteBufCodec.html#encode(io.netty.channel.ChannelHandlerContext,org.drasyl.channel.InetAddressedMessage,java.util.List)" class="member-name-link">encode(ChannelHandlerContext, InetAddressedMessage&lt;ByteBuf&gt;, List&lt;Object&gt;)</a> - Method in class org.drasyl.handler.remote.tcp.<a href="org/drasyl/handler/remote/tcp/ByteBufCodec.html" title="class in org.drasyl.handler.remote.tcp">ByteBufCodec</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/crypto/ProtocolArmHandler.html#encode(io.netty.channel.ChannelHandlerContext,org.drasyl.channel.InetAddressedMessage,java.util.List)" class="member-name-link">encode(ChannelHandlerContext, InetAddressedMessage&lt;FullReadMessage&lt;?&gt;&gt;, List&lt;Object&gt;)</a> - Method in class org.drasyl.handler.remote.crypto.<a href="org/drasyl/handler/remote/crypto/ProtocolArmHandler.html" title="class in org.drasyl.handler.remote.crypto">ProtocolArmHandler</a></dt>
 <dd>&nbsp;</dd>
@@ -3638,6 +3650,8 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/drasyl/node/plugin/groups/manager/database/DatabaseAdapterManager.html#initAdapter(java.net.URI)" class="member-name-link">initAdapter(URI)</a> - Static method in class org.drasyl.node.plugin.groups.manager.database.<a href="org/drasyl/node/plugin/groups/manager/database/DatabaseAdapterManager.html" title="class in org.drasyl.node.plugin.groups.manager.database">DatabaseAdapterManager</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/UdpServerChannelInitializer.html#initChannel(io.netty.channel.socket.DatagramChannel)" class="member-name-link">initChannel(DatagramChannel)</a> - Method in class org.drasyl.handler.remote.<a href="org/drasyl/handler/remote/UdpServerChannelInitializer.html" title="class in org.drasyl.handler.remote">UdpServerChannelInitializer</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/remote/tcp/TcpClientChannelInitializer.html#initChannel(io.netty.channel.socket.SocketChannel)" class="member-name-link">initChannel(SocketChannel)</a> - Method in class org.drasyl.handler.remote.tcp.<a href="org/drasyl/handler/remote/tcp/TcpClientChannelInitializer.html" title="class in org.drasyl.handler.remote.tcp">TcpClientChannelInitializer</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/channel/ConnectionHandshakeChannelInitializer.html#initChannel(org.drasyl.channel.DrasylChannel)" class="member-name-link">initChannel(DrasylChannel)</a> - Method in class org.drasyl.channel.<a href="org/drasyl/channel/ConnectionHandshakeChannelInitializer.html" title="class in org.drasyl.channel">ConnectionHandshakeChannelInitializer</a></dt>
 <dd>&nbsp;</dd>
@@ -7536,6 +7550,10 @@ loadScripts(document, 'script');</script>
 <div class="block">This handler monitors how long the node has not received a response from any super peer.</div>
 </dd>
 <dt><a href="org/drasyl/handler/remote/tcp/TcpClient.html#%3Cinit%3E(io.netty.channel.nio.NioEventLoopGroup,java.util.Set,java.time.Duration,java.net.InetSocketAddress)" class="member-name-link">TcpClient(NioEventLoopGroup, Set&lt;InetSocketAddress&gt;, Duration, InetSocketAddress)</a> - Constructor for class org.drasyl.handler.remote.tcp.<a href="org/drasyl/handler/remote/tcp/TcpClient.html" title="class in org.drasyl.handler.remote.tcp">TcpClient</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/remote/tcp/TcpClientChannelInitializer.html" class="type-name-link" title="class in org.drasyl.handler.remote.tcp">TcpClientChannelInitializer</a> - Class in <a href="org/drasyl/handler/remote/tcp/package-summary.html">org.drasyl.handler.remote.tcp</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/remote/tcp/TcpClientChannelInitializer.html#%3Cinit%3E(io.netty.channel.ChannelHandlerContext)" class="member-name-link">TcpClientChannelInitializer(ChannelHandlerContext)</a> - Constructor for class org.drasyl.handler.remote.tcp.<a href="org/drasyl/handler/remote/tcp/TcpClientChannelInitializer.html" title="class in org.drasyl.handler.remote.tcp">TcpClientChannelInitializer</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/tcp/TcpServer.html" class="type-name-link" title="class in org.drasyl.handler.remote.tcp">TcpServer</a> - Class in <a href="org/drasyl/handler/remote/tcp/package-summary.html">org.drasyl.handler.remote.tcp</a></dt>
 <dd>
