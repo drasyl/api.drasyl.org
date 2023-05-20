@@ -59,29 +59,25 @@ loadScripts(document, 'script');</script>
 <div class="block"><a href="https://netty.io/">netty</a> <code>Channel</code> for the drasyl overlay
  network.</div>
 </div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.handler">org.drasyl.handler</a></div>
+<div class="col-first odd-row-color"><a href="#org.drasyl.handler.remote">org.drasyl.handler.remote</a></div>
 <div class="col-last odd-row-color">
-<div class="block">Handlers used to run a drasyl node.</div>
-</div>
-<div class="col-first even-row-color"><a href="#org.drasyl.handler.remote">org.drasyl.handler.remote</a></div>
-<div class="col-last even-row-color">
 <div class="block">Handlers used to communicate with remote nodes.</div>
 </div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.handler.remote.crypto">org.drasyl.handler.remote.crypto</a></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><a href="#org.drasyl.handler.remote.crypto">org.drasyl.handler.remote.crypto</a></div>
+<div class="col-last even-row-color">
 <div class="block">Contains classes necessary for encrypted protocol communication.</div>
 </div>
-<div class="col-first even-row-color"><a href="#org.drasyl.handler.remote.internet">org.drasyl.handler.remote.internet</a></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><a href="#org.drasyl.handler.remote.internet">org.drasyl.handler.remote.internet</a></div>
+<div class="col-last odd-row-color">
 <div class="block">Discovery/Routing of peers on the internet.</div>
 </div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.handler.remote.portmapper">org.drasyl.handler.remote.portmapper</a></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><a href="#org.drasyl.handler.remote.portmapper">org.drasyl.handler.remote.portmapper</a></div>
+<div class="col-last even-row-color">
 <div class="block">Contains <a href="../../handler/remote/portmapper/PortMapper.html" title="class in org.drasyl.handler.remote.portmapper"><code>PortMapper</code></a> that attempts to create port
  forwarding via PCP, NAT-PMP, UPnP-IDG.</div>
 </div>
-<div class="col-first even-row-color"><a href="#org.drasyl.handler.remote.tcp">org.drasyl.handler.remote.tcp</a></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><a href="#org.drasyl.handler.remote.tcp">org.drasyl.handler.remote.tcp</a></div>
+<div class="col-last odd-row-color">
 <div class="block">Contains the pipeline handlers for TCP fallback connections.</div>
 </div>
 </div>
@@ -121,31 +117,6 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-first even-row-color"><code><a href="../InetAddressedMessage.html" title="class in org.drasyl.channel">InetAddressedMessage</a>&lt;<a href="../InetAddressedMessage.html" title="type parameter in InetAddressedMessage">M</a>&gt;</code></div>
 <div class="col-second even-row-color"><span class="type-name-label">InetAddressedMessage.</span><code><a href="../InetAddressedMessage.html#touch(java.lang.Object)" class="member-name-link">touch</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;hint)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="org.drasyl.handler">
-<h2>Uses of <a href="../InetAddressedMessage.html" title="class in org.drasyl.channel">InetAddressedMessage</a> in <a href="../../handler/package-summary.html">org.drasyl.handler</a></h2>
-<div class="caption"><span>Methods in <a href="../../handler/package-summary.html">org.drasyl.handler</a> with parameters of type <a href="../InetAddressedMessage.html" title="class in org.drasyl.channel">InetAddressedMessage</a></span></div>
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier and Type</div>
-<div class="table-header col-second">Method</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>protected void</code></div>
-<div class="col-second even-row-color"><span class="type-name-label">ChannelReadListener.</span><code><a href="../../handler/ChannelReadListener.html#channelRead0(io.netty.channel.ChannelHandlerContext,org.drasyl.channel.InetAddressedMessage)" class="member-name-link">channelRead0</a><wbr>(io.netty.channel.ChannelHandlerContext&nbsp;ctx,
- <a href="../InetAddressedMessage.html" title="class in org.drasyl.channel">InetAddressedMessage</a>&lt;io.netty.buffer.ByteBuf&gt;&nbsp;msg)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-</div>
-<div class="caption"><span>Constructor parameters in <a href="../../handler/package-summary.html">org.drasyl.handler</a> with type arguments of type <a href="../InetAddressedMessage.html" title="class in org.drasyl.channel">InetAddressedMessage</a></span></div>
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier</div>
-<div class="table-header col-second">Constructor</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="../../handler/ChannelReadListener.html#%3Cinit%3E(java.util.function.Consumer,java.lang.Runnable)" class="member-name-link">ChannelReadListener</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="../InetAddressedMessage.html" title="class in org.drasyl.channel">InetAddressedMessage</a>&lt;io.netty.buffer.ByteBuf&gt;&gt;&nbsp;readListener,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runnable.html" title="class or interface in java.lang" class="external-link">Runnable</a>&nbsp;readCompleteListener)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
@@ -259,10 +230,14 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>protected void</code></div>
-<div class="col-second even-row-color"><span class="type-name-label">ByteBufCodec.</span><code><a href="../../handler/remote/tcp/ByteBufCodec.html#encode(io.netty.channel.ChannelHandlerContext,org.drasyl.channel.InetAddressedMessage,java.util.List)" class="member-name-link">encode</a><wbr>(io.netty.channel.ChannelHandlerContext&nbsp;ctx,
+<div class="col-second even-row-color"><span class="type-name-label">TcpDrasylMessageHandler.</span><code><a href="../../handler/remote/tcp/TcpDrasylMessageHandler.html#channelRead0(io.netty.channel.ChannelHandlerContext,org.drasyl.channel.InetAddressedMessage)" class="member-name-link">channelRead0</a><wbr>(io.netty.channel.ChannelHandlerContext&nbsp;ctx,
+ <a href="../InetAddressedMessage.html" title="class in org.drasyl.channel">InetAddressedMessage</a>&lt;io.netty.buffer.ByteBuf&gt;&nbsp;msg)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>protected void</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">ByteBufCodec.</span><code><a href="../../handler/remote/tcp/ByteBufCodec.html#encode(io.netty.channel.ChannelHandlerContext,org.drasyl.channel.InetAddressedMessage,java.util.List)" class="member-name-link">encode</a><wbr>(io.netty.channel.ChannelHandlerContext&nbsp;ctx,
  <a href="../InetAddressedMessage.html" title="class in org.drasyl.channel">InetAddressedMessage</a>&lt;io.netty.buffer.ByteBuf&gt;&nbsp;msg,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;&nbsp;out)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
 </li>

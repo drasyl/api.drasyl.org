@@ -85,9 +85,7 @@ loadScripts(document, 'script');</script>
 implements <a href="PartialReadMessage.html" title="interface in org.drasyl.handler.remote.protocol">PartialReadMessage</a></span></div>
 <div class="block">Describes an unencrypted protocol message whose only public header has been read so far.
  <p>
- <a href="#read()"><code>read()</code></a> can be used to read the message's remainder.
- <p>
- This is an immutable object.</div>
+ <a href="#read()"><code>read()</code></a> can be used to read the message's remainder.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -139,21 +137,31 @@ implements <a href="PartialReadMessage.html" title="interface in org.drasyl.hand
 <div class="block">Returns an armed version (<a href="ArmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol"><code>ArmedProtocolMessage</code></a>) of this message and then releases
  this message.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#close()" class="member-name-link">close</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="UnarmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">UnarmedProtocolMessage</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#asReadOnly()" class="member-name-link">asReadOnly</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns a read-only version of this message.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#close()" class="member-name-link">close</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Calls <code>ReferenceCounted.release()</code>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLength()" class="member-name-link">getLength</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract <a href="../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getRecipient()" class="member-name-link">getRecipient</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="UnarmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">UnarmedProtocolMessage</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#incrementHopCount()" class="member-name-link">incrementHopCount</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLength()" class="member-name-link">getLength</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract <a href="../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getRecipient()" class="member-name-link">getRecipient</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="UnarmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">UnarmedProtocolMessage</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#incrementHopCount()" class="member-name-link">incrementHopCount</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns a copy of this message with incremented <a href="RemoteMessage.html#getHopCount()"><code>RemoteMessage.getHopCount()</code></a>.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isReadOnly()" class="member-name-link">isReadOnly</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns <code>true</code> if and only if this message is read-only.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="UnarmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">UnarmedProtocolMessage</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#of(org.drasyl.handler.remote.protocol.HopCount,boolean,int,org.drasyl.handler.remote.protocol.Nonce,org.drasyl.identity.DrasylAddress,org.drasyl.identity.DrasylAddress,org.drasyl.identity.ProofOfWork,io.netty.buffer.ByteBuf)" class="member-name-link">of</a><wbr>(<a href="HopCount.html" title="class in org.drasyl.handler.remote.protocol">HopCount</a>&nbsp;hopCount,
@@ -424,6 +432,20 @@ implements <a href="PartialReadMessage.html" title="interface in org.drasyl.hand
 <dt>Throws:</dt>
 <dd><code><a href="InvalidMessageFormatException.html" title="class in org.drasyl.handler.remote.protocol">InvalidMessageFormatException</a></code> - if arming was not possible</dd>
 </dl>
+</section>
+</li>
+<li>
+<section class="detail" id="isReadOnly()">
+<h3>isReadOnly</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isReadOnly</span>()</div>
+<div class="block">Returns <code>true</code> if and only if this message is read-only.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="asReadOnly()">
+<h3>asReadOnly</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="UnarmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">UnarmedProtocolMessage</a></span>&nbsp;<span class="element-name">asReadOnly</span>()</div>
+<div class="block">Returns a read-only version of this message.</div>
 </section>
 </li>
 <li>

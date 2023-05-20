@@ -170,7 +170,15 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(int,org.drasyl.identity.IdentityPublicKey,org.drasyl.identity.IdentitySecretKey,org.drasyl.identity.ProofOfWork,long,long,long,long,java.util.Map)" class="member-name-link">InternetDiscoveryChildrenHandler</a><wbr>(int&nbsp;myNetworkId,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(int,org.drasyl.identity.Identity,long,long,long,long,java.util.Map)" class="member-name-link">InternetDiscoveryChildrenHandler</a><wbr>(int&nbsp;myNetworkId,
+ <a href="../../../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;myIdentity,
+ long&nbsp;initialPingDelayMillis,
+ long&nbsp;pingIntervalMillis,
+ long&nbsp;pingTimeoutMillis,
+ long&nbsp;maxTimeOffsetMillis,
+ <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;superPeerAddresses)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(int,org.drasyl.identity.IdentityPublicKey,org.drasyl.identity.IdentitySecretKey,org.drasyl.identity.ProofOfWork,long,long,long,long,java.util.Map)" class="member-name-link">InternetDiscoveryChildrenHandler</a><wbr>(int&nbsp;myNetworkId,
  <a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>&nbsp;myPublicKey,
  <a href="../../../identity/IdentitySecretKey.html" title="class in org.drasyl.identity">IdentitySecretKey</a>&nbsp;mySecretKey,
  <a href="../../../identity/ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;myProofOfWork,
@@ -179,8 +187,8 @@ loadScripts(document, 'script');</script>
  long&nbsp;pingTimeoutMillis,
  long&nbsp;maxTimeOffsetMillis,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;superPeerAddresses)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(int,org.drasyl.identity.IdentityPublicKey,org.drasyl.identity.IdentitySecretKey,org.drasyl.identity.ProofOfWork,java.util.function.LongSupplier,long,long,long,long,java.util.Map)" class="member-name-link">InternetDiscoveryChildrenHandler</a><wbr>(int&nbsp;myNetworkId,
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(int,org.drasyl.identity.IdentityPublicKey,org.drasyl.identity.IdentitySecretKey,org.drasyl.identity.ProofOfWork,java.util.function.LongSupplier,long,long,long,long,java.util.Map)" class="member-name-link">InternetDiscoveryChildrenHandler</a><wbr>(int&nbsp;myNetworkId,
  <a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>&nbsp;myPublicKey,
  <a href="../../../identity/IdentitySecretKey.html" title="class in org.drasyl.identity">IdentitySecretKey</a>&nbsp;mySecretKey,
  <a href="../../../identity/ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;myProofOfWork,
@@ -190,7 +198,7 @@ loadScripts(document, 'script');</script>
  long&nbsp;pingTimeoutMillis,
  long&nbsp;maxTimeOffsetMillis,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;superPeerAddresses)</code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -351,6 +359,18 @@ loadScripts(document, 'script');</script>
  <a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>&nbsp;myPublicKey,
  <a href="../../../identity/IdentitySecretKey.html" title="class in org.drasyl.identity">IdentitySecretKey</a>&nbsp;mySecretKey,
  <a href="../../../identity/ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;myProofOfWork,
+ long&nbsp;initialPingDelayMillis,
+ long&nbsp;pingIntervalMillis,
+ long&nbsp;pingTimeoutMillis,
+ long&nbsp;maxTimeOffsetMillis,
+ <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;superPeerAddresses)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="&lt;init&gt;(int,org.drasyl.identity.Identity,long,long,long,long,java.util.Map)">
+<h3>InternetDiscoveryChildrenHandler</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">InternetDiscoveryChildrenHandler</span><wbr><span class="parameters">(int&nbsp;myNetworkId,
+ <a href="../../../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;myIdentity,
  long&nbsp;initialPingDelayMillis,
  long&nbsp;pingIntervalMillis,
  long&nbsp;pingTimeoutMillis,

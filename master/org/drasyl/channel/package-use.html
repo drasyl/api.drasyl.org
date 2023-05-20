@@ -59,51 +59,47 @@ loadScripts(document, 'script');</script>
 <div class="block"><a href="https://netty.io/">netty</a> <code>Channel</code> for the drasyl overlay
  network.</div>
 </div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.handler">org.drasyl.handler</a></div>
+<div class="col-first odd-row-color"><a href="#org.drasyl.handler.codec">org.drasyl.handler.codec</a></div>
 <div class="col-last odd-row-color">
-<div class="block">Handlers used to run a drasyl node.</div>
-</div>
-<div class="col-first even-row-color"><a href="#org.drasyl.handler.codec">org.drasyl.handler.codec</a></div>
-<div class="col-last even-row-color">
 <div class="block">For message decoding and encoding (like serialization).</div>
 </div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.handler.membership.cyclon">org.drasyl.handler.membership.cyclon</a></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><a href="#org.drasyl.handler.membership.cyclon">org.drasyl.handler.membership.cyclon</a></div>
+<div class="col-last even-row-color">
 <div class="block">CYCLON membership management.</div>
 </div>
-<div class="col-first even-row-color"><a href="#org.drasyl.handler.pubsub">org.drasyl.handler.pubsub</a></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.handler.remote">org.drasyl.handler.remote</a></div>
-<div class="col-last odd-row-color">
+<div class="col-first odd-row-color"><a href="#org.drasyl.handler.pubsub">org.drasyl.handler.pubsub</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><a href="#org.drasyl.handler.remote">org.drasyl.handler.remote</a></div>
+<div class="col-last even-row-color">
 <div class="block">Handlers used to communicate with remote nodes.</div>
 </div>
-<div class="col-first even-row-color"><a href="#org.drasyl.handler.remote.crypto">org.drasyl.handler.remote.crypto</a></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><a href="#org.drasyl.handler.remote.crypto">org.drasyl.handler.remote.crypto</a></div>
+<div class="col-last odd-row-color">
 <div class="block">Contains classes necessary for encrypted protocol communication.</div>
 </div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.handler.remote.internet">org.drasyl.handler.remote.internet</a></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><a href="#org.drasyl.handler.remote.internet">org.drasyl.handler.remote.internet</a></div>
+<div class="col-last even-row-color">
 <div class="block">Discovery/Routing of peers on the internet.</div>
 </div>
-<div class="col-first even-row-color"><a href="#org.drasyl.handler.remote.portmapper">org.drasyl.handler.remote.portmapper</a></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><a href="#org.drasyl.handler.remote.portmapper">org.drasyl.handler.remote.portmapper</a></div>
+<div class="col-last odd-row-color">
 <div class="block">Contains <a href="../handler/remote/portmapper/PortMapper.html" title="class in org.drasyl.handler.remote.portmapper"><code>PortMapper</code></a> that attempts to create port
  forwarding via PCP, NAT-PMP, UPnP-IDG.</div>
 </div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.handler.remote.tcp">org.drasyl.handler.remote.tcp</a></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><a href="#org.drasyl.handler.remote.tcp">org.drasyl.handler.remote.tcp</a></div>
+<div class="col-last even-row-color">
 <div class="block">Contains the pipeline handlers for TCP fallback connections.</div>
 </div>
-<div class="col-first even-row-color"><a href="#org.drasyl.node.channel">org.drasyl.node.channel</a></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><a href="#org.drasyl.node.channel">org.drasyl.node.channel</a></div>
+<div class="col-last odd-row-color">
 <div class="block"><a href="https://netty.io/">netty</a> <code>Channel</code> for the <a href="../node/DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>.</div>
 </div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.node.plugin.groups.client">org.drasyl.node.plugin.groups.client</a></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><a href="#org.drasyl.node.plugin.groups.client">org.drasyl.node.plugin.groups.client</a></div>
+<div class="col-last even-row-color">
 <div class="block">The groups client plugin.</div>
 </div>
-<div class="col-first even-row-color"><a href="#org.drasyl.node.plugin.groups.manager">org.drasyl.node.plugin.groups.manager</a></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><a href="#org.drasyl.node.plugin.groups.manager">org.drasyl.node.plugin.groups.manager</a></div>
+<div class="col-last odd-row-color">
 <div class="block">The groups manager plugin.</div>
 </div>
 </div>
@@ -139,19 +135,6 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color">
 <div class="block">A <code>ChannelInitializer</code> for <a href="DrasylServerChannel.html" title="class in org.drasyl.channel"><code>DrasylServerChannel</code></a>s that relays all messages through
  super peers.</div>
-</div>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="org.drasyl.handler">
-<div class="caption"><span>Classes in <a href="package-summary.html">org.drasyl.channel</a> used by <a href="../handler/package-summary.html">org.drasyl.handler</a></span></div>
-<div class="summary-table two-column-summary">
-<div class="table-header col-first">Class</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><a href="class-use/InetAddressedMessage.html#org.drasyl.handler">InetAddressedMessage</a></div>
-<div class="col-last even-row-color">
-<div class="block">A message that wraps another message with an <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link"><code>InetSocketAddress</code></a>.</div>
 </div>
 </div>
 </section>

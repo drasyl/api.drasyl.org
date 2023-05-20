@@ -180,12 +180,6 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Signals that the path to the remote peer has been changed from direct to relayed or vice versa.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/drasyl/handler/ChannelReadListener.html" title="class in org.drasyl.handler">ChannelReadListener</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/drasyl/handler/ChannelWritableListener.html" title="class in org.drasyl.handler">ChannelWritableListener</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
-<div class="block">Calls a listener once the channel this handler belongs become writable (again).</div>
-</div>
 <div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/drasyl/node/handler/serialization/CharacterSerializer.html" title="class in org.drasyl.node.handler.serialization">CharacterSerializer</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">This Serializer (de)serializes <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html" title="class or interface in java.lang" class="external-link"><code>Character</code></a> objects.</div>
@@ -1392,7 +1386,14 @@ loadScripts(document, 'script');</script>
 </div>
 <div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/drasyl/handler/remote/tcp/TcpClientChannelInitializer.html" title="class in org.drasyl.handler.remote.tcp">TcpClientChannelInitializer</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/drasyl/handler/remote/tcp/TcpCloseIdleClientsHandler.html" title="class in org.drasyl.handler.remote.tcp">TcpCloseIdleClientsHandler</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/drasyl/handler/remote/tcp/TcpClientToDrasylHandler.html" title="class in org.drasyl.handler.remote.tcp">TcpClientToDrasylHandler</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="block">This handler passes messages from the <code>SocketChannel</code> to the
+ <a href="org/drasyl/channel/DrasylServerChannel.html" title="class in org.drasyl.channel"><code>DrasylServerChannel</code></a>'s context.</div>
+</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/drasyl/handler/remote/tcp/TcpCloseIdleClientsHandler.html" title="class in org.drasyl.handler.remote.tcp">TcpCloseIdleClientsHandler</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/drasyl/handler/remote/tcp/TcpDrasylMessageHandler.html" title="class in org.drasyl.handler.remote.tcp">TcpDrasylMessageHandler</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
 <div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/drasyl/handler/remote/tcp/TcpServer.html" title="class in org.drasyl.handler.remote.tcp">TcpServer</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
@@ -1406,6 +1407,13 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/drasyl/handler/remote/tcp/TcpServer.TcpServerBound.html" title="class in org.drasyl.handler.remote.tcp">TcpServer.TcpServerBound</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Signals that the <a href="org/drasyl/handler/remote/tcp/TcpServer.html" title="class in org.drasyl.handler.remote.tcp"><code>TcpServer</code></a> is bind to <a href="org/drasyl/handler/remote/tcp/TcpServer.TcpServerBound.html#getPort()"><code>TcpServer.TcpServerBound.getPort()</code></a>.</div>
+</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/drasyl/handler/remote/tcp/TcpServerChannelInitializer.html" title="class in org.drasyl.handler.remote.tcp">TcpServerChannelInitializer</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/drasyl/handler/remote/tcp/TcpServerHandler.html" title="class in org.drasyl.handler.remote.tcp">TcpServerHandler</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="block">This handler passes all receiving messages to the pipeline and updates <code>TcpServerHandler.clients</code> on
+ new/closed connections.</div>
 </div>
 <div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/drasyl/handler/monitoring/TelemetryHandler.html" title="class in org.drasyl.handler.monitoring">TelemetryHandler</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">
@@ -1514,7 +1522,7 @@ loadScripts(document, 'script');</script>
 </div>
 <div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/drasyl/handler/remote/crypto/UnarmedMessageDecoder.html" title="class in org.drasyl.handler.remote.crypto">UnarmedMessageDecoder</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">
-<div class="block">Decodes <a href="org/drasyl/handler/remote/protocol/UnarmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol"><code>UnarmedProtocolMessage</code></a>s to <code>FullReadMessage</code>s.</div>
+<div class="block">Decodes <a href="org/drasyl/handler/remote/protocol/UnarmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol"><code>UnarmedProtocolMessage</code></a>s to <a href="org/drasyl/handler/remote/protocol/FullReadMessage.html" title="interface in org.drasyl.handler.remote.protocol"><code>FullReadMessage</code></a>s.</div>
 </div>
 <div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/drasyl/handler/remote/protocol/UnarmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">UnarmedProtocolMessage</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">

@@ -134,6 +134,12 @@ loadScripts(document, 'script');</script>
  int&nbsp;bindPort,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a>&nbsp;pingTimeout)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(io.netty.channel.nio.NioEventLoopGroup,java.net.InetAddress,int,java.time.Duration,java.util.function.Function)" class="member-name-link">TcpServer</a><wbr>(io.netty.channel.nio.NioEventLoopGroup&nbsp;group,
+ <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html" title="class or interface in java.net" class="external-link">InetAddress</a>&nbsp;bindHost,
+ int&nbsp;bindPort,
+ <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a>&nbsp;pingTimeout,
+ <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;io.netty.channel.ChannelHandlerContext,<wbr>io.netty.channel.ChannelInitializer&lt;io.netty.channel.socket.SocketChannel&gt;&gt;&nbsp;channelInitializerSupplier)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -189,6 +195,22 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
+<section class="detail" id="&lt;init&gt;(io.netty.channel.nio.NioEventLoopGroup,java.net.InetAddress,int,java.time.Duration,java.util.function.Function)">
+<h3>TcpServer</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">TcpServer</span><wbr><span class="parameters">(io.netty.channel.nio.NioEventLoopGroup&nbsp;group,
+ <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html" title="class or interface in java.net" class="external-link">InetAddress</a>&nbsp;bindHost,
+ int&nbsp;bindPort,
+ <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a>&nbsp;pingTimeout,
+ <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;io.netty.channel.ChannelHandlerContext,<wbr>io.netty.channel.ChannelInitializer&lt;io.netty.channel.socket.SocketChannel&gt;&gt;&nbsp;channelInitializerSupplier)</span></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>group</code> - the <code>NioEventLoopGroup</code> the underlying tcp server
+                                   should run on</dd>
+<dd><code>channelInitializerSupplier</code> - </dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="&lt;init&gt;(io.netty.channel.nio.NioEventLoopGroup,java.net.InetAddress,int,java.time.Duration)">
 <h3>TcpServer</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">TcpServer</span><wbr><span class="parameters">(io.netty.channel.nio.NioEventLoopGroup&nbsp;group,
@@ -197,7 +219,8 @@ loadScripts(document, 'script');</script>
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a>&nbsp;pingTimeout)</span></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>group</code> - the <code>NioEventLoopGroup</code> the underlying tcp server should run on</dd>
+<dd><code>group</code> - the <code>NioEventLoopGroup</code> the underlying tcp server
+                                   should run on</dd>
 </dl>
 </section>
 </li>

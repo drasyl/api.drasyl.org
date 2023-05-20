@@ -90,12 +90,17 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code><a href="../UnarmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">UnarmedProtocolMessage</a></code></div>
-<div class="col-second even-row-color"><span class="type-name-label">UnarmedProtocolMessage.</span><code><a href="../UnarmedProtocolMessage.html#incrementHopCount()" class="member-name-link">incrementHopCount</a>()</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">UnarmedProtocolMessage.</span><code><a href="../UnarmedProtocolMessage.html#asReadOnly()" class="member-name-link">asReadOnly</a>()</code></div>
 <div class="col-last even-row-color">
+<div class="block">Returns a read-only version of this message.</div>
+</div>
+<div class="col-first odd-row-color"><code><a href="../UnarmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">UnarmedProtocolMessage</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">UnarmedProtocolMessage.</span><code><a href="../UnarmedProtocolMessage.html#incrementHopCount()" class="member-name-link">incrementHopCount</a>()</code></div>
+<div class="col-last odd-row-color">
 <div class="block">Returns a copy of this message with incremented <a href="../RemoteMessage.html#getHopCount()"><code>RemoteMessage.getHopCount()</code></a>.</div>
 </div>
-<div class="col-first odd-row-color"><code>static <a href="../UnarmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">UnarmedProtocolMessage</a></code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">UnarmedProtocolMessage.</span><code><a href="../UnarmedProtocolMessage.html#of(org.drasyl.handler.remote.protocol.HopCount,boolean,int,org.drasyl.handler.remote.protocol.Nonce,org.drasyl.identity.DrasylAddress,org.drasyl.identity.DrasylAddress,org.drasyl.identity.ProofOfWork,io.netty.buffer.ByteBuf)" class="member-name-link">of</a><wbr>(<a href="../HopCount.html" title="class in org.drasyl.handler.remote.protocol">HopCount</a>&nbsp;hopCount,
+<div class="col-first even-row-color"><code>static <a href="../UnarmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">UnarmedProtocolMessage</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">UnarmedProtocolMessage.</span><code><a href="../UnarmedProtocolMessage.html#of(org.drasyl.handler.remote.protocol.HopCount,boolean,int,org.drasyl.handler.remote.protocol.Nonce,org.drasyl.identity.DrasylAddress,org.drasyl.identity.DrasylAddress,org.drasyl.identity.ProofOfWork,io.netty.buffer.ByteBuf)" class="member-name-link">of</a><wbr>(<a href="../HopCount.html" title="class in org.drasyl.handler.remote.protocol">HopCount</a>&nbsp;hopCount,
  boolean&nbsp;isArmed,
  int&nbsp;networkId,
  <a href="../Nonce.html" title="class in org.drasyl.handler.remote.protocol">Nonce</a>&nbsp;nonce,
@@ -103,21 +108,21 @@ loadScripts(document, 'script');</script>
  <a href="../../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;sender,
  <a href="../../../../identity/ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;proofOfWork,
  io.netty.buffer.ByteBuf&nbsp;bytes)</code></div>
-<div class="col-last odd-row-color">
+<div class="col-last even-row-color">
 <div class="block">Creates an unarmed message.</div>
 </div>
-<div class="col-first even-row-color"><code><a href="../UnarmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">UnarmedProtocolMessage</a></code></div>
-<div class="col-second even-row-color"><span class="type-name-label">UnarmedProtocolMessage.</span><code><a href="../UnarmedProtocolMessage.html#retain()" class="member-name-link">retain</a>()</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><code><a href="../UnarmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">UnarmedProtocolMessage</a></code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">UnarmedProtocolMessage.</span><code><a href="../UnarmedProtocolMessage.html#retain(int)" class="member-name-link">retain</a><wbr>(int&nbsp;increment)</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">UnarmedProtocolMessage.</span><code><a href="../UnarmedProtocolMessage.html#retain()" class="member-name-link">retain</a>()</code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-first even-row-color"><code><a href="../UnarmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">UnarmedProtocolMessage</a></code></div>
-<div class="col-second even-row-color"><span class="type-name-label">UnarmedProtocolMessage.</span><code><a href="../UnarmedProtocolMessage.html#touch()" class="member-name-link">touch</a>()</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">UnarmedProtocolMessage.</span><code><a href="../UnarmedProtocolMessage.html#retain(int)" class="member-name-link">retain</a><wbr>(int&nbsp;increment)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><code><a href="../UnarmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">UnarmedProtocolMessage</a></code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">UnarmedProtocolMessage.</span><code><a href="../UnarmedProtocolMessage.html#touch(java.lang.Object)" class="member-name-link">touch</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;hint)</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">UnarmedProtocolMessage.</span><code><a href="../UnarmedProtocolMessage.html#touch()" class="member-name-link">touch</a>()</code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="../UnarmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">UnarmedProtocolMessage</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">UnarmedProtocolMessage.</span><code><a href="../UnarmedProtocolMessage.html#touch(java.lang.Object)" class="member-name-link">touch</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;hint)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
