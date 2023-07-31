@@ -54,17 +54,25 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Package</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><a href="#org.drasyl.handler.remote.protocol">org.drasyl.handler.remote.protocol</a></div>
+<div class="col-first even-row-color"><a href="#org.drasyl.crypto.sodium">org.drasyl.crypto.sodium</a></div>
 <div class="col-last even-row-color">
+<div class="block">Libsodium wrappers for the crypto operations of drasyl</div>
+</div>
+<div class="col-first odd-row-color"><a href="#org.drasyl.handler.remote.protocol">org.drasyl.handler.remote.protocol</a></div>
+<div class="col-last odd-row-color">
 <div class="block">The protocol used for communication with remote peers.</div>
 </div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.identity">org.drasyl.identity</a></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><a href="#org.drasyl.identity">org.drasyl.identity</a></div>
+<div class="col-last even-row-color">
 <div class="block">Contains classes to manage the <a href="../../identity/Identity.html" title="class in org.drasyl.identity"><code>Identity</code></a> of the drasyl node.</div>
 </div>
-<div class="col-first even-row-color"><a href="#org.drasyl.node.handler.crypto">org.drasyl.node.handler.crypto</a></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><a href="#org.drasyl.node.handler.crypto">org.drasyl.node.handler.crypto</a></div>
+<div class="col-last odd-row-color">
 <div class="block">Contains classes necessary for encrypted peer/application communication.</div>
+</div>
+<div class="col-first even-row-color"><a href="#org.drasyl.node.handler.serialization">org.drasyl.node.handler.serialization</a></div>
+<div class="col-last even-row-color">
+<div class="block">Serialization of java objects to byte arrays and vice versa.</div>
 </div>
 <div class="col-first odd-row-color"><a href="#org.drasyl.util">org.drasyl.util</a></div>
 <div class="col-last odd-row-color">
@@ -73,6 +81,33 @@ loadScripts(document, 'script');</script>
 </div>
 <section class="class-uses">
 <ul class="block-list">
+<li>
+<section class="detail" id="org.drasyl.crypto.sodium">
+<h2>Uses of <a href="../ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a> in <a href="../../crypto/sodium/package-summary.html">org.drasyl.crypto.sodium</a></h2>
+<div class="caption"><span>Methods in <a href="../../crypto/sodium/package-summary.html">org.drasyl.crypto.sodium</a> that return <a href="../ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>abstract <a href="../ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">SessionPair.</span><code><a href="../../crypto/sodium/SessionPair.html#getRx()" class="member-name-link">getRx</a>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>abstract <a href="../ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">SessionPair.</span><code><a href="../../crypto/sodium/SessionPair.html#getTx()" class="member-name-link">getTx</a>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+</div>
+<div class="caption"><span>Methods in <a href="../../crypto/sodium/package-summary.html">org.drasyl.crypto.sodium</a> with parameters of type <a href="../ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>static <a href="../../crypto/sodium/SessionPair.html" title="class in org.drasyl.crypto.sodium">SessionPair</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">SessionPair.</span><code><a href="../../crypto/sodium/SessionPair.html#of(org.drasyl.util.ImmutableByteArray,org.drasyl.util.ImmutableByteArray)" class="member-name-link">of</a><wbr>(<a href="../ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a>&nbsp;rx,
+ <a href="../ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a>&nbsp;tx)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+</div>
+</section>
+</li>
 <li>
 <section class="detail" id="org.drasyl.handler.remote.protocol">
 <h2>Uses of <a href="../ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a> in <a href="../../handler/remote/protocol/package-summary.html">org.drasyl.handler.remote.protocol</a></h2>
@@ -170,6 +205,30 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>static <a href="../../node/handler/crypto/AgreementId.html" title="class in org.drasyl.node.handler.crypto">AgreementId</a></code></div>
 <div class="col-second even-row-color"><span class="type-name-label">AgreementId.</span><code><a href="../../node/handler/crypto/AgreementId.html#of(org.drasyl.util.ImmutableByteArray)" class="member-name-link">of</a><wbr>(<a href="../ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a>&nbsp;id)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="org.drasyl.node.handler.serialization">
+<h2>Uses of <a href="../ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a> in <a href="../../node/handler/serialization/package-summary.html">org.drasyl.node.handler.serialization</a></h2>
+<div class="caption"><span>Methods in <a href="../../node/handler/serialization/package-summary.html">org.drasyl.node.handler.serialization</a> that return <a href="../ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>abstract <a href="../ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">SerializedPayload.</span><code><a href="../../node/handler/serialization/SerializedPayload.html#getPayload()" class="member-name-link">getPayload</a>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+</div>
+<div class="caption"><span>Methods in <a href="../../node/handler/serialization/package-summary.html">org.drasyl.node.handler.serialization</a> with parameters of type <a href="../ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>static <a href="../../node/handler/serialization/SerializedPayload.html" title="class in org.drasyl.node.handler.serialization">SerializedPayload</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">SerializedPayload.</span><code><a href="../../node/handler/serialization/SerializedPayload.html#of(java.lang.String,org.drasyl.util.ImmutableByteArray)" class="member-name-link">of</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;type,
+ <a href="../ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a>&nbsp;payload)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
