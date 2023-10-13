@@ -388,9 +388,9 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/drasyl/node/behaviour/BehavioralDrasylNode.html#%3Cinit%3E()" class="member-name-link">BehavioralDrasylNode()</a> - Constructor for class org.drasyl.node.behaviour.<a href="org/drasyl/node/behaviour/BehavioralDrasylNode.html" title="class in org.drasyl.node.behaviour">BehavioralDrasylNode</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/drasyl/node/behaviour/BehavioralDrasylNode.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.bootstrap.ServerBootstrap,io.netty.channel.ChannelFuture)" class="member-name-link">BehavioralDrasylNode(Identity, ServerBootstrap, ChannelFuture)</a> - Constructor for class org.drasyl.node.behaviour.<a href="org/drasyl/node/behaviour/BehavioralDrasylNode.html" title="class in org.drasyl.node.behaviour">BehavioralDrasylNode</a></dt>
+<dt><a href="org/drasyl/node/behaviour/BehavioralDrasylNode.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.bootstrap.ServerBootstrap,io.netty.channel.ChannelFuture,io.netty.channel.Channel,org.drasyl.node.behaviour.Behavior,java.util.List)" class="member-name-link">BehavioralDrasylNode(Identity, ServerBootstrap, ChannelFuture, Channel, Behavior, List&lt;SocketAddress&gt;)</a> - Constructor for class org.drasyl.node.behaviour.<a href="org/drasyl/node/behaviour/BehavioralDrasylNode.html" title="class in org.drasyl.node.behaviour">BehavioralDrasylNode</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/drasyl/node/behaviour/BehavioralDrasylNode.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.bootstrap.ServerBootstrap,io.netty.channel.ChannelFuture,io.netty.channel.Channel,org.drasyl.node.behaviour.Behavior)" class="member-name-link">BehavioralDrasylNode(Identity, ServerBootstrap, ChannelFuture, Channel, Behavior)</a> - Constructor for class org.drasyl.node.behaviour.<a href="org/drasyl/node/behaviour/BehavioralDrasylNode.html" title="class in org.drasyl.node.behaviour">BehavioralDrasylNode</a></dt>
+<dt><a href="org/drasyl/node/behaviour/BehavioralDrasylNode.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.bootstrap.ServerBootstrap,io.netty.channel.ChannelFuture,java.util.List)" class="member-name-link">BehavioralDrasylNode(Identity, ServerBootstrap, ChannelFuture, List&lt;SocketAddress&gt;)</a> - Constructor for class org.drasyl.node.behaviour.<a href="org/drasyl/node/behaviour/BehavioralDrasylNode.html" title="class in org.drasyl.node.behaviour">BehavioralDrasylNode</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/behaviour/BehavioralDrasylNode.html#%3Cinit%3E(org.drasyl.node.DrasylConfig)" class="member-name-link">BehavioralDrasylNode(DrasylConfig)</a> - Constructor for class org.drasyl.node.behaviour.<a href="org/drasyl/node/behaviour/BehavioralDrasylNode.html" title="class in org.drasyl.node.behaviour">BehavioralDrasylNode</a></dt>
 <dd>&nbsp;</dd>
@@ -670,6 +670,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/UdpServer.html#channelActive(io.netty.channel.ChannelHandlerContext)" class="member-name-link">channelActive(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.remote.<a href="org/drasyl/handler/remote/UdpServer.html" title="class in org.drasyl.handler.remote">UdpServer</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpHandler.html#channelActive(io.netty.channel.ChannelHandlerContext)" class="member-name-link">channelActive(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpHandler.html" title="class in org.drasyl.handler.sntp">SntpHandler</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/plugin/PluginsHandler.html#channelActive(io.netty.channel.ChannelHandlerContext)" class="member-name-link">channelActive(ChannelHandlerContext)</a> - Method in class org.drasyl.node.handler.plugin.<a href="org/drasyl/node/handler/plugin/PluginsHandler.html" title="class in org.drasyl.node.handler.plugin">PluginsHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/plugin/groups/client/GroupsClientHandler.html#channelActive(io.netty.channel.ChannelHandlerContext)" class="member-name-link">channelActive(ChannelHandlerContext)</a> - Method in class org.drasyl.node.plugin.groups.client.<a href="org/drasyl/node/plugin/groups/client/GroupsClientHandler.html" title="class in org.drasyl.node.plugin.groups.client">GroupsClientHandler</a></dt>
@@ -791,6 +793,8 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/drasyl/node/plugin/groups/manager/GroupsManagerHandler.html#channelRead0(io.netty.channel.ChannelHandlerContext,org.drasyl.channel.OverlayAddressedMessage)" class="member-name-link">channelRead0(ChannelHandlerContext, OverlayAddressedMessage&lt;GroupsClientMessage&gt;)</a> - Method in class org.drasyl.node.plugin.groups.manager.<a href="org/drasyl/node/plugin/groups/manager/GroupsManagerHandler.html" title="class in org.drasyl.node.plugin.groups.manager">GroupsManagerHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/plugin/groups/client/GroupsClientHandler.html#channelRead0(io.netty.channel.ChannelHandlerContext,org.drasyl.channel.OverlayAddressedMessage)" class="member-name-link">channelRead0(ChannelHandlerContext, OverlayAddressedMessage&lt;GroupsServerMessage&gt;)</a> - Method in class org.drasyl.node.plugin.groups.client.<a href="org/drasyl/node/plugin/groups/client/GroupsClientHandler.html" title="class in org.drasyl.node.plugin.groups.client">GroupsClientHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpHandler.html#channelRead0(io.netty.channel.ChannelHandlerContext,org.drasyl.handler.sntp.SntpMessage)" class="member-name-link">channelRead0(ChannelHandlerContext, SntpMessage)</a> - Method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpHandler.html" title="class in org.drasyl.handler.sntp">SntpHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/tcp/TcpClientToDrasylHandler.html#channelReadComplete(io.netty.channel.ChannelHandlerContext)" class="member-name-link">channelReadComplete(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.remote.tcp.<a href="org/drasyl/handler/remote/tcp/TcpClientToDrasylHandler.html" title="class in org.drasyl.handler.remote.tcp">TcpClientToDrasylHandler</a></dt>
 <dd>&nbsp;</dd>
@@ -938,6 +942,8 @@ loadScripts(document, 'script');</script>
 <div class="block">Removes all entries from this multimap.</div>
 </dd>
 <dt><a href="org/drasyl/node/plugin/groups/manager/database/jdbc/SingleConnectionWrapper.html#clearWarnings()" class="member-name-link">clearWarnings()</a> - Method in class org.drasyl.node.plugin.groups.manager.database.jdbc.<a href="org/drasyl/node/plugin/groups/manager/database/jdbc/SingleConnectionWrapper.html" title="class in org.drasyl.node.plugin.groups.manager.database.jdbc">SingleConnectionWrapper</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpMessage.html#CLIENT_MODE" class="member-name-link">CLIENT_MODE</a> - Static variable in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp">SntpMessage</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/protocol/ApplicationMessage.html#close()" class="member-name-link">close()</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/ApplicationMessage.html" title="class in org.drasyl.handler.remote.protocol">ApplicationMessage</a></dt>
 <dd>
@@ -1578,6 +1584,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/DatagramCodec.html#decode(io.netty.channel.ChannelHandlerContext,io.netty.channel.socket.DatagramPacket,java.util.List)" class="member-name-link">decode(ChannelHandlerContext, DatagramPacket, List&lt;Object&gt;)</a> - Method in class org.drasyl.handler.remote.<a href="org/drasyl/handler/remote/DatagramCodec.html" title="class in org.drasyl.handler.remote">DatagramCodec</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpCodec.html#decode(io.netty.channel.ChannelHandlerContext,io.netty.channel.socket.DatagramPacket,java.util.List)" class="member-name-link">decode(ChannelHandlerContext, DatagramPacket, List&lt;Object&gt;)</a> - Method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpCodec.html" title="class in org.drasyl.handler.sntp">SntpCodec</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/ByteToRemoteMessageCodec.html#decode(io.netty.channel.ChannelHandlerContext,org.drasyl.channel.InetAddressedMessage,java.util.List)" class="member-name-link">decode(ChannelHandlerContext, InetAddressedMessage&lt;ByteBuf&gt;, List&lt;Object&gt;)</a> - Method in class org.drasyl.handler.remote.<a href="org/drasyl/handler/remote/ByteToRemoteMessageCodec.html" title="class in org.drasyl.handler.remote">ByteToRemoteMessageCodec</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/crypto/ProtocolArmHandler.html#decode(io.netty.channel.ChannelHandlerContext,org.drasyl.channel.InetAddressedMessage,java.util.List)" class="member-name-link">decode(ChannelHandlerContext, InetAddressedMessage&lt;ArmedProtocolMessage&gt;, List&lt;Object&gt;)</a> - Method in class org.drasyl.handler.remote.crypto.<a href="org/drasyl/handler/remote/crypto/ProtocolArmHandler.html" title="class in org.drasyl.handler.remote.crypto">ProtocolArmHandler</a></dt>
@@ -1764,7 +1772,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Creates a new drasyl Node.</div>
 </dd>
-<dt><a href="org/drasyl/node/DrasylNode.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.bootstrap.ServerBootstrap,io.netty.channel.ChannelFuture)" class="member-name-link">DrasylNode(Identity, ServerBootstrap, ChannelFuture)</a> - Constructor for class org.drasyl.node.<a href="org/drasyl/node/DrasylNode.html" title="class in org.drasyl.node">DrasylNode</a></dt>
+<dt><a href="org/drasyl/node/DrasylNode.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.bootstrap.ServerBootstrap,io.netty.channel.ChannelFuture,java.util.List)" class="member-name-link">DrasylNode(Identity, ServerBootstrap, ChannelFuture, List&lt;SocketAddress&gt;)</a> - Constructor for class org.drasyl.node.<a href="org/drasyl/node/DrasylNode.html" title="class in org.drasyl.node">DrasylNode</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/DrasylNode.html#%3Cinit%3E(org.drasyl.node.DrasylConfig)" class="member-name-link">DrasylNode(DrasylConfig)</a> - Constructor for class org.drasyl.node.<a href="org/drasyl/node/DrasylNode.html" title="class in org.drasyl.node">DrasylNode</a></dt>
 <dd>
@@ -1875,6 +1883,8 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/drasyl/handler/arq/stopandwait/StopAndWaitArqCodec.html#encode(io.netty.channel.ChannelHandlerContext,org.drasyl.handler.arq.stopandwait.StopAndWaitArqMessage,java.util.List)" class="member-name-link">encode(ChannelHandlerContext, StopAndWaitArqMessage, List&lt;Object&gt;)</a> - Method in class org.drasyl.handler.arq.stopandwait.<a href="org/drasyl/handler/arq/stopandwait/StopAndWaitArqCodec.html" title="class in org.drasyl.handler.arq.stopandwait">StopAndWaitArqCodec</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/connection/ConnectionHandshakeCodec.html#encode(io.netty.channel.ChannelHandlerContext,org.drasyl.handler.connection.ConnectionHandshakeSegment,java.util.List)" class="member-name-link">encode(ChannelHandlerContext, ConnectionHandshakeSegment, List&lt;Object&gt;)</a> - Method in class org.drasyl.handler.connection.<a href="org/drasyl/handler/connection/ConnectionHandshakeCodec.html" title="class in org.drasyl.handler.connection">ConnectionHandshakeCodec</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpCodec.html#encode(io.netty.channel.ChannelHandlerContext,org.drasyl.handler.sntp.SntpMessage,java.util.List)" class="member-name-link">encode(ChannelHandlerContext, SntpMessage, List&lt;Object&gt;)</a> - Method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpCodec.html" title="class in org.drasyl.handler.sntp">SntpCodec</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/stream/MessageChunkEncoder.html#encode(io.netty.channel.ChannelHandlerContext,org.drasyl.handler.stream.MessageChunk,io.netty.buffer.ByteBuf)" class="member-name-link">encode(ChannelHandlerContext, MessageChunk, ByteBuf)</a> - Method in class org.drasyl.handler.stream.<a href="org/drasyl/handler/stream/MessageChunkEncoder.html" title="class in org.drasyl.handler.stream">MessageChunkEncoder</a></dt>
 <dd>&nbsp;</dd>
@@ -2213,7 +2223,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/drasyl/node/EventTypeDrasylNode.html#%3Cinit%3E()" class="member-name-link">EventTypeDrasylNode()</a> - Constructor for class org.drasyl.node.<a href="org/drasyl/node/EventTypeDrasylNode.html" title="class in org.drasyl.node">EventTypeDrasylNode</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/drasyl/node/EventTypeDrasylNode.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.bootstrap.ServerBootstrap,io.netty.channel.ChannelFuture)" class="member-name-link">EventTypeDrasylNode(Identity, ServerBootstrap, ChannelFuture)</a> - Constructor for class org.drasyl.node.<a href="org/drasyl/node/EventTypeDrasylNode.html" title="class in org.drasyl.node">EventTypeDrasylNode</a></dt>
+<dt><a href="org/drasyl/node/EventTypeDrasylNode.html#%3Cinit%3E(org.drasyl.identity.Identity,io.netty.bootstrap.ServerBootstrap,io.netty.channel.ChannelFuture,java.util.List)" class="member-name-link">EventTypeDrasylNode(Identity, ServerBootstrap, ChannelFuture, List&lt;SocketAddress&gt;)</a> - Constructor for class org.drasyl.node.<a href="org/drasyl/node/EventTypeDrasylNode.html" title="class in org.drasyl.node">EventTypeDrasylNode</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/EventTypeDrasylNode.html#%3Cinit%3E(org.drasyl.node.DrasylConfig)" class="member-name-link">EventTypeDrasylNode(DrasylConfig)</a> - Constructor for class org.drasyl.node.<a href="org/drasyl/node/EventTypeDrasylNode.html" title="class in org.drasyl.node">EventTypeDrasylNode</a></dt>
 <dd>&nbsp;</dd>
@@ -2704,6 +2714,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/DrasylConfig.html#getInetSocketAddress(com.typesafe.config.Config,java.lang.String)" class="member-name-link">getInetSocketAddress(Config, String)</a> - Static method in class org.drasyl.node.<a href="org/drasyl/node/DrasylConfig.html" title="class in org.drasyl.node">DrasylConfig</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/drasyl/node/DrasylConfig.html#getInetSocketAddressList(com.typesafe.config.Config,java.lang.String)" class="member-name-link">getInetSocketAddressList(Config, String)</a> - Static method in class org.drasyl.node.<a href="org/drasyl/node/DrasylConfig.html" title="class in org.drasyl.node">DrasylConfig</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/crypto/Session.html#getInitializedAgreements()" class="member-name-link">getInitializedAgreements()</a> - Method in class org.drasyl.node.handler.crypto.<a href="org/drasyl/node/handler/crypto/Session.html" title="class in org.drasyl.node.handler.crypto">Session</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/util/OSInfo.html#getInstance()" class="member-name-link">getInstance()</a> - Static method in class org.drasyl.util.<a href="org/drasyl/util/OSInfo.html" title="class in org.drasyl.util">OSInfo</a></dt>
@@ -2737,6 +2749,8 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/drasyl/node/handler/crypto/Session.html#getLastKeyExchangeAt()" class="member-name-link">getLastKeyExchangeAt()</a> - Method in class org.drasyl.node.handler.crypto.<a href="org/drasyl/node/handler/crypto/Session.html" title="class in org.drasyl.node.handler.crypto">Session</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/crypto/Session.html#getLastRenewAttemptAt()" class="member-name-link">getLastRenewAttemptAt()</a> - Method in class org.drasyl.node.handler.crypto.<a href="org/drasyl/node/handler/crypto/Session.html" title="class in org.drasyl.node.handler.crypto">Session</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpMessage.html#getLeapIndicator()" class="member-name-link">getLeapIndicator()</a> - Method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp">SntpMessage</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/util/protocol/UpnpIgdUtil.MappingEntry.html#getLeaseDuration()" class="member-name-link">getLeaseDuration()</a> - Method in class org.drasyl.util.protocol.<a href="org/drasyl/util/protocol/UpnpIgdUtil.MappingEntry.html" title="class in org.drasyl.util.protocol">UpnpIgdUtil.MappingEntry</a></dt>
 <dd>&nbsp;</dd>
@@ -2815,6 +2829,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/plugin/groups/manager/data/Group.html#getMinDifficulty()" class="member-name-link">getMinDifficulty()</a> - Method in class org.drasyl.node.plugin.groups.manager.data.<a href="org/drasyl/node/plugin/groups/manager/data/Group.html" title="class in org.drasyl.node.plugin.groups.manager.data">Group</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpMessage.html#getMode()" class="member-name-link">getMode()</a> - Method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp">SntpMessage</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/arq/gobackn/Window.Frame.html#getMsg()" class="member-name-link">getMsg()</a> - Method in class org.drasyl.handler.arq.gobackn.<a href="org/drasyl/handler/arq/gobackn/Window.Frame.html" title="class in org.drasyl.handler.arq.gobackn">Window.Frame</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/rmi/message/RmiRequest.html#getName()" class="member-name-link">getName()</a> - Method in class org.drasyl.handler.rmi.message.<a href="org/drasyl/handler/rmi/message/RmiRequest.html" title="class in org.drasyl.handler.rmi.message">RmiRequest</a></dt>
@@ -2872,10 +2888,18 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/util/protocol/PcpPortUtil.ResultCode.html#getNumber()" class="member-name-link">getNumber()</a> - Method in enum org.drasyl.util.protocol.<a href="org/drasyl/util/protocol/PcpPortUtil.ResultCode.html" title="enum in org.drasyl.util.protocol">PcpPortUtil.ResultCode</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpClient.html#getOffset()" class="member-name-link">getOffset()</a> - Static method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpClient.html" title="class in org.drasyl.handler.sntp">SntpClient</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpClient.html#getOffset(java.net.SocketAddress)" class="member-name-link">getOffset(SocketAddress)</a> - Static method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpClient.html" title="class in org.drasyl.handler.sntp">SntpClient</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpClient.html#getOffset(java.util.List)" class="member-name-link">getOffset(List&lt;SocketAddress&gt;)</a> - Static method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpClient.html" title="class in org.drasyl.handler.sntp">SntpClient</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/util/Worm.html#getOrCompute(java.util.function.Supplier)" class="member-name-link">getOrCompute(Supplier&lt;T&gt;)</a> - Method in class org.drasyl.util.<a href="org/drasyl/util/Worm.html" title="class in org.drasyl.util">Worm</a></dt>
 <dd>
 <div class="block">If no value has been set yet, it will be set to the return of <code>supplier</code>.</div>
 </dd>
+<dt><a href="org/drasyl/handler/sntp/SntpMessage.html#getOriginateTimestamp()" class="member-name-link">getOriginateTimestamp()</a> - Method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp">SntpMessage</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/util/Worm.html#getOrSet(T)" class="member-name-link">getOrSet(T)</a> - Method in class org.drasyl.util.<a href="org/drasyl/util/Worm.html" title="class in org.drasyl.util">Worm</a></dt>
 <dd>
 <div class="block">If no value has been set yet, it will be set to <code>value</code>.</div>
@@ -2913,6 +2937,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/DrasylConfig.html#getPlugins(com.typesafe.config.Config,java.lang.String)" class="member-name-link">getPlugins(Config, String)</a> - Static method in class org.drasyl.node.<a href="org/drasyl/node/DrasylConfig.html" title="class in org.drasyl.node">DrasylConfig</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpMessage.html#getPoll()" class="member-name-link">getPoll()</a> - Method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp">SntpMessage</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/tcp/TcpServer.TcpServerBound.html#getPort()" class="member-name-link">getPort()</a> - Method in class org.drasyl.handler.remote.tcp.<a href="org/drasyl/handler/remote/tcp/TcpServer.TcpServerBound.html" title="class in org.drasyl.handler.remote.tcp">TcpServer.TcpServerBound</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/event/Node.html#getPort()" class="member-name-link">getPort()</a> - Method in class org.drasyl.node.event.<a href="org/drasyl/node/event/Node.html" title="class in org.drasyl.node.event">Node</a></dt>
@@ -2923,6 +2949,8 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns the port of this endpoint.</div>
 </dd>
+<dt><a href="org/drasyl/handler/sntp/SntpMessage.html#getPrecision()" class="member-name-link">getPrecision()</a> - Method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp">SntpMessage</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/dht/chord/LocalChordNode.html#getPredecessor()" class="member-name-link">getPredecessor()</a> - Method in class org.drasyl.handler.dht.chord.<a href="org/drasyl/handler/dht/chord/LocalChordNode.html" title="class in org.drasyl.handler.dht.chord">LocalChordNode</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/dht/chord/RemoteChordNode.html#getPredecessor()" class="member-name-link">getPredecessor()</a> - Method in interface org.drasyl.handler.dht.chord.<a href="org/drasyl/handler/dht/chord/RemoteChordNode.html" title="interface in org.drasyl.handler.dht.chord">RemoteChordNode</a></dt>
@@ -2966,6 +2994,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/plugin/groups/client/message/GroupJoinFailedMessage.html#getReason()" class="member-name-link">getReason()</a> - Method in class org.drasyl.node.plugin.groups.client.message.<a href="org/drasyl/node/plugin/groups/client/message/GroupJoinFailedMessage.html" title="class in org.drasyl.node.plugin.groups.client.message">GroupJoinFailedMessage</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpMessage.html#getReceiveTimestamp()" class="member-name-link">getReceiveTimestamp()</a> - Method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp">SntpMessage</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/protocol/FullReadMessage.html#getRecipient()" class="member-name-link">getRecipient()</a> - Method in interface org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/FullReadMessage.html" title="interface in org.drasyl.handler.remote.protocol">FullReadMessage</a></dt>
 <dd>
 <div class="block">Returns the <a href="org/drasyl/identity/IdentityPublicKey.html" title="class in org.drasyl.identity"><code>IdentityPublicKey</code></a> of the message recipient.</div>
@@ -2981,6 +3011,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/drasyl/handler/remote/protocol/UnarmedProtocolMessage.html#getRecipient()" class="member-name-link">getRecipient()</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/UnarmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">UnarmedProtocolMessage</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/crypto/PendingAgreement.html#getRecipientsKeyAgreementKey()" class="member-name-link">getRecipientsKeyAgreementKey()</a> - Method in class org.drasyl.node.handler.crypto.<a href="org/drasyl/node/handler/crypto/PendingAgreement.html" title="class in org.drasyl.node.handler.crypto">PendingAgreement</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpMessage.html#getReferenceIdentifier()" class="member-name-link">getReferenceIdentifier()</a> - Method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp">SntpMessage</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpMessage.html#getReferenceTimestamp()" class="member-name-link">getReferenceTimestamp()</a> - Method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp">SntpMessage</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/plugin/groups/client/event/GroupJoinFailedEvent.html#getReJoin()" class="member-name-link">getReJoin()</a> - Method in class org.drasyl.node.plugin.groups.client.event.<a href="org/drasyl/node/plugin/groups/client/event/GroupJoinFailedEvent.html" title="class in org.drasyl.node.plugin.groups.client.event">GroupJoinFailedEvent</a></dt>
 <dd>
@@ -3054,6 +3088,10 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/util/protocol/PcpPortUtil.MappingResponseMessage.html#getResultCode()" class="member-name-link">getResultCode()</a> - Method in class org.drasyl.util.protocol.<a href="org/drasyl/util/protocol/PcpPortUtil.MappingResponseMessage.html" title="class in org.drasyl.util.protocol">PcpPortUtil.MappingResponseMessage</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpMessage.html#getRootDelay()" class="member-name-link">getRootDelay()</a> - Method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp">SntpMessage</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpMessage.html#getRootDispersion()" class="member-name-link">getRootDispersion()</a> - Method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp">SntpMessage</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/discovery/AddPathAndSuperPeerEvent.html#getRtt()" class="member-name-link">getRtt()</a> - Method in class org.drasyl.handler.discovery.<a href="org/drasyl/handler/discovery/AddPathAndSuperPeerEvent.html" title="class in org.drasyl.handler.discovery">AddPathAndSuperPeerEvent</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/discovery/AddPathEvent.html#getRtt()" class="member-name-link">getRtt()</a> - Method in class org.drasyl.handler.discovery.<a href="org/drasyl/handler/discovery/AddPathEvent.html" title="class in org.drasyl.handler.discovery">AddPathEvent</a></dt>
@@ -3104,6 +3142,8 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/drasyl/handler/remote/protocol/HelloMessage.html#getSignature()" class="member-name-link">getSignature()</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/HelloMessage.html" title="class in org.drasyl.handler.remote.protocol">HelloMessage</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/drasyl/node/DrasylConfig.html#getSntpServers()" class="member-name-link">getSntpServers()</a> - Method in class org.drasyl.node.<a href="org/drasyl/node/DrasylConfig.html" title="class in org.drasyl.node">DrasylConfig</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/crypto/Crypto.html#getSodium()" class="member-name-link">getSodium()</a> - Method in class org.drasyl.crypto.<a href="org/drasyl/crypto/Crypto.html" title="class in org.drasyl.crypto">Crypto</a></dt>
 <dd>
 <div class="block"><b>Is only for internal usage.</b></div>
@@ -3123,6 +3163,8 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/drasyl/node/DrasylConfig.html#getStaticRoutes(com.typesafe.config.Config,java.lang.String)" class="member-name-link">getStaticRoutes(Config, String)</a> - Static method in class org.drasyl.node.<a href="org/drasyl/node/DrasylConfig.html" title="class in org.drasyl.node">DrasylConfig</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/util/protocol/UpnpIgdUtil.html#getStatusInfo(java.net.URI,java.lang.String)" class="member-name-link">getStatusInfo(URI, String)</a> - Method in class org.drasyl.util.protocol.<a href="org/drasyl/util/protocol/UpnpIgdUtil.html" title="class in org.drasyl.util.protocol">UpnpIgdUtil</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpMessage.html#getStratum()" class="member-name-link">getStratum()</a> - Method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp">SntpMessage</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/dht/chord/ChordFingerTable.html#getSuccessor()" class="member-name-link">getSuccessor()</a> - Method in class org.drasyl.handler.dht.chord.<a href="org/drasyl/handler/dht/chord/ChordFingerTable.html" title="class in org.drasyl.handler.dht.chord">ChordFingerTable</a></dt>
 <dd>&nbsp;</dd>
@@ -3157,6 +3199,8 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/drasyl/handler/pubsub/PubSubUnsubscribe.html#getTopic()" class="member-name-link">getTopic()</a> - Method in class org.drasyl.handler.pubsub.<a href="org/drasyl/handler/pubsub/PubSubUnsubscribe.html" title="class in org.drasyl.handler.pubsub">PubSubUnsubscribe</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/plugin/groups/manager/database/jdbc/SingleConnectionWrapper.html#getTransactionIsolation()" class="member-name-link">getTransactionIsolation()</a> - Method in class org.drasyl.node.plugin.groups.manager.database.jdbc.<a href="org/drasyl/node/plugin/groups/manager/database/jdbc/SingleConnectionWrapper.html" title="class in org.drasyl.node.plugin.groups.manager.database.jdbc">SingleConnectionWrapper</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpMessage.html#getTransmitTimestamp()" class="member-name-link">getTransmitTimestamp()</a> - Method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp">SntpMessage</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/crypto/sodium/SessionPair.html#getTx()" class="member-name-link">getTx()</a> - Method in class org.drasyl.crypto.sodium.<a href="org/drasyl/crypto/sodium/SessionPair.html" title="class in org.drasyl.crypto.sodium">SessionPair</a></dt>
 <dd>&nbsp;</dd>
@@ -3193,6 +3237,8 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/drasyl/util/UnsignedMediumInteger.html#getValue()" class="member-name-link">getValue()</a> - Method in class org.drasyl.util.<a href="org/drasyl/util/UnsignedMediumInteger.html" title="class in org.drasyl.util">UnsignedMediumInteger</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/util/UnsignedShort.html#getValue()" class="member-name-link">getValue()</a> - Method in class org.drasyl.util.<a href="org/drasyl/util/UnsignedShort.html" title="class in org.drasyl.util">UnsignedShort</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpMessage.html#getVersionNumber()" class="member-name-link">getVersionNumber()</a> - Method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp">SntpMessage</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/plugin/groups/manager/database/jdbc/SingleConnectionWrapper.html#getWarnings()" class="member-name-link">getWarnings()</a> - Method in class org.drasyl.node.plugin.groups.manager.database.jdbc.<a href="org/drasyl/node/plugin/groups/manager/database/jdbc/SingleConnectionWrapper.html" title="class in org.drasyl.node.plugin.groups.manager.database.jdbc">SingleConnectionWrapper</a></dt>
 <dd>&nbsp;</dd>
@@ -4548,6 +4594,10 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/util/SerialNumberArithmetic.html#lessThanOrEqualTo(long,long,int)" class="member-name-link">lessThanOrEqualTo(long, long, int)</a> - Static method in class org.drasyl.util.<a href="org/drasyl/util/SerialNumberArithmetic.html" title="class in org.drasyl.util">SerialNumberArithmetic</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpMessage.html#LI_NOT_SYNC" class="member-name-link">LI_NOT_SYNC</a> - Static variable in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp">SntpMessage</a></dt>
+<dd>
+<div class="block">NTP server is not synchronized.</div>
+</dd>
 <dt><a href="org/drasyl/crypto/loader/LibraryLoader.html" class="type-name-link" title="class in org.drasyl.crypto.loader">LibraryLoader</a> - Class in <a href="org/drasyl/crypto/loader/package-summary.html">org.drasyl.crypto.loader</a></dt>
 <dd>
 <div class="block">Helper class to load the libsodium library from the preferred location.</div>
@@ -4897,6 +4947,8 @@ loadScripts(document, 'script');</script>
  number (expected magic number: <a href="org/drasyl/handler/remote/protocol/RemoteMessage.html#MAGIC_NUMBER"><code>RemoteMessage.MAGIC_NUMBER</code></a>).</div>
 </dd>
 <dt><a href="org/drasyl/handler/remote/protocol/MagicNumberMissmatchException.html#%3Cinit%3E()" class="member-name-link">MagicNumberMissmatchException()</a> - Constructor for exception org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/MagicNumberMissmatchException.html" title="class in org.drasyl.handler.remote.protocol">MagicNumberMissmatchException</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpClient.html#main(java.lang.String%5B%5D)" class="member-name-link">main(String[])</a> - Static method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpClient.html" title="class in org.drasyl.handler.sntp">SntpClient</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/util/Version.html#main(java.lang.String%5B%5D)" class="member-name-link">main(String[])</a> - Static method in class org.drasyl.util.<a href="org/drasyl/util/Version.html" title="class in org.drasyl.util">Version</a></dt>
 <dd>&nbsp;</dd>
@@ -5415,6 +5467,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns the <code>n</code>-th element from set <code>set</code>.</div>
 </dd>
+<dt><a href="org/drasyl/handler/sntp/SntpClient.html#NTP_PORT" class="member-name-link">NTP_PORT</a> - Static variable in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpClient.html" title="class in org.drasyl.handler.sntp">SntpClient</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpClient.html#NTP_SERVERS" class="member-name-link">NTP_SERVERS</a> - Static variable in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpClient.html" title="class in org.drasyl.handler.sntp">SntpClient</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/Null.html" class="type-name-link" title="enum in org.drasyl.node">Null</a> - Enum in <a href="org/drasyl/node/package-summary.html">org.drasyl.node</a></dt>
 <dd>
 <div class="block">As <code>null</code> values cannot be processed by a <code>Channel</code>, we need a
@@ -5562,6 +5618,8 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Creates a new <a href="org/drasyl/util/UnsignedShort.html" title="class in org.drasyl.util"><code>UnsignedShort</code></a>.</div>
 </dd>
+<dt><a href="org/drasyl/handler/sntp/SntpMessage.html#of(int,int,int,int,int,int,float,float,int,long,long,long,long)" class="member-name-link">of(int, int, int, int, int, int, float, float, int, long, long, long, long)</a> - Static method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp">SntpMessage</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/rmi/message/RmiRequest.html#of(int,int,io.netty.buffer.ByteBuf)" class="member-name-link">of(int, int, ByteBuf)</a> - Static method in class org.drasyl.handler.rmi.message.<a href="org/drasyl/handler/rmi/message/RmiRequest.html" title="class in org.drasyl.handler.rmi.message">RmiRequest</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/identity/Identity.html#of(int,java.lang.String)" class="member-name-link">of(int, String)</a> - Static method in class org.drasyl.identity.<a href="org/drasyl/identity/Identity.html" title="class in org.drasyl.identity">Identity</a></dt>
@@ -5603,6 +5661,10 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/identity/Identity.html#of(int,org.drasyl.identity.KeyPair,org.drasyl.identity.KeyPair)" class="member-name-link">of(int, KeyPair&lt;IdentityPublicKey, IdentitySecretKey&gt;, KeyPair&lt;KeyAgreementPublicKey, KeyAgreementSecretKey&gt;)</a> - Static method in class org.drasyl.identity.<a href="org/drasyl/identity/Identity.html" title="class in org.drasyl.identity">Identity</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpMessage.html#of(long)" class="member-name-link">of(long)</a> - Static method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp">SntpMessage</a></dt>
+<dd>
+<div class="block">Creates a client <a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp"><code>SntpMessage</code></a>.</div>
+</dd>
 <dt><a href="org/drasyl/util/UnsignedInteger.html#of(long)" class="member-name-link">of(long)</a> - Static method in class org.drasyl.util.<a href="org/drasyl/util/UnsignedInteger.html" title="class in org.drasyl.util">UnsignedInteger</a></dt>
 <dd>
 <div class="block">Creates a new <a href="org/drasyl/util/UnsignedInteger.html" title="class in org.drasyl.util"><code>UnsignedInteger</code></a>.</div>
@@ -6128,6 +6190,8 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/drasyl/handler/rmi/annotation/package-summary.html">org.drasyl.handler.rmi.annotation</a> - package org.drasyl.handler.rmi.annotation</dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/rmi/message/package-summary.html">org.drasyl.handler.rmi.message</a> - package org.drasyl.handler.rmi.message</dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/package-summary.html">org.drasyl.handler.sntp</a> - package org.drasyl.handler.sntp</dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/stream/package-summary.html">org.drasyl.handler.stream</a> - package org.drasyl.handler.stream</dt>
 <dd>
@@ -7693,6 +7757,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/channel/DrasylServerChannel.html#serve(org.drasyl.identity.DrasylAddress,io.netty.util.concurrent.Promise)" class="member-name-link">serve(DrasylAddress, Promise&lt;DrasylChannel&gt;)</a> - Method in class org.drasyl.channel.<a href="org/drasyl/channel/DrasylServerChannel.html" title="class in org.drasyl.channel">DrasylServerChannel</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpMessage.html#SERVER_MODE" class="member-name-link">SERVER_MODE</a> - Static variable in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp">SntpMessage</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/util/protocol/UpnpIgdUtil.Service.html#%3Cinit%3E(java.lang.String,java.net.URI,java.net.InetAddress)" class="member-name-link">Service(String, URI, InetAddress)</a> - Constructor for class org.drasyl.util.protocol.<a href="org/drasyl/util/protocol/UpnpIgdUtil.Service.html" title="class in org.drasyl.util.protocol">UpnpIgdUtil.Service</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/crypto/AbstractArmHandler.html#session" class="member-name-link">session</a> - Variable in class org.drasyl.node.handler.crypto.<a href="org/drasyl/node/handler/crypto/AbstractArmHandler.html" title="class in org.drasyl.node.handler.crypto">AbstractArmHandler</a></dt>
@@ -7851,6 +7917,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/util/InconsistentSortedSet.html#size()" class="member-name-link">size()</a> - Method in class org.drasyl.util.<a href="org/drasyl/util/InconsistentSortedSet.html" title="class in org.drasyl.util">InconsistentSortedSet</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpMessage.html#SIZE" class="member-name-link">SIZE</a> - Static variable in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp">SntpMessage</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/crypto/Crypto.html#SK_CURVE_25519_KEY_LENGTH" class="member-name-link">SK_CURVE_25519_KEY_LENGTH</a> - Static variable in class org.drasyl.crypto.<a href="org/drasyl/crypto/Crypto.html" title="class in org.drasyl.crypto">Crypto</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/crypto/Crypto.html#SK_LONG_TIME_KEY_LENGTH" class="member-name-link">SK_LONG_TIME_KEY_LENGTH</a> - Static variable in class org.drasyl.crypto.<a href="org/drasyl/crypto/Crypto.html" title="class in org.drasyl.crypto">Crypto</a></dt>
@@ -7909,6 +7977,26 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns the state that has been shared with the remote peer.</div>
 </dd>
+<dt><a href="org/drasyl/node/DrasylConfig.html#SNTP_SERVER" class="member-name-link">SNTP_SERVER</a> - Static variable in class org.drasyl.node.<a href="org/drasyl/node/DrasylConfig.html" title="class in org.drasyl.node">DrasylConfig</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpClient.html" class="type-name-link" title="class in org.drasyl.handler.sntp">SntpClient</a> - Class in <a href="org/drasyl/handler/sntp/package-summary.html">org.drasyl.handler.sntp</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpClient.html#%3Cinit%3E()" class="member-name-link">SntpClient()</a> - Constructor for class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpClient.html" title="class in org.drasyl.handler.sntp">SntpClient</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpCodec.html" class="type-name-link" title="class in org.drasyl.handler.sntp">SntpCodec</a> - Class in <a href="org/drasyl/handler/sntp/package-summary.html">org.drasyl.handler.sntp</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpCodec.html#%3Cinit%3E()" class="member-name-link">SntpCodec()</a> - Constructor for class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpCodec.html" title="class in org.drasyl.handler.sntp">SntpCodec</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpHandler.html" class="type-name-link" title="class in org.drasyl.handler.sntp">SntpHandler</a> - Class in <a href="org/drasyl/handler/sntp/package-summary.html">org.drasyl.handler.sntp</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpHandler.html#%3Cinit%3E(java.util.concurrent.CompletableFuture,java.util.concurrent.atomic.AtomicLong)" class="member-name-link">SntpHandler(CompletableFuture&lt;Long&gt;, AtomicLong)</a> - Constructor for class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpHandler.html" title="class in org.drasyl.handler.sntp">SntpHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpMessage.html" class="type-name-link" title="class in org.drasyl.handler.sntp">SntpMessage</a> - Class in <a href="org/drasyl/handler/sntp/package-summary.html">org.drasyl.handler.sntp</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpMessage.html#%3Cinit%3E()" class="member-name-link">SntpMessage()</a> - Constructor for class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp">SntpMessage</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/node/DrasylConfig.Builder.html#sntpServers(java.util.List)" class="member-name-link">sntpServers(List&lt;InetSocketAddress&gt;)</a> - Method in class org.drasyl.node.<a href="org/drasyl/node/DrasylConfig.Builder.html" title="class in org.drasyl.node">DrasylConfig.Builder</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/util/InetSocketAddressUtil.html#socketAddressFromString(java.lang.String)" class="member-name-link">socketAddressFromString(String)</a> - Static method in class org.drasyl.util.<a href="org/drasyl/util/InetSocketAddressUtil.html" title="class in org.drasyl.util">InetSocketAddressUtil</a></dt>
 <dd>
 <div class="block">Convert a <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link"><code>String</code></a> to a <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link"><code>InetSocketAddress</code></a>.</div>
@@ -8248,6 +8336,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Creates an unresolved socket address from <a href="org/drasyl/node/PeerEndpoint.html#getHost()"><code>PeerEndpoint.getHost()</code></a> and <a href="org/drasyl/node/PeerEndpoint.html#getPort()"><code>PeerEndpoint.getPort()</code></a>.</div>
 </dd>
+<dt><a href="org/drasyl/handler/sntp/SntpMessage.html#toJavaTime(long)" class="member-name-link">toJavaTime(long)</a> - Static method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp">SntpMessage</a></dt>
+<dd>
+<div class="block">Converts <code>ntpTime</code> to the java time format.</div>
+</dd>
 <dt><a href="org/drasyl/handler/traffic/OutboundMessagesThrottlingHandler.RateLimitedQueue.html#tokenBucket" class="member-name-link">tokenBucket</a> - Variable in class org.drasyl.handler.traffic.<a href="org/drasyl/handler/traffic/OutboundMessagesThrottlingHandler.RateLimitedQueue.html" title="class in org.drasyl.handler.traffic">OutboundMessagesThrottlingHandler.RateLimitedQueue</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/util/TokenBucket.html" class="type-name-link" title="class in org.drasyl.util">TokenBucket</a> - Class in <a href="org/drasyl/util/package-summary.html">org.drasyl.util</a></dt>
@@ -8258,6 +8350,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/drasyl/util/TokenBucket.html#%3Cinit%3E(long,java.time.Duration,boolean)" class="member-name-link">TokenBucket(long, Duration, boolean)</a> - Constructor for class org.drasyl.util.<a href="org/drasyl/util/TokenBucket.html" title="class in org.drasyl.util">TokenBucket</a></dt>
 <dd>
 <div class="block">Creates a new leaky token bucket.</div>
+</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpMessage.html#toNTPTime(long)" class="member-name-link">toNTPTime(long)</a> - Static method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp">SntpMessage</a></dt>
+<dd>
+<div class="block">Converts <code>javaTime</code> to the correct NTP time format as defined in RFC-1305.</div>
 </dd>
 <dt><a href="org/drasyl/handler/monitoring/TopologyHandler.html#topology(io.netty.channel.ChannelHandlerContext)" class="member-name-link">topology(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.monitoring.<a href="org/drasyl/handler/monitoring/TopologyHandler.html" title="class in org.drasyl.handler.monitoring">TopologyHandler</a></dt>
 <dd>&nbsp;</dd>
@@ -8618,6 +8714,8 @@ loadScripts(document, 'script');</script>
 <div class="block">Log an exception (throwable) at the TRACE level.</div>
 </dd>
 <dt><a href="org/drasyl/util/logging/LogLevel.html#TRACE" class="member-name-link">TRACE</a> - Enum constant in enum org.drasyl.util.logging.<a href="org/drasyl/util/logging/LogLevel.html" title="enum in org.drasyl.util.logging">LogLevel</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpMessage.html#TRANSMIT_TIMESTAMP_OFFSET" class="member-name-link">TRANSMIT_TIMESTAMP_OFFSET</a> - Static variable in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp">SntpMessage</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html" class="type-name-link" title="class in org.drasyl.channel">TraversingDrasylServerChannelInitializer</a> - Class in <a href="org/drasyl/channel/package-summary.html">org.drasyl.channel</a></dt>
 <dd>
@@ -9055,6 +9153,8 @@ the order they are declared.</div>
 <dt><a href="org/drasyl/util/Version.html#version()" class="member-name-link">version()</a> - Method in class org.drasyl.util.<a href="org/drasyl/util/Version.html" title="class in org.drasyl.util">Version</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/util/Version.html" class="type-name-link" title="class in org.drasyl.util">Version</a> - Class in <a href="org/drasyl/util/package-summary.html">org.drasyl.util</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/sntp/SntpMessage.html#VERSION_NUMBER" class="member-name-link">VERSION_NUMBER</a> - Static variable in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp">SntpMessage</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <h2 class="title" id="I:W">W</h2>
