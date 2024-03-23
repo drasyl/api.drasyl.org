@@ -183,7 +183,7 @@ loadScripts(document, 'script');</script>
 <div class="block">Defines how long small data packets are delayed at most.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract <a href="ConnectionConfig.Builder.html" title="class in org.drasyl.handler.connection">ConnectionConfig.Builder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#rcfBufSupplier(java.util.function.Function)" class="member-name-link">rcfBufSupplier</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;io.netty.channel.Channel,<wbr><a href="ReceiveBuffer.html" title="class in org.drasyl.handler.connection">ReceiveBuffer</a>&gt;&nbsp;rcfBufSupplier)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#rcfBufSupplier(java.util.function.Supplier)" class="member-name-link">rcfBufSupplier</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;<a href="ReceiveBuffer.html" title="class in org.drasyl.handler.connection">ReceiveBuffer</a>&gt;&nbsp;rcfBufSupplier)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Used to create the <a href="ReceiveBuffer.html" title="class in org.drasyl.handler.connection"><code>ReceiveBuffer</code></a>.</div>
 </div>
@@ -292,9 +292,9 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="rcfBufSupplier(java.util.function.Function)">
+<section class="detail" id="rcfBufSupplier(java.util.function.Supplier)">
 <h3>rcfBufSupplier</h3>
-<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type"><a href="ConnectionConfig.Builder.html" title="class in org.drasyl.handler.connection">ConnectionConfig.Builder</a></span>&nbsp;<span class="element-name">rcfBufSupplier</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;io.netty.channel.Channel,<wbr><a href="ReceiveBuffer.html" title="class in org.drasyl.handler.connection">ReceiveBuffer</a>&gt;&nbsp;rcfBufSupplier)</span></div>
+<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type"><a href="ConnectionConfig.Builder.html" title="class in org.drasyl.handler.connection">ConnectionConfig.Builder</a></span>&nbsp;<span class="element-name">rcfBufSupplier</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;<a href="ReceiveBuffer.html" title="class in org.drasyl.handler.connection">ReceiveBuffer</a>&gt;&nbsp;rcfBufSupplier)</span></div>
 <div class="block">Used to create the <a href="ReceiveBuffer.html" title="class in org.drasyl.handler.connection"><code>ReceiveBuffer</code></a>.</div>
 </section>
 </li>
