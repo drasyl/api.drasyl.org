@@ -117,14 +117,11 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Field</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>static final int</code></div>
-<div class="col-second even-row-color"><code><a href="#DEFAULT_SEND_MSS" class="member-name-link">DEFAULT_SEND_MSS</a></code></div>
+<div class="col-second even-row-color"><code><a href="#MAX_PORT" class="member-name-link">MAX_PORT</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><code>static final int</code></div>
-<div class="col-second odd-row-color"><code><a href="#MAX_PORT" class="member-name-link">MAX_PORT</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#MIN_PORT" class="member-name-link">MIN_PORT</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>static final int</code></div>
-<div class="col-second even-row-color"><code><a href="#MIN_PORT" class="member-name-link">MIN_PORT</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -152,7 +149,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#duplicateAcks()" class="member-name-link">duplicateAcks</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>long</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#effSndMss()" class="member-name-link">effSndMss</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">The maximum size of a segment that TCP really sends, the "effective send MSS,"</div>
@@ -263,7 +260,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>long</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#sendMss()" class="member-name-link">sendMss</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>long</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#smss()" class="member-name-link">smss</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">RFC 5681: The SMSS is the size of the largest segment that the sender can transmit.</div>
@@ -384,20 +381,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <ul class="see-list">
 <li><a href="../../../../constant-values.html#org.drasyl.handler.connection.TransmissionControlBlock.MAX_PORT">Constant Field Values</a></li>
-</ul>
-</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="DEFAULT_SEND_MSS">
-<h3>DEFAULT_SEND_MSS</h3>
-<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">DEFAULT_SEND_MSS</span></div>
-<dl class="notes">
-<dt>See Also:</dt>
-<dd>
-<ul class="see-list">
-<li><a href="../../../../constant-values.html#org.drasyl.handler.connection.TransmissionControlBlock.DEFAULT_SEND_MSS">Constant Field Values</a></li>
 </ul>
 </dd>
 </dl>
@@ -621,14 +604,14 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="effSndMss()">
 <h3>effSndMss</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">long</span>&nbsp;<span class="element-name">effSndMss</span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">effSndMss</span>()</div>
 <div class="block">The maximum size of a segment that TCP really sends, the "effective send MSS,"</div>
 </section>
 </li>
 <li>
 <section class="detail" id="smss()">
 <h3>smss</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">long</span>&nbsp;<span class="element-name">smss</span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">smss</span>()</div>
 <div class="block">RFC 5681: The SMSS is the size of the largest segment that the sender can transmit. This
  RFC 5681: value can be based on the maximum transmission unit of the network, the path MTU
  RFC 5681: discovery [RFC1191, RFC4821] algorithm, RMSS (see next item), or other factors. The
