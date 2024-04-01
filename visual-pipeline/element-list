@@ -24,6 +24,7 @@ org.drasyl.handler.remote.tcp
 org.drasyl.handler.rmi
 org.drasyl.handler.rmi.annotation
 org.drasyl.handler.rmi.message
+org.drasyl.handler.sntp
 org.drasyl.handler.stream
 org.drasyl.handler.traffic
 org.drasyl.identity

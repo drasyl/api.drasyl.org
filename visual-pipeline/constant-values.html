@@ -32,6 +32,7 @@ loadScripts(document, 'script');</script>
 <li>Class</li>
 <li>Use</li>
 <li><a href="overview-tree.html">Tree</a></li>
+<li><a href="deprecated-list.html">Deprecated</a></li>
 <li><a href="index-all.html">Index</a></li>
 <li><a href="help-doc.html#constant-values">Help</a></li>
 </ul>
@@ -59,6 +60,17 @@ loadScripts(document, 'script');</script>
 <section class="constants-summary" id="org.drasyl.channel">
 <h2 title="org.drasyl">org.drasyl.*</h2>
 <ul class="block-list">
+<li>
+<div class="caption"><span>org.drasyl.channel.<a href="org/drasyl/channel/ConnectionChannelInitializer.html" title="class in org.drasyl.channel">ConnectionChannelInitializer</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Constant Field</div>
+<div class="table-header col-last">Value</div>
+<div class="col-first even-row-color"><code id="org.drasyl.channel.ConnectionChannelInitializer.DEFAULT_SERVER_PORT">public&nbsp;static&nbsp;final&nbsp;int</code></div>
+<div class="col-second even-row-color"><code><a href="org/drasyl/channel/ConnectionChannelInitializer.html#DEFAULT_SERVER_PORT">DEFAULT_SERVER_PORT</a></code></div>
+<div class="col-last even-row-color"><code>21037</code></div>
+</div>
+</li>
 <li>
 <div class="caption"><span>org.drasyl.channel.<a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html" title="class in org.drasyl.channel">RelayOnlyDrasylServerChannelInitializer</a></span></div>
 <div class="summary-table three-column-summary">
@@ -232,6 +244,20 @@ loadScripts(document, 'script');</script>
 </ul>
 <ul class="block-list">
 <li>
+<div class="caption"><span>org.drasyl.handler.connection.<a href="org/drasyl/handler/connection/ConnectionConfig.html" title="class in org.drasyl.handler.connection">ConnectionConfig</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Constant Field</div>
+<div class="table-header col-last">Value</div>
+<div class="col-first even-row-color"><code id="org.drasyl.handler.connection.ConnectionConfig.DRASYL_HDR_SIZE">public&nbsp;static&nbsp;final&nbsp;int</code></div>
+<div class="col-second even-row-color"><code><a href="org/drasyl/handler/connection/ConnectionConfig.html#DRASYL_HDR_SIZE">DRASYL_HDR_SIZE</a></code></div>
+<div class="col-last even-row-color"><code>148</code></div>
+<div class="col-first odd-row-color"><code id="org.drasyl.handler.connection.ConnectionConfig.IP_MTU">public&nbsp;static&nbsp;final&nbsp;int</code></div>
+<div class="col-second odd-row-color"><code><a href="org/drasyl/handler/connection/ConnectionConfig.html#IP_MTU">IP_MTU</a></code></div>
+<div class="col-last odd-row-color"><code>1460</code></div>
+</div>
+</li>
+<li>
 <div class="caption"><span>org.drasyl.handler.connection.<a href="org/drasyl/handler/connection/ConnectionHandshakeCodec.html" title="class in org.drasyl.handler.connection">ConnectionHandshakeCodec</a></span></div>
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
@@ -257,6 +283,54 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color"><code id="org.drasyl.handler.connection.ConnectionHandshakeSegment.MIN_SEQ_NO">public&nbsp;static&nbsp;final&nbsp;long</code></div>
 <div class="col-second odd-row-color"><code><a href="org/drasyl/handler/connection/ConnectionHandshakeSegment.html#MIN_SEQ_NO">MIN_SEQ_NO</a></code></div>
 <div class="col-last odd-row-color"><code>0L</code></div>
+</div>
+</li>
+<li>
+<div class="caption"><span>org.drasyl.handler.connection.<a href="org/drasyl/handler/connection/Segment.html" title="class in org.drasyl.handler.connection">Segment</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Constant Field</div>
+<div class="table-header col-last">Value</div>
+<div class="col-first even-row-color"><code id="org.drasyl.handler.connection.Segment.HALF_MAX_SEQ_NO">public&nbsp;static&nbsp;final&nbsp;long</code></div>
+<div class="col-second even-row-color"><code><a href="org/drasyl/handler/connection/Segment.html#HALF_MAX_SEQ_NO">HALF_MAX_SEQ_NO</a></code></div>
+<div class="col-last even-row-color"><code>2147483648L</code></div>
+<div class="col-first odd-row-color"><code id="org.drasyl.handler.connection.Segment.MAX_SEQ_NO">public&nbsp;static&nbsp;final&nbsp;long</code></div>
+<div class="col-second odd-row-color"><code><a href="org/drasyl/handler/connection/Segment.html#MAX_SEQ_NO">MAX_SEQ_NO</a></code></div>
+<div class="col-last odd-row-color"><code>4294967295L</code></div>
+<div class="col-first even-row-color"><code id="org.drasyl.handler.connection.Segment.MIN_SEQ_NO">public&nbsp;static&nbsp;final&nbsp;long</code></div>
+<div class="col-second even-row-color"><code><a href="org/drasyl/handler/connection/Segment.html#MIN_SEQ_NO">MIN_SEQ_NO</a></code></div>
+<div class="col-last even-row-color"><code>0L</code></div>
+<div class="col-first odd-row-color"><code id="org.drasyl.handler.connection.Segment.SEG_HDR_SIZE">public&nbsp;static&nbsp;final&nbsp;int</code></div>
+<div class="col-second odd-row-color"><code><a href="org/drasyl/handler/connection/Segment.html#SEG_HDR_SIZE">SEG_HDR_SIZE</a></code></div>
+<div class="col-last odd-row-color"><code>24</code></div>
+</div>
+</li>
+<li>
+<div class="caption"><span>org.drasyl.handler.connection.<a href="org/drasyl/handler/connection/SegmentCodec.html" title="class in org.drasyl.handler.connection">SegmentCodec</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Constant Field</div>
+<div class="table-header col-last">Value</div>
+<div class="col-first even-row-color"><code id="org.drasyl.handler.connection.SegmentCodec.CKS_INDEX">public&nbsp;static&nbsp;final&nbsp;int</code></div>
+<div class="col-second even-row-color"><code><a href="org/drasyl/handler/connection/SegmentCodec.html#CKS_INDEX">CKS_INDEX</a></code></div>
+<div class="col-last even-row-color"><code>16</code></div>
+<div class="col-first odd-row-color"><code id="org.drasyl.handler.connection.SegmentCodec.MAGIC_NUMBER">public&nbsp;static&nbsp;final&nbsp;int</code></div>
+<div class="col-second odd-row-color"><code><a href="org/drasyl/handler/connection/SegmentCodec.html#MAGIC_NUMBER">MAGIC_NUMBER</a></code></div>
+<div class="col-last odd-row-color"><code>1232217832</code></div>
+</div>
+</li>
+<li>
+<div class="caption"><span>org.drasyl.handler.connection.<a href="org/drasyl/handler/connection/TransmissionControlBlock.html" title="class in org.drasyl.handler.connection">TransmissionControlBlock</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Constant Field</div>
+<div class="table-header col-last">Value</div>
+<div class="col-first even-row-color"><code id="org.drasyl.handler.connection.TransmissionControlBlock.MAX_PORT">public&nbsp;static&nbsp;final&nbsp;int</code></div>
+<div class="col-second even-row-color"><code><a href="org/drasyl/handler/connection/TransmissionControlBlock.html#MAX_PORT">MAX_PORT</a></code></div>
+<div class="col-last even-row-color"><code>65535</code></div>
+<div class="col-first odd-row-color"><code id="org.drasyl.handler.connection.TransmissionControlBlock.MIN_PORT">public&nbsp;static&nbsp;final&nbsp;int</code></div>
+<div class="col-second odd-row-color"><code><a href="org/drasyl/handler/connection/TransmissionControlBlock.html#MIN_PORT">MIN_PORT</a></code></div>
+<div class="col-last odd-row-color"><code>1</code></div>
 </div>
 </li>
 </ul>
@@ -495,6 +569,45 @@ loadScripts(document, 'script');</script>
 </ul>
 <ul class="block-list">
 <li>
+<div class="caption"><span>org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpClient.html" title="class in org.drasyl.handler.sntp">SntpClient</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Constant Field</div>
+<div class="table-header col-last">Value</div>
+<div class="col-first even-row-color"><code id="org.drasyl.handler.sntp.SntpClient.NTP_PORT">public&nbsp;static&nbsp;final&nbsp;int</code></div>
+<div class="col-second even-row-color"><code><a href="org/drasyl/handler/sntp/SntpClient.html#NTP_PORT">NTP_PORT</a></code></div>
+<div class="col-last even-row-color"><code>123</code></div>
+</div>
+</li>
+<li>
+<div class="caption"><span>org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpMessage.html" title="class in org.drasyl.handler.sntp">SntpMessage</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Constant Field</div>
+<div class="table-header col-last">Value</div>
+<div class="col-first even-row-color"><code id="org.drasyl.handler.sntp.SntpMessage.CLIENT_MODE">public&nbsp;static&nbsp;final&nbsp;int</code></div>
+<div class="col-second even-row-color"><code><a href="org/drasyl/handler/sntp/SntpMessage.html#CLIENT_MODE">CLIENT_MODE</a></code></div>
+<div class="col-last even-row-color"><code>3</code></div>
+<div class="col-first odd-row-color"><code id="org.drasyl.handler.sntp.SntpMessage.LI_NOT_SYNC">public&nbsp;static&nbsp;final&nbsp;int</code></div>
+<div class="col-second odd-row-color"><code><a href="org/drasyl/handler/sntp/SntpMessage.html#LI_NOT_SYNC">LI_NOT_SYNC</a></code></div>
+<div class="col-last odd-row-color"><code>3</code></div>
+<div class="col-first even-row-color"><code id="org.drasyl.handler.sntp.SntpMessage.SERVER_MODE">public&nbsp;static&nbsp;final&nbsp;int</code></div>
+<div class="col-second even-row-color"><code><a href="org/drasyl/handler/sntp/SntpMessage.html#SERVER_MODE">SERVER_MODE</a></code></div>
+<div class="col-last even-row-color"><code>4</code></div>
+<div class="col-first odd-row-color"><code id="org.drasyl.handler.sntp.SntpMessage.SIZE">public&nbsp;static&nbsp;final&nbsp;int</code></div>
+<div class="col-second odd-row-color"><code><a href="org/drasyl/handler/sntp/SntpMessage.html#SIZE">SIZE</a></code></div>
+<div class="col-last odd-row-color"><code>48</code></div>
+<div class="col-first even-row-color"><code id="org.drasyl.handler.sntp.SntpMessage.TRANSMIT_TIMESTAMP_OFFSET">public&nbsp;static&nbsp;final&nbsp;int</code></div>
+<div class="col-second even-row-color"><code><a href="org/drasyl/handler/sntp/SntpMessage.html#TRANSMIT_TIMESTAMP_OFFSET">TRANSMIT_TIMESTAMP_OFFSET</a></code></div>
+<div class="col-last even-row-color"><code>40</code></div>
+<div class="col-first odd-row-color"><code id="org.drasyl.handler.sntp.SntpMessage.VERSION_NUMBER">public&nbsp;static&nbsp;final&nbsp;int</code></div>
+<div class="col-second odd-row-color"><code><a href="org/drasyl/handler/sntp/SntpMessage.html#VERSION_NUMBER">VERSION_NUMBER</a></code></div>
+<div class="col-last odd-row-color"><code>4</code></div>
+</div>
+</li>
+</ul>
+<ul class="block-list">
+<li>
 <div class="caption"><span>org.drasyl.handler.stream.<a href="org/drasyl/handler/stream/MessageChunkEncoder.html" title="class in org.drasyl.handler.stream">MessageChunkEncoder</a></span></div>
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
@@ -727,6 +840,9 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color"><code id="org.drasyl.node.DrasylConfig.SERIALIZATION_SERIALIZERS">public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color"><code><a href="org/drasyl/node/DrasylConfig.html#SERIALIZATION_SERIALIZERS">SERIALIZATION_SERIALIZERS</a></code></div>
 <div class="col-last odd-row-color"><code>"drasyl.serialization.serializers"</code></div>
+<div class="col-first even-row-color"><code id="org.drasyl.node.DrasylConfig.SNTP_SERVER">public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color"><code><a href="org/drasyl/node/DrasylConfig.html#SNTP_SERVER">SNTP_SERVER</a></code></div>
+<div class="col-last even-row-color"><code>"drasyl.sntp-server"</code></div>
 </div>
 </li>
 </ul>
@@ -1141,7 +1257,7 @@ loadScripts(document, 'script');</script>
 </main>
 <footer role="contentinfo">
 <hr>
-<p class="legal-copy"><small>Copyright &#169; 2020&#x2013;2023 <a href="https://drasyl.org/">Heiko Bornholdt and Kevin Röbert</a>. All rights reserved.</small></p>
+<p class="legal-copy"><small>Copyright &#169; 2020&#x2013;2024 <a href="https://drasyl.org/">Heiko Bornholdt and Kevin Röbert</a>. All rights reserved.</small></p>
 </footer>
 </div>
 </div>
