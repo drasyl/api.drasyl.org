@@ -76,7 +76,7 @@ loadScripts(document, 'script');</script>
 <div class="inheritance">io.netty.channel.ChannelHandlerAdapter
 <div class="inheritance">io.netty.channel.ChannelInboundHandlerAdapter
 <div class="inheritance">io.netty.channel.ChannelInitializer&lt;<a href="../../channel/DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;
-<div class="inheritance"><a href="../../channel/ConnectionHandshakeChannelInitializer.html" title="class in org.drasyl.channel">org.drasyl.channel.ConnectionHandshakeChannelInitializer</a>
+<div class="inheritance"><a href="../../channel/ConnectionChannelInitializer.html" title="class in org.drasyl.channel">org.drasyl.channel.ConnectionChannelInitializer</a>
 <div class="inheritance">org.drasyl.node.channel.DrasylNodeChannelInitializer</div>
 </div>
 </div>
@@ -89,8 +89,9 @@ loadScripts(document, 'script');</script>
 <dd><code>io.netty.channel.ChannelHandler</code>, <code>io.netty.channel.ChannelInboundHandler</code></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">DrasylNodeChannelInitializer</span>
-<span class="extends-implements">extends <a href="../../channel/ConnectionHandshakeChannelInitializer.html" title="class in org.drasyl.channel">ConnectionHandshakeChannelInitializer</a></span></div>
+<div class="type-signature"><span class="annotations"><a href="../../util/internal/UnstableApi.html" title="annotation in org.drasyl.util.internal">@UnstableApi</a>
+</span><span class="modifiers">public class </span><span class="element-name type-name-label">DrasylNodeChannelInitializer</span>
+<span class="extends-implements">extends <a href="../../channel/ConnectionChannelInitializer.html" title="class in org.drasyl.channel">ConnectionChannelInitializer</a></span></div>
 <div class="block">Initialize child <a href="../../channel/DrasylChannel.html" title="class in org.drasyl.channel"><code>DrasylChannel</code></a>s used by <a href="../DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>.</div>
 </section>
 <section class="summary">
@@ -118,8 +119,8 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">&nbsp;</div>
 </div>
 <div class="inherited-list">
-<h3 id="fields-inherited-from-class-org.drasyl.channel.ConnectionHandshakeChannelInitializer">Fields inherited from class&nbsp;org.drasyl.channel.<a href="../../channel/ConnectionHandshakeChannelInitializer.html" title="class in org.drasyl.channel">ConnectionHandshakeChannelInitializer</a></h3>
-<code><a href="../../channel/ConnectionHandshakeChannelInitializer.html#DEFAULT_HANDSHAKE_TIMEOUT">DEFAULT_HANDSHAKE_TIMEOUT</a>, <a href="../../channel/ConnectionHandshakeChannelInitializer.html#handshakeTimeout">handshakeTimeout</a>, <a href="../../channel/ConnectionHandshakeChannelInitializer.html#initiateHandshake">initiateHandshake</a></code></div>
+<h3 id="fields-inherited-from-class-org.drasyl.channel.ConnectionChannelInitializer">Fields inherited from class&nbsp;org.drasyl.channel.<a href="../../channel/ConnectionChannelInitializer.html" title="class in org.drasyl.channel">ConnectionChannelInitializer</a></h3>
+<code><a href="../../channel/ConnectionChannelInitializer.html#DEFAULT_SERVER_PORT">DEFAULT_SERVER_PORT</a></code></div>
 </section>
 </li>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -153,19 +154,10 @@ loadScripts(document, 'script');</script>
 <div class="block">This stage arms outbound and disarms inbound messages.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#arqStage(org.drasyl.channel.DrasylChannel)" class="member-name-link">arqStage</a><wbr>(<a href="../../channel/DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#chunkingStage(org.drasyl.channel.DrasylChannel)" class="member-name-link">chunkingStage</a><wbr>(<a href="../../channel/DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">This stage splits <code>ByteBuf</code>s that are too big for a single udp
- datagram.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#firstStage(org.drasyl.channel.DrasylChannel)" class="member-name-link">firstStage</a><wbr>(<a href="../../channel/DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#handshakeCompleted(org.drasyl.channel.DrasylChannel)" class="member-name-link">handshakeCompleted</a><wbr>(<a href="../../channel/DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#handshakeCompleted(io.netty.channel.ChannelHandlerContext)" class="member-name-link">handshakeCompleted</a><wbr>(io.netty.channel.ChannelHandlerContext&nbsp;ctx)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#handshakeFailed(io.netty.channel.ChannelHandlerContext,java.lang.Throwable)" class="member-name-link">handshakeFailed</a><wbr>(io.netty.channel.ChannelHandlerContext&nbsp;ctx,
@@ -255,26 +247,20 @@ loadScripts(document, 'script');</script>
                     throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Exception.html" title="class or interface in java.lang" class="external-link">Exception</a></span></div>
 <dl class="notes">
 <dt>Overrides:</dt>
-<dd><code><a href="../../channel/ConnectionHandshakeChannelInitializer.html#initChannel(org.drasyl.channel.DrasylChannel)">initChannel</a></code>&nbsp;in class&nbsp;<code><a href="../../channel/ConnectionHandshakeChannelInitializer.html" title="class in org.drasyl.channel">ConnectionHandshakeChannelInitializer</a></code></dd>
+<dd><code><a href="../../channel/ConnectionChannelInitializer.html#initChannel(org.drasyl.channel.DrasylChannel)">initChannel</a></code>&nbsp;in class&nbsp;<code><a href="../../channel/ConnectionChannelInitializer.html" title="class in org.drasyl.channel">ConnectionChannelInitializer</a></code></dd>
 <dt>Throws:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Exception.html" title="class or interface in java.lang" class="external-link">Exception</a></code></dd>
 </dl>
 </section>
 </li>
 <li>
-<section class="detail" id="handshakeCompleted(org.drasyl.channel.DrasylChannel)">
+<section class="detail" id="handshakeCompleted(io.netty.channel.ChannelHandlerContext)">
 <h3>handshakeCompleted</h3>
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">handshakeCompleted</span><wbr><span class="parameters">(<a href="../../channel/DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</span></div>
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">handshakeCompleted</span><wbr><span class="parameters">(io.netty.channel.ChannelHandlerContext&nbsp;ctx)</span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="../../channel/ConnectionHandshakeChannelInitializer.html#handshakeCompleted(org.drasyl.channel.DrasylChannel)">handshakeCompleted</a></code>&nbsp;in class&nbsp;<code><a href="../../channel/ConnectionHandshakeChannelInitializer.html" title="class in org.drasyl.channel">ConnectionHandshakeChannelInitializer</a></code></dd>
+<dd><code><a href="../../channel/ConnectionChannelInitializer.html#handshakeCompleted(io.netty.channel.ChannelHandlerContext)">handshakeCompleted</a></code>&nbsp;in class&nbsp;<code><a href="../../channel/ConnectionChannelInitializer.html" title="class in org.drasyl.channel">ConnectionChannelInitializer</a></code></dd>
 </dl>
-</section>
-</li>
-<li>
-<section class="detail" id="arqStage(org.drasyl.channel.DrasylChannel)">
-<h3>arqStage</h3>
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">arqStage</span><wbr><span class="parameters">(<a href="../../channel/DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</span></div>
 </section>
 </li>
 <li>
@@ -284,7 +270,7 @@ loadScripts(document, 'script');</script>
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Throwable.html" title="class or interface in java.lang" class="external-link">Throwable</a>&nbsp;cause)</span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="../../channel/ConnectionHandshakeChannelInitializer.html#handshakeFailed(io.netty.channel.ChannelHandlerContext,java.lang.Throwable)">handshakeFailed</a></code>&nbsp;in class&nbsp;<code><a href="../../channel/ConnectionHandshakeChannelInitializer.html" title="class in org.drasyl.channel">ConnectionHandshakeChannelInitializer</a></code></dd>
+<dd><code><a href="../../channel/ConnectionChannelInitializer.html#handshakeFailed(io.netty.channel.ChannelHandlerContext,java.lang.Throwable)">handshakeFailed</a></code>&nbsp;in class&nbsp;<code><a href="../../channel/ConnectionChannelInitializer.html" title="class in org.drasyl.channel">ConnectionChannelInitializer</a></code></dd>
 </dl>
 </section>
 </li>
@@ -292,14 +278,6 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="firstStage(org.drasyl.channel.DrasylChannel)">
 <h3>firstStage</h3>
 <div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">firstStage</span><wbr><span class="parameters">(<a href="../../channel/DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</span></div>
-</section>
-</li>
-<li>
-<section class="detail" id="chunkingStage(org.drasyl.channel.DrasylChannel)">
-<h3>chunkingStage</h3>
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">chunkingStage</span><wbr><span class="parameters">(<a href="../../channel/DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</span></div>
-<div class="block">This stage splits <code>ByteBuf</code>s that are too big for a single udp
- datagram.</div>
 </section>
 </li>
 <li>

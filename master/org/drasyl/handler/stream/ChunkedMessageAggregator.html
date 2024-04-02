@@ -89,8 +89,10 @@ loadScripts(document, 'script');</script>
 <dd><code>io.netty.channel.ChannelHandler</code>, <code>io.netty.channel.ChannelInboundHandler</code></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">ChunkedMessageAggregator</span>
+<div class="type-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+</span><span class="modifiers">public class </span><span class="element-name type-name-label">ChunkedMessageAggregator</span>
 <span class="extends-implements">extends io.netty.handler.codec.MessageAggregator&lt;<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="ReassembledMessage.html" title="class in org.drasyl.handler.stream">ReassembledMessage</a>&gt;</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Aggregates <a href="MessageChunk.html" title="class in org.drasyl.handler.stream"><code>MessageChunk</code></a>s to a <a href="ReassembledMessage.html" title="class in org.drasyl.handler.stream"><code>ReassembledMessage</code></a>.</div>
 <dl class="notes">
 <dt>See Also:</dt>
@@ -122,6 +124,7 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(int)" class="member-name-link">ChunkedMessageAggregator</a><wbr>(int&nbsp;maxContentLength)</code></div>
 <div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Creates a new instance.</div>
 </div>
 </div>
@@ -132,43 +135,61 @@ loadScripts(document, 'script');</script>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button><button id="method-summary-table-tab6" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab6', 3)" class="table-tab">Deprecated Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel">
 <div class="summary-table three-column-summary" aria-labelledby="method-summary-table-tab0">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected <a href="ReassembledMessage.html" title="class in org.drasyl.handler.stream">ReassembledMessage</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#beginAggregation(org.drasyl.handler.stream.MessageChunk,io.netty.buffer.ByteBuf)" class="member-name-link">beginAggregation</a><wbr>(<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&nbsp;start,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>protected <a href="ReassembledMessage.html" title="class in org.drasyl.handler.stream">ReassembledMessage</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#beginAggregation(org.drasyl.handler.stream.MessageChunk,io.netty.buffer.ByteBuf)" class="member-name-link">beginAggregation</a><wbr>(<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&nbsp;start,
  io.netty.buffer.ByteBuf&nbsp;content)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#closeAfterContinueResponse(java.lang.Object)" class="member-name-link">closeAfterContinueResponse</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;msg)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#ignoreContentAfterContinueResponse(java.lang.Object)" class="member-name-link">ignoreContentAfterContinueResponse</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;msg)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isAggregated(org.drasyl.handler.stream.MessageChunk)" class="member-name-link">isAggregated</a><wbr>(<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&nbsp;msg)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isContentLengthInvalid(org.drasyl.handler.stream.MessageChunk,int)" class="member-name-link">isContentLengthInvalid</a><wbr>(<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&nbsp;start,
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>protected boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#closeAfterContinueResponse(java.lang.Object)" class="member-name-link">closeAfterContinueResponse</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;msg)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>protected boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#ignoreContentAfterContinueResponse(java.lang.Object)" class="member-name-link">ignoreContentAfterContinueResponse</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;msg)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>protected boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#isAggregated(org.drasyl.handler.stream.MessageChunk)" class="member-name-link">isAggregated</a><wbr>(<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&nbsp;msg)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>protected boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#isContentLengthInvalid(org.drasyl.handler.stream.MessageChunk,int)" class="member-name-link">isContentLengthInvalid</a><wbr>(<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&nbsp;start,
  int&nbsp;maxContentLength)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isContentMessage(org.drasyl.handler.stream.MessageChunk)" class="member-name-link">isContentMessage</a><wbr>(<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&nbsp;msg)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isLastContentMessage(org.drasyl.handler.stream.MessageChunk)" class="member-name-link">isLastContentMessage</a><wbr>(<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&nbsp;msg)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isStartMessage(org.drasyl.handler.stream.MessageChunk)" class="member-name-link">isStartMessage</a><wbr>(<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&nbsp;msg)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newContinueResponse(org.drasyl.handler.stream.MessageChunk,int,io.netty.channel.ChannelPipeline)" class="member-name-link">newContinueResponse</a><wbr>(<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&nbsp;start,
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>protected boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#isContentMessage(org.drasyl.handler.stream.MessageChunk)" class="member-name-link">isContentMessage</a><wbr>(<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&nbsp;msg)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>protected boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#isLastContentMessage(org.drasyl.handler.stream.MessageChunk)" class="member-name-link">isLastContentMessage</a><wbr>(<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&nbsp;msg)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>protected boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#isStartMessage(org.drasyl.handler.stream.MessageChunk)" class="member-name-link">isStartMessage</a><wbr>(<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&nbsp;msg)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>protected <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#newContinueResponse(org.drasyl.handler.stream.MessageChunk,int,io.netty.channel.ChannelPipeline)" class="member-name-link">newContinueResponse</a><wbr>(<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&nbsp;start,
  int&nbsp;maxContentLength,
  io.netty.channel.ChannelPipeline&nbsp;pipeline)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</div>
 </div>
 </div>
 </div>
@@ -202,6 +223,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="&lt;init&gt;(int)">
 <h3>ChunkedMessageAggregator</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">ChunkedMessageAggregator</span><wbr><span class="parameters">(int&nbsp;maxContentLength)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Creates a new instance.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -222,6 +244,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="isStartMessage(org.drasyl.handler.stream.MessageChunk)">
 <h3>isStartMessage</h3>
 <div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isStartMessage</span><wbr><span class="parameters">(<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&nbsp;msg)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code>isStartMessage</code>&nbsp;in class&nbsp;<code>io.netty.handler.codec.MessageAggregator&lt;<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="ReassembledMessage.html" title="class in org.drasyl.handler.stream">ReassembledMessage</a>&gt;</code></dd>
@@ -232,6 +255,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="isContentMessage(org.drasyl.handler.stream.MessageChunk)">
 <h3>isContentMessage</h3>
 <div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isContentMessage</span><wbr><span class="parameters">(<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&nbsp;msg)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code>isContentMessage</code>&nbsp;in class&nbsp;<code>io.netty.handler.codec.MessageAggregator&lt;<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="ReassembledMessage.html" title="class in org.drasyl.handler.stream">ReassembledMessage</a>&gt;</code></dd>
@@ -242,6 +266,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="isLastContentMessage(org.drasyl.handler.stream.MessageChunk)">
 <h3>isLastContentMessage</h3>
 <div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isLastContentMessage</span><wbr><span class="parameters">(<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&nbsp;msg)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code>isLastContentMessage</code>&nbsp;in class&nbsp;<code>io.netty.handler.codec.MessageAggregator&lt;<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="ReassembledMessage.html" title="class in org.drasyl.handler.stream">ReassembledMessage</a>&gt;</code></dd>
@@ -252,6 +277,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="isAggregated(org.drasyl.handler.stream.MessageChunk)">
 <h3>isAggregated</h3>
 <div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isAggregated</span><wbr><span class="parameters">(<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&nbsp;msg)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code>isAggregated</code>&nbsp;in class&nbsp;<code>io.netty.handler.codec.MessageAggregator&lt;<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="ReassembledMessage.html" title="class in org.drasyl.handler.stream">ReassembledMessage</a>&gt;</code></dd>
@@ -263,6 +289,7 @@ loadScripts(document, 'script');</script>
 <h3>isContentLengthInvalid</h3>
 <div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isContentLengthInvalid</span><wbr><span class="parameters">(<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&nbsp;start,
  int&nbsp;maxContentLength)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code>isContentLengthInvalid</code>&nbsp;in class&nbsp;<code>io.netty.handler.codec.MessageAggregator&lt;<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="ReassembledMessage.html" title="class in org.drasyl.handler.stream">ReassembledMessage</a>&gt;</code></dd>
@@ -275,6 +302,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span>&nbsp;<span class="element-name">newContinueResponse</span><wbr><span class="parameters">(<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&nbsp;start,
  int&nbsp;maxContentLength,
  io.netty.channel.ChannelPipeline&nbsp;pipeline)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code>newContinueResponse</code>&nbsp;in class&nbsp;<code>io.netty.handler.codec.MessageAggregator&lt;<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="ReassembledMessage.html" title="class in org.drasyl.handler.stream">ReassembledMessage</a>&gt;</code></dd>
@@ -285,6 +313,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="closeAfterContinueResponse(java.lang.Object)">
 <h3>closeAfterContinueResponse</h3>
 <div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">closeAfterContinueResponse</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;msg)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code>closeAfterContinueResponse</code>&nbsp;in class&nbsp;<code>io.netty.handler.codec.MessageAggregator&lt;<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="ReassembledMessage.html" title="class in org.drasyl.handler.stream">ReassembledMessage</a>&gt;</code></dd>
@@ -295,6 +324,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="ignoreContentAfterContinueResponse(java.lang.Object)">
 <h3>ignoreContentAfterContinueResponse</h3>
 <div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">ignoreContentAfterContinueResponse</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;msg)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code>ignoreContentAfterContinueResponse</code>&nbsp;in class&nbsp;<code>io.netty.handler.codec.MessageAggregator&lt;<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="ReassembledMessage.html" title="class in org.drasyl.handler.stream">ReassembledMessage</a>&gt;</code></dd>
@@ -306,6 +336,7 @@ loadScripts(document, 'script');</script>
 <h3>beginAggregation</h3>
 <div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="ReassembledMessage.html" title="class in org.drasyl.handler.stream">ReassembledMessage</a></span>&nbsp;<span class="element-name">beginAggregation</span><wbr><span class="parameters">(<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&nbsp;start,
  io.netty.buffer.ByteBuf&nbsp;content)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code>beginAggregation</code>&nbsp;in class&nbsp;<code>io.netty.handler.codec.MessageAggregator&lt;<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>,<wbr><a href="ReassembledMessage.html" title="class in org.drasyl.handler.stream">ReassembledMessage</a>&gt;</code></dd>

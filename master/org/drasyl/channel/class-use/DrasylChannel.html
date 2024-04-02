@@ -146,31 +146,19 @@ loadScripts(document, 'script');</script>
 <div class="block">This stage arms outbound and disarms inbound messages.</div>
 </div>
 <div class="col-first odd-row-color"><code>protected void</code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">DrasylNodeChannelInitializer.</span><code><a href="../../node/channel/DrasylNodeChannelInitializer.html#arqStage(org.drasyl.channel.DrasylChannel)" class="member-name-link">arqStage</a><wbr>(<a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>protected void</code></div>
-<div class="col-second even-row-color"><span class="type-name-label">DrasylNodeChannelInitializer.</span><code><a href="../../node/channel/DrasylNodeChannelInitializer.html#chunkingStage(org.drasyl.channel.DrasylChannel)" class="member-name-link">chunkingStage</a><wbr>(<a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
-<div class="col-last even-row-color">
-<div class="block">This stage splits <code>ByteBuf</code>s that are too big for a single udp
- datagram.</div>
-</div>
-<div class="col-first odd-row-color"><code>protected void</code></div>
 <div class="col-second odd-row-color"><span class="type-name-label">DrasylNodeChannelInitializer.</span><code><a href="../../node/channel/DrasylNodeChannelInitializer.html#firstStage(org.drasyl.channel.DrasylChannel)" class="member-name-link">firstStage</a><wbr>(<a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-first even-row-color"><code>protected void</code></div>
-<div class="col-second even-row-color"><span class="type-name-label">DrasylNodeChannelInitializer.</span><code><a href="../../node/channel/DrasylNodeChannelInitializer.html#handshakeCompleted(org.drasyl.channel.DrasylChannel)" class="member-name-link">handshakeCompleted</a><wbr>(<a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DrasylNodeChannelInitializer.</span><code><a href="../../node/channel/DrasylNodeChannelInitializer.html#initChannel(org.drasyl.channel.DrasylChannel)" class="member-name-link">initChannel</a><wbr>(<a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><code>protected void</code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">DrasylNodeChannelInitializer.</span><code><a href="../../node/channel/DrasylNodeChannelInitializer.html#initChannel(org.drasyl.channel.DrasylChannel)" class="member-name-link">initChannel</a><wbr>(<a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>protected void</code></div>
-<div class="col-second even-row-color"><span class="type-name-label">DrasylNodeChannelInitializer.</span><code><a href="../../node/channel/DrasylNodeChannelInitializer.html#lastStage(org.drasyl.channel.DrasylChannel)" class="member-name-link">lastStage</a><wbr>(<a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
-<div class="col-last even-row-color">
+<div class="col-second odd-row-color"><span class="type-name-label">DrasylNodeChannelInitializer.</span><code><a href="../../node/channel/DrasylNodeChannelInitializer.html#lastStage(org.drasyl.channel.DrasylChannel)" class="member-name-link">lastStage</a><wbr>(<a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
+<div class="col-last odd-row-color">
 <div class="block">This stage emits <a href="../../node/event/Event.html" title="interface in org.drasyl.node.event"><code>Event</code></a>s to <code>DrasylNodeChannelInitializer.node</code>.</div>
 </div>
-<div class="col-first odd-row-color"><code>protected void</code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">DrasylNodeChannelInitializer.</span><code><a href="../../node/channel/DrasylNodeChannelInitializer.html#serializationStage(org.drasyl.channel.DrasylChannel)" class="member-name-link">serializationStage</a><wbr>(<a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><code>protected void</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DrasylNodeChannelInitializer.</span><code><a href="../../node/channel/DrasylNodeChannelInitializer.html#serializationStage(org.drasyl.channel.DrasylChannel)" class="member-name-link">serializationStage</a><wbr>(<a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
+<div class="col-last even-row-color">
 <div class="block">This stage serializes <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html" title="class or interface in java.util" class="external-link"><code>Objects</code></a> to <code>ByteBuf</code> and vice
  versa.</div>
 </div>

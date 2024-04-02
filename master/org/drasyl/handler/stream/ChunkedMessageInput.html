@@ -81,9 +81,11 @@ loadScripts(document, 'script');</script>
 <dd><code>io.netty.handler.stream.ChunkedInput&lt;<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&gt;</code></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">ChunkedMessageInput</span>
+<div class="type-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+</span><span class="modifiers">public class </span><span class="element-name type-name-label">ChunkedMessageInput</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>
 implements io.netty.handler.stream.ChunkedInput&lt;<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&gt;</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Wraps each chunk of the specified <code>io.netty.handler.stream.ChunkedInput&lt;io.netty.buffer.ByteBuf&gt;</code> into a series of sortable <a href="MessageChunk.html" title="class in org.drasyl.handler.stream"><code>MessageChunk</code></a>s, allowing the receiver to reassemble the <code>ByteBuf</code> in correct order. Useful
  for protocols that does provide message ordering (like <code>UDP</code> or drasyl).
  <blockquote>
@@ -111,7 +113,9 @@ implements io.netty.handler.stream.ChunkedInput&lt;<a href="MessageChunk.html" t
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(io.netty.handler.stream.ChunkedInput)" class="member-name-link">ChunkedMessageInput</a><wbr>(io.netty.handler.stream.ChunkedInput&lt;io.netty.buffer.ByteBuf&gt;&nbsp;input)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</div>
 </div>
 </section>
 </li>
@@ -120,30 +124,42 @@ implements io.netty.handler.stream.ChunkedInput&lt;<a href="MessageChunk.html" t
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button><button id="method-summary-table-tab6" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab6', 3)" class="table-tab">Deprecated Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel">
 <div class="summary-table three-column-summary" aria-labelledby="method-summary-table-tab0">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#close()" class="member-name-link">close</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isEndOfInput()" class="member-name-link">isEndOfInput</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>long</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#length()" class="member-name-link">length</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>long</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#progress()" class="member-name-link">progress</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#readChunk(io.netty.buffer.ByteBufAllocator)" class="member-name-link">readChunk</a><wbr>(io.netty.buffer.ByteBufAllocator&nbsp;allocator)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#readChunk(io.netty.channel.ChannelHandlerContext)" class="member-name-link">readChunk</a><wbr>(io.netty.channel.ChannelHandlerContext&nbsp;ctx)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#close()" class="member-name-link">close</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#isEndOfInput()" class="member-name-link">isEndOfInput</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>long</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#length()" class="member-name-link">length</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>long</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#progress()" class="member-name-link">progress</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#readChunk(io.netty.buffer.ByteBufAllocator)" class="member-name-link">readChunk</a><wbr>(io.netty.buffer.ByteBufAllocator&nbsp;allocator)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#readChunk(io.netty.channel.ChannelHandlerContext)" class="member-name-link">readChunk</a><wbr>(io.netty.channel.ChannelHandlerContext&nbsp;ctx)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</div>
 </div>
 </div>
 </div>
@@ -165,6 +181,7 @@ implements io.netty.handler.stream.ChunkedInput&lt;<a href="MessageChunk.html" t
 <section class="detail" id="&lt;init&gt;(io.netty.handler.stream.ChunkedInput)">
 <h3>ChunkedMessageInput</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">ChunkedMessageInput</span><wbr><span class="parameters">(io.netty.handler.stream.ChunkedInput&lt;io.netty.buffer.ByteBuf&gt;&nbsp;input)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 </section>
 </li>
 </ul>
@@ -180,6 +197,7 @@ implements io.netty.handler.stream.ChunkedInput&lt;<a href="MessageChunk.html" t
 <h3>isEndOfInput</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isEndOfInput</span>()
                      throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Exception.html" title="class or interface in java.lang" class="external-link">Exception</a></span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code>isEndOfInput</code>&nbsp;in interface&nbsp;<code>io.netty.handler.stream.ChunkedInput&lt;<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&gt;</code></dd>
@@ -193,6 +211,7 @@ implements io.netty.handler.stream.ChunkedInput&lt;<a href="MessageChunk.html" t
 <h3>close</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">close</span>()
            throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Exception.html" title="class or interface in java.lang" class="external-link">Exception</a></span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code>close</code>&nbsp;in interface&nbsp;<code>io.netty.handler.stream.ChunkedInput&lt;<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&gt;</code></dd>
@@ -206,6 +225,7 @@ implements io.netty.handler.stream.ChunkedInput&lt;<a href="MessageChunk.html" t
 <h3>readChunk</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a></span>&nbsp;<span class="element-name">readChunk</span><wbr><span class="parameters">(io.netty.channel.ChannelHandlerContext&nbsp;ctx)</span>
                        throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Exception.html" title="class or interface in java.lang" class="external-link">Exception</a></span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code>readChunk</code>&nbsp;in interface&nbsp;<code>io.netty.handler.stream.ChunkedInput&lt;<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&gt;</code></dd>
@@ -219,6 +239,7 @@ implements io.netty.handler.stream.ChunkedInput&lt;<a href="MessageChunk.html" t
 <h3>readChunk</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a></span>&nbsp;<span class="element-name">readChunk</span><wbr><span class="parameters">(io.netty.buffer.ByteBufAllocator&nbsp;allocator)</span>
                        throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Exception.html" title="class or interface in java.lang" class="external-link">Exception</a></span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code>readChunk</code>&nbsp;in interface&nbsp;<code>io.netty.handler.stream.ChunkedInput&lt;<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&gt;</code></dd>
@@ -231,6 +252,7 @@ implements io.netty.handler.stream.ChunkedInput&lt;<a href="MessageChunk.html" t
 <section class="detail" id="length()">
 <h3>length</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">long</span>&nbsp;<span class="element-name">length</span>()</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code>length</code>&nbsp;in interface&nbsp;<code>io.netty.handler.stream.ChunkedInput&lt;<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&gt;</code></dd>
@@ -241,6 +263,7 @@ implements io.netty.handler.stream.ChunkedInput&lt;<a href="MessageChunk.html" t
 <section class="detail" id="progress()">
 <h3>progress</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">long</span>&nbsp;<span class="element-name">progress</span>()</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code>progress</code>&nbsp;in interface&nbsp;<code>io.netty.handler.stream.ChunkedInput&lt;<a href="MessageChunk.html" title="class in org.drasyl.handler.stream">MessageChunk</a>&gt;</code></dd>
