@@ -137,13 +137,22 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Constructor</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>protected </code></div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.lang.Boolean,int)" class="member-name-link">ConnectionChannelInitializer</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&nbsp;doServer,
- int&nbsp;port)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>protected </code></div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(java.lang.Boolean,int,org.drasyl.handler.connection.ConnectionConfig)" class="member-name-link">ConnectionChannelInitializer</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&nbsp;doServer,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(boolean,int,org.drasyl.handler.connection.ConnectionConfig)" class="member-name-link">ConnectionChannelInitializer</a><wbr>(boolean&nbsp;doServer,
  int&nbsp;port,
  <a href="../handler/connection/ConnectionConfig.html" title="class in org.drasyl.handler.connection">ConnectionConfig</a>&nbsp;config)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>protected </code></div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(int,int)" class="member-name-link">ConnectionChannelInitializer</a><wbr>(int&nbsp;localPort,
+ int&nbsp;remotePort)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>protected </code></div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(int,int,org.drasyl.handler.connection.ConnectionConfig)" class="member-name-link">ConnectionChannelInitializer</a><wbr>(int&nbsp;localPort,
+ int&nbsp;remotePort,
+ <a href="../handler/connection/ConnectionConfig.html" title="class in org.drasyl.handler.connection">ConnectionConfig</a>&nbsp;config)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>protected </code></div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(java.lang.Boolean,int)" class="member-name-link">ConnectionChannelInitializer</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&nbsp;doServer,
+ int&nbsp;port)</code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
@@ -224,9 +233,24 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(java.lang.Boolean,int,org.drasyl.handler.connection.ConnectionConfig)">
+<section class="detail" id="&lt;init&gt;(int,int,org.drasyl.handler.connection.ConnectionConfig)">
 <h3>ConnectionChannelInitializer</h3>
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="element-name">ConnectionChannelInitializer</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&nbsp;doServer,
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="element-name">ConnectionChannelInitializer</span><wbr><span class="parameters">(int&nbsp;localPort,
+ int&nbsp;remotePort,
+ <a href="../handler/connection/ConnectionConfig.html" title="class in org.drasyl.handler.connection">ConnectionConfig</a>&nbsp;config)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="&lt;init&gt;(int,int)">
+<h3>ConnectionChannelInitializer</h3>
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="element-name">ConnectionChannelInitializer</span><wbr><span class="parameters">(int&nbsp;localPort,
+ int&nbsp;remotePort)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="&lt;init&gt;(boolean,int,org.drasyl.handler.connection.ConnectionConfig)">
+<h3>ConnectionChannelInitializer</h3>
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="element-name">ConnectionChannelInitializer</span><wbr><span class="parameters">(boolean&nbsp;doServer,
  int&nbsp;port,
  <a href="../handler/connection/ConnectionConfig.html" title="class in org.drasyl.handler.connection">ConnectionConfig</a>&nbsp;config)</span></div>
 <dl class="notes">
@@ -235,7 +259,6 @@ loadScripts(document, 'script');</script>
                  <ul>
                  <li><code>true</code> sets this channel to server mode, listening on the specified <code>port</code>.</li>
                  <li><code>false</code> sets this channel to client mode, listening on a random port while assuming the peer listens on <code>port</code>.</li>
-                 <li><code>null</code> decides the server/client role based on comparing local and remote public keys, with the "higher" key indicating a server.</li>
                  </ul></dd>
 <dd><code>port</code> - Specifies the port number. In server mode, the channel listens on this port.
                  In client mode, the channel assumes the peer listens on this port.</dd>
