@@ -10,6 +10,7 @@ org.drasyl.handler.codec
 org.drasyl.handler.connection
 org.drasyl.handler.dht.chord
 org.drasyl.handler.discovery
+org.drasyl.handler.ipc
 org.drasyl.handler.logging
 org.drasyl.handler.membership.cyclon
 org.drasyl.handler.monitoring

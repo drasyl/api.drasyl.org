@@ -698,6 +698,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/discovery/IntraVmDiscovery.html#channelActive(io.netty.channel.ChannelHandlerContext)" class="member-name-link">channelActive(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.discovery.<a href="org/drasyl/handler/discovery/IntraVmDiscovery.html" title="class in org.drasyl.handler.discovery">IntraVmDiscovery</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/ipc/FileListenerHandler.html#channelActive(io.netty.channel.ChannelHandlerContext)" class="member-name-link">channelActive(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.ipc.<a href="org/drasyl/handler/ipc/FileListenerHandler.html" title="class in org.drasyl.handler.ipc">FileListenerHandler</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/logging/MessagesThroughputHandler.html#channelActive(io.netty.channel.ChannelHandlerContext)" class="member-name-link">channelActive(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.logging.<a href="org/drasyl/handler/logging/MessagesThroughputHandler.html" title="class in org.drasyl.handler.logging">MessagesThroughputHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/membership/cyclon/CyclonShufflingClientHandler.html#channelActive(io.netty.channel.ChannelHandlerContext)" class="member-name-link">channelActive(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.membership.cyclon.<a href="org/drasyl/handler/membership/cyclon/CyclonShufflingClientHandler.html" title="class in org.drasyl.handler.membership.cyclon">CyclonShufflingClientHandler</a></dt>
@@ -765,6 +767,8 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/drasyl/handler/dht/chord/ChordJoinHandler.html#channelInactive(io.netty.channel.ChannelHandlerContext)" class="member-name-link">channelInactive(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.dht.chord.<a href="org/drasyl/handler/dht/chord/ChordJoinHandler.html" title="class in org.drasyl.handler.dht.chord">ChordJoinHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/discovery/IntraVmDiscovery.html#channelInactive(io.netty.channel.ChannelHandlerContext)" class="member-name-link">channelInactive(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.discovery.<a href="org/drasyl/handler/discovery/IntraVmDiscovery.html" title="class in org.drasyl.handler.discovery">IntraVmDiscovery</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/ipc/FileNotifierHandler.html#channelInactive(io.netty.channel.ChannelHandlerContext)" class="member-name-link">channelInactive(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.ipc.<a href="org/drasyl/handler/ipc/FileNotifierHandler.html" title="class in org.drasyl.handler.ipc">FileNotifierHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/logging/MessagesThroughputHandler.html#channelInactive(io.netty.channel.ChannelHandlerContext)" class="member-name-link">channelInactive(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.logging.<a href="org/drasyl/handler/logging/MessagesThroughputHandler.html" title="class in org.drasyl.handler.logging">MessagesThroughputHandler</a></dt>
 <dd>&nbsp;</dd>
@@ -2588,6 +2592,23 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/LocalHostDiscovery.html#FILE_SUFFIX" class="member-name-link">FILE_SUFFIX</a> - Static variable in class org.drasyl.handler.remote.<a href="org/drasyl/handler/remote/LocalHostDiscovery.html" title="class in org.drasyl.handler.remote">LocalHostDiscovery</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/ipc/FileListenerHandler.html" class="type-name-link" title="class in org.drasyl.handler.ipc">FileListenerHandler</a> - Class in <a href="org/drasyl/handler/ipc/package-summary.html">org.drasyl.handler.ipc</a></dt>
+<dd>
+<div class="block">This handler listens to files in a specific path and will then fire specific channel event.</div>
+</dd>
+<dt><a href="org/drasyl/handler/ipc/FileListenerHandler.html#%3Cinit%3E()" class="member-name-link">FileListenerHandler()</a> - Constructor for class org.drasyl.handler.ipc.<a href="org/drasyl/handler/ipc/FileListenerHandler.html" title="class in org.drasyl.handler.ipc">FileListenerHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/ipc/FileListenerHandler.html#%3Cinit%3E(java.nio.file.Path)" class="member-name-link">FileListenerHandler(Path)</a> - Constructor for class org.drasyl.handler.ipc.<a href="org/drasyl/handler/ipc/FileListenerHandler.html" title="class in org.drasyl.handler.ipc">FileListenerHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/ipc/FileNotifierHandler.html" class="type-name-link" title="class in org.drasyl.handler.ipc">FileNotifierHandler</a> - Class in <a href="org/drasyl/handler/ipc/package-summary.html">org.drasyl.handler.ipc</a></dt>
+<dd>
+<div class="block">This handler creates files in a specific path when specific channel events occur, so that other
+ processes that monitor this path can be informed.</div>
+</dd>
+<dt><a href="org/drasyl/handler/ipc/FileNotifierHandler.html#%3Cinit%3E()" class="member-name-link">FileNotifierHandler()</a> - Constructor for class org.drasyl.handler.ipc.<a href="org/drasyl/handler/ipc/FileNotifierHandler.html" title="class in org.drasyl.handler.ipc">FileNotifierHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/ipc/FileNotifierHandler.html#%3Cinit%3E(java.nio.file.Path)" class="member-name-link">FileNotifierHandler(Path)</a> - Constructor for class org.drasyl.handler.ipc.<a href="org/drasyl/handler/ipc/FileNotifierHandler.html" title="class in org.drasyl.handler.ipc">FileNotifierHandler</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/channel/DrasylChannel.html#filterOutboundMessage(java.lang.Object)" class="member-name-link">filterOutboundMessage(Object)</a> - Method in class org.drasyl.channel.<a href="org/drasyl/channel/DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/connection/State.html#FIN_WAIT_1" class="member-name-link">FIN_WAIT_1</a> - Enum constant in enum org.drasyl.handler.connection.<a href="org/drasyl/handler/connection/State.html" title="enum in org.drasyl.handler.connection">State</a></dt>
@@ -3844,6 +3865,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/dht/chord/ChordJoinHandler.html#handlerAdded(io.netty.channel.ChannelHandlerContext)" class="member-name-link">handlerAdded(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.dht.chord.<a href="org/drasyl/handler/dht/chord/ChordJoinHandler.html" title="class in org.drasyl.handler.dht.chord">ChordJoinHandler</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/ipc/FileNotifierHandler.html#handlerAdded(io.netty.channel.ChannelHandlerContext)" class="member-name-link">handlerAdded(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.ipc.<a href="org/drasyl/handler/ipc/FileNotifierHandler.html" title="class in org.drasyl.handler.ipc">FileNotifierHandler</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/membership/cyclon/CyclonShufflingClientHandler.html#handlerAdded(io.netty.channel.ChannelHandlerContext)" class="member-name-link">handlerAdded(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.membership.cyclon.<a href="org/drasyl/handler/membership/cyclon/CyclonShufflingClientHandler.html" title="class in org.drasyl.handler.membership.cyclon">CyclonShufflingClientHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/monitoring/SlowReadAwareHandler.html#handlerAdded(io.netty.channel.ChannelHandlerContext)" class="member-name-link">handlerAdded(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.monitoring.<a href="org/drasyl/handler/monitoring/SlowReadAwareHandler.html" title="class in org.drasyl.handler.monitoring">SlowReadAwareHandler</a></dt>
@@ -3867,6 +3890,8 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/drasyl/handler/dht/chord/ChordHousekeepingHandler.html#handlerRemoved(io.netty.channel.ChannelHandlerContext)" class="member-name-link">handlerRemoved(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.dht.chord.<a href="org/drasyl/handler/dht/chord/ChordHousekeepingHandler.html" title="class in org.drasyl.handler.dht.chord">ChordHousekeepingHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/dht/chord/ChordJoinHandler.html#handlerRemoved(io.netty.channel.ChannelHandlerContext)" class="member-name-link">handlerRemoved(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.dht.chord.<a href="org/drasyl/handler/dht/chord/ChordJoinHandler.html" title="class in org.drasyl.handler.dht.chord">ChordJoinHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/ipc/FileNotifierHandler.html#handlerRemoved(io.netty.channel.ChannelHandlerContext)" class="member-name-link">handlerRemoved(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.ipc.<a href="org/drasyl/handler/ipc/FileNotifierHandler.html" title="class in org.drasyl.handler.ipc">FileNotifierHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/membership/cyclon/CyclonShufflingClientHandler.html#handlerRemoved(io.netty.channel.ChannelHandlerContext)" class="member-name-link">handlerRemoved(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.membership.cyclon.<a href="org/drasyl/handler/membership/cyclon/CyclonShufflingClientHandler.html" title="class in org.drasyl.handler.membership.cyclon">CyclonShufflingClientHandler</a></dt>
 <dd>&nbsp;</dd>
@@ -6740,6 +6765,8 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Different methods to discover peers.</div>
 </dd>
+<dt><a href="org/drasyl/handler/ipc/package-summary.html">org.drasyl.handler.ipc</a> - package org.drasyl.handler.ipc</dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/logging/package-summary.html">org.drasyl.handler.logging</a> - package org.drasyl.handler.logging</dt>
 <dd>
 <div class="block">Logs channel events/messages for debugging purpose.</div>
@@ -9951,6 +9978,8 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 &nbsp;</dd>
+<dt><a href="org/drasyl/handler/ipc/FileNotifierHandler.html#userEventTriggered(io.netty.channel.ChannelHandlerContext,java.lang.Object)" class="member-name-link">userEventTriggered(ChannelHandlerContext, Object)</a> - Method in class org.drasyl.handler.ipc.<a href="org/drasyl/handler/ipc/FileNotifierHandler.html" title="class in org.drasyl.handler.ipc">FileNotifierHandler</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/monitoring/TopologyHandler.html#userEventTriggered(io.netty.channel.ChannelHandlerContext,java.lang.Object)" class="member-name-link">userEventTriggered(ChannelHandlerContext, Object)</a> - Method in class org.drasyl.handler.monitoring.<a href="org/drasyl/handler/monitoring/TopologyHandler.html" title="class in org.drasyl.handler.monitoring">TopologyHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/peers/PeersHandler.html#userEventTriggered(io.netty.channel.ChannelHandlerContext,java.lang.Object)" class="member-name-link">userEventTriggered(ChannelHandlerContext, Object)</a> - Method in class org.drasyl.handler.peers.<a href="org/drasyl/handler/peers/PeersHandler.html" title="class in org.drasyl.handler.peers">PeersHandler</a></dt>
