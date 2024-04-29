@@ -93,7 +93,8 @@ loadScripts(document, 'script');</script>
 <dd><code><a href="LongTimeArmHandler.html" title="class in org.drasyl.node.handler.crypto">LongTimeArmHandler</a></code>, <code><a href="PFSArmHandler.html" title="class in org.drasyl.node.handler.crypto">PFSArmHandler</a></code></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public abstract class </span><span class="element-name type-name-label">AbstractArmHandler</span>
+<div class="type-signature"><span class="annotations"><a href="../../../util/internal/UnstableApi.html" title="annotation in org.drasyl.util.internal">@UnstableApi</a>
+</span><span class="modifiers">public abstract class </span><span class="element-name type-name-label">AbstractArmHandler</span>
 <span class="extends-implements">extends io.netty.handler.codec.MessageToMessageCodec&lt;<a href="ArmHeader.html" title="class in org.drasyl.node.handler.crypto">ArmHeader</a>,<wbr>io.netty.buffer.ByteBuf&gt;</span></div>
 <div class="block">Skeleton handler that arms (encrypt) outbound and disarms (decrypt) inbound messages. Messages
  that could not be (dis-)armed are dropped.</div>
@@ -121,15 +122,12 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color"><code>protected final <a href="../../../crypto/Crypto.html" title="class in org.drasyl.crypto">Crypto</a></code></div>
 <div class="col-second even-row-color"><code><a href="#crypto" class="member-name-link">crypto</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>protected final <a href="../../../identity/Identity.html" title="class in org.drasyl.identity">Identity</a></code></div>
-<div class="col-second odd-row-color"><code><a href="#identity" class="member-name-link">identity</a></code></div>
+<div class="col-first odd-row-color"><code>protected final <a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#peerIdentity" class="member-name-link">peerIdentity</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>protected final <a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a></code></div>
-<div class="col-second even-row-color"><code><a href="#peerIdentity" class="member-name-link">peerIdentity</a></code></div>
+<div class="col-first even-row-color"><code>protected final <a href="Session.html" title="class in org.drasyl.node.handler.crypto">Session</a></code></div>
+<div class="col-second even-row-color"><code><a href="#session" class="member-name-link">session</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>protected final <a href="Session.html" title="class in org.drasyl.node.handler.crypto">Session</a></code></div>
-<div class="col-second odd-row-color"><code><a href="#session" class="member-name-link">session</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -150,8 +148,7 @@ loadScripts(document, 'script');</script>
  <a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>&nbsp;peerIdentity)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><code>protected </code></div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(org.drasyl.crypto.Crypto,org.drasyl.identity.Identity,org.drasyl.identity.IdentityPublicKey,org.drasyl.node.handler.crypto.Session)" class="member-name-link">AbstractArmHandler</a><wbr>(<a href="../../../crypto/Crypto.html" title="class in org.drasyl.crypto">Crypto</a>&nbsp;crypto,
- <a href="../../../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(org.drasyl.crypto.Crypto,org.drasyl.identity.IdentityPublicKey,org.drasyl.node.handler.crypto.Session)" class="member-name-link">AbstractArmHandler</a><wbr>(<a href="../../../crypto/Crypto.html" title="class in org.drasyl.crypto">Crypto</a>&nbsp;crypto,
  <a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>&nbsp;peerIdentity,
  <a href="Session.html" title="class in org.drasyl.node.handler.crypto">Session</a>&nbsp;session)</code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
@@ -243,12 +240,6 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="identity">
-<h3>identity</h3>
-<div class="member-signature"><span class="modifiers">protected final</span>&nbsp;<span class="return-type"><a href="../../../identity/Identity.html" title="class in org.drasyl.identity">Identity</a></span>&nbsp;<span class="element-name">identity</span></div>
-</section>
-</li>
-<li>
 <section class="detail" id="peerIdentity">
 <h3>peerIdentity</h3>
 <div class="member-signature"><span class="modifiers">protected final</span>&nbsp;<span class="return-type"><a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a></span>&nbsp;<span class="element-name">peerIdentity</span></div>
@@ -269,10 +260,9 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(org.drasyl.crypto.Crypto,org.drasyl.identity.Identity,org.drasyl.identity.IdentityPublicKey,org.drasyl.node.handler.crypto.Session)">
+<section class="detail" id="&lt;init&gt;(org.drasyl.crypto.Crypto,org.drasyl.identity.IdentityPublicKey,org.drasyl.node.handler.crypto.Session)">
 <h3>AbstractArmHandler</h3>
 <div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="element-name">AbstractArmHandler</span><wbr><span class="parameters">(<a href="../../../crypto/Crypto.html" title="class in org.drasyl.crypto">Crypto</a>&nbsp;crypto,
- <a href="../../../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
  <a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>&nbsp;peerIdentity,
  <a href="Session.html" title="class in org.drasyl.node.handler.crypto">Session</a>&nbsp;session)</span></div>
 </section>

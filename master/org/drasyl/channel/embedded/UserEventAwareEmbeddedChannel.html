@@ -84,11 +84,12 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code>io.netty.channel.Channel</code>, <code>io.netty.channel.ChannelOutboundInvoker</code>, <code>io.netty.util.AttributeMap</code>, <code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;io.netty.channel.Channel&gt;</code></dd>
+<dd><code>io.netty.channel.Channel</code>, <code>io.netty.channel.ChannelOutboundInvoker</code>, <code>io.netty.util.AttributeMap</code>, <code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;io.netty.channel.Channel&gt;</code>, <code><a href="../IdentityChannel.html" title="interface in org.drasyl.channel">IdentityChannel</a></code></dd>
 </dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">UserEventAwareEmbeddedChannel</span>
-<span class="extends-implements">extends io.netty.channel.embedded.EmbeddedChannel</span></div>
+<span class="extends-implements">extends io.netty.channel.embedded.EmbeddedChannel
+implements <a href="../IdentityChannel.html" title="interface in org.drasyl.channel">IdentityChannel</a></span></div>
 <div class="block">A <code>EmbeddedChannel</code> that record all received user events.</div>
 </section>
 <section class="summary">
@@ -113,11 +114,21 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(io.netty.channel.ChannelHandler...)" class="member-name-link">UserEventAwareEmbeddedChannel</a><wbr>(io.netty.channel.ChannelHandler...&nbsp;handlers)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(java.net.SocketAddress,io.netty.channel.ChannelHandler...)" class="member-name-link">UserEventAwareEmbeddedChannel</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketAddress.html" title="class or interface in java.net" class="external-link">SocketAddress</a>&nbsp;localAddress,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(io.netty.channel.ChannelConfig,io.netty.channel.ChannelHandler...)" class="member-name-link">UserEventAwareEmbeddedChannel</a><wbr>(io.netty.channel.ChannelConfig&nbsp;config,
  io.netty.channel.ChannelHandler...&nbsp;handlers)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(io.netty.channel.ChannelConfig,java.net.SocketAddress)" class="member-name-link">UserEventAwareEmbeddedChannel</a><wbr>(io.netty.channel.ChannelConfig&nbsp;config,
+ <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketAddress.html" title="class or interface in java.net" class="external-link">SocketAddress</a>&nbsp;localAddress)</code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(io.netty.channel.ChannelConfig,java.net.SocketAddress,io.netty.channel.ChannelHandler...)" class="member-name-link">UserEventAwareEmbeddedChannel</a><wbr>(io.netty.channel.ChannelConfig&nbsp;config,
+ <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketAddress.html" title="class or interface in java.net" class="external-link">SocketAddress</a>&nbsp;localAddress,
+ io.netty.channel.ChannelHandler...&nbsp;handlers)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(io.netty.channel.ChannelHandler...)" class="member-name-link">UserEventAwareEmbeddedChannel</a><wbr>(io.netty.channel.ChannelHandler...&nbsp;handlers)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.net.SocketAddress,io.netty.channel.ChannelHandler...)" class="member-name-link">UserEventAwareEmbeddedChannel</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketAddress.html" title="class or interface in java.net" class="external-link">SocketAddress</a>&nbsp;localAddress,
+ io.netty.channel.ChannelHandler...&nbsp;handlers)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -132,6 +143,12 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>io.netty.channel.ChannelConfig</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#config()" class="member-name-link">config</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../identity/Identity.html" title="class in org.drasyl.identity">Identity</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#identity()" class="member-name-link">identity</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketAddress.html" title="class or interface in java.net" class="external-link">SocketAddress</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#localAddress0()" class="member-name-link">localAddress0</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
@@ -150,7 +167,7 @@ loadScripts(document, 'script');</script>
 </div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-io.netty.channel.embedded.EmbeddedChannel">Methods inherited from class&nbsp;io.netty.channel.embedded.EmbeddedChannel</h3>
-<code>advanceTimeBy, checkException, close, close, config, disconnect, disconnect, doBeginRead, doBind, doClose, doDisconnect, doRegister, doWrite, ensureOpen, finish, finishAndReleaseAll, flushInbound, flushOutbound, freezeTime, handleInboundMessage, handleOutboundMessage, hasPendingTasks, inboundMessages, isActive, isCompatible, isOpen, lastInboundBuffer, lastOutboundBuffer, metadata, newChannelPipeline, newUnsafe, outboundMessages, readInbound, readOutbound, register, releaseInbound, releaseOutbound, remoteAddress0, runPendingTasks, runScheduledPendingTasks, unfreezeTime, unsafe, writeInbound, writeOneInbound, writeOneInbound, writeOneOutbound, writeOneOutbound, writeOutbound</code></div>
+<code>advanceTimeBy, checkException, close, close, disconnect, disconnect, doBeginRead, doBind, doClose, doDisconnect, doRegister, doWrite, ensureOpen, finish, finishAndReleaseAll, flushInbound, flushOutbound, freezeTime, handleInboundMessage, handleOutboundMessage, hasPendingTasks, inboundMessages, isActive, isCompatible, isOpen, lastInboundBuffer, lastOutboundBuffer, metadata, newChannelPipeline, newUnsafe, outboundMessages, readInbound, readOutbound, register, releaseInbound, releaseOutbound, remoteAddress0, runPendingTasks, runScheduledPendingTasks, unfreezeTime, unsafe, writeInbound, writeOneInbound, writeOneInbound, writeOneOutbound, writeOneOutbound, writeOutbound</code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-io.netty.channel.AbstractChannel">Methods inherited from class&nbsp;io.netty.channel.AbstractChannel</h3>
 <code>alloc, bind, bind, bytesBeforeUnwritable, bytesBeforeWritable, closeFuture, compareTo, connect, connect, connect, connect, deregister, deregister, doDeregister, doShutdownOutput, equals, eventLoop, filterOutboundMessage, flush, hashCode, id, invalidateLocalAddress, invalidateRemoteAddress, isRegistered, isWritable, localAddress, maxMessagesPerWrite, newFailedFuture, newId, newProgressivePromise, newPromise, newSucceededFuture, parent, pipeline, read, remoteAddress, toString, validateFileRegion, voidPromise, write, write, writeAndFlush, writeAndFlush</code></div>
@@ -175,9 +192,31 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
+<section class="detail" id="&lt;init&gt;(io.netty.channel.ChannelConfig,java.net.SocketAddress,io.netty.channel.ChannelHandler...)">
+<h3>UserEventAwareEmbeddedChannel</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">UserEventAwareEmbeddedChannel</span><wbr><span class="parameters">(io.netty.channel.ChannelConfig&nbsp;config,
+ <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketAddress.html" title="class or interface in java.net" class="external-link">SocketAddress</a>&nbsp;localAddress,
+ io.netty.channel.ChannelHandler...&nbsp;handlers)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="&lt;init&gt;(io.netty.channel.ChannelConfig,java.net.SocketAddress)">
+<h3>UserEventAwareEmbeddedChannel</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">UserEventAwareEmbeddedChannel</span><wbr><span class="parameters">(io.netty.channel.ChannelConfig&nbsp;config,
+ <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketAddress.html" title="class or interface in java.net" class="external-link">SocketAddress</a>&nbsp;localAddress)</span></div>
+</section>
+</li>
+<li>
 <section class="detail" id="&lt;init&gt;(java.net.SocketAddress,io.netty.channel.ChannelHandler...)">
 <h3>UserEventAwareEmbeddedChannel</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">UserEventAwareEmbeddedChannel</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketAddress.html" title="class or interface in java.net" class="external-link">SocketAddress</a>&nbsp;localAddress,
+ io.netty.channel.ChannelHandler...&nbsp;handlers)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="&lt;init&gt;(io.netty.channel.ChannelConfig,io.netty.channel.ChannelHandler...)">
+<h3>UserEventAwareEmbeddedChannel</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">UserEventAwareEmbeddedChannel</span><wbr><span class="parameters">(io.netty.channel.ChannelConfig&nbsp;config,
  io.netty.channel.ChannelHandler...&nbsp;handlers)</span></div>
 </section>
 </li>
@@ -195,6 +234,28 @@ loadScripts(document, 'script');</script>
 <section class="method-details" id="method-detail">
 <h2>Method Details</h2>
 <ul class="member-list">
+<li>
+<section class="detail" id="config()">
+<h3>config</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">io.netty.channel.ChannelConfig</span>&nbsp;<span class="element-name">config</span>()</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code>config</code>&nbsp;in interface&nbsp;<code>io.netty.channel.Channel</code></dd>
+<dt>Overrides:</dt>
+<dd><code>config</code>&nbsp;in class&nbsp;<code>io.netty.channel.embedded.EmbeddedChannel</code></dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="identity()">
+<h3>identity</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../identity/Identity.html" title="class in org.drasyl.identity">Identity</a></span>&nbsp;<span class="element-name">identity</span>()</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="../IdentityChannel.html#identity()">identity</a></code>&nbsp;in interface&nbsp;<code><a href="../IdentityChannel.html" title="interface in org.drasyl.channel">IdentityChannel</a></code></dd>
+</dl>
+</section>
+</li>
 <li>
 <section class="detail" id="localAddress0()">
 <h3>localAddress0</h3>

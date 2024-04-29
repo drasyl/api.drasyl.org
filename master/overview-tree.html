@@ -271,12 +271,8 @@ loadScripts(document, 'script');</script>
 </ul>
 </li>
 <li class="circle">org.drasyl.channel.<a href="org/drasyl/channel/ConnectionHandshakeChannelInitializer.html" class="type-name-link" title="class in org.drasyl.channel">ConnectionHandshakeChannelInitializer</a></li>
+<li class="circle">org.drasyl.channel.<a href="org/drasyl/channel/DefaultDrasylServerChannelInitializer.html" class="type-name-link" title="class in org.drasyl.channel">DefaultDrasylServerChannelInitializer</a></li>
 <li class="circle">org.drasyl.node.channel.<a href="org/drasyl/node/channel/DrasylNodeServerChannelInitializer.html" class="type-name-link" title="class in org.drasyl.node.channel">DrasylNodeServerChannelInitializer</a></li>
-<li class="circle">org.drasyl.channel.<a href="org/drasyl/channel/RelayOnlyDrasylServerChannelInitializer.html" class="type-name-link" title="class in org.drasyl.channel">RelayOnlyDrasylServerChannelInitializer</a>
-<ul>
-<li class="circle">org.drasyl.channel.<a href="org/drasyl/channel/TraversingDrasylServerChannelInitializer.html" class="type-name-link" title="class in org.drasyl.channel">TraversingDrasylServerChannelInitializer</a></li>
-</ul>
-</li>
 <li class="circle">org.drasyl.handler.remote.tcp.<a href="org/drasyl/handler/remote/tcp/TcpClientChannelInitializer.html" class="type-name-link" title="class in org.drasyl.handler.remote.tcp">TcpClientChannelInitializer</a></li>
 <li class="circle">org.drasyl.handler.remote.tcp.<a href="org/drasyl/handler/remote/tcp/TcpServerChannelInitializer.html" class="type-name-link" title="class in org.drasyl.handler.remote.tcp">TcpServerChannelInitializer</a></li>
 <li class="circle">org.drasyl.handler.remote.<a href="org/drasyl/handler/remote/UdpBroadcastServerChannelInitializer.html" class="type-name-link" title="class in org.drasyl.handler.remote">UdpBroadcastServerChannelInitializer</a></li>
@@ -391,13 +387,13 @@ loadScripts(document, 'script');</script>
 <ul>
 <li class="circle">io.netty.channel.AbstractServerChannel (implements io.netty.channel.ServerChannel)
 <ul>
-<li class="circle">org.drasyl.channel.<a href="org/drasyl/channel/DrasylServerChannel.html" class="type-name-link" title="class in org.drasyl.channel">DrasylServerChannel</a></li>
+<li class="circle">org.drasyl.channel.<a href="org/drasyl/channel/DrasylServerChannel.html" class="type-name-link" title="class in org.drasyl.channel">DrasylServerChannel</a> (implements org.drasyl.channel.<a href="org/drasyl/channel/IdentityChannel.html" title="interface in org.drasyl.channel">IdentityChannel</a>)</li>
 </ul>
 </li>
-<li class="circle">org.drasyl.channel.<a href="org/drasyl/channel/DrasylChannel.html" class="type-name-link" title="class in org.drasyl.channel">DrasylChannel</a></li>
+<li class="circle">org.drasyl.channel.<a href="org/drasyl/channel/DrasylChannel.html" class="type-name-link" title="class in org.drasyl.channel">DrasylChannel</a> (implements org.drasyl.channel.<a href="org/drasyl/channel/IdentityChannel.html" title="interface in org.drasyl.channel">IdentityChannel</a>)</li>
 <li class="circle">io.netty.channel.embedded.EmbeddedChannel
 <ul>
-<li class="circle">org.drasyl.channel.embedded.<a href="org/drasyl/channel/embedded/UserEventAwareEmbeddedChannel.html" class="type-name-link" title="class in org.drasyl.channel.embedded">UserEventAwareEmbeddedChannel</a></li>
+<li class="circle">org.drasyl.channel.embedded.<a href="org/drasyl/channel/embedded/UserEventAwareEmbeddedChannel.html" class="type-name-link" title="class in org.drasyl.channel.embedded">UserEventAwareEmbeddedChannel</a> (implements org.drasyl.channel.<a href="org/drasyl/channel/IdentityChannel.html" title="interface in org.drasyl.channel">IdentityChannel</a>)</li>
 </ul>
 </li>
 </ul>
@@ -420,6 +416,11 @@ loadScripts(document, 'script');</script>
 <li class="circle">org.drasyl.handler.rmi.message.<a href="org/drasyl/handler/rmi/message/RmiResponse.html" class="type-name-link" title="class in org.drasyl.handler.rmi.message">RmiResponse</a> (implements org.drasyl.handler.rmi.message.<a href="org/drasyl/handler/rmi/message/RmiMessage.html" title="interface in org.drasyl.handler.rmi.message">RmiMessage</a>)</li>
 <li class="circle">org.drasyl.handler.connection.<a href="org/drasyl/handler/connection/Segment.html" class="type-name-link" title="class in org.drasyl.handler.connection">Segment</a></li>
 <li class="circle">org.drasyl.handler.arq.stopandwait.<a href="org/drasyl/handler/arq/stopandwait/StopAndWaitArqData.html" class="type-name-link" title="class in org.drasyl.handler.arq.stopandwait">StopAndWaitArqData</a> (implements org.drasyl.handler.arq.stopandwait.<a href="org/drasyl/handler/arq/stopandwait/StopAndWaitArqMessage.html" title="interface in org.drasyl.handler.arq.stopandwait">StopAndWaitArqMessage</a>)</li>
+</ul>
+</li>
+<li class="circle">io.netty.channel.DefaultChannelConfig (implements io.netty.channel.ChannelConfig)
+<ul>
+<li class="circle">org.drasyl.channel.<a href="org/drasyl/channel/DrasylServerChannelConfig.html" class="type-name-link" title="class in org.drasyl.channel">DrasylServerChannelConfig</a></li>
 </ul>
 </li>
 <li class="circle">org.drasyl.node.handler.serialization.<a href="org/drasyl/node/handler/serialization/DisabledSerializer.html" class="type-name-link" title="class in org.drasyl.node.handler.serialization">DisabledSerializer</a> (implements org.drasyl.node.handler.serialization.<a href="org/drasyl/node/handler/serialization/Serializer.html" title="interface in org.drasyl.node.handler.serialization">Serializer</a>)</li>
@@ -484,7 +485,6 @@ loadScripts(document, 'script');</script>
 <li class="circle">org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/HelloMessage.html" class="type-name-link" title="class in org.drasyl.handler.remote.protocol">HelloMessage</a></li>
 <li class="circle">org.drasyl.crypto.<a href="org/drasyl/crypto/HexUtil.html" class="type-name-link" title="class in org.drasyl.crypto">HexUtil</a></li>
 <li class="circle">org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/HopCount.html" class="type-name-link" title="class in org.drasyl.handler.remote.protocol">HopCount</a> (implements java.lang.<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;T&gt;)</li>
-<li class="circle">org.drasyl.identity.<a href="org/drasyl/identity/Identity.html" class="type-name-link" title="class in org.drasyl.identity">Identity</a></li>
 <li class="circle">org.drasyl.node.<a href="org/drasyl/node/IdentityFile.html" class="type-name-link" title="class in org.drasyl.node">IdentityFile</a></li>
 <li class="circle">org.drasyl.node.identity.<a href="org/drasyl/node/identity/IdentityManager.html" class="type-name-link" title="class in org.drasyl.node.identity">IdentityManager</a></li>
 <li class="circle">org.drasyl.identity.<a href="org/drasyl/identity/IdentitySecretKey.html" class="type-name-link" title="class in org.drasyl.identity">IdentitySecretKey</a> (implements org.drasyl.identity.<a href="org/drasyl/identity/SecretKey.html" title="interface in org.drasyl.identity">SecretKey</a>)</li>
@@ -602,6 +602,7 @@ loadScripts(document, 'script');</script>
 <li class="circle">org.drasyl.identity.<a href="org/drasyl/identity/IdentityPublicKey.html" class="type-name-link" title="class in org.drasyl.identity">IdentityPublicKey</a> (implements org.drasyl.identity.<a href="org/drasyl/identity/PublicKey.html" title="interface in org.drasyl.identity">PublicKey</a>)</li>
 </ul>
 </li>
+<li class="circle">org.drasyl.identity.<a href="org/drasyl/identity/Identity.html" class="type-name-link" title="class in org.drasyl.identity">Identity</a></li>
 </ul>
 </li>
 <li class="circle">org.drasyl.crypto.sodium.<a href="org/drasyl/crypto/sodium/Sodium.html" class="type-name-link" title="class in org.drasyl.crypto.sodium">Sodium</a>
@@ -714,6 +715,7 @@ loadScripts(document, 'script');</script>
 </ul>
 </li>
 <li class="circle">org.drasyl.handler.arq.gobackn.<a href="org/drasyl/handler/arq/gobackn/GoBackNArqMessage.html" class="type-name-link" title="interface in org.drasyl.handler.arq.gobackn">GoBackNArqMessage</a></li>
+<li class="circle">org.drasyl.channel.<a href="org/drasyl/channel/IdentityChannel.html" class="type-name-link" title="interface in org.drasyl.channel">IdentityChannel</a></li>
 <li class="circle">org.drasyl.identity.<a href="org/drasyl/identity/Key.html" class="type-name-link" title="interface in org.drasyl.identity">Key</a>
 <ul>
 <li class="circle">org.drasyl.identity.<a href="org/drasyl/identity/PublicKey.html" class="type-name-link" title="interface in org.drasyl.identity">PublicKey</a></li>

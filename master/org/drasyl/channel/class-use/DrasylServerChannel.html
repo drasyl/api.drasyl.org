@@ -60,8 +60,12 @@ loadScripts(document, 'script');</script>
 <div class="block"><a href="https://netty.io/">netty</a> <code>Channel</code> for the drasyl overlay
  network.</div>
 </div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.node.channel">org.drasyl.node.channel</a></div>
+<div class="col-first odd-row-color"><a href="#org.drasyl.handler.remote">org.drasyl.handler.remote</a></div>
 <div class="col-last odd-row-color">
+<div class="block">Handlers used to communicate with remote nodes.</div>
+</div>
+<div class="col-first even-row-color"><a href="#org.drasyl.node.channel">org.drasyl.node.channel</a></div>
+<div class="col-last even-row-color">
 <div class="block"><a href="https://netty.io/">netty</a> <code>Channel</code> for the <a href="../../node/DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>.</div>
 </div>
 </div>
@@ -70,16 +74,39 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="org.drasyl.channel">
 <h2>Uses of <a href="../DrasylServerChannel.html" title="class in org.drasyl.channel">DrasylServerChannel</a> in <a href="../package-summary.html">org.drasyl.channel</a></h2>
+<div class="caption"><span>Methods in <a href="../package-summary.html">org.drasyl.channel</a> that return <a href="../DrasylServerChannel.html" title="class in org.drasyl.channel">DrasylServerChannel</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code><a href="../DrasylServerChannel.html" title="class in org.drasyl.channel">DrasylServerChannel</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DrasylChannel.</span><code><a href="../DrasylChannel.html#parent()" class="member-name-link">parent</a>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+</div>
 <div class="caption"><span>Methods in <a href="../package-summary.html">org.drasyl.channel</a> with parameters of type <a href="../DrasylServerChannel.html" title="class in org.drasyl.channel">DrasylServerChannel</a></span></div>
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>protected void</code></div>
-<div class="col-second even-row-color"><span class="type-name-label">RelayOnlyDrasylServerChannelInitializer.</span><code><a href="../RelayOnlyDrasylServerChannelInitializer.html#initChannel(org.drasyl.channel.DrasylServerChannel)" class="member-name-link">initChannel</a><wbr>(<a href="../DrasylServerChannel.html" title="class in org.drasyl.channel">DrasylServerChannel</a>&nbsp;ch)</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DefaultDrasylServerChannelInitializer.</span><code><a href="../DefaultDrasylServerChannelInitializer.html#initChannel(org.drasyl.channel.DrasylServerChannel)" class="member-name-link">initChannel</a><wbr>(<a href="../DrasylServerChannel.html" title="class in org.drasyl.channel">DrasylServerChannel</a>&nbsp;ch)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>protected void</code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">TraversingDrasylServerChannelInitializer.</span><code><a href="../TraversingDrasylServerChannelInitializer.html#initChannel(org.drasyl.channel.DrasylServerChannel)" class="member-name-link">initChannel</a><wbr>(<a href="../DrasylServerChannel.html" title="class in org.drasyl.channel">DrasylServerChannel</a>&nbsp;ch)</code></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="org.drasyl.handler.remote">
+<h2>Uses of <a href="../DrasylServerChannel.html" title="class in org.drasyl.channel">DrasylServerChannel</a> in <a href="../../handler/remote/package-summary.html">org.drasyl.handler.remote</a></h2>
+<div class="caption"><span>Constructors in <a href="../../handler/remote/package-summary.html">org.drasyl.handler.remote</a> with parameters of type <a href="../DrasylServerChannel.html" title="class in org.drasyl.channel">DrasylServerChannel</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier</div>
+<div class="table-header col-second">Constructor</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="../../handler/remote/UdpServerChannelInitializer.html#%3Cinit%3E(org.drasyl.channel.DrasylServerChannel)" class="member-name-link">UdpServerChannelInitializer</a><wbr>(<a href="../DrasylServerChannel.html" title="class in org.drasyl.channel">DrasylServerChannel</a>&nbsp;parent)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>&nbsp;</code></div>
+<div class="col-second odd-row-color"><code><a href="../../handler/remote/UdpServerToDrasylHandler.html#%3Cinit%3E(org.drasyl.channel.DrasylServerChannel)" class="member-name-link">UdpServerToDrasylHandler</a><wbr>(<a href="../DrasylServerChannel.html" title="class in org.drasyl.channel">DrasylServerChannel</a>&nbsp;parent)</code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
