@@ -112,9 +112,12 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Field</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>static final io.netty.util.AttributeKey&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;<a href="../../handler/peers/PeersList.html" title="class in org.drasyl.handler.peers">PeersList</a>&gt;&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#PEERS_LIST_SUPPLIER_KEY" class="member-name-link">PEERS_LIST_SUPPLIER_KEY</a></code></div>
+<div class="col-first even-row-color"><code>static final short</code></div>
+<div class="col-second even-row-color"><code><a href="#MIN_DERIVED_PORT" class="member-name-link">MIN_DERIVED_PORT</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>static final io.netty.util.AttributeKey&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;<a href="../../handler/peers/PeersList.html" title="class in org.drasyl.handler.peers">PeersList</a>&gt;&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#PEERS_LIST_SUPPLIER_KEY" class="member-name-link">PEERS_LIST_SUPPLIER_KEY</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -126,10 +129,8 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(org.drasyl.node.DrasylConfig,org.drasyl.identity.Identity,org.drasyl.node.DrasylNode,io.netty.channel.EventLoopGroup)" class="member-name-link">DrasylNodeServerChannelInitializer</a><wbr>(<a href="../DrasylConfig.html" title="class in org.drasyl.node">DrasylConfig</a>&nbsp;config,
- <a href="../../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
- <a href="../DrasylNode.html" title="class in org.drasyl.node">DrasylNode</a>&nbsp;node,
- io.netty.channel.EventLoopGroup&nbsp;udpServerGroup)</code></div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(org.drasyl.node.DrasylConfig,org.drasyl.node.DrasylNode)" class="member-name-link">DrasylNodeServerChannelInitializer</a><wbr>(<a href="../DrasylConfig.html" title="class in org.drasyl.node">DrasylConfig</a>&nbsp;config,
+ <a href="../DrasylNode.html" title="class in org.drasyl.node">DrasylNode</a>&nbsp;node)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
@@ -175,6 +176,20 @@ loadScripts(document, 'script');</script>
 <h2>Field Details</h2>
 <ul class="member-list">
 <li>
+<section class="detail" id="MIN_DERIVED_PORT">
+<h3>MIN_DERIVED_PORT</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">short</span>&nbsp;<span class="element-name">MIN_DERIVED_PORT</span></div>
+<dl class="notes">
+<dt>See Also:</dt>
+<dd>
+<ul class="see-list">
+<li><a href="../../../../constant-values.html#org.drasyl.node.channel.DrasylNodeServerChannelInitializer.MIN_DERIVED_PORT">Constant Field Values</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="PEERS_LIST_SUPPLIER_KEY">
 <h3>PEERS_LIST_SUPPLIER_KEY</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">io.netty.util.AttributeKey&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;<a href="../../handler/peers/PeersList.html" title="class in org.drasyl.handler.peers">PeersList</a>&gt;&gt;</span>&nbsp;<span class="element-name">PEERS_LIST_SUPPLIER_KEY</span></div>
@@ -189,12 +204,10 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(org.drasyl.node.DrasylConfig,org.drasyl.identity.Identity,org.drasyl.node.DrasylNode,io.netty.channel.EventLoopGroup)">
+<section class="detail" id="&lt;init&gt;(org.drasyl.node.DrasylConfig,org.drasyl.node.DrasylNode)">
 <h3>DrasylNodeServerChannelInitializer</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">DrasylNodeServerChannelInitializer</span><wbr><span class="parameters">(<a href="../DrasylConfig.html" title="class in org.drasyl.node">DrasylConfig</a>&nbsp;config,
- <a href="../../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
- <a href="../DrasylNode.html" title="class in org.drasyl.node">DrasylNode</a>&nbsp;node,
- io.netty.channel.EventLoopGroup&nbsp;udpServerGroup)</span></div>
+ <a href="../DrasylNode.html" title="class in org.drasyl.node">DrasylNode</a>&nbsp;node)</span></div>
 </section>
 </li>
 </ul>

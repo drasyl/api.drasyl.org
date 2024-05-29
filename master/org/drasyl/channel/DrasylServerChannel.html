@@ -46,13 +46,13 @@ loadScripts(document, 'script');</script>
 <ul class="sub-nav-list">
 <li>Summary:&nbsp;</li>
 <li><a href="#nested-class-summary">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#field-summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor-summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method-summary">Method</a></li>
 </ul>
 <ul class="sub-nav-list">
 <li>Detail:&nbsp;</li>
-<li><a href="#field-detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor-detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method-detail">Method</a></li>
 </ul>
@@ -120,21 +120,6 @@ implements <a href="IdentityChannel.html" title="interface in org.drasyl.channel
 <code>io.netty.channel.Channel.Unsafe</code></div>
 </section>
 </li>
-<!-- =========== FIELD SUMMARY =========== -->
-<li>
-<section class="field-summary" id="field-summary">
-<h2>Field Summary</h2>
-<div class="caption"><span>Fields</span></div>
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier and Type</div>
-<div class="table-header col-second">Field</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>final <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketAddress.html" title="class or interface in java.net" class="external-link">SocketAddress</a>,<wbr><a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#channels" class="member-name-link">channels</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-</div>
-</section>
-</li>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <li>
 <section class="constructor-summary" id="constructor-summary">
@@ -174,6 +159,23 @@ implements <a href="IdentityChannel.html" title="interface in org.drasyl.channel
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#doRegister()" class="member-name-link">doRegister</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#enqueueUdpWrite(java.lang.Object)" class="member-name-link">enqueueUdpWrite</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;o)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">This method places the message <code>o</code> in the queue for outbound messages to be written by
+ the UDP channel.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#finishUdpWrite()" class="member-name-link">finishUdpWrite</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">This method start processing (if any) queued outbound messages for the UDP channel.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getChannel(org.drasyl.identity.DrasylAddress)" class="member-name-link">getChannel</a><wbr>(<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>,<wbr><a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getChannels()" class="member-name-link">getChannels</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../identity/Identity.html" title="class in org.drasyl.identity">Identity</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#identity()" class="member-name-link">identity</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
@@ -199,6 +201,9 @@ implements <a href="IdentityChannel.html" title="interface in org.drasyl.channel
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#serve(org.drasyl.identity.DrasylAddress,io.netty.util.concurrent.Promise)" class="member-name-link">serve</a><wbr>(<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer,
  io.netty.util.concurrent.Promise&lt;<a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;&nbsp;promise)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#serve0(org.drasyl.identity.DrasylAddress)" class="member-name-link">serve0</a><wbr>(<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -232,20 +237,6 @@ implements <a href="IdentityChannel.html" title="interface in org.drasyl.channel
 </section>
 <section class="details">
 <ul class="details-list">
-<!-- ============ FIELD DETAIL =========== -->
-<li>
-<section class="field-details" id="field-detail">
-<h2>Field Details</h2>
-<ul class="member-list">
-<li>
-<section class="detail" id="channels">
-<h3>channels</h3>
-<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketAddress.html" title="class or interface in java.net" class="external-link">SocketAddress</a>,<wbr><a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;</span>&nbsp;<span class="element-name">channels</span></div>
-</section>
-</li>
-</ul>
-</section>
-</li>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <li>
 <section class="constructor-details" id="constructor-detail">
@@ -375,6 +366,18 @@ implements <a href="IdentityChannel.html" title="interface in org.drasyl.channel
 </section>
 </li>
 <li>
+<section class="detail" id="getChannels()">
+<h3>getChannels</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>,<wbr><a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;</span>&nbsp;<span class="element-name">getChannels</span>()</div>
+</section>
+</li>
+<li>
+<section class="detail" id="getChannel(org.drasyl.identity.DrasylAddress)">
+<h3>getChannel</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a></span>&nbsp;<span class="element-name">getChannel</span><wbr><span class="parameters">(<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer)</span></div>
+</section>
+</li>
+<li>
 <section class="detail" id="serve(org.drasyl.identity.DrasylAddress,io.netty.util.concurrent.Promise)">
 <h3>serve</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">io.netty.util.concurrent.Promise&lt;<a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;</span>&nbsp;<span class="element-name">serve</span><wbr><span class="parameters">(<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer,
@@ -382,9 +385,32 @@ implements <a href="IdentityChannel.html" title="interface in org.drasyl.channel
 </section>
 </li>
 <li>
+<section class="detail" id="serve0(org.drasyl.identity.DrasylAddress)">
+<h3>serve0</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a></span>&nbsp;<span class="element-name">serve0</span><wbr><span class="parameters">(<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer)</span></div>
+</section>
+</li>
+<li>
 <section class="detail" id="serve(org.drasyl.identity.DrasylAddress)">
 <h3>serve</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">io.netty.util.concurrent.Promise&lt;<a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;</span>&nbsp;<span class="element-name">serve</span><wbr><span class="parameters">(<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="enqueueUdpWrite(java.lang.Object)">
+<h3>enqueueUdpWrite</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">enqueueUdpWrite</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;o)</span></div>
+<div class="block">This method places the message <code>o</code> in the queue for outbound messages to be written by
+ the UDP channel. Queued message are not processed until <a href="#finishUdpWrite()"><code>finishUdpWrite()</code></a> is called.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="finishUdpWrite()">
+<h3>finishUdpWrite</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">finishUdpWrite</span>()</div>
+<div class="block">This method start processing (if any) queued outbound messages for the UDP channel. This
+ method ensures that read/write order is respected. Therefore, if UDP channel is currently
+ reading, these reads are performed first and the writes are performed afterwards.</div>
 </section>
 </li>
 </ul>

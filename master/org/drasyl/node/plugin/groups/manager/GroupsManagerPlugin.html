@@ -81,7 +81,8 @@ loadScripts(document, 'script');</script>
 <dd><code><a href="../../../handler/plugin/DrasylPlugin.html" title="interface in org.drasyl.node.handler.plugin">DrasylPlugin</a></code></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">GroupsManagerPlugin</span>
+<div class="type-signature"><span class="annotations"><a href="../../../../util/internal/UnstableApi.html" title="annotation in org.drasyl.util.internal">@UnstableApi</a>
+</span><span class="modifiers">public class </span><span class="element-name type-name-label">GroupsManagerPlugin</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>
 implements <a href="../../../handler/plugin/DrasylPlugin.html" title="interface in org.drasyl.node.handler.plugin">DrasylPlugin</a></span></div>
 <div class="block">Starting point for the groups master plugin.</div>
@@ -130,17 +131,23 @@ implements <a href="../../../handler/plugin/DrasylPlugin.html" title="interface 
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onAfterStart(org.drasyl.node.handler.plugin.PluginEnvironment)" class="member-name-link">onAfterStart</a><wbr>(<a href="../../../handler/plugin/PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;env)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onChildChannelInactive(org.drasyl.node.handler.plugin.PluginEnvironment)" class="member-name-link">onChildChannelInactive</a><wbr>(<a href="../../../handler/plugin/PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;env)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onChildChannelRegistered(org.drasyl.node.handler.plugin.PluginEnvironment)" class="member-name-link">onChildChannelRegistered</a><wbr>(<a href="../../../handler/plugin/PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;env)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onServerChannelActive(org.drasyl.node.handler.plugin.PluginEnvironment)" class="member-name-link">onServerChannelActive</a><wbr>(<a href="../../../handler/plugin/PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;env)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">This method gets called after the drasyl node was started.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onBeforeShutdown(org.drasyl.node.handler.plugin.PluginEnvironment)" class="member-name-link">onBeforeShutdown</a><wbr>(<a href="../../../handler/plugin/PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;env)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onServerChannelInactive(org.drasyl.node.handler.plugin.PluginEnvironment)" class="member-name-link">onServerChannelInactive</a><wbr>(<a href="../../../handler/plugin/PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;env)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">This method get called before the drasyl node is shut down.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onBeforeStart(org.drasyl.node.handler.plugin.PluginEnvironment)" class="member-name-link">onBeforeStart</a><wbr>(<a href="../../../handler/plugin/PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;env)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onServerChannelRegistered(org.drasyl.node.handler.plugin.PluginEnvironment)" class="member-name-link">onServerChannelRegistered</a><wbr>(<a href="../../../handler/plugin/PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;env)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">This method gets called before the drasyl node is started.</div>
 </div>
@@ -152,7 +159,7 @@ implements <a href="../../../handler/plugin/DrasylPlugin.html" title="interface 
 <code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#clone()" title="class or interface in java.lang" class="external-link">clone</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)" title="class or interface in java.lang" class="external-link">equals</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#finalize()" title="class or interface in java.lang" class="external-link">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#getClass()" title="class or interface in java.lang" class="external-link">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#hashCode()" title="class or interface in java.lang" class="external-link">hashCode</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#notify()" title="class or interface in java.lang" class="external-link">notify</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#notifyAll()" title="class or interface in java.lang" class="external-link">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#toString()" title="class or interface in java.lang" class="external-link">toString</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#wait()" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#wait(long)" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#wait(long,int)" title="class or interface in java.lang" class="external-link">wait</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.drasyl.node.handler.plugin.DrasylPlugin">Methods inherited from interface&nbsp;org.drasyl.node.handler.plugin.<a href="../../../handler/plugin/DrasylPlugin.html" title="interface in org.drasyl.node.handler.plugin">DrasylPlugin</a></h3>
-<code><a href="../../../handler/plugin/DrasylPlugin.html#onAfterShutdown(org.drasyl.node.handler.plugin.PluginEnvironment)">onAfterShutdown</a></code></div>
+<code><a href="../../../handler/plugin/DrasylPlugin.html#onChildChannelActive(org.drasyl.node.handler.plugin.PluginEnvironment)">onChildChannelActive</a>, <a href="../../../handler/plugin/DrasylPlugin.html#onChildChannelUnregistered(org.drasyl.node.handler.plugin.PluginEnvironment)">onChildChannelUnregistered</a>, <a href="../../../handler/plugin/DrasylPlugin.html#onServerChannelUnregistered(org.drasyl.node.handler.plugin.PluginEnvironment)">onServerChannelUnregistered</a></code></div>
 </section>
 </li>
 </ul>
@@ -207,45 +214,65 @@ implements <a href="../../../handler/plugin/DrasylPlugin.html" title="interface 
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="onBeforeStart(org.drasyl.node.handler.plugin.PluginEnvironment)">
-<h3>onBeforeStart</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">onBeforeStart</span><wbr><span class="parameters">(<a href="../../../handler/plugin/PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;env)</span></div>
-<div class="block"><span class="descfrm-type-label">Description copied from interface:&nbsp;<code><a href="../../../handler/plugin/DrasylPlugin.html#onBeforeStart(org.drasyl.node.handler.plugin.PluginEnvironment)">DrasylPlugin</a></code></span></div>
+<section class="detail" id="onServerChannelRegistered(org.drasyl.node.handler.plugin.PluginEnvironment)">
+<h3>onServerChannelRegistered</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">onServerChannelRegistered</span><wbr><span class="parameters">(<a href="../../../handler/plugin/PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;env)</span></div>
+<div class="block"><span class="descfrm-type-label">Description copied from interface:&nbsp;<code><a href="../../../handler/plugin/DrasylPlugin.html#onServerChannelRegistered(org.drasyl.node.handler.plugin.PluginEnvironment)">DrasylPlugin</a></code></span></div>
 <div class="block">This method gets called before the drasyl node is started. <br/>
  <b>At this point, no communication channel is alive.</b></div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="../../../handler/plugin/DrasylPlugin.html#onBeforeStart(org.drasyl.node.handler.plugin.PluginEnvironment)">onBeforeStart</a></code>&nbsp;in interface&nbsp;<code><a href="../../../handler/plugin/DrasylPlugin.html" title="interface in org.drasyl.node.handler.plugin">DrasylPlugin</a></code></dd>
+<dd><code><a href="../../../handler/plugin/DrasylPlugin.html#onServerChannelRegistered(org.drasyl.node.handler.plugin.PluginEnvironment)">onServerChannelRegistered</a></code>&nbsp;in interface&nbsp;<code><a href="../../../handler/plugin/DrasylPlugin.html" title="interface in org.drasyl.node.handler.plugin">DrasylPlugin</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>env</code> - the plugin environment</dd>
 </dl>
 </section>
 </li>
 <li>
-<section class="detail" id="onAfterStart(org.drasyl.node.handler.plugin.PluginEnvironment)">
-<h3>onAfterStart</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">onAfterStart</span><wbr><span class="parameters">(<a href="../../../handler/plugin/PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;env)</span></div>
-<div class="block"><span class="descfrm-type-label">Description copied from interface:&nbsp;<code><a href="../../../handler/plugin/DrasylPlugin.html#onAfterStart(org.drasyl.node.handler.plugin.PluginEnvironment)">DrasylPlugin</a></code></span></div>
+<section class="detail" id="onServerChannelActive(org.drasyl.node.handler.plugin.PluginEnvironment)">
+<h3>onServerChannelActive</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">onServerChannelActive</span><wbr><span class="parameters">(<a href="../../../handler/plugin/PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;env)</span></div>
+<div class="block"><span class="descfrm-type-label">Description copied from interface:&nbsp;<code><a href="../../../handler/plugin/DrasylPlugin.html#onServerChannelActive(org.drasyl.node.handler.plugin.PluginEnvironment)">DrasylPlugin</a></code></span></div>
 <div class="block">This method gets called after the drasyl node was started.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="../../../handler/plugin/DrasylPlugin.html#onAfterStart(org.drasyl.node.handler.plugin.PluginEnvironment)">onAfterStart</a></code>&nbsp;in interface&nbsp;<code><a href="../../../handler/plugin/DrasylPlugin.html" title="interface in org.drasyl.node.handler.plugin">DrasylPlugin</a></code></dd>
+<dd><code><a href="../../../handler/plugin/DrasylPlugin.html#onServerChannelActive(org.drasyl.node.handler.plugin.PluginEnvironment)">onServerChannelActive</a></code>&nbsp;in interface&nbsp;<code><a href="../../../handler/plugin/DrasylPlugin.html" title="interface in org.drasyl.node.handler.plugin">DrasylPlugin</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>env</code> - the plugin environment</dd>
 </dl>
 </section>
 </li>
 <li>
-<section class="detail" id="onBeforeShutdown(org.drasyl.node.handler.plugin.PluginEnvironment)">
-<h3>onBeforeShutdown</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">onBeforeShutdown</span><wbr><span class="parameters">(<a href="../../../handler/plugin/PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;env)</span></div>
-<div class="block"><span class="descfrm-type-label">Description copied from interface:&nbsp;<code><a href="../../../handler/plugin/DrasylPlugin.html#onBeforeShutdown(org.drasyl.node.handler.plugin.PluginEnvironment)">DrasylPlugin</a></code></span></div>
+<section class="detail" id="onServerChannelInactive(org.drasyl.node.handler.plugin.PluginEnvironment)">
+<h3>onServerChannelInactive</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">onServerChannelInactive</span><wbr><span class="parameters">(<a href="../../../handler/plugin/PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;env)</span></div>
+<div class="block"><span class="descfrm-type-label">Description copied from interface:&nbsp;<code><a href="../../../handler/plugin/DrasylPlugin.html#onServerChannelInactive(org.drasyl.node.handler.plugin.PluginEnvironment)">DrasylPlugin</a></code></span></div>
 <div class="block">This method get called before the drasyl node is shut down.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="../../../handler/plugin/DrasylPlugin.html#onBeforeShutdown(org.drasyl.node.handler.plugin.PluginEnvironment)">onBeforeShutdown</a></code>&nbsp;in interface&nbsp;<code><a href="../../../handler/plugin/DrasylPlugin.html" title="interface in org.drasyl.node.handler.plugin">DrasylPlugin</a></code></dd>
+<dd><code><a href="../../../handler/plugin/DrasylPlugin.html#onServerChannelInactive(org.drasyl.node.handler.plugin.PluginEnvironment)">onServerChannelInactive</a></code>&nbsp;in interface&nbsp;<code><a href="../../../handler/plugin/DrasylPlugin.html" title="interface in org.drasyl.node.handler.plugin">DrasylPlugin</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>env</code> - the plugin environment</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="onChildChannelRegistered(org.drasyl.node.handler.plugin.PluginEnvironment)">
+<h3>onChildChannelRegistered</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">onChildChannelRegistered</span><wbr><span class="parameters">(<a href="../../../handler/plugin/PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;env)</span></div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="../../../handler/plugin/DrasylPlugin.html#onChildChannelRegistered(org.drasyl.node.handler.plugin.PluginEnvironment)">onChildChannelRegistered</a></code>&nbsp;in interface&nbsp;<code><a href="../../../handler/plugin/DrasylPlugin.html" title="interface in org.drasyl.node.handler.plugin">DrasylPlugin</a></code></dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="onChildChannelInactive(org.drasyl.node.handler.plugin.PluginEnvironment)">
+<h3>onChildChannelInactive</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">onChildChannelInactive</span><wbr><span class="parameters">(<a href="../../../handler/plugin/PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;env)</span></div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="../../../handler/plugin/DrasylPlugin.html#onChildChannelInactive(org.drasyl.node.handler.plugin.PluginEnvironment)">onChildChannelInactive</a></code>&nbsp;in interface&nbsp;<code><a href="../../../handler/plugin/DrasylPlugin.html" title="interface in org.drasyl.node.handler.plugin">DrasylPlugin</a></code></dd>
 </dl>
 </section>
 </li>

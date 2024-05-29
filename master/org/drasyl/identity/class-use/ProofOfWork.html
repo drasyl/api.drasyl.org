@@ -55,14 +55,6 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Package</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><a href="#org.drasyl.handler.remote">org.drasyl.handler.remote</a></div>
-<div class="col-last even-row-color">
-<div class="block">Handlers used to communicate with remote nodes.</div>
-</div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.handler.remote.internet">org.drasyl.handler.remote.internet</a></div>
-<div class="col-last odd-row-color">
-<div class="block">Discovery/Routing of peers on the internet.</div>
-</div>
 <div class="col-first even-row-color"><a href="#org.drasyl.handler.remote.protocol">org.drasyl.handler.remote.protocol</a></div>
 <div class="col-last even-row-color">
 <div class="block">The protocol used for communication with remote peers.</div>
@@ -82,64 +74,6 @@ loadScripts(document, 'script');</script>
 </div>
 <section class="class-uses">
 <ul class="block-list">
-<li>
-<section class="detail" id="org.drasyl.handler.remote">
-<h2>Uses of <a href="../ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a> in <a href="../../handler/remote/package-summary.html">org.drasyl.handler.remote</a></h2>
-<div class="caption"><span>Constructors in <a href="../../handler/remote/package-summary.html">org.drasyl.handler.remote</a> with parameters of type <a href="../ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a></span></div>
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier</div>
-<div class="table-header col-second">Constructor</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="../../handler/remote/LocalNetworkDiscovery.html#%3Cinit%3E(int,long,long,org.drasyl.identity.IdentityPublicKey,org.drasyl.identity.ProofOfWork,java.net.InetSocketAddress)" class="member-name-link">LocalNetworkDiscovery</a><wbr>(int&nbsp;networkId,
- long&nbsp;pingIntervalMillis,
- long&nbsp;pingTimeoutMillis,
- <a href="../IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>&nbsp;myPublicKey,
- <a href="../ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;myProofOfWork,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&nbsp;recipient)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="org.drasyl.handler.remote.internet">
-<h2>Uses of <a href="../ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a> in <a href="../../handler/remote/internet/package-summary.html">org.drasyl.handler.remote.internet</a></h2>
-<div class="caption"><span>Fields in <a href="../../handler/remote/internet/package-summary.html">org.drasyl.handler.remote.internet</a> declared as <a href="../ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a></span></div>
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier and Type</div>
-<div class="table-header col-second">Field</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>protected final <a href="../ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a></code></div>
-<div class="col-second even-row-color"><span class="type-name-label">InternetDiscoverySuperPeerHandler.</span><code><a href="../../handler/remote/internet/InternetDiscoverySuperPeerHandler.html#myProofOfWork" class="member-name-link">myProofOfWork</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-</div>
-<div class="caption"><span>Constructors in <a href="../../handler/remote/internet/package-summary.html">org.drasyl.handler.remote.internet</a> with parameters of type <a href="../ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a></span></div>
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier</div>
-<div class="table-header col-second">Constructor</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="../../handler/remote/internet/InternetDiscoverySuperPeerHandler.html#%3Cinit%3E(int,org.drasyl.identity.IdentityPublicKey,org.drasyl.identity.ProofOfWork,long,long,long,org.drasyl.handler.remote.protocol.HopCount)" class="member-name-link">InternetDiscoverySuperPeerHandler</a><wbr>(int&nbsp;myNetworkId,
- <a href="../IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>&nbsp;myPublicKey,
- <a href="../ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;myProofOfWork,
- long&nbsp;pingIntervalMillis,
- long&nbsp;pingTimeoutMillis,
- long&nbsp;maxTimeOffsetMillis,
- <a href="../../handler/remote/protocol/HopCount.html" title="class in org.drasyl.handler.remote.protocol">HopCount</a>&nbsp;hopLimit)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>&nbsp;</code></div>
-<div class="col-second odd-row-color"><code><a href="../../handler/remote/internet/TraversingInternetDiscoverySuperPeerHandler.html#%3Cinit%3E(int,org.drasyl.identity.IdentityPublicKey,org.drasyl.identity.ProofOfWork,long,long,long,org.drasyl.handler.remote.protocol.HopCount,long)" class="member-name-link">TraversingInternetDiscoverySuperPeerHandler</a><wbr>(int&nbsp;myNetworkId,
- <a href="../IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>&nbsp;myPublicKey,
- <a href="../ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;myProofOfWork,
- long&nbsp;pingIntervalMillis,
- long&nbsp;pingTimeoutMillis,
- long&nbsp;maxTimeOffsetMillis,
- <a href="../../handler/remote/protocol/HopCount.html" title="class in org.drasyl.handler.remote.protocol">HopCount</a>&nbsp;hopLimit,
- long&nbsp;uniteMinIntervalMillis)</code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-</div>
-</section>
-</li>
 <li>
 <section class="detail" id="org.drasyl.handler.remote.protocol">
 <h2>Uses of <a href="../ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a> in <a href="../../handler/remote/protocol/package-summary.html">org.drasyl.handler.remote.protocol</a></h2>

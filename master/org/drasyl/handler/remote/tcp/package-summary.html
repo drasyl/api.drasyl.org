@@ -115,6 +115,14 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color class-summary class-summary-tab2">
 <div class="block">This handler monitors how long the node has not received a response from any super peer.</div>
 </div>
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="TcpClient.TcpClientConnected.html" title="class in org.drasyl.handler.remote.tcp">TcpClient.TcpClientConnected</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="block">Signals that the <a href="TcpClient.html" title="class in org.drasyl.handler.remote.tcp"><code>TcpClient</code></a> is connected to <a href="TcpClient.TcpClientConnected.html#getConnectAddress()"><code>TcpClient.TcpClientConnected.getConnectAddress()</code></a>.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab5"><a href="TcpClient.TcpClientConnectFailedException.html" title="class in org.drasyl.handler.remote.tcp">TcpClient.TcpClientConnectFailedException</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab5">
+<div class="block">Signals that the <a href="TcpClient.html" title="class in org.drasyl.handler.remote.tcp"><code>TcpClient</code></a> was unable to connect to given address.</div>
+</div>
 <div class="col-first even-row-color class-summary class-summary-tab2"><a href="TcpClientChannelInitializer.html" title="class in org.drasyl.handler.remote.tcp">TcpClientChannelInitializer</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab2">&nbsp;</div>
 <div class="col-first odd-row-color class-summary class-summary-tab2"><a href="TcpClientToDrasylHandler.html" title="class in org.drasyl.handler.remote.tcp">TcpClientToDrasylHandler</a></div>
@@ -133,17 +141,17 @@ loadScripts(document, 'script');</script>
 </div>
 <div class="col-first odd-row-color class-summary class-summary-tab5"><a href="TcpServer.TcpServerBindFailedException.html" title="class in org.drasyl.handler.remote.tcp">TcpServer.TcpServerBindFailedException</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab5">
-<div class="block">Signals that the <a href="TcpServer.html" title="class in org.drasyl.handler.remote.tcp"><code>TcpServer</code></a> was unable to bind to port.</div>
+<div class="block">Signals that the <a href="TcpServer.html" title="class in org.drasyl.handler.remote.tcp"><code>TcpServer</code></a> was unable to bind to given address.</div>
 </div>
 <div class="col-first even-row-color class-summary class-summary-tab2"><a href="TcpServer.TcpServerBound.html" title="class in org.drasyl.handler.remote.tcp">TcpServer.TcpServerBound</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab2">
-<div class="block">Signals that the <a href="TcpServer.html" title="class in org.drasyl.handler.remote.tcp"><code>TcpServer</code></a> is bind to <a href="TcpServer.TcpServerBound.html#getPort()"><code>TcpServer.TcpServerBound.getPort()</code></a>.</div>
+<div class="block">Signals that the <a href="TcpServer.html" title="class in org.drasyl.handler.remote.tcp"><code>TcpServer</code></a> is bound to <a href="TcpServer.TcpServerBound.html#getBindAddress()"><code>TcpServer.TcpServerBound.getBindAddress()</code></a>.</div>
 </div>
 <div class="col-first odd-row-color class-summary class-summary-tab2"><a href="TcpServerChannelInitializer.html" title="class in org.drasyl.handler.remote.tcp">TcpServerChannelInitializer</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab2">&nbsp;</div>
-<div class="col-first even-row-color class-summary class-summary-tab2"><a href="TcpServerHandler.html" title="class in org.drasyl.handler.remote.tcp">TcpServerHandler</a></div>
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="TcpServerToDrasylHandler.html" title="class in org.drasyl.handler.remote.tcp">TcpServerToDrasylHandler</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab2">
-<div class="block">This handler passes all receiving messages to the pipeline and updates <code>TcpServerHandler.clients</code> on
+<div class="block">This handler passes all receiving messages to the pipeline and updates <code>#clients</code> on
  new/closed connections.</div>
 </div>
 </div>

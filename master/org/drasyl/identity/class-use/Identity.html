@@ -81,18 +81,10 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color">
 <div class="block">Describes <a href="../../node/DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>s as finite state machines.</div>
 </div>
-<div class="col-first even-row-color"><a href="#org.drasyl.node.channel">org.drasyl.node.channel</a></div>
+<div class="col-first even-row-color"><a href="#org.drasyl.node.event">org.drasyl.node.event</a></div>
 <div class="col-last even-row-color">
-<div class="block"><a href="https://netty.io/">netty</a> <code>Channel</code> for the <a href="../../node/DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>.</div>
-</div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.node.event">org.drasyl.node.event</a></div>
-<div class="col-last odd-row-color">
 <div class="block">Contains events that inform about various states of the <a href="../../node/DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>
  (started, stopped, etc.) or overlay network events (messages, peer discovery, etc.)</div>
-</div>
-<div class="col-first even-row-color"><a href="#org.drasyl.node.handler">org.drasyl.node.handler</a></div>
-<div class="col-last even-row-color">
-<div class="block"><code>ChannelHandler</code>s used by the <a href="../../node/DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>.</div>
 </div>
 <div class="col-first odd-row-color"><a href="#org.drasyl.node.handler.crypto">org.drasyl.node.handler.crypto</a></div>
 <div class="col-last odd-row-color">
@@ -343,23 +335,6 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="org.drasyl.node.channel">
-<h2>Uses of <a href="../Identity.html" title="class in org.drasyl.identity">Identity</a> in <a href="../../node/channel/package-summary.html">org.drasyl.node.channel</a></h2>
-<div class="caption"><span>Constructors in <a href="../../node/channel/package-summary.html">org.drasyl.node.channel</a> with parameters of type <a href="../Identity.html" title="class in org.drasyl.identity">Identity</a></span></div>
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier</div>
-<div class="table-header col-second">Constructor</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="../../node/channel/DrasylNodeServerChannelInitializer.html#%3Cinit%3E(org.drasyl.node.DrasylConfig,org.drasyl.identity.Identity,org.drasyl.node.DrasylNode,io.netty.channel.EventLoopGroup)" class="member-name-link">DrasylNodeServerChannelInitializer</a><wbr>(<a href="../../node/DrasylConfig.html" title="class in org.drasyl.node">DrasylConfig</a>&nbsp;config,
- <a href="../Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
- <a href="../../node/DrasylNode.html" title="class in org.drasyl.node">DrasylNode</a>&nbsp;node,
- io.netty.channel.EventLoopGroup&nbsp;udpServerGroup)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-</div>
-</section>
-</li>
-<li>
 <section class="detail" id="org.drasyl.node.event">
 <h2>Uses of <a href="../Identity.html" title="class in org.drasyl.identity">Identity</a> in <a href="../../node/event/package-summary.html">org.drasyl.node.event</a></h2>
 <div class="caption"><span>Methods in <a href="../../node/event/package-summary.html">org.drasyl.node.event</a> that return <a href="../Identity.html" title="class in org.drasyl.identity">Identity</a></span></div>
@@ -389,20 +364,6 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color"><span class="type-name-label">Node.</span><code><a href="../../node/event/Node.html#of(org.drasyl.identity.Identity,int,int)" class="member-name-link">of</a><wbr>(<a href="../Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
  int&nbsp;port,
  int&nbsp;tcpFallbackPort)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="org.drasyl.node.handler">
-<h2>Uses of <a href="../Identity.html" title="class in org.drasyl.identity">Identity</a> in <a href="../../node/handler/package-summary.html">org.drasyl.node.handler</a></h2>
-<div class="caption"><span>Constructors in <a href="../../node/handler/package-summary.html">org.drasyl.node.handler</a> with parameters of type <a href="../Identity.html" title="class in org.drasyl.identity">Identity</a></span></div>
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier</div>
-<div class="table-header col-second">Constructor</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="../../node/handler/PeersManagerHandler.html#%3Cinit%3E(org.drasyl.identity.Identity)" class="member-name-link">PeersManagerHandler</a><wbr>(<a href="../Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
@@ -484,9 +445,13 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Constructor</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="../../node/handler/plugin/PluginsHandler.html#%3Cinit%3E(org.drasyl.node.DrasylConfig,org.drasyl.identity.Identity)" class="member-name-link">PluginsHandler</a><wbr>(<a href="../../node/DrasylConfig.html" title="class in org.drasyl.node">DrasylConfig</a>&nbsp;config,
+<div class="col-second even-row-color"><code><a href="../../node/handler/plugin/PluginsChildHandler.html#%3Cinit%3E(org.drasyl.node.DrasylConfig,org.drasyl.identity.Identity)" class="member-name-link">PluginsChildHandler</a><wbr>(<a href="../../node/DrasylConfig.html" title="class in org.drasyl.node">DrasylConfig</a>&nbsp;config,
  <a href="../Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>&nbsp;</code></div>
+<div class="col-second odd-row-color"><code><a href="../../node/handler/plugin/PluginsServerHandler.html#%3Cinit%3E(org.drasyl.node.DrasylConfig,org.drasyl.identity.Identity)" class="member-name-link">PluginsServerHandler</a><wbr>(<a href="../../node/DrasylConfig.html" title="class in org.drasyl.node">DrasylConfig</a>&nbsp;config,
+ <a href="../Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
 </li>

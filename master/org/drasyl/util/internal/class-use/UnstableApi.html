@@ -76,54 +76,75 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">Connection-oriented communication with peers.</div>
 </div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.handler.monitoring">org.drasyl.handler.monitoring</a></div>
+<div class="col-first odd-row-color"><a href="#org.drasyl.handler.discovery">org.drasyl.handler.discovery</a></div>
 <div class="col-last odd-row-color">
+<div class="block">Different methods to discover peers.</div>
+</div>
+<div class="col-first even-row-color"><a href="#org.drasyl.handler.monitoring">org.drasyl.handler.monitoring</a></div>
+<div class="col-last even-row-color">
 <div class="block">Logs channel events/messages for monitoring purpose.</div>
 </div>
-<div class="col-first even-row-color"><a href="#org.drasyl.handler.peers">org.drasyl.handler.peers</a></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><a href="#org.drasyl.handler.peers">org.drasyl.handler.peers</a></div>
+<div class="col-last odd-row-color">
 <div class="block">Information about peers.</div>
 </div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.handler.remote">org.drasyl.handler.remote</a></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><a href="#org.drasyl.handler.remote">org.drasyl.handler.remote</a></div>
+<div class="col-last even-row-color">
 <div class="block">Handlers used to communicate with remote nodes.</div>
 </div>
-<div class="col-first even-row-color"><a href="#org.drasyl.handler.remote.internet">org.drasyl.handler.remote.internet</a></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><a href="#org.drasyl.handler.remote.internet">org.drasyl.handler.remote.internet</a></div>
+<div class="col-last odd-row-color">
 <div class="block">Discovery/Routing of peers on the internet.</div>
 </div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.handler.remote.protocol">org.drasyl.handler.remote.protocol</a></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><a href="#org.drasyl.handler.remote.protocol">org.drasyl.handler.remote.protocol</a></div>
+<div class="col-last even-row-color">
 <div class="block">The protocol used for communication with remote peers.</div>
 </div>
-<div class="col-first even-row-color"><a href="#org.drasyl.handler.remote.tcp">org.drasyl.handler.remote.tcp</a></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><a href="#org.drasyl.handler.remote.tcp">org.drasyl.handler.remote.tcp</a></div>
+<div class="col-last odd-row-color">
 <div class="block">Contains the pipeline handlers for TCP fallback connections.</div>
 </div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.handler.rmi">org.drasyl.handler.rmi</a></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><a href="#org.drasyl.identity">org.drasyl.identity</a></div>
-<div class="col-last even-row-color">
+<div class="col-first even-row-color"><a href="#org.drasyl.handler.rmi">org.drasyl.handler.rmi</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><a href="#org.drasyl.identity">org.drasyl.identity</a></div>
+<div class="col-last odd-row-color">
 <div class="block">Contains classes to manage the <a href="../../../identity/Identity.html" title="class in org.drasyl.identity"><code>Identity</code></a> of the drasyl node.</div>
 </div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.node">org.drasyl.node</a></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><a href="#org.drasyl.node">org.drasyl.node</a></div>
+<div class="col-last even-row-color">
 <div class="block">Contains <a href="../../../node/DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>.</div>
 </div>
-<div class="col-first even-row-color"><a href="#org.drasyl.node.channel">org.drasyl.node.channel</a></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><a href="#org.drasyl.node.channel">org.drasyl.node.channel</a></div>
+<div class="col-last odd-row-color">
 <div class="block"><a href="https://netty.io/">netty</a> <code>Channel</code> for the <a href="../../../node/DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>.</div>
+</div>
+<div class="col-first even-row-color"><a href="#org.drasyl.node.handler">org.drasyl.node.handler</a></div>
+<div class="col-last even-row-color">
+<div class="block"><code>ChannelHandler</code>s used by the <a href="../../../node/DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>.</div>
 </div>
 <div class="col-first odd-row-color"><a href="#org.drasyl.node.handler.crypto">org.drasyl.node.handler.crypto</a></div>
 <div class="col-last odd-row-color">
 <div class="block">Contains classes necessary for encrypted peer/application communication.</div>
 </div>
-<div class="col-first even-row-color"><a href="#org.drasyl.util">org.drasyl.util</a></div>
+<div class="col-first even-row-color"><a href="#org.drasyl.node.handler.plugin">org.drasyl.node.handler.plugin</a></div>
 <div class="col-last even-row-color">
+<div class="block">Flexible extensions of drasyl via plugins that can be loaded into the pipeline together with
+ user-defined settings.</div>
+</div>
+<div class="col-first odd-row-color"><a href="#org.drasyl.node.plugin.groups.client">org.drasyl.node.plugin.groups.client</a></div>
+<div class="col-last odd-row-color">
+<div class="block">The groups client plugin.</div>
+</div>
+<div class="col-first even-row-color"><a href="#org.drasyl.node.plugin.groups.manager">org.drasyl.node.plugin.groups.manager</a></div>
+<div class="col-last even-row-color">
+<div class="block">The groups manager plugin.</div>
+</div>
+<div class="col-first odd-row-color"><a href="#org.drasyl.util">org.drasyl.util</a></div>
+<div class="col-last odd-row-color">
 <div class="block">Utility classes used across multiple packages.</div>
 </div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.util.logging">org.drasyl.util.logging</a></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><a href="#org.drasyl.util.logging">org.drasyl.util.logging</a></div>
+<div class="col-last even-row-color">
 <div class="block">Logging API (for internal use only).</div>
 </div>
 </div>
@@ -318,6 +339,22 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="org.drasyl.handler.discovery">
+<h2>Uses of <a href="../UnstableApi.html" title="annotation in org.drasyl.util.internal">UnstableApi</a> in <a href="../../../handler/discovery/package-summary.html">org.drasyl.handler.discovery</a></h2>
+<div class="caption"><span>Classes in <a href="../../../handler/discovery/package-summary.html">org.drasyl.handler.discovery</a> with annotations of type <a href="../UnstableApi.html" title="annotation in org.drasyl.util.internal">UnstableApi</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Class</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>class&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="../../../handler/discovery/IntraVmDiscovery.html" class="type-name-link" title="class in org.drasyl.handler.discovery">IntraVmDiscovery</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">Uses shared memory to discover other drasyl nodes running on same JVM.</div>
+</div>
+</div>
+</section>
+</li>
+<li>
 <section class="detail" id="org.drasyl.handler.monitoring">
 <h2>Uses of <a href="../UnstableApi.html" title="annotation in org.drasyl.util.internal">UnstableApi</a> in <a href="../../../handler/monitoring/package-summary.html">org.drasyl.handler.monitoring</a></h2>
 <div class="caption"><span>Classes in <a href="../../../handler/monitoring/package-summary.html">org.drasyl.handler.monitoring</a> with annotations of type <a href="../UnstableApi.html" title="annotation in org.drasyl.util.internal">UnstableApi</a></span></div>
@@ -331,6 +368,11 @@ loadScripts(document, 'script');</script>
 <div class="block">This handler measures the execution time of
  <code>ChannelInboundHandler.channelRead(ChannelHandlerContext, Object)</code> for every
  <code>ChannelInboundHandler</code>.</div>
+</div>
+<div class="col-first odd-row-color"><code>class&nbsp;</code></div>
+<div class="col-second odd-row-color"><code><a href="../../../handler/monitoring/TopologyHandler.html" class="type-name-link" title="class in org.drasyl.handler.monitoring">TopologyHandler</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">Uses emitted <a href="../../../handler/discovery/PathEvent.html" title="interface in org.drasyl.handler.discovery"><code>PathEvent</code></a>s to build the node's current world view of the overlay network.</div>
 </div>
 </div>
 </section>
@@ -361,19 +403,30 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Class</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>class&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="../../../handler/remote/ApplicationMessageToPayloadCodec.html" class="type-name-link" title="class in org.drasyl.handler.remote">ApplicationMessageToPayloadCodec</a></code></div>
+<div class="col-second even-row-color"><code><a href="../../../handler/remote/DatagramCodec.html" class="type-name-link" title="class in org.drasyl.handler.remote">DatagramCodec</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">This codec converts <a href="../../../handler/remote/protocol/ApplicationMessage.html" title="class in org.drasyl.handler.remote.protocol"><code>ApplicationMessage</code></a>s to the embedded payload and vice versa.</div>
-</div>
-<div class="col-first odd-row-color"><code>class&nbsp;</code></div>
-<div class="col-second odd-row-color"><code><a href="../../../handler/remote/DatagramCodec.html" class="type-name-link" title="class in org.drasyl.handler.remote">DatagramCodec</a></code></div>
-<div class="col-last odd-row-color">
 <div class="block">Encodes <code>DatagramPacket</code>s to <a href="../../../channel/InetAddressedMessage.html" title="class in org.drasyl.channel"><code>InetAddressedMessage</code></a>s and vice versa.</div>
 </div>
-<div class="col-first even-row-color"><code>final class&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="../../../handler/remote/InvalidProofOfWorkFilter.html" class="type-name-link" title="class in org.drasyl.handler.remote">InvalidProofOfWorkFilter</a></code></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><code>final class&nbsp;</code></div>
+<div class="col-second odd-row-color"><code><a href="../../../handler/remote/InvalidProofOfWorkFilter.html" class="type-name-link" title="class in org.drasyl.handler.remote">InvalidProofOfWorkFilter</a></code></div>
+<div class="col-last odd-row-color">
 <div class="block">This handler filters out all messages received with invalid proof of work.</div>
+</div>
+<div class="col-first even-row-color"><code>class&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="../../../handler/remote/LocalHostDiscovery.html" class="type-name-link" title="class in org.drasyl.handler.remote">LocalHostDiscovery</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">Uses the file system to discover other drasyl nodes running on the local computer.</div>
+</div>
+<div class="col-first odd-row-color"><code>class&nbsp;</code></div>
+<div class="col-second odd-row-color"><code><a href="../../../handler/remote/LocalNetworkDiscovery.html" class="type-name-link" title="class in org.drasyl.handler.remote">LocalNetworkDiscovery</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">This handler, along with the <a href="../../../handler/remote/UdpMulticastServer.html" title="class in org.drasyl.handler.remote"><code>UdpMulticastServer</code></a> or <a href="../../../handler/remote/UdpBroadcastServer.html" title="class in org.drasyl.handler.remote"><code>UdpBroadcastServer</code></a>, is used to
+ discover other nodes on the local network via IP multicast or broadcast.</div>
+</div>
+<div class="col-first even-row-color"><code>final class&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="../../../handler/remote/StaticRoutesHandler.html" class="type-name-link" title="class in org.drasyl.handler.remote">StaticRoutesHandler</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">This handler uses preconfigured static routes to deliver messages.</div>
 </div>
 <div class="col-first odd-row-color"><code>class&nbsp;</code></div>
 <div class="col-second odd-row-color"><code><a href="../../../handler/remote/UdpBroadcastServer.html" class="type-name-link" title="class in org.drasyl.handler.remote">UdpBroadcastServer</a></code></div>
@@ -425,10 +478,21 @@ loadScripts(document, 'script');</script>
 <div class="block">Joins one or multiple super peer(s) as a children.</div>
 </div>
 <div class="col-first odd-row-color"><code>class&nbsp;</code></div>
-<div class="col-second odd-row-color"><code><a href="../../../handler/remote/internet/TraversingInternetDiscoveryChildrenHandler.html" class="type-name-link" title="class in org.drasyl.handler.remote.internet">TraversingInternetDiscoveryChildrenHandler</a></code></div>
+<div class="col-second odd-row-color"><code><a href="../../../handler/remote/internet/InternetDiscoverySuperPeerHandler.html" class="type-name-link" title="class in org.drasyl.handler.remote.internet">InternetDiscoverySuperPeerHandler</a></code></div>
 <div class="col-last odd-row-color">
+<div class="block">Operates as a super peer allowing other nodes to join as children.</div>
+</div>
+<div class="col-first even-row-color"><code>class&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="../../../handler/remote/internet/TraversingInternetDiscoveryChildrenHandler.html" class="type-name-link" title="class in org.drasyl.handler.remote.internet">TraversingInternetDiscoveryChildrenHandler</a></code></div>
+<div class="col-last even-row-color">
 <div class="block">Extends <a href="../../../handler/remote/internet/InternetDiscoveryChildrenHandler.html" title="class in org.drasyl.handler.remote.internet"><code>InternetDiscoveryChildrenHandler</code></a> by performing a rendezvous initiated by one of
  our super peers.</div>
+</div>
+<div class="col-first odd-row-color"><code>class&nbsp;</code></div>
+<div class="col-second odd-row-color"><code><a href="../../../handler/remote/internet/TraversingInternetDiscoverySuperPeerHandler.html" class="type-name-link" title="class in org.drasyl.handler.remote.internet">TraversingInternetDiscoverySuperPeerHandler</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">Extends <a href="../../../handler/remote/internet/InternetDiscoverySuperPeerHandler.html" title="class in org.drasyl.handler.remote.internet"><code>InternetDiscoverySuperPeerHandler</code></a> by performing a rendezvous on communication
+ between two children peers.</div>
 </div>
 <div class="col-first even-row-color"><code>class&nbsp;</code></div>
 <div class="col-second even-row-color"><code><a href="../../../handler/remote/internet/UnconfirmedAddressResolveHandler.html" class="type-name-link" title="class in org.drasyl.handler.remote.internet">UnconfirmedAddressResolveHandler</a></code></div>
@@ -522,9 +586,9 @@ loadScripts(document, 'script');</script>
 <div class="col-second odd-row-color"><code><a href="../../../handler/remote/tcp/TcpServerChannelInitializer.html" class="type-name-link" title="class in org.drasyl.handler.remote.tcp">TcpServerChannelInitializer</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-first even-row-color"><code>class&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="../../../handler/remote/tcp/TcpServerHandler.html" class="type-name-link" title="class in org.drasyl.handler.remote.tcp">TcpServerHandler</a></code></div>
+<div class="col-second even-row-color"><code><a href="../../../handler/remote/tcp/TcpServerToDrasylHandler.html" class="type-name-link" title="class in org.drasyl.handler.remote.tcp">TcpServerToDrasylHandler</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">This handler passes all receiving messages to the pipeline and updates <code>TcpServerHandler.clients</code> on
+<div class="block">This handler passes all receiving messages to the pipeline and updates <code>#clients</code> on
  new/closed connections.</div>
 </div>
 </div>
@@ -569,9 +633,14 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Class</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>final class&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="../../../node/DrasylNodeSharedEventLoopGroupHolder.html" class="type-name-link" title="class in org.drasyl.node">DrasylNodeSharedEventLoopGroupHolder</a></code></div>
+<div class="col-first even-row-color"><code>class&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="../../../node/DrasylConfig.html" class="type-name-link" title="class in org.drasyl.node">DrasylConfig</a></code></div>
 <div class="col-last even-row-color">
+<div class="block">This class represents the configuration for a <a href="../../../node/DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>.</div>
+</div>
+<div class="col-first odd-row-color"><code>final class&nbsp;</code></div>
+<div class="col-second odd-row-color"><code><a href="../../../node/DrasylNodeSharedEventLoopGroupHolder.html" class="type-name-link" title="class in org.drasyl.node">DrasylNodeSharedEventLoopGroupHolder</a></code></div>
+<div class="col-last odd-row-color">
 <div class="block">Holds parent and child <code>EventLoop</code>s that are shared across all
  <a href="../../../node/DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>s.</div>
 </div>
@@ -600,6 +669,23 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="org.drasyl.node.handler">
+<h2>Uses of <a href="../UnstableApi.html" title="annotation in org.drasyl.util.internal">UnstableApi</a> in <a href="../../../node/handler/package-summary.html">org.drasyl.node.handler</a></h2>
+<div class="caption"><span>Classes in <a href="../../../node/handler/package-summary.html">org.drasyl.node.handler</a> with annotations of type <a href="../UnstableApi.html" title="annotation in org.drasyl.util.internal">UnstableApi</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Class</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>class&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="../../../node/handler/PeersManagerHandler.html" class="type-name-link" title="class in org.drasyl.node.handler">PeersManagerHandler</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">This handler track received <a href="../../../handler/discovery/PathEvent.html" title="interface in org.drasyl.handler.discovery"><code>PathEvent</code></a>s and will contain an internal state of all peers,
+ super peers, children, and available paths.</div>
+</div>
+</div>
+</section>
+</li>
+<li>
 <section class="detail" id="org.drasyl.node.handler.crypto">
 <h2>Uses of <a href="../UnstableApi.html" title="annotation in org.drasyl.util.internal">UnstableApi</a> in <a href="../../../node/handler/crypto/package-summary.html">org.drasyl.node.handler.crypto</a></h2>
 <div class="caption"><span>Classes in <a href="../../../node/handler/crypto/package-summary.html">org.drasyl.node.handler.crypto</a> with annotations of type <a href="../UnstableApi.html" title="annotation in org.drasyl.util.internal">UnstableApi</a></span></div>
@@ -622,6 +708,70 @@ loadScripts(document, 'script');</script>
 <div class="col-second odd-row-color"><code><a href="../../../node/handler/crypto/LongTimeArmHandler.html" class="type-name-link" title="class in org.drasyl.node.handler.crypto">LongTimeArmHandler</a></code></div>
 <div class="col-last odd-row-color">
 <div class="block">Arms (encrypt) outbound and disarms (decrypt) inbound messages.</div>
+</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="org.drasyl.node.handler.plugin">
+<h2>Uses of <a href="../UnstableApi.html" title="annotation in org.drasyl.util.internal">UnstableApi</a> in <a href="../../../node/handler/plugin/package-summary.html">org.drasyl.node.handler.plugin</a></h2>
+<div class="caption"><span>Classes in <a href="../../../node/handler/plugin/package-summary.html">org.drasyl.node.handler.plugin</a> with annotations of type <a href="../UnstableApi.html" title="annotation in org.drasyl.util.internal">UnstableApi</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Interface</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>interface&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="../../../node/handler/plugin/DrasylPlugin.html" class="type-name-link" title="interface in org.drasyl.node.handler.plugin">DrasylPlugin</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">This interface is implemented by all drasyl plugins.</div>
+</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="org.drasyl.node.plugin.groups.client">
+<h2>Uses of <a href="../UnstableApi.html" title="annotation in org.drasyl.util.internal">UnstableApi</a> in <a href="../../../node/plugin/groups/client/package-summary.html">org.drasyl.node.plugin.groups.client</a></h2>
+<div class="caption"><span>Classes in <a href="../../../node/plugin/groups/client/package-summary.html">org.drasyl.node.plugin.groups.client</a> with annotations of type <a href="../UnstableApi.html" title="annotation in org.drasyl.util.internal">UnstableApi</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Class</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>class&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="../../../node/plugin/groups/client/GroupsClientMessageDecoder.html" class="type-name-link" title="class in org.drasyl.node.plugin.groups.client">GroupsClientMessageDecoder</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">Decodes <code>ByteBuf</code>s to <a href="../../../node/plugin/groups/client/message/GroupsClientMessage.html" title="class in org.drasyl.node.plugin.groups.client.message"><code>GroupsClientMessage</code></a>s.</div>
+</div>
+<div class="col-first odd-row-color"><code>class&nbsp;</code></div>
+<div class="col-second odd-row-color"><code><a href="../../../node/plugin/groups/client/GroupsClientMessageEncoder.html" class="type-name-link" title="class in org.drasyl.node.plugin.groups.client">GroupsClientMessageEncoder</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">Encodes <a href="../../../node/plugin/groups/client/message/GroupsClientMessage.html" title="class in org.drasyl.node.plugin.groups.client.message"><code>GroupsClientMessage</code></a>s to <code>ByteBuf</code>s.</div>
+</div>
+<div class="col-first even-row-color"><code>class&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="../../../node/plugin/groups/client/GroupsClientPlugin.html" class="type-name-link" title="class in org.drasyl.node.plugin.groups.client">GroupsClientPlugin</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">The Groups Membership Client Plugin allows drasyl nodes to connect to membership managers at
+ startup to join groups.</div>
+</div>
+<div class="col-first odd-row-color"><code>class&nbsp;</code></div>
+<div class="col-second odd-row-color"><code><a href="../../../node/plugin/groups/client/GroupsServerMessageEncoder.html" class="type-name-link" title="class in org.drasyl.node.plugin.groups.client">GroupsServerMessageEncoder</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">Encodes <a href="../../../node/plugin/groups/client/message/GroupsServerMessage.html" title="class in org.drasyl.node.plugin.groups.client.message"><code>GroupsServerMessage</code></a>s to <code>ByteBuf</code>s.</div>
+</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="org.drasyl.node.plugin.groups.manager">
+<h2>Uses of <a href="../UnstableApi.html" title="annotation in org.drasyl.util.internal">UnstableApi</a> in <a href="../../../node/plugin/groups/manager/package-summary.html">org.drasyl.node.plugin.groups.manager</a></h2>
+<div class="caption"><span>Classes in <a href="../../../node/plugin/groups/manager/package-summary.html">org.drasyl.node.plugin.groups.manager</a> with annotations of type <a href="../UnstableApi.html" title="annotation in org.drasyl.util.internal">UnstableApi</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Class</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>class&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="../../../node/plugin/groups/manager/GroupsManagerPlugin.html" class="type-name-link" title="class in org.drasyl.node.plugin.groups.manager">GroupsManagerPlugin</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">Starting point for the groups master plugin.</div>
 </div>
 </div>
 </section>

@@ -70,22 +70,19 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="org.drasyl.channel">
 <h2>Uses of <a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a> in <a href="../package-summary.html">org.drasyl.channel</a></h2>
-<div class="caption"><span>Fields in <a href="../package-summary.html">org.drasyl.channel</a> with type parameters of type <a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a></span></div>
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier and Type</div>
-<div class="table-header col-second">Field</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>final <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketAddress.html" title="class or interface in java.net" class="external-link">SocketAddress</a>,<wbr><a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;</code></div>
-<div class="col-second even-row-color"><span class="type-name-label">DrasylServerChannel.</span><code><a href="../DrasylServerChannel.html#channels" class="member-name-link">channels</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-</div>
 <div class="caption"><span>Methods in <a href="../package-summary.html">org.drasyl.channel</a> that return <a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a></span></div>
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>protected <a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a></code></div>
-<div class="col-second even-row-color"><span class="type-name-label">DrasylServerChannel.</span><code><a href="../DrasylServerChannel.html#newDrasylChannel(org.drasyl.identity.DrasylAddress)" class="member-name-link">newDrasylChannel</a><wbr>(<a href="../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer)</code></div>
+<div class="col-first even-row-color"><code><a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DrasylServerChannel.</span><code><a href="../DrasylServerChannel.html#getChannel(org.drasyl.identity.DrasylAddress)" class="member-name-link">getChannel</a><wbr>(<a href="../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>protected <a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DrasylServerChannel.</span><code><a href="../DrasylServerChannel.html#newDrasylChannel(org.drasyl.identity.DrasylAddress)" class="member-name-link">newDrasylChannel</a><wbr>(<a href="../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DrasylServerChannel.</span><code><a href="../DrasylServerChannel.html#serve0(org.drasyl.identity.DrasylAddress)" class="member-name-link">serve0</a><wbr>(<a href="../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 </div>
 <div class="caption"><span>Methods in <a href="../package-summary.html">org.drasyl.channel</a> that return types with arguments of type <a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a></span></div>
@@ -93,13 +90,16 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>io.netty.util.concurrent.Promise&lt;<a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;</code></div>
-<div class="col-second even-row-color"><span class="type-name-label">DrasylServerChannel.</span><code><a href="../DrasylServerChannel.html#serve(org.drasyl.identity.DrasylAddress)" class="member-name-link">serve</a><wbr>(<a href="../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer)</code></div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>,<wbr><a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DrasylServerChannel.</span><code><a href="../DrasylServerChannel.html#getChannels()" class="member-name-link">getChannels</a>()</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><code>io.netty.util.concurrent.Promise&lt;<a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;</code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">DrasylServerChannel.</span><code><a href="../DrasylServerChannel.html#serve(org.drasyl.identity.DrasylAddress,io.netty.util.concurrent.Promise)" class="member-name-link">serve</a><wbr>(<a href="../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer,
- io.netty.util.concurrent.Promise&lt;<a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;&nbsp;promise)</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DrasylServerChannel.</span><code><a href="../DrasylServerChannel.html#serve(org.drasyl.identity.DrasylAddress)" class="member-name-link">serve</a><wbr>(<a href="../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer)</code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>io.netty.util.concurrent.Promise&lt;<a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DrasylServerChannel.</span><code><a href="../DrasylServerChannel.html#serve(org.drasyl.identity.DrasylAddress,io.netty.util.concurrent.Promise)" class="member-name-link">serve</a><wbr>(<a href="../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer,
+ io.netty.util.concurrent.Promise&lt;<a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;&nbsp;promise)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
 </div>
 <div class="caption"><span>Methods in <a href="../package-summary.html">org.drasyl.channel</a> with parameters of type <a href="../DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a></span></div>
 <div class="summary-table three-column-summary">

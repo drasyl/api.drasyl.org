@@ -78,7 +78,8 @@ loadScripts(document, 'script');</script>
 <dd><code><a href="../../plugin/groups/client/GroupsClientPlugin.html" title="class in org.drasyl.node.plugin.groups.client">GroupsClientPlugin</a></code>, <code><a href="../../plugin/groups/manager/GroupsManagerPlugin.html" title="class in org.drasyl.node.plugin.groups.manager">GroupsManagerPlugin</a></code></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">DrasylPlugin</span></div>
+<div class="type-signature"><span class="annotations"><a href="../../../util/internal/UnstableApi.html" title="annotation in org.drasyl.util.internal">@UnstableApi</a>
+</span><span class="modifiers">public interface </span><span class="element-name type-name-label">DrasylPlugin</span></div>
 <div class="block">This interface is implemented by all drasyl plugins.
  <br>
  <b>Every drasyl plugin must implement a constructor with the <code>Config</code> as only
@@ -98,24 +99,36 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#onAfterShutdown(org.drasyl.node.handler.plugin.PluginEnvironment)" class="member-name-link">onAfterShutdown</a><wbr>(<a href="PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;environment)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
-<div class="block">This method gets called after the drasyl node was shut down.</div>
-</div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#onChildChannelActive(org.drasyl.node.handler.plugin.PluginEnvironment)" class="member-name-link">onChildChannelActive</a><wbr>(<a href="PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;environment)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#onAfterStart(org.drasyl.node.handler.plugin.PluginEnvironment)" class="member-name-link">onAfterStart</a><wbr>(<a href="PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;environment)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#onChildChannelInactive(org.drasyl.node.handler.plugin.PluginEnvironment)" class="member-name-link">onChildChannelInactive</a><wbr>(<a href="PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;environment)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#onChildChannelRegistered(org.drasyl.node.handler.plugin.PluginEnvironment)" class="member-name-link">onChildChannelRegistered</a><wbr>(<a href="PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;environment)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#onChildChannelUnregistered(org.drasyl.node.handler.plugin.PluginEnvironment)" class="member-name-link">onChildChannelUnregistered</a><wbr>(<a href="PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;environment)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#onServerChannelActive(org.drasyl.node.handler.plugin.PluginEnvironment)" class="member-name-link">onServerChannelActive</a><wbr>(<a href="PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;environment)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">This method gets called after the drasyl node was started.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#onBeforeShutdown(org.drasyl.node.handler.plugin.PluginEnvironment)" class="member-name-link">onBeforeShutdown</a><wbr>(<a href="PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;environment)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#onServerChannelInactive(org.drasyl.node.handler.plugin.PluginEnvironment)" class="member-name-link">onServerChannelInactive</a><wbr>(<a href="PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;environment)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">This method get called before the drasyl node is shut down.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#onBeforeStart(org.drasyl.node.handler.plugin.PluginEnvironment)" class="member-name-link">onBeforeStart</a><wbr>(<a href="PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;environment)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#onServerChannelRegistered(org.drasyl.node.handler.plugin.PluginEnvironment)" class="member-name-link">onServerChannelRegistered</a><wbr>(<a href="PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;environment)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">This method gets called before the drasyl node is started.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#onServerChannelUnregistered(org.drasyl.node.handler.plugin.PluginEnvironment)" class="member-name-link">onServerChannelUnregistered</a><wbr>(<a href="PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;environment)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">This method gets called after the drasyl node was shut down.</div>
 </div>
 </div>
 </div>
@@ -132,9 +145,9 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="onBeforeStart(org.drasyl.node.handler.plugin.PluginEnvironment)">
-<h3>onBeforeStart</h3>
-<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">onBeforeStart</span><wbr><span class="parameters">(<a href="PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;environment)</span></div>
+<section class="detail" id="onServerChannelRegistered(org.drasyl.node.handler.plugin.PluginEnvironment)">
+<h3>onServerChannelRegistered</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">onServerChannelRegistered</span><wbr><span class="parameters">(<a href="PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;environment)</span></div>
 <div class="block">This method gets called before the drasyl node is started. <br/>
  <b>At this point, no communication channel is alive.</b></div>
 <dl class="notes">
@@ -144,9 +157,9 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="onAfterStart(org.drasyl.node.handler.plugin.PluginEnvironment)">
-<h3>onAfterStart</h3>
-<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">onAfterStart</span><wbr><span class="parameters">(<a href="PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;environment)</span></div>
+<section class="detail" id="onServerChannelActive(org.drasyl.node.handler.plugin.PluginEnvironment)">
+<h3>onServerChannelActive</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">onServerChannelActive</span><wbr><span class="parameters">(<a href="PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;environment)</span></div>
 <div class="block">This method gets called after the drasyl node was started.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -155,9 +168,9 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="onBeforeShutdown(org.drasyl.node.handler.plugin.PluginEnvironment)">
-<h3>onBeforeShutdown</h3>
-<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">onBeforeShutdown</span><wbr><span class="parameters">(<a href="PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;environment)</span></div>
+<section class="detail" id="onServerChannelInactive(org.drasyl.node.handler.plugin.PluginEnvironment)">
+<h3>onServerChannelInactive</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">onServerChannelInactive</span><wbr><span class="parameters">(<a href="PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;environment)</span></div>
 <div class="block">This method get called before the drasyl node is shut down.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -166,15 +179,39 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="onAfterShutdown(org.drasyl.node.handler.plugin.PluginEnvironment)">
-<h3>onAfterShutdown</h3>
-<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">onAfterShutdown</span><wbr><span class="parameters">(<a href="PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;environment)</span></div>
+<section class="detail" id="onServerChannelUnregistered(org.drasyl.node.handler.plugin.PluginEnvironment)">
+<h3>onServerChannelUnregistered</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">onServerChannelUnregistered</span><wbr><span class="parameters">(<a href="PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;environment)</span></div>
 <div class="block">This method gets called after the drasyl node was shut down. <br/>
  <b>At this point, no communication channel is alive.</b></div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>environment</code> - the plugin environment</dd>
 </dl>
+</section>
+</li>
+<li>
+<section class="detail" id="onChildChannelRegistered(org.drasyl.node.handler.plugin.PluginEnvironment)">
+<h3>onChildChannelRegistered</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">onChildChannelRegistered</span><wbr><span class="parameters">(<a href="PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;environment)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="onChildChannelActive(org.drasyl.node.handler.plugin.PluginEnvironment)">
+<h3>onChildChannelActive</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">onChildChannelActive</span><wbr><span class="parameters">(<a href="PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;environment)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="onChildChannelInactive(org.drasyl.node.handler.plugin.PluginEnvironment)">
+<h3>onChildChannelInactive</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">onChildChannelInactive</span><wbr><span class="parameters">(<a href="PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;environment)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="onChildChannelUnregistered(org.drasyl.node.handler.plugin.PluginEnvironment)">
+<h3>onChildChannelUnregistered</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">onChildChannelUnregistered</span><wbr><span class="parameters">(<a href="PluginEnvironment.html" title="class in org.drasyl.node.handler.plugin">PluginEnvironment</a>&nbsp;environment)</span></div>
 </section>
 </li>
 </ul>

@@ -89,7 +89,8 @@ loadScripts(document, 'script');</script>
 <dd><code>io.netty.channel.ChannelHandler</code>, <code>io.netty.channel.ChannelInboundHandler</code>, <code>io.netty.channel.ChannelOutboundHandler</code></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">TraversingInternetDiscoverySuperPeerHandler</span>
+<div class="type-signature"><span class="annotations"><a href="../../../util/internal/UnstableApi.html" title="annotation in org.drasyl.util.internal">@UnstableApi</a>
+</span><span class="modifiers">public class </span><span class="element-name type-name-label">TraversingInternetDiscoverySuperPeerHandler</span>
 <span class="extends-implements">extends <a href="InternetDiscoverySuperPeerHandler.html" title="class in org.drasyl.handler.remote.internet">InternetDiscoverySuperPeerHandler</a></span></div>
 <div class="block">Extends <a href="InternetDiscoverySuperPeerHandler.html" title="class in org.drasyl.handler.remote.internet"><code>InternetDiscoverySuperPeerHandler</code></a> by performing a rendezvous on communication
  between two children peers.</div>
@@ -122,7 +123,7 @@ loadScripts(document, 'script');</script>
 <h2>Field Summary</h2>
 <div class="inherited-list">
 <h3 id="fields-inherited-from-class-org.drasyl.handler.remote.internet.InternetDiscoverySuperPeerHandler">Fields inherited from class&nbsp;org.drasyl.handler.remote.internet.<a href="InternetDiscoverySuperPeerHandler.html" title="class in org.drasyl.handler.remote.internet">InternetDiscoverySuperPeerHandler</a></h3>
-<code><a href="InternetDiscoverySuperPeerHandler.html#childrenPeers">childrenPeers</a>, <a href="InternetDiscoverySuperPeerHandler.html#myNetworkId">myNetworkId</a>, <a href="InternetDiscoverySuperPeerHandler.html#myProofOfWork">myProofOfWork</a>, <a href="InternetDiscoverySuperPeerHandler.html#myPublicKey">myPublicKey</a></code></div>
+<code><a href="InternetDiscoverySuperPeerHandler.html#childrenPeers">childrenPeers</a></code></div>
 </section>
 </li>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -133,15 +134,12 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(int,org.drasyl.identity.IdentityPublicKey,org.drasyl.identity.ProofOfWork,long,long,long,org.drasyl.handler.remote.protocol.HopCount,long)" class="member-name-link">TraversingInternetDiscoverySuperPeerHandler</a><wbr>(int&nbsp;myNetworkId,
- <a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>&nbsp;myPublicKey,
- <a href="../../../identity/ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;myProofOfWork,
- long&nbsp;pingIntervalMillis,
- long&nbsp;pingTimeoutMillis,
- long&nbsp;maxTimeOffsetMillis,
- <a href="../protocol/HopCount.html" title="class in org.drasyl.handler.remote.protocol">HopCount</a>&nbsp;hopLimit,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(byte,long)" class="member-name-link">TraversingInternetDiscoverySuperPeerHandler</a><wbr>(byte&nbsp;hopLimit,
  long&nbsp;uniteMinIntervalMillis)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(org.drasyl.handler.remote.protocol.HopCount,long)" class="member-name-link">TraversingInternetDiscoverySuperPeerHandler</a><wbr>(<a href="../protocol/HopCount.html" title="class in org.drasyl.handler.remote.protocol">HopCount</a>&nbsp;hopLimit,
+ long&nbsp;uniteMinIntervalMillis)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -166,22 +164,22 @@ loadScripts(document, 'script');</script>
 </div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.drasyl.handler.remote.internet.InternetDiscoverySuperPeerHandler">Methods inherited from class&nbsp;org.drasyl.handler.remote.internet.<a href="InternetDiscoverySuperPeerHandler.html" title="class in org.drasyl.handler.remote.internet">InternetDiscoverySuperPeerHandler</a></h3>
-<code><a href="InternetDiscoverySuperPeerHandler.html#channelActive(io.netty.channel.ChannelHandlerContext)">channelActive</a>, <a href="InternetDiscoverySuperPeerHandler.html#channelInactive(io.netty.channel.ChannelHandlerContext)">channelInactive</a>, <a href="InternetDiscoverySuperPeerHandler.html#channelRead(io.netty.channel.ChannelHandlerContext,java.lang.Object)">channelRead</a>, <a href="InternetDiscoverySuperPeerHandler.html#write(io.netty.channel.ChannelHandlerContext,java.lang.Object,io.netty.channel.ChannelPromise)">write</a></code></div>
+<code><a href="InternetDiscoverySuperPeerHandler.html#channelActive(io.netty.channel.ChannelHandlerContext)">channelActive</a>, <a href="InternetDiscoverySuperPeerHandler.html#channelInactive(io.netty.channel.ChannelHandlerContext)">channelInactive</a>, <a href="InternetDiscoverySuperPeerHandler.html#channelRead(io.netty.channel.ChannelHandlerContext,java.lang.Object)">channelRead</a>, <a href="InternetDiscoverySuperPeerHandler.html#config(io.netty.channel.ChannelHandlerContext)">config</a>, <a href="InternetDiscoverySuperPeerHandler.html#handlerAdded(io.netty.channel.ChannelHandlerContext)">handlerAdded</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-io.netty.channel.ChannelDuplexHandler">Methods inherited from class&nbsp;io.netty.channel.ChannelDuplexHandler</h3>
-<code>bind, close, connect, deregister, disconnect, flush, read</code></div>
+<code>bind, close, connect, deregister, disconnect, flush, read, write</code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-io.netty.channel.ChannelInboundHandlerAdapter">Methods inherited from class&nbsp;io.netty.channel.ChannelInboundHandlerAdapter</h3>
 <code>channelReadComplete, channelRegistered, channelUnregistered, channelWritabilityChanged, exceptionCaught, userEventTriggered</code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-io.netty.channel.ChannelHandlerAdapter">Methods inherited from class&nbsp;io.netty.channel.ChannelHandlerAdapter</h3>
-<code>ensureNotSharable, handlerAdded, handlerRemoved, isSharable</code></div>
+<code>ensureNotSharable, handlerRemoved, isSharable</code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
 <code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#clone()" title="class or interface in java.lang" class="external-link">clone</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)" title="class or interface in java.lang" class="external-link">equals</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#finalize()" title="class or interface in java.lang" class="external-link">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#getClass()" title="class or interface in java.lang" class="external-link">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#hashCode()" title="class or interface in java.lang" class="external-link">hashCode</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#notify()" title="class or interface in java.lang" class="external-link">notify</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#notifyAll()" title="class or interface in java.lang" class="external-link">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#toString()" title="class or interface in java.lang" class="external-link">toString</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#wait()" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#wait(long)" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#wait(long,int)" title="class or interface in java.lang" class="external-link">wait</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-io.netty.channel.ChannelHandler">Methods inherited from interface&nbsp;io.netty.channel.ChannelHandler</h3>
-<code>handlerAdded, handlerRemoved</code></div>
+<code>handlerRemoved</code></div>
 </section>
 </li>
 </ul>
@@ -194,15 +192,16 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(int,org.drasyl.identity.IdentityPublicKey,org.drasyl.identity.ProofOfWork,long,long,long,org.drasyl.handler.remote.protocol.HopCount,long)">
+<section class="detail" id="&lt;init&gt;(org.drasyl.handler.remote.protocol.HopCount,long)">
 <h3>TraversingInternetDiscoverySuperPeerHandler</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">TraversingInternetDiscoverySuperPeerHandler</span><wbr><span class="parameters">(int&nbsp;myNetworkId,
- <a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>&nbsp;myPublicKey,
- <a href="../../../identity/ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;myProofOfWork,
- long&nbsp;pingIntervalMillis,
- long&nbsp;pingTimeoutMillis,
- long&nbsp;maxTimeOffsetMillis,
- <a href="../protocol/HopCount.html" title="class in org.drasyl.handler.remote.protocol">HopCount</a>&nbsp;hopLimit,
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">TraversingInternetDiscoverySuperPeerHandler</span><wbr><span class="parameters">(<a href="../protocol/HopCount.html" title="class in org.drasyl.handler.remote.protocol">HopCount</a>&nbsp;hopLimit,
+ long&nbsp;uniteMinIntervalMillis)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="&lt;init&gt;(byte,long)">
+<h3>TraversingInternetDiscoverySuperPeerHandler</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">TraversingInternetDiscoverySuperPeerHandler</span><wbr><span class="parameters">(byte&nbsp;hopLimit,
  long&nbsp;uniteMinIntervalMillis)</span></div>
 </section>
 </li>

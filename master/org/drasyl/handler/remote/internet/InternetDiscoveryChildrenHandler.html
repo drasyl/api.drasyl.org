@@ -111,15 +111,6 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="nested-class-summary" id="nested-class-summary">
 <h2>Nested Class Summary</h2>
-<div class="caption"><span>Nested Classes</span></div>
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier and Type</div>
-<div class="table-header col-second">Class</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>protected static class&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="InternetDiscoveryChildrenHandler.SuperPeer.html" class="type-name-link" title="class in org.drasyl.handler.remote.internet">InternetDiscoveryChildrenHandler.SuperPeer</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-</div>
 <div class="inherited-list">
 <h2 id="nested-classes-inherited-from-class-io.netty.channel.ChannelHandler">Nested classes/interfaces inherited from interface&nbsp;io.netty.channel.ChannelHandler</h2>
 <code>io.netty.channel.ChannelHandler.Sharable</code></div>
@@ -140,12 +131,9 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color"><code>protected final <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongSupplier.html" title="class or interface in java.util.function" class="external-link">LongSupplier</a></code></div>
 <div class="col-second odd-row-color"><code><a href="#currentTime" class="member-name-link">currentTime</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>protected final <a href="../../discovery/DuplicatePathEventFilter.html" title="class in org.drasyl.handler.discovery">DuplicatePathEventFilter</a></code></div>
-<div class="col-second even-row-color"><code><a href="#pathEventFilter" class="member-name-link">pathEventFilter</a></code></div>
+<div class="col-first even-row-color"><code>static final <a href="../PeersManager.PathId.html" title="class in org.drasyl.handler.remote">PeersManager.PathId</a></code></div>
+<div class="col-second even-row-color"><code><a href="#PATH_ID" class="member-name-link">PATH_ID</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>protected final <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>,<wbr><a href="InternetDiscoveryChildrenHandler.SuperPeer.html" title="class in org.drasyl.handler.remote.internet">InternetDiscoveryChildrenHandler.SuperPeer</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#superPeers" class="member-name-link">superPeers</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -157,11 +145,13 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(long,java.util.Map)" class="member-name-link">InternetDiscoveryChildrenHandler</a><wbr>(long&nbsp;initialPingDelayMillis,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;superPeerAddresses)</code></div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E()" class="member-name-link">InternetDiscoveryChildrenHandler</a>()</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(java.util.Map)" class="member-name-link">InternetDiscoveryChildrenHandler</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;superPeerAddresses)</code></div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(long)" class="member-name-link">InternetDiscoveryChildrenHandler</a><wbr>(long&nbsp;initialPingDelayMillis)</code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.util.function.LongSupplier,long)" class="member-name-link">InternetDiscoveryChildrenHandler</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongSupplier.html" title="class or interface in java.util.function" class="external-link">LongSupplier</a>&nbsp;currentTime,
+ long&nbsp;initialPingDelayMillis)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -202,17 +192,12 @@ loadScripts(document, 'script');</script>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#userEventTriggered(io.netty.channel.ChannelHandlerContext,java.lang.Object)" class="member-name-link">userEventTriggered</a><wbr>(io.netty.channel.ChannelHandlerContext&nbsp;ctx,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;evt)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#write(io.netty.channel.ChannelHandlerContext,java.lang.Object,io.netty.channel.ChannelPromise)" class="member-name-link">write</a><wbr>(io.netty.channel.ChannelHandlerContext&nbsp;ctx,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;msg,
- io.netty.channel.ChannelPromise&nbsp;promise)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writeHelloMessage(io.netty.channel.ChannelHandlerContext,org.drasyl.identity.DrasylAddress,java.net.InetSocketAddress,java.util.Set)" class="member-name-link">writeHelloMessage</a><wbr>(io.netty.channel.ChannelHandlerContext&nbsp;ctx,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writeHelloMessage(io.netty.channel.ChannelHandlerContext,org.drasyl.identity.DrasylAddress,java.net.InetSocketAddress,java.util.Set)" class="member-name-link">writeHelloMessage</a><wbr>(io.netty.channel.ChannelHandlerContext&nbsp;ctx,
  <a href="../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;publicKey,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&nbsp;inetAddress,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;privateInetAddresses)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Make sure to call <code>Channel.flush()</code> by your own!</div>
 </div>
 </div>
@@ -220,7 +205,7 @@ loadScripts(document, 'script');</script>
 </div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-io.netty.channel.ChannelDuplexHandler">Methods inherited from class&nbsp;io.netty.channel.ChannelDuplexHandler</h3>
-<code>bind, close, connect, deregister, disconnect, flush, read</code></div>
+<code>bind, close, connect, deregister, disconnect, flush, read, write</code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-io.netty.channel.ChannelInboundHandlerAdapter">Methods inherited from class&nbsp;io.netty.channel.ChannelInboundHandlerAdapter</h3>
 <code>channelReadComplete, channelRegistered, channelUnregistered, channelWritabilityChanged, exceptionCaught</code></div>
@@ -245,21 +230,15 @@ loadScripts(document, 'script');</script>
 <h2>Field Details</h2>
 <ul class="member-list">
 <li>
+<section class="detail" id="PATH_ID">
+<h3>PATH_ID</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../PeersManager.PathId.html" title="class in org.drasyl.handler.remote">PeersManager.PathId</a></span>&nbsp;<span class="element-name">PATH_ID</span></div>
+</section>
+</li>
+<li>
 <section class="detail" id="currentTime">
 <h3>currentTime</h3>
 <div class="member-signature"><span class="modifiers">protected final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongSupplier.html" title="class or interface in java.util.function" class="external-link">LongSupplier</a></span>&nbsp;<span class="element-name">currentTime</span></div>
-</section>
-</li>
-<li>
-<section class="detail" id="superPeers">
-<h3>superPeers</h3>
-<div class="member-signature"><span class="modifiers">protected final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>,<wbr><a href="InternetDiscoveryChildrenHandler.SuperPeer.html" title="class in org.drasyl.handler.remote.internet">InternetDiscoveryChildrenHandler.SuperPeer</a>&gt;</span>&nbsp;<span class="element-name">superPeers</span></div>
-</section>
-</li>
-<li>
-<section class="detail" id="pathEventFilter">
-<h3>pathEventFilter</h3>
-<div class="member-signature"><span class="modifiers">protected final</span>&nbsp;<span class="return-type"><a href="../../discovery/DuplicatePathEventFilter.html" title="class in org.drasyl.handler.discovery">DuplicatePathEventFilter</a></span>&nbsp;<span class="element-name">pathEventFilter</span></div>
 </section>
 </li>
 <li>
@@ -277,16 +256,22 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(long,java.util.Map)">
+<section class="detail" id="&lt;init&gt;(java.util.function.LongSupplier,long)">
 <h3>InternetDiscoveryChildrenHandler</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">InternetDiscoveryChildrenHandler</span><wbr><span class="parameters">(long&nbsp;initialPingDelayMillis,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;superPeerAddresses)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">InternetDiscoveryChildrenHandler</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongSupplier.html" title="class or interface in java.util.function" class="external-link">LongSupplier</a>&nbsp;currentTime,
+ long&nbsp;initialPingDelayMillis)</span></div>
 </section>
 </li>
 <li>
-<section class="detail" id="&lt;init&gt;(java.util.Map)">
+<section class="detail" id="&lt;init&gt;(long)">
 <h3>InternetDiscoveryChildrenHandler</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">InternetDiscoveryChildrenHandler</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;superPeerAddresses)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">InternetDiscoveryChildrenHandler</span><wbr><span class="parameters">(long&nbsp;initialPingDelayMillis)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="&lt;init&gt;()">
+<h3>InternetDiscoveryChildrenHandler</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">InternetDiscoveryChildrenHandler</span>()</div>
 </section>
 </li>
 </ul>
@@ -315,12 +300,15 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="channelActive(io.netty.channel.ChannelHandlerContext)">
 <h3>channelActive</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">channelActive</span><wbr><span class="parameters">(io.netty.channel.ChannelHandlerContext&nbsp;ctx)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">channelActive</span><wbr><span class="parameters">(io.netty.channel.ChannelHandlerContext&nbsp;ctx)</span>
+                   throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/UnknownHostException.html" title="class or interface in java.net" class="external-link">UnknownHostException</a></span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code>channelActive</code>&nbsp;in interface&nbsp;<code>io.netty.channel.ChannelInboundHandler</code></dd>
 <dt>Overrides:</dt>
 <dd><code>channelActive</code>&nbsp;in class&nbsp;<code>io.netty.channel.ChannelInboundHandlerAdapter</code></dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/UnknownHostException.html" title="class or interface in java.net" class="external-link">UnknownHostException</a></code></dd>
 </dl>
 </section>
 </li>
@@ -346,20 +334,6 @@ loadScripts(document, 'script');</script>
 <dd><code>channelRead</code>&nbsp;in interface&nbsp;<code>io.netty.channel.ChannelInboundHandler</code></dd>
 <dt>Overrides:</dt>
 <dd><code>channelRead</code>&nbsp;in class&nbsp;<code>io.netty.channel.ChannelInboundHandlerAdapter</code></dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="write(io.netty.channel.ChannelHandlerContext,java.lang.Object,io.netty.channel.ChannelPromise)">
-<h3>write</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">write</span><wbr><span class="parameters">(io.netty.channel.ChannelHandlerContext&nbsp;ctx,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;msg,
- io.netty.channel.ChannelPromise&nbsp;promise)</span></div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code>write</code>&nbsp;in interface&nbsp;<code>io.netty.channel.ChannelOutboundHandler</code></dd>
-<dt>Overrides:</dt>
-<dd><code>write</code>&nbsp;in class&nbsp;<code>io.netty.channel.ChannelDuplexHandler</code></dd>
 </dl>
 </section>
 </li>

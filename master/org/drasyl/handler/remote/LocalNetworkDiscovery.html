@@ -87,7 +87,8 @@ loadScripts(document, 'script');</script>
 <dd><code>io.netty.channel.ChannelHandler</code>, <code>io.netty.channel.ChannelInboundHandler</code>, <code>io.netty.channel.ChannelOutboundHandler</code></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">LocalNetworkDiscovery</span>
+<div class="type-signature"><span class="annotations"><a href="../../util/internal/UnstableApi.html" title="annotation in org.drasyl.util.internal">@UnstableApi</a>
+</span><span class="modifiers">public class </span><span class="element-name type-name-label">LocalNetworkDiscovery</span>
 <span class="extends-implements">extends io.netty.channel.ChannelDuplexHandler</span></div>
 <div class="block">This handler, along with the <a href="UdpMulticastServer.html" title="class in org.drasyl.handler.remote"><code>UdpMulticastServer</code></a> or <a href="UdpBroadcastServer.html" title="class in org.drasyl.handler.remote"><code>UdpBroadcastServer</code></a>, is used to
  discover other nodes on the local network via IP multicast or broadcast.
@@ -127,12 +128,7 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(int,long,long,org.drasyl.identity.IdentityPublicKey,org.drasyl.identity.ProofOfWork,java.net.InetSocketAddress)" class="member-name-link">LocalNetworkDiscovery</a><wbr>(int&nbsp;networkId,
- long&nbsp;pingIntervalMillis,
- long&nbsp;pingTimeoutMillis,
- <a href="../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>&nbsp;myPublicKey,
- <a href="../../identity/ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;myProofOfWork,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&nbsp;recipient)</code></div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.net.InetSocketAddress)" class="member-name-link">LocalNetworkDiscovery</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&nbsp;recipient)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
@@ -158,17 +154,12 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#channelRead(io.netty.channel.ChannelHandlerContext,java.lang.Object)" class="member-name-link">channelRead</a><wbr>(io.netty.channel.ChannelHandlerContext&nbsp;ctx,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;msg)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#write(io.netty.channel.ChannelHandlerContext,java.lang.Object,io.netty.channel.ChannelPromise)" class="member-name-link">write</a><wbr>(io.netty.channel.ChannelHandlerContext&nbsp;ctx,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;msg,
- io.netty.channel.ChannelPromise&nbsp;promise)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-io.netty.channel.ChannelDuplexHandler">Methods inherited from class&nbsp;io.netty.channel.ChannelDuplexHandler</h3>
-<code>bind, close, connect, deregister, disconnect, flush, read</code></div>
+<code>bind, close, connect, deregister, disconnect, flush, read, write</code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-io.netty.channel.ChannelInboundHandlerAdapter">Methods inherited from class&nbsp;io.netty.channel.ChannelInboundHandlerAdapter</h3>
 <code>channelReadComplete, channelRegistered, channelUnregistered, channelWritabilityChanged, exceptionCaught, userEventTriggered</code></div>
@@ -193,14 +184,9 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(int,long,long,org.drasyl.identity.IdentityPublicKey,org.drasyl.identity.ProofOfWork,java.net.InetSocketAddress)">
+<section class="detail" id="&lt;init&gt;(java.net.InetSocketAddress)">
 <h3>LocalNetworkDiscovery</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">LocalNetworkDiscovery</span><wbr><span class="parameters">(int&nbsp;networkId,
- long&nbsp;pingIntervalMillis,
- long&nbsp;pingTimeoutMillis,
- <a href="../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>&nbsp;myPublicKey,
- <a href="../../identity/ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;myProofOfWork,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&nbsp;recipient)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">LocalNetworkDiscovery</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&nbsp;recipient)</span></div>
 </section>
 </li>
 </ul>
@@ -221,20 +207,6 @@ loadScripts(document, 'script');</script>
 <dd><code>channelRead</code>&nbsp;in interface&nbsp;<code>io.netty.channel.ChannelInboundHandler</code></dd>
 <dt>Overrides:</dt>
 <dd><code>channelRead</code>&nbsp;in class&nbsp;<code>io.netty.channel.ChannelInboundHandlerAdapter</code></dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="write(io.netty.channel.ChannelHandlerContext,java.lang.Object,io.netty.channel.ChannelPromise)">
-<h3>write</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">write</span><wbr><span class="parameters">(io.netty.channel.ChannelHandlerContext&nbsp;ctx,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;msg,
- io.netty.channel.ChannelPromise&nbsp;promise)</span></div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code>write</code>&nbsp;in interface&nbsp;<code>io.netty.channel.ChannelOutboundHandler</code></dd>
-<dt>Overrides:</dt>
-<dd><code>write</code>&nbsp;in class&nbsp;<code>io.netty.channel.ChannelDuplexHandler</code></dd>
 </dl>
 </section>
 </li>

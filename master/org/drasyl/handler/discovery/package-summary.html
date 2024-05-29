@@ -46,7 +46,7 @@ loadScripts(document, 'script');</script>
 <ul class="sub-nav-list">
 <li>Package:&nbsp;</li>
 <li><a href="#package-description">Description</a>&nbsp;|&nbsp;</li>
-<li><a href="#related-package-summary">Related Packages</a>&nbsp;|&nbsp;</li>
+<li>Related Packages&nbsp;|&nbsp;</li>
 <li><a href="#class-summary">Classes and Interfaces</a></li>
 </ul>
 </div>
@@ -71,19 +71,6 @@ loadScripts(document, 'script');</script>
 <section class="summary">
 <ul class="summary-list">
 <li>
-<div id="related-package-summary">
-<div class="caption"><span>Related Packages</span></div>
-<div class="summary-table two-column-summary">
-<div class="table-header col-first">Package</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><a href="../package-summary.html">org.drasyl.handler</a></div>
-<div class="col-last even-row-color">
-<div class="block">Handlers used to run a drasyl node.</div>
-</div>
-</div>
-</div>
-</li>
-<li>
 <div id="class-summary">
 <div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="class-summary-tab0" role="tab" aria-selected="true" aria-controls="class-summary.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('class-summary', 'class-summary', 2)" class="active-table-tab">All Classes and Interfaces</button><button id="class-summary-tab1" role="tab" aria-selected="false" aria-controls="class-summary.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('class-summary', 'class-summary-tab1', 2)" class="table-tab">Interfaces</button><button id="class-summary-tab2" role="tab" aria-selected="false" aria-controls="class-summary.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('class-summary', 'class-summary-tab2', 2)" class="table-tab">Classes</button></div>
 <div id="class-summary.tabpanel" role="tabpanel">
@@ -104,35 +91,31 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color class-summary class-summary-tab2">
 <div class="block">Signals that a direct routing path has been discovered to <a href="PathEvent.html#getAddress()"><code>PathEvent.getAddress()</code></a>.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="DuplicatePathEventFilter.html" title="class in org.drasyl.handler.discovery">DuplicatePathEventFilter</a></div>
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="IntraVmDiscovery.html" title="class in org.drasyl.handler.discovery">IntraVmDiscovery</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab2">
-<div class="block">This class can be used to filter equal events for a given peer (identifies by <a href="PathEvent.html#getAddress()"><code>PathEvent.getAddress()</code></a>).</div>
-</div>
-<div class="col-first even-row-color class-summary class-summary-tab2"><a href="IntraVmDiscovery.html" title="class in org.drasyl.handler.discovery">IntraVmDiscovery</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab2">
 <div class="block">Uses shared memory to discover other drasyl nodes running on same JVM.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="PathEvent.html" title="interface in org.drasyl.handler.discovery">PathEvent</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab1">
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="PathEvent.html" title="interface in org.drasyl.handler.discovery">PathEvent</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab1">
 <div class="block">Classes implementing this interface signals that a direct routing path availability and/or the
  relation (children/super peer) to a peer has changed.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab2"><a href="PathRttEvent.html" title="class in org.drasyl.handler.discovery">PathRttEvent</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="PathRttEvent.html" title="class in org.drasyl.handler.discovery">PathRttEvent</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
 <div class="block">Signals that a new RTT measurement for a routing path has been performed to <a href="PathEvent.html#getAddress()"><code>PathEvent.getAddress()</code></a>.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="RemoveChildrenAndPathEvent.html" title="class in org.drasyl.handler.discovery">RemoveChildrenAndPathEvent</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="RemoveChildrenAndPathEvent.html" title="class in org.drasyl.handler.discovery">RemoveChildrenAndPathEvent</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
 <div class="block">Signals that <a href="PathEvent.html#getAddress()"><code>PathEvent.getAddress()</code></a> is no longer registered at us as a
  children because the direct routing path to that peer is no longer available.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab2"><a href="RemovePathEvent.html" title="class in org.drasyl.handler.discovery">RemovePathEvent</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="RemovePathEvent.html" title="class in org.drasyl.handler.discovery">RemovePathEvent</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
 <div class="block">Signals that a direct routing path to <a href="PathEvent.html#getAddress()"><code>PathEvent.getAddress()</code></a> is no longer
  available.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="RemoveSuperPeerAndPathEvent.html" title="class in org.drasyl.handler.discovery">RemoveSuperPeerAndPathEvent</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="RemoveSuperPeerAndPathEvent.html" title="class in org.drasyl.handler.discovery">RemoveSuperPeerAndPathEvent</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
 <div class="block">Signals that we are no longer registered at as a children at <a href="PathEvent.html#getAddress()"><code>PathEvent.getAddress()</code></a>  as the direct routing path to that peer is no longer
  available.</div>
 </div>

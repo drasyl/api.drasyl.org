@@ -70,16 +70,12 @@ loadScripts(document, 'script');</script>
 </div>
 <div class="col-first odd-row-color"><a href="#org.drasyl.handler.pubsub">org.drasyl.handler.pubsub</a></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><a href="#org.drasyl.handler.remote">org.drasyl.handler.remote</a></div>
+<div class="col-first even-row-color"><a href="#org.drasyl.node.plugin.groups.client">org.drasyl.node.plugin.groups.client</a></div>
 <div class="col-last even-row-color">
-<div class="block">Handlers used to communicate with remote nodes.</div>
-</div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.node.plugin.groups.client">org.drasyl.node.plugin.groups.client</a></div>
-<div class="col-last odd-row-color">
 <div class="block">The groups client plugin.</div>
 </div>
-<div class="col-first even-row-color"><a href="#org.drasyl.node.plugin.groups.manager">org.drasyl.node.plugin.groups.manager</a></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><a href="#org.drasyl.node.plugin.groups.manager">org.drasyl.node.plugin.groups.manager</a></div>
+<div class="col-last odd-row-color">
 <div class="block">The groups manager plugin.</div>
 </div>
 </div>
@@ -180,22 +176,6 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="org.drasyl.handler.remote">
-<h2>Uses of <a href="../OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a> in <a href="../../handler/remote/package-summary.html">org.drasyl.handler.remote</a></h2>
-<div class="caption"><span>Methods in <a href="../../handler/remote/package-summary.html">org.drasyl.handler.remote</a> with parameters of type <a href="../OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a></span></div>
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier and Type</div>
-<div class="table-header col-second">Method</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>protected void</code></div>
-<div class="col-second even-row-color"><span class="type-name-label">ApplicationMessageToPayloadCodec.</span><code><a href="../../handler/remote/ApplicationMessageToPayloadCodec.html#encode(io.netty.channel.ChannelHandlerContext,org.drasyl.channel.OverlayAddressedMessage,java.util.List)" class="member-name-link">encode</a><wbr>(io.netty.channel.ChannelHandlerContext&nbsp;ctx,
- <a href="../OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;io.netty.buffer.ByteBuf&gt;&nbsp;msg,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;&nbsp;out)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-</div>
-</section>
-</li>
-<li>
 <section class="detail" id="org.drasyl.node.plugin.groups.client">
 <h2>Uses of <a href="../OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a> in <a href="../../node/plugin/groups/client/package-summary.html">org.drasyl.node.plugin.groups.client</a></h2>
 <div class="caption"><span>Methods in <a href="../../node/plugin/groups/client/package-summary.html">org.drasyl.node.plugin.groups.client</a> with parameters of type <a href="../OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a></span></div>
@@ -207,21 +187,6 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color"><span class="type-name-label">GroupsClientHandler.</span><code><a href="../../node/plugin/groups/client/GroupsClientHandler.html#channelRead0(io.netty.channel.ChannelHandlerContext,org.drasyl.channel.OverlayAddressedMessage)" class="member-name-link">channelRead0</a><wbr>(io.netty.channel.ChannelHandlerContext&nbsp;ctx,
  <a href="../OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;<a href="../../node/plugin/groups/client/message/GroupsServerMessage.html" title="class in org.drasyl.node.plugin.groups.client.message">GroupsServerMessage</a>&gt;&nbsp;msg)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>protected void</code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">GroupsClientMessageDecoder.</span><code><a href="../../node/plugin/groups/client/GroupsClientMessageDecoder.html#decode(io.netty.channel.ChannelHandlerContext,org.drasyl.channel.OverlayAddressedMessage,java.util.List)" class="member-name-link">decode</a><wbr>(io.netty.channel.ChannelHandlerContext&nbsp;ctx,
- <a href="../OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;io.netty.buffer.ByteBuf&gt;&nbsp;msg,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;&nbsp;out)</code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>protected void</code></div>
-<div class="col-second even-row-color"><span class="type-name-label">GroupsClientMessageEncoder.</span><code><a href="../../node/plugin/groups/client/GroupsClientMessageEncoder.html#encode(io.netty.channel.ChannelHandlerContext,org.drasyl.channel.OverlayAddressedMessage,java.util.List)" class="member-name-link">encode</a><wbr>(io.netty.channel.ChannelHandlerContext&nbsp;ctx,
- <a href="../OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;<a href="../../node/plugin/groups/client/message/GroupsClientMessage.html" title="class in org.drasyl.node.plugin.groups.client.message">GroupsClientMessage</a>&gt;&nbsp;msg,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;&nbsp;out)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>protected void</code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">GroupsServerMessageEncoder.</span><code><a href="../../node/plugin/groups/client/GroupsServerMessageEncoder.html#encode(io.netty.channel.ChannelHandlerContext,org.drasyl.channel.OverlayAddressedMessage,java.util.List)" class="member-name-link">encode</a><wbr>(io.netty.channel.ChannelHandlerContext&nbsp;ctx,
- <a href="../OverlayAddressedMessage.html" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;<a href="../../node/plugin/groups/client/message/GroupsServerMessage.html" title="class in org.drasyl.node.plugin.groups.client.message">GroupsServerMessage</a>&gt;&nbsp;msg,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;&nbsp;out)</code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
