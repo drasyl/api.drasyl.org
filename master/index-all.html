@@ -334,7 +334,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Applies this function to the given arguments.</div>
 </dd>
-<dt><a href="org/drasyl/handler/remote/protocol/AcknowledgementMessage.html#arm(io.netty.buffer.ByteBufAllocator,org.drasyl.crypto.Crypto,org.drasyl.crypto.sodium.SessionPair)" class="member-name-link">arm(ByteBufAllocator, Crypto, SessionPair)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/AcknowledgementMessage.html" title="class in org.drasyl.handler.remote.protocol">AcknowledgementMessage</a></dt>
+<dt><a href="org/drasyl/handler/remote/protocol/HelloMessage.html#arm(io.netty.buffer.ByteBufAllocator,org.drasyl.crypto.Crypto,org.drasyl.crypto.sodium.SessionPair)" class="member-name-link">arm(ByteBufAllocator, Crypto, SessionPair)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/HelloMessage.html" title="class in org.drasyl.handler.remote.protocol">HelloMessage</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/protocol/FullReadMessage.html#arm(io.netty.buffer.ByteBufAllocator,org.drasyl.crypto.Crypto,org.drasyl.crypto.sodium.SessionPair)" class="member-name-link">arm(ByteBufAllocator, Crypto, SessionPair)</a> - Method in interface org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/FullReadMessage.html" title="interface in org.drasyl.handler.remote.protocol">FullReadMessage</a></dt>
 <dd>
@@ -2756,9 +2756,9 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/util/protocol/PcpPortUtil.ResultCode.html#from(short)" class="member-name-link">from(short)</a> - Static method in enum org.drasyl.util.protocol.<a href="org/drasyl/util/protocol/PcpPortUtil.ResultCode.html" title="enum in org.drasyl.util.protocol">PcpPortUtil.ResultCode</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/drasyl/node/handler/crypto/AcknowledgementMessage.html#fromApplication(io.netty.buffer.ByteBuf,io.netty.buffer.ByteBufAllocator)" class="member-name-link">fromApplication(ByteBuf, ByteBufAllocator)</a> - Static method in class org.drasyl.node.handler.crypto.<a href="org/drasyl/node/handler/crypto/AcknowledgementMessage.html" title="class in org.drasyl.node.handler.crypto">AcknowledgementMessage</a></dt>
+<dt><a href="org/drasyl/node/handler/crypto/KeyExchangeMessage.html#fromApplication(io.netty.buffer.ByteBuf,io.netty.buffer.ByteBufAllocator)" class="member-name-link">fromApplication(ByteBuf, ByteBufAllocator)</a> - Static method in class org.drasyl.node.handler.crypto.<a href="org/drasyl/node/handler/crypto/KeyExchangeMessage.html" title="class in org.drasyl.node.handler.crypto">KeyExchangeMessage</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/drasyl/node/handler/serialization/FloatSerializer.html#fromByteArray(byte%5B%5D,java.lang.Class)" class="member-name-link">fromByteArray(byte[], Class&lt;T&gt;)</a> - Method in class org.drasyl.node.handler.serialization.<a href="org/drasyl/node/handler/serialization/FloatSerializer.html" title="class in org.drasyl.node.handler.serialization">FloatSerializer</a></dt>
+<dt><a href="org/drasyl/node/handler/serialization/BooleanSerializer.html#fromByteArray(byte%5B%5D,java.lang.Class)" class="member-name-link">fromByteArray(byte[], Class&lt;T&gt;)</a> - Method in class org.drasyl.node.handler.serialization.<a href="org/drasyl/node/handler/serialization/BooleanSerializer.html" title="class in org.drasyl.node.handler.serialization">BooleanSerializer</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/serialization/DisabledSerializer.html#fromByteArray(byte%5B%5D,java.lang.Class)" class="member-name-link">fromByteArray(byte[], Class&lt;T&gt;)</a> - Method in class org.drasyl.node.handler.serialization.<a href="org/drasyl/node/handler/serialization/DisabledSerializer.html" title="class in org.drasyl.node.handler.serialization">DisabledSerializer</a></dt>
 <dd>&nbsp;</dd>
@@ -9406,7 +9406,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/identity/KeyAgreementSecretKey.html#toByteArray()" class="member-name-link">toByteArray()</a> - Method in class org.drasyl.identity.<a href="org/drasyl/identity/KeyAgreementSecretKey.html" title="class in org.drasyl.identity">KeyAgreementSecretKey</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/drasyl/node/handler/serialization/FloatSerializer.html#toByteArray(java.lang.Object)" class="member-name-link">toByteArray(Object)</a> - Method in class org.drasyl.node.handler.serialization.<a href="org/drasyl/node/handler/serialization/FloatSerializer.html" title="class in org.drasyl.node.handler.serialization">FloatSerializer</a></dt>
+<dt><a href="org/drasyl/node/handler/serialization/BooleanSerializer.html#toByteArray(java.lang.Object)" class="member-name-link">toByteArray(Object)</a> - Method in class org.drasyl.node.handler.serialization.<a href="org/drasyl/node/handler/serialization/BooleanSerializer.html" title="class in org.drasyl.node.handler.serialization">BooleanSerializer</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/serialization/DisabledSerializer.html#toByteArray(java.lang.Object)" class="member-name-link">toByteArray(Object)</a> - Method in class org.drasyl.node.handler.serialization.<a href="org/drasyl/node/handler/serialization/DisabledSerializer.html" title="class in org.drasyl.node.handler.serialization">DisabledSerializer</a></dt>
 <dd>&nbsp;</dd>
@@ -10609,9 +10609,9 @@ the order they are declared.</div>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/protocol/UniteMessage.html#writePrivateHeaderTo(io.netty.buffer.ByteBuf)" class="member-name-link">writePrivateHeaderTo(ByteBuf)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/UniteMessage.html" title="class in org.drasyl.handler.remote.protocol">UniteMessage</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/drasyl/handler/remote/protocol/AcknowledgementMessage.html#writePublicHeaderTo(io.netty.buffer.ByteBuf)" class="member-name-link">writePublicHeaderTo(ByteBuf)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/AcknowledgementMessage.html" title="class in org.drasyl.handler.remote.protocol">AcknowledgementMessage</a></dt>
+<dt><a href="org/drasyl/handler/remote/protocol/HelloMessage.html#writePublicHeaderTo(io.netty.buffer.ByteBuf)" class="member-name-link">writePublicHeaderTo(ByteBuf)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/HelloMessage.html" title="class in org.drasyl.handler.remote.protocol">HelloMessage</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/drasyl/handler/remote/protocol/AcknowledgementMessage.html#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo(ByteBuf)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/AcknowledgementMessage.html" title="class in org.drasyl.handler.remote.protocol">AcknowledgementMessage</a></dt>
+<dt><a href="org/drasyl/handler/remote/protocol/HelloMessage.html#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo(ByteBuf)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/HelloMessage.html" title="class in org.drasyl.handler.remote.protocol">HelloMessage</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/protocol/ArmedProtocolMessage.html#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo(ByteBuf)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/ArmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">ArmedProtocolMessage</a></dt>
 <dd>&nbsp;</dd>
@@ -10631,7 +10631,7 @@ the order they are declared.</div>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/crypto/ArmHeader.html#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo(ByteBuf)</a> - Method in class org.drasyl.node.handler.crypto.<a href="org/drasyl/node/handler/crypto/ArmHeader.html" title="class in org.drasyl.node.handler.crypto">ArmHeader</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/drasyl/node/handler/crypto/AcknowledgementMessage.html#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo(ByteBuf)</a> - Method in class org.drasyl.node.handler.crypto.<a href="org/drasyl/node/handler/crypto/AcknowledgementMessage.html" title="class in org.drasyl.node.handler.crypto">AcknowledgementMessage</a></dt>
+<dt><a href="org/drasyl/node/handler/crypto/KeyExchangeMessage.html#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo(ByteBuf)</a> - Method in class org.drasyl.node.handler.crypto.<a href="org/drasyl/node/handler/crypto/KeyExchangeMessage.html" title="class in org.drasyl.node.handler.crypto">KeyExchangeMessage</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/serialization/SerializedPayload.html#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo(ByteBuf)</a> - Method in class org.drasyl.node.handler.serialization.<a href="org/drasyl/node/handler/serialization/SerializedPayload.html" title="class in org.drasyl.node.handler.serialization">SerializedPayload</a></dt>
 <dd>
