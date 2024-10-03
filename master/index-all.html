@@ -798,8 +798,6 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/UdpMulticastServer.html#channelInactive(io.netty.channel.ChannelHandlerContext)" class="member-name-link">channelInactive(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.remote.<a href="org/drasyl/handler/remote/UdpMulticastServer.html" title="class in org.drasyl.handler.remote">UdpMulticastServer</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/drasyl/handler/remote/UdpServerToDrasylHandler.html#channelInactive(io.netty.channel.ChannelHandlerContext)" class="member-name-link">channelInactive(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.remote.<a href="org/drasyl/handler/remote/UdpServerToDrasylHandler.html" title="class in org.drasyl.handler.remote">UdpServerToDrasylHandler</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/rmi/RmiClientHandler.html#channelInactive(io.netty.channel.ChannelHandlerContext)" class="member-name-link">channelInactive(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.rmi.<a href="org/drasyl/handler/rmi/RmiClientHandler.html" title="class in org.drasyl.handler.rmi">RmiClientHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/plugin/PluginsChildHandler.html#channelInactive(io.netty.channel.ChannelHandlerContext)" class="member-name-link">channelInactive(ChannelHandlerContext)</a> - Method in class org.drasyl.node.handler.plugin.<a href="org/drasyl/node/handler/plugin/PluginsChildHandler.html" title="class in org.drasyl.node.handler.plugin">PluginsChildHandler</a></dt>
@@ -881,6 +879,8 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/drasyl/node/handler/plugin/PluginsChildHandler.html#channelUnregistered(io.netty.channel.ChannelHandlerContext)" class="member-name-link">channelUnregistered(ChannelHandlerContext)</a> - Method in class org.drasyl.node.handler.plugin.<a href="org/drasyl/node/handler/plugin/PluginsChildHandler.html" title="class in org.drasyl.node.handler.plugin">PluginsChildHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/plugin/PluginsServerHandler.html#channelUnregistered(io.netty.channel.ChannelHandlerContext)" class="member-name-link">channelUnregistered(ChannelHandlerContext)</a> - Method in class org.drasyl.node.handler.plugin.<a href="org/drasyl/node/handler/plugin/PluginsServerHandler.html" title="class in org.drasyl.node.handler.plugin">PluginsServerHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/remote/UdpServerToDrasylHandler.html#channelWritabilityChanged(io.netty.channel.ChannelHandlerContext)" class="member-name-link">channelWritabilityChanged(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.remote.<a href="org/drasyl/handler/remote/UdpServerToDrasylHandler.html" title="class in org.drasyl.handler.remote">UdpServerToDrasylHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/serialization/CharacterSerializer.html" class="type-name-link" title="class in org.drasyl.node.handler.serialization">CharacterSerializer</a> - Class in <a href="org/drasyl/node/handler/serialization/package-summary.html">org.drasyl.node.handler.serialization</a></dt>
 <dd>
@@ -2211,22 +2211,12 @@ loadScripts(document, 'script');</script>
 <div class="block">Add a buffer to the end of the queue and associate a promise with it that should be completed
  when all the buffer's bytes have been consumed from the queue and written.</div>
 </dd>
-<dt><a href="org/drasyl/channel/DrasylServerChannel.html#enqueueUdpWrite(java.lang.Object)" class="member-name-link">enqueueUdpWrite(Object)</a> - Method in class org.drasyl.channel.<a href="org/drasyl/channel/DrasylServerChannel.html" title="class in org.drasyl.channel">DrasylServerChannel</a></dt>
-<dd>
-<div class="block">This method places the message <code>o</code> in the queue for outbound messages to be written by
- the UDP channel.</div>
-</dd>
 <dt><a href="org/drasyl/handler/remote/tcp/TcpClientToDrasylHandler.html#enqueueWrite(java.lang.Object)" class="member-name-link">enqueueWrite(Object)</a> - Method in class org.drasyl.handler.remote.tcp.<a href="org/drasyl/handler/remote/tcp/TcpClientToDrasylHandler.html" title="class in org.drasyl.handler.remote.tcp">TcpClientToDrasylHandler</a></dt>
 <dd>
 <div class="block">This method places the message <code>o</code> in the queue for outbound messages to be written by
  this channel.</div>
 </dd>
 <dt><a href="org/drasyl/handler/remote/tcp/TcpServerToDrasylHandler.html#enqueueWrite(java.lang.Object)" class="member-name-link">enqueueWrite(Object)</a> - Method in class org.drasyl.handler.remote.tcp.<a href="org/drasyl/handler/remote/tcp/TcpServerToDrasylHandler.html" title="class in org.drasyl.handler.remote.tcp">TcpServerToDrasylHandler</a></dt>
-<dd>
-<div class="block">This method places the message <code>o</code> in the queue for outbound messages to be written by
- this channel.</div>
-</dd>
-<dt><a href="org/drasyl/handler/remote/UdpServerToDrasylHandler.html#enqueueWrite(java.lang.Object)" class="member-name-link">enqueueWrite(Object)</a> - Method in class org.drasyl.handler.remote.<a href="org/drasyl/handler/remote/UdpServerToDrasylHandler.html" title="class in org.drasyl.handler.remote">UdpServerToDrasylHandler</a></dt>
 <dd>
 <div class="block">This method places the message <code>o</code> in the queue for outbound messages to be written by
  this channel.</div>
@@ -2671,19 +2661,11 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">This method start processing (if any) queued inbound messages.</div>
 </dd>
-<dt><a href="org/drasyl/channel/DrasylServerChannel.html#finishUdpWrite()" class="member-name-link">finishUdpWrite()</a> - Method in class org.drasyl.channel.<a href="org/drasyl/channel/DrasylServerChannel.html" title="class in org.drasyl.channel">DrasylServerChannel</a></dt>
-<dd>
-<div class="block">This method start processing (if any) queued outbound messages for the UDP channel.</div>
-</dd>
 <dt><a href="org/drasyl/handler/remote/tcp/TcpClientToDrasylHandler.html#finishWrite()" class="member-name-link">finishWrite()</a> - Method in class org.drasyl.handler.remote.tcp.<a href="org/drasyl/handler/remote/tcp/TcpClientToDrasylHandler.html" title="class in org.drasyl.handler.remote.tcp">TcpClientToDrasylHandler</a></dt>
 <dd>
 <div class="block">This method start processing (if any) queued outbound messages for the UDP channel.</div>
 </dd>
 <dt><a href="org/drasyl/handler/remote/tcp/TcpServerToDrasylHandler.html#finishWrite()" class="member-name-link">finishWrite()</a> - Method in class org.drasyl.handler.remote.tcp.<a href="org/drasyl/handler/remote/tcp/TcpServerToDrasylHandler.html" title="class in org.drasyl.handler.remote.tcp">TcpServerToDrasylHandler</a></dt>
-<dd>
-<div class="block">This method start processing (if any) queued outbound messages for the UDP channel.</div>
-</dd>
-<dt><a href="org/drasyl/handler/remote/UdpServerToDrasylHandler.html#finishWrite()" class="member-name-link">finishWrite()</a> - Method in class org.drasyl.handler.remote.<a href="org/drasyl/handler/remote/UdpServerToDrasylHandler.html" title="class in org.drasyl.handler.remote">UdpServerToDrasylHandler</a></dt>
 <dd>
 <div class="block">This method start processing (if any) queued outbound messages for the UDP channel.</div>
 </dd>
@@ -2743,6 +2725,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/drasyl/handler/remote/UdpServer.html#flush(io.netty.channel.ChannelHandlerContext)" class="member-name-link">flush(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.remote.<a href="org/drasyl/handler/remote/UdpServer.html" title="class in org.drasyl.handler.remote">UdpServer</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/connection/OutgoingSegmentQueue.html#flush(io.netty.channel.ChannelHandlerContext,org.drasyl.handler.connection.TransmissionControlBlock)" class="member-name-link">flush(ChannelHandlerContext, TransmissionControlBlock)</a> - Method in class org.drasyl.handler.connection.<a href="org/drasyl/handler/connection/OutgoingSegmentQueue.html" title="class in org.drasyl.handler.connection">OutgoingSegmentQueue</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/remote/UdpServerToDrasylHandler.html#flushIfBecomeWritable(io.netty.channel.Channel)" class="member-name-link">flushIfBecomeWritable(Channel)</a> - Method in class org.drasyl.handler.remote.<a href="org/drasyl/handler/remote/UdpServerToDrasylHandler.html" title="class in org.drasyl.handler.remote">UdpServerToDrasylHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/channel/DrasylServerChannel.html#flushMeIfUdpChannelBecomeWritable(io.netty.channel.Channel)" class="member-name-link">flushMeIfUdpChannelBecomeWritable(Channel)</a> - Method in class org.drasyl.channel.<a href="org/drasyl/channel/DrasylServerChannel.html" title="class in org.drasyl.channel">DrasylServerChannel</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/util/Ansi.html#format(java.lang.String)" class="member-name-link">format(String)</a> - Method in class org.drasyl.util.<a href="org/drasyl/util/Ansi.html" title="class in org.drasyl.util">Ansi</a></dt>
 <dd>&nbsp;</dd>
@@ -9937,6 +9923,8 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/drasyl/handler/remote/UdpBroadcastServerChannelInitializer.html" class="type-name-link" title="class in org.drasyl.handler.remote">UdpBroadcastServerChannelInitializer</a> - Class in <a href="org/drasyl/handler/remote/package-summary.html">org.drasyl.handler.remote</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/UdpBroadcastServerChannelInitializer.html#%3Cinit%3E(io.netty.channel.ChannelHandlerContext)" class="member-name-link">UdpBroadcastServerChannelInitializer(ChannelHandlerContext)</a> - Constructor for class org.drasyl.handler.remote.<a href="org/drasyl/handler/remote/UdpBroadcastServerChannelInitializer.html" title="class in org.drasyl.handler.remote">UdpBroadcastServerChannelInitializer</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/channel/DrasylServerChannel.html#udpChannel()" class="member-name-link">udpChannel()</a> - Method in class org.drasyl.channel.<a href="org/drasyl/channel/DrasylServerChannel.html" title="class in org.drasyl.channel">DrasylServerChannel</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/UdpServer.html#udpChannel()" class="member-name-link">udpChannel()</a> - Method in class org.drasyl.handler.remote.<a href="org/drasyl/handler/remote/UdpServer.html" title="class in org.drasyl.handler.remote">UdpServer</a></dt>
 <dd>&nbsp;</dd>

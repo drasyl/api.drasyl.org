@@ -160,49 +160,44 @@ implements <a href="IdentityChannel.html" title="interface in org.drasyl.channel
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#doRegister()" class="member-name-link">doRegister</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#enqueueUdpWrite(java.lang.Object)" class="member-name-link">enqueueUdpWrite</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;o)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">This method places the message <code>o</code> in the queue for outbound messages to be written by
- the UDP channel.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#finishUdpWrite()" class="member-name-link">finishUdpWrite</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">This method start processing (if any) queued outbound messages for the UDP channel.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getChannel(org.drasyl.identity.DrasylAddress)" class="member-name-link">getChannel</a><wbr>(<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#flushMeIfUdpChannelBecomeWritable(io.netty.channel.Channel)" class="member-name-link">flushMeIfUdpChannelBecomeWritable</a><wbr>(io.netty.channel.Channel&nbsp;channel)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>,<wbr><a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getChannels()" class="member-name-link">getChannels</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getChannel(org.drasyl.identity.DrasylAddress)" class="member-name-link">getChannel</a><wbr>(<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../identity/Identity.html" title="class in org.drasyl.identity">Identity</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#identity()" class="member-name-link">identity</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>,<wbr><a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getChannels()" class="member-name-link">getChannels</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isActive()" class="member-name-link">isActive</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../identity/Identity.html" title="class in org.drasyl.identity">Identity</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#identity()" class="member-name-link">identity</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isCompatible(io.netty.channel.EventLoop)" class="member-name-link">isCompatible</a><wbr>(io.netty.channel.EventLoop&nbsp;loop)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isActive()" class="member-name-link">isActive</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isOpen()" class="member-name-link">isOpen</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isCompatible(io.netty.channel.EventLoop)" class="member-name-link">isCompatible</a><wbr>(io.netty.channel.EventLoop&nbsp;loop)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected <a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#localAddress0()" class="member-name-link">localAddress0</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isOpen()" class="member-name-link">isOpen</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected <a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newDrasylChannel(org.drasyl.identity.DrasylAddress)" class="member-name-link">newDrasylChannel</a><wbr>(<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected <a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#localAddress0()" class="member-name-link">localAddress0</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>io.netty.util.concurrent.Promise&lt;<a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#serve(org.drasyl.identity.DrasylAddress)" class="member-name-link">serve</a><wbr>(<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected <a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newDrasylChannel(org.drasyl.identity.DrasylAddress)" class="member-name-link">newDrasylChannel</a><wbr>(<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>io.netty.util.concurrent.Promise&lt;<a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#serve(org.drasyl.identity.DrasylAddress,io.netty.util.concurrent.Promise)" class="member-name-link">serve</a><wbr>(<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer,
- io.netty.util.concurrent.Promise&lt;<a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;&nbsp;promise)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#serve(org.drasyl.identity.DrasylAddress)" class="member-name-link">serve</a><wbr>(<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#serve0(org.drasyl.identity.DrasylAddress)" class="member-name-link">serve0</a><wbr>(<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>io.netty.util.concurrent.Promise&lt;<a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#serve(org.drasyl.identity.DrasylAddress,io.netty.util.concurrent.Promise)" class="member-name-link">serve</a><wbr>(<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer,
+ io.netty.util.concurrent.Promise&lt;<a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;&nbsp;promise)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#serve0(org.drasyl.identity.DrasylAddress)" class="member-name-link">serve0</a><wbr>(<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>io.netty.channel.socket.DatagramChannel</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#udpChannel()" class="member-name-link">udpChannel</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
@@ -397,20 +392,15 @@ implements <a href="IdentityChannel.html" title="interface in org.drasyl.channel
 </section>
 </li>
 <li>
-<section class="detail" id="enqueueUdpWrite(java.lang.Object)">
-<h3>enqueueUdpWrite</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">enqueueUdpWrite</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;o)</span></div>
-<div class="block">This method places the message <code>o</code> in the queue for outbound messages to be written by
- the UDP channel. Queued message are not processed until <a href="#finishUdpWrite()"><code>finishUdpWrite()</code></a> is called.</div>
+<section class="detail" id="udpChannel()">
+<h3>udpChannel</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">io.netty.channel.socket.DatagramChannel</span>&nbsp;<span class="element-name">udpChannel</span>()</div>
 </section>
 </li>
 <li>
-<section class="detail" id="finishUdpWrite()">
-<h3>finishUdpWrite</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">finishUdpWrite</span>()</div>
-<div class="block">This method start processing (if any) queued outbound messages for the UDP channel. This
- method ensures that read/write order is respected. Therefore, if UDP channel is currently
- reading, these reads are performed first and the writes are performed afterwards.</div>
+<section class="detail" id="flushMeIfUdpChannelBecomeWritable(io.netty.channel.Channel)">
+<h3>flushMeIfUdpChannelBecomeWritable</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">flushMeIfUdpChannelBecomeWritable</span><wbr><span class="parameters">(io.netty.channel.Channel&nbsp;channel)</span></div>
 </section>
 </li>
 </ul>
