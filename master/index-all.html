@@ -2196,6 +2196,16 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/codec/JacksonCodec.html#encode(io.netty.channel.ChannelHandlerContext,T,io.netty.buffer.ByteBuf)" class="member-name-link">encode(ChannelHandlerContext, T, ByteBuf)</a> - Method in class org.drasyl.handler.codec.<a href="org/drasyl/handler/codec/JacksonCodec.html" title="class in org.drasyl.handler.codec">JacksonCodec</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/remote/protocol/HelloMessage.html#encodeMessage(io.netty.buffer.ByteBufAllocator)" class="member-name-link">encodeMessage(ByteBufAllocator)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/HelloMessage.html" title="class in org.drasyl.handler.remote.protocol">HelloMessage</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/remote/protocol/ArmedProtocolMessage.html#encodeMessage(io.netty.buffer.ByteBufAllocator)" class="member-name-link">encodeMessage(ByteBufAllocator)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/ArmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">ArmedProtocolMessage</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/remote/protocol/RemoteMessage.html#encodeMessage(io.netty.buffer.ByteBufAllocator)" class="member-name-link">encodeMessage(ByteBufAllocator)</a> - Method in interface org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/RemoteMessage.html" title="interface in org.drasyl.handler.remote.protocol">RemoteMessage</a></dt>
+<dd>
+<div class="block">Writes this message to a buffer created by <code>alloc</code>.</div>
+</dd>
+<dt><a href="org/drasyl/handler/remote/protocol/UnarmedProtocolMessage.html#encodeMessage(io.netty.buffer.ByteBufAllocator)" class="member-name-link">encodeMessage(ByteBufAllocator)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/UnarmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">UnarmedProtocolMessage</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/crypto/Crypto.html#encrypt(byte%5B%5D,byte%5B%5D,org.drasyl.handler.remote.protocol.Nonce,org.drasyl.crypto.sodium.SessionPair)" class="member-name-link">encrypt(byte[], byte[], Nonce, SessionPair)</a> - Method in class org.drasyl.crypto.<a href="org/drasyl/crypto/Crypto.html" title="class in org.drasyl.crypto">Crypto</a></dt>
 <dd>
 <div class="block">Encrypts the given <code>message</code>, by adding <code>authTag</code> as an authentication tag, using
@@ -10599,10 +10609,6 @@ the order they are declared.</div>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/protocol/HelloMessage.html#writePublicHeaderTo(io.netty.buffer.ByteBuf)" class="member-name-link">writePublicHeaderTo(ByteBuf)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/HelloMessage.html" title="class in org.drasyl.handler.remote.protocol">HelloMessage</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/drasyl/handler/remote/protocol/HelloMessage.html#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo(ByteBuf)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/HelloMessage.html" title="class in org.drasyl.handler.remote.protocol">HelloMessage</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="org/drasyl/handler/remote/protocol/ArmedProtocolMessage.html#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo(ByteBuf)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/ArmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">ArmedProtocolMessage</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/protocol/PrivateHeader.html#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo(ByteBuf)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/PrivateHeader.html" title="class in org.drasyl.handler.remote.protocol">PrivateHeader</a></dt>
 <dd>
 <div class="block">Writes this header to the buffer <code>byteBuf</code>.</div>
@@ -10611,12 +10617,6 @@ the order they are declared.</div>
 <dd>
 <div class="block">Writes this header to the buffer <code>byteBuf</code>.</div>
 </dd>
-<dt><a href="org/drasyl/handler/remote/protocol/RemoteMessage.html#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo(ByteBuf)</a> - Method in interface org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/RemoteMessage.html" title="interface in org.drasyl.handler.remote.protocol">RemoteMessage</a></dt>
-<dd>
-<div class="block">Writes this message to the buffer <code>out</code>.</div>
-</dd>
-<dt><a href="org/drasyl/handler/remote/protocol/UnarmedProtocolMessage.html#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo(ByteBuf)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/UnarmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">UnarmedProtocolMessage</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/crypto/ArmHeader.html#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo(ByteBuf)</a> - Method in class org.drasyl.node.handler.crypto.<a href="org/drasyl/node/handler/crypto/ArmHeader.html" title="class in org.drasyl.node.handler.crypto">ArmHeader</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/crypto/KeyExchangeMessage.html#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo(ByteBuf)</a> - Method in class org.drasyl.node.handler.crypto.<a href="org/drasyl/node/handler/crypto/KeyExchangeMessage.html" title="class in org.drasyl.node.handler.crypto">KeyExchangeMessage</a></dt>

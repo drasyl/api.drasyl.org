@@ -81,7 +81,8 @@ loadScripts(document, 'script');</script>
 <dd><code>io.netty.util.ReferenceCounted</code>, <code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/AutoCloseable.html" title="class or interface in java.lang" class="external-link">AutoCloseable</a></code>, <code><a href="PartialReadMessage.html" title="interface in org.drasyl.handler.remote.protocol">PartialReadMessage</a></code>, <code><a href="RemoteMessage.html" title="interface in org.drasyl.handler.remote.protocol">RemoteMessage</a></code></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public abstract class </span><span class="element-name type-name-label">ArmedProtocolMessage</span>
+<div class="type-signature"><span class="annotations"><a href="../../../util/internal/UnstableApi.html" title="annotation in org.drasyl.util.internal">@UnstableApi</a>
+</span><span class="modifiers">public abstract class </span><span class="element-name type-name-label">ArmedProtocolMessage</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>
 implements <a href="PartialReadMessage.html" title="interface in org.drasyl.handler.remote.protocol">PartialReadMessage</a></span></div>
 <div class="block">Describes a protocol message whose contents has been armed by using authenticated encryption with
@@ -154,51 +155,51 @@ implements <a href="PartialReadMessage.html" title="interface in org.drasyl.hand
 <div class="block">Returns a disarmed version (<a href="FullReadMessage.html" title="interface in org.drasyl.handler.remote.protocol"><code>FullReadMessage</code></a>) of this message and then releases this
  message.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLength()" class="member-name-link">getLength</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="ArmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">ArmedProtocolMessage</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#incrementHopCount()" class="member-name-link">incrementHopCount</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>io.netty.buffer.ByteBuf</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#encodeMessage(io.netty.buffer.ByteBufAllocator)" class="member-name-link">encodeMessage</a><wbr>(io.netty.buffer.ByteBufAllocator&nbsp;alloc)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Writes this message to a buffer created by <code>alloc</code>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLength()" class="member-name-link">getLength</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="ArmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">ArmedProtocolMessage</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#incrementHopCount()" class="member-name-link">incrementHopCount</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns a copy of this message with incremented <a href="RemoteMessage.html#getHopCount()"><code>RemoteMessage.getHopCount()</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="ArmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">ArmedProtocolMessage</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#of(org.drasyl.handler.remote.protocol.Nonce,org.drasyl.handler.remote.protocol.HopCount,int,org.drasyl.identity.DrasylAddress,org.drasyl.identity.DrasylAddress,org.drasyl.identity.ProofOfWork,io.netty.buffer.ByteBuf)" class="member-name-link">of</a><wbr>(<a href="Nonce.html" title="class in org.drasyl.handler.remote.protocol">Nonce</a>&nbsp;nonce,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="ArmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">ArmedProtocolMessage</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#of(org.drasyl.handler.remote.protocol.Nonce,org.drasyl.handler.remote.protocol.HopCount,int,org.drasyl.identity.DrasylAddress,org.drasyl.identity.DrasylAddress,org.drasyl.identity.ProofOfWork,io.netty.buffer.ByteBuf)" class="member-name-link">of</a><wbr>(<a href="Nonce.html" title="class in org.drasyl.handler.remote.protocol">Nonce</a>&nbsp;nonce,
  <a href="HopCount.html" title="class in org.drasyl.handler.remote.protocol">HopCount</a>&nbsp;hopCount,
  int&nbsp;networkId,
  <a href="../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;recipient,
  <a href="../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;sender,
  <a href="../../../identity/ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;proofOfWork,
  io.netty.buffer.ByteBuf&nbsp;bytes)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates an armed message.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#refCnt()" class="member-name-link">refCnt</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#release()" class="member-name-link">release</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#refCnt()" class="member-name-link">refCnt</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#release(int)" class="member-name-link">release</a><wbr>(int&nbsp;decrement)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#release()" class="member-name-link">release</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>io.netty.util.ReferenceCounted</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#retain()" class="member-name-link">retain</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#release(int)" class="member-name-link">release</a><wbr>(int&nbsp;decrement)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>io.netty.util.ReferenceCounted</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#retain(int)" class="member-name-link">retain</a><wbr>(int&nbsp;increment)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#retain()" class="member-name-link">retain</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>io.netty.util.ReferenceCounted</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#touch()" class="member-name-link">touch</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#retain(int)" class="member-name-link">retain</a><wbr>(int&nbsp;increment)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>io.netty.util.ReferenceCounted</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#touch(java.lang.Object)" class="member-name-link">touch</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;hint)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#touch()" class="member-name-link">touch</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo</a><wbr>(io.netty.buffer.ByteBuf&nbsp;out)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Writes this message to the buffer <code>out</code>.</div>
-</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>io.netty.util.ReferenceCounted</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#touch(java.lang.Object)" class="member-name-link">touch</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;hint)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -417,16 +418,16 @@ implements <a href="PartialReadMessage.html" title="interface in org.drasyl.hand
 </section>
 </li>
 <li>
-<section class="detail" id="writeTo(io.netty.buffer.ByteBuf)">
-<h3>writeTo</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">writeTo</span><wbr><span class="parameters">(io.netty.buffer.ByteBuf&nbsp;out)</span></div>
-<div class="block"><span class="descfrm-type-label">Description copied from interface:&nbsp;<code><a href="RemoteMessage.html#writeTo(io.netty.buffer.ByteBuf)">RemoteMessage</a></code></span></div>
-<div class="block">Writes this message to the buffer <code>out</code>.</div>
+<section class="detail" id="encodeMessage(io.netty.buffer.ByteBufAllocator)">
+<h3>encodeMessage</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">io.netty.buffer.ByteBuf</span>&nbsp;<span class="element-name">encodeMessage</span><wbr><span class="parameters">(io.netty.buffer.ByteBufAllocator&nbsp;alloc)</span></div>
+<div class="block"><span class="descfrm-type-label">Description copied from interface:&nbsp;<code><a href="RemoteMessage.html#encodeMessage(io.netty.buffer.ByteBufAllocator)">RemoteMessage</a></code></span></div>
+<div class="block">Writes this message to a buffer created by <code>alloc</code>.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="RemoteMessage.html#writeTo(io.netty.buffer.ByteBuf)">writeTo</a></code>&nbsp;in interface&nbsp;<code><a href="RemoteMessage.html" title="interface in org.drasyl.handler.remote.protocol">RemoteMessage</a></code></dd>
-<dt>Parameters:</dt>
-<dd><code>out</code> - writes this envelope to this buffer</dd>
+<dd><code><a href="RemoteMessage.html#encodeMessage(io.netty.buffer.ByteBufAllocator)">encodeMessage</a></code>&nbsp;in interface&nbsp;<code><a href="RemoteMessage.html" title="interface in org.drasyl.handler.remote.protocol">RemoteMessage</a></code></dd>
+<dt>Returns:</dt>
+<dd>the buffer written to</dd>
 </dl>
 </section>
 </li>
