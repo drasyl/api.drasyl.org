@@ -77,7 +77,8 @@ loadScripts(document, 'script');</script>
 </div>
 <section class="class-description" id="class-description">
 <hr>
-<div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">Nonce</span>
+<div class="type-signature"><span class="annotations"><a href="../../../util/internal/UnstableApi.html" title="annotation in org.drasyl.util.internal">@UnstableApi</a>
+</span><span class="modifiers">public class </span><span class="element-name type-name-label">Nonce</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
 <div class="block">A <a href="RemoteMessage.html" title="interface in org.drasyl.handler.remote.protocol"><code>RemoteMessage</code></a> is uniquely identified by its <a href="#NONCE_LENGTH"><code>NONCE_LENGTH</code></a> bytes long nonce.
  <p>
@@ -121,7 +122,7 @@ loadScripts(document, 'script');</script>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#hashCode()" class="member-name-link">hashCode</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#isValidNonce(org.drasyl.util.ImmutableByteArray)" class="member-name-link">isValidNonce</a><wbr>(<a href="../../../util/ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a>&nbsp;bytes)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#isValidNonce(byte%5B%5D)" class="member-name-link">isValidNonce</a><wbr>(byte[]&nbsp;bytes)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Checks if <code>bytes</code> is a valid value.</div>
 </div>
@@ -148,6 +149,11 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toString()" class="member-name-link">toString</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo</a><wbr>(io.netty.buffer.ByteBuf&nbsp;out)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Writes this nonce to the buffer <code>out</code>.</div>
+</div>
 </div>
 </div>
 </div>
@@ -247,26 +253,15 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="isValidNonce(org.drasyl.util.ImmutableByteArray)">
+<section class="detail" id="isValidNonce(byte[])">
 <h3>isValidNonce</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isValidNonce</span><wbr><span class="parameters">(<a href="../../../util/ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a>&nbsp;bytes)</span></div>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isValidNonce</span><wbr><span class="parameters">(byte[]&nbsp;bytes)</span></div>
 <div class="block">Checks if <code>bytes</code> is a valid value.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>bytes</code> - string to be validated</dd>
 <dt>Returns:</dt>
 <dd><code>true</code> if valid. Otherwise <code>false</code></dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="of(org.drasyl.util.ImmutableByteArray)">
-<h3>of</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="Nonce.html" title="class in org.drasyl.handler.remote.protocol">Nonce</a></span>&nbsp;<span class="element-name">of</span><wbr><span class="parameters">(<a href="../../../util/internal/NonNull.html" title="annotation in org.drasyl.util.internal">@NonNull</a>
- <a href="../../../util/ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a>&nbsp;bytes)</span></div>
-<dl class="notes">
-<dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/NullPointerException.html" title="class or interface in java.lang" class="external-link">NullPointerException</a></code> - if <code>bytes</code> is <code>null</code></dd>
 </dl>
 </section>
 </li>
@@ -282,6 +277,17 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="of(org.drasyl.util.ImmutableByteArray)">
+<h3>of</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="Nonce.html" title="class in org.drasyl.handler.remote.protocol">Nonce</a></span>&nbsp;<span class="element-name">of</span><wbr><span class="parameters">(<a href="../../../util/internal/NonNull.html" title="annotation in org.drasyl.util.internal">@NonNull</a>
+ <a href="../../../util/ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a>&nbsp;bytes)</span></div>
+<dl class="notes">
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/NullPointerException.html" title="class or interface in java.lang" class="external-link">NullPointerException</a></code> - if <code>bytes</code> is <code>null</code></dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="of(java.lang.String)">
 <h3>of</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="Nonce.html" title="class in org.drasyl.handler.remote.protocol">Nonce</a></span>&nbsp;<span class="element-name">of</span><wbr><span class="parameters">(<a href="../../../util/internal/NonNull.html" title="annotation in org.drasyl.util.internal">@NonNull</a>
@@ -289,6 +295,17 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Throws:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/NullPointerException.html" title="class or interface in java.lang" class="external-link">NullPointerException</a></code> - if <code>bytes</code> is <code>null</code></dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="writeTo(io.netty.buffer.ByteBuf)">
+<h3>writeTo</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">writeTo</span><wbr><span class="parameters">(io.netty.buffer.ByteBuf&nbsp;out)</span></div>
+<div class="block">Writes this nonce to the buffer <code>out</code>.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>byteBuf</code> - writes this nonce to the given buffer</dd>
 </dl>
 </section>
 </li>
