@@ -47,13 +47,13 @@ loadScripts(document, 'script');</script>
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
 <li><a href="#field-summary">Field</a>&nbsp;|&nbsp;</li>
-<li><a href="#constructor-summary">Constr</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method-summary">Method</a></li>
 </ul>
 <ul class="sub-nav-list">
 <li>Detail:&nbsp;</li>
 <li><a href="#field-detail">Field</a>&nbsp;|&nbsp;</li>
-<li><a href="#constructor-detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method-detail">Method</a></li>
 </ul>
 </div>
@@ -85,7 +85,7 @@ loadScripts(document, 'script');</script>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Serializable.html" title="class or interface in java.io" class="external-link">Serializable</a></code>, <code><a href="Key.html" title="interface in org.drasyl.identity">Key</a></code>, <code><a href="PublicKey.html" title="interface in org.drasyl.identity">PublicKey</a></code></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public abstract class </span><span class="element-name type-name-label">IdentityPublicKey</span>
+<div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">IdentityPublicKey</span>
 <span class="extends-implements">extends <a href="DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>
 implements <a href="PublicKey.html" title="interface in org.drasyl.identity">PublicKey</a></span></div>
 <div class="block">This class models an ed25519 public key that is used as node's unique overlay address.
@@ -123,19 +123,6 @@ implements <a href="PublicKey.html" title="interface in org.drasyl.identity">Pub
 </div>
 </section>
 </li>
-<!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<li>
-<section class="constructor-summary" id="constructor-summary">
-<h2>Constructor Summary</h2>
-<div class="caption"><span>Constructors</span></div>
-<div class="summary-table two-column-summary">
-<div class="table-header col-first">Constructor</div>
-<div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E()" class="member-name-link">IdentityPublicKey</a>()</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-</div>
-</section>
-</li>
 <!-- ========== METHOD SUMMARY =========== -->
 <li>
 <section class="method-summary" id="method-summary">
@@ -150,45 +137,50 @@ implements <a href="PublicKey.html" title="interface in org.drasyl.identity">Pub
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#equals(java.lang.Object)" class="member-name-link">equals</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;o)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="KeyAgreementPublicKey.html" title="class in org.drasyl.identity">KeyAgreementPublicKey</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLongTimeKeyAgreementKey()" class="member-name-link">getLongTimeKeyAgreementKey</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../util/ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getBytes()" class="member-name-link">getBytes</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#hashCode()" class="member-name-link">hashCode</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="KeyAgreementPublicKey.html" title="class in org.drasyl.identity">KeyAgreementPublicKey</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLongTimeKeyAgreementKey()" class="member-name-link">getLongTimeKeyAgreementKey</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#intern()" class="member-name-link">intern</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#hashCode()" class="member-name-link">hashCode</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#intern()" class="member-name-link">intern</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">See <a href="../util/InternPool.html#intern(T)"><code>InternPool.intern(Object)</code></a></div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#of(byte%5B%5D)" class="member-name-link">of</a><wbr>(byte[]&nbsp;bytes)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#of(byte%5B%5D)" class="member-name-link">of</a><wbr>(byte[]&nbsp;bytes)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Converts a byte[] into a <a href="IdentityPublicKey.html" title="class in org.drasyl.identity"><code>IdentityPublicKey</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#of(java.lang.String)" class="member-name-link">of</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;bytes)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#of(java.lang.String)" class="member-name-link">of</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;bytes)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Converts a <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link"><code>String</code></a> into a <a href="IdentityPublicKey.html" title="class in org.drasyl.identity"><code>IdentityPublicKey</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#of(org.drasyl.util.ImmutableByteArray)" class="member-name-link">of</a><wbr>(<a href="../util/ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a>&nbsp;bytes)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>byte[]</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toByteArray()" class="member-name-link">toByteArray</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toString()" class="member-name-link">toString</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#of(org.drasyl.util.ImmutableByteArray)" class="member-name-link">of</a><wbr>(<a href="../util/ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a>&nbsp;bytes)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>byte[]</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toByteArray()" class="member-name-link">toByteArray</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toString()" class="member-name-link">toString</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo</a><wbr>(io.netty.buffer.ByteBuf&nbsp;out)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Writes this public key to the buffer <code>out</code>.</div>
+</div>
 </div>
 </div>
 </div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
 <code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#clone()" title="class or interface in java.lang" class="external-link">clone</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#finalize()" title="class or interface in java.lang" class="external-link">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#getClass()" title="class or interface in java.lang" class="external-link">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#notify()" title="class or interface in java.lang" class="external-link">notify</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#notifyAll()" title="class or interface in java.lang" class="external-link">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#wait()" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#wait(long)" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#wait(long,int)" title="class or interface in java.lang" class="external-link">wait</a></code></div>
-<div class="inherited-list">
-<h3 id="methods-inherited-from-class-org.drasyl.identity.Key">Methods inherited from interface&nbsp;org.drasyl.identity.<a href="Key.html" title="interface in org.drasyl.identity">Key</a></h3>
-<code><a href="Key.html#getBytes()">getBytes</a></code></div>
 </section>
 </li>
 </ul>
@@ -237,20 +229,6 @@ implements <a href="PublicKey.html" title="interface in org.drasyl.identity">Pub
 </ul>
 </section>
 </li>
-<!-- ========= CONSTRUCTOR DETAIL ======== -->
-<li>
-<section class="constructor-details" id="constructor-detail">
-<h2>Constructor Details</h2>
-<ul class="member-list">
-<li>
-<section class="detail" id="&lt;init&gt;()">
-<h3>IdentityPublicKey</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">IdentityPublicKey</span>()</div>
-</section>
-</li>
-</ul>
-</section>
-</li>
 <!-- ============ METHOD DETAIL ========== -->
 <li>
 <section class="method-details" id="method-detail">
@@ -271,6 +249,16 @@ implements <a href="PublicKey.html" title="interface in org.drasyl.identity">Pub
 <h3>intern</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a></span>&nbsp;<span class="element-name">intern</span>()</div>
 <div class="block">See <a href="../util/InternPool.html#intern(T)"><code>InternPool.intern(Object)</code></a></div>
+</section>
+</li>
+<li>
+<section class="detail" id="getBytes()">
+<h3>getBytes</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../util/ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a></span>&nbsp;<span class="element-name">getBytes</span>()</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="Key.html#getBytes()">getBytes</a></code>&nbsp;in interface&nbsp;<code><a href="Key.html" title="interface in org.drasyl.identity">Key</a></code></dd>
+</dl>
 </section>
 </li>
 <li>
@@ -316,13 +304,16 @@ implements <a href="PublicKey.html" title="interface in org.drasyl.identity">Pub
 </section>
 </li>
 <li>
-<section class="detail" id="of(org.drasyl.util.ImmutableByteArray)">
-<h3>of</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a></span>&nbsp;<span class="element-name">of</span><wbr><span class="parameters">(<a href="../util/ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a>&nbsp;bytes)</span></div>
+<section class="detail" id="writeTo(io.netty.buffer.ByteBuf)">
+<h3>writeTo</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">writeTo</span><wbr><span class="parameters">(io.netty.buffer.ByteBuf&nbsp;out)</span></div>
+<div class="block"><span class="descfrm-type-label">Description copied from class:&nbsp;<code><a href="DrasylAddress.html#writeTo(io.netty.buffer.ByteBuf)">DrasylAddress</a></code></span></div>
+<div class="block">Writes this public key to the buffer <code>out</code>.</div>
 <dl class="notes">
-<dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/NullPointerException.html" title="class or interface in java.lang" class="external-link">NullPointerException</a></code> - if <code>bytes</code> is <code>null</code></dd>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if <code>bytes</code> has wrong key size</dd>
+<dt>Specified by:</dt>
+<dd><code><a href="DrasylAddress.html#writeTo(io.netty.buffer.ByteBuf)">writeTo</a></code>&nbsp;in class&nbsp;<code><a href="DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a></code></dd>
+<dt>Parameters:</dt>
+<dd><code>out</code> - writes this public key to the given buffer</dd>
 </dl>
 </section>
 </li>
@@ -338,6 +329,17 @@ implements <a href="PublicKey.html" title="interface in org.drasyl.identity">Pub
 <dd><a href="IdentityPublicKey.html" title="class in org.drasyl.identity"><code>IdentityPublicKey</code></a></dd>
 <dt>Throws:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/NullPointerException.html" title="class or interface in java.lang" class="external-link">NullPointerException</a></code> - if <code>key</code> is <code>null</code></dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if <code>bytes</code> has wrong key size</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="of(org.drasyl.util.ImmutableByteArray)">
+<h3>of</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a></span>&nbsp;<span class="element-name">of</span><wbr><span class="parameters">(<a href="../util/ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a>&nbsp;bytes)</span></div>
+<dl class="notes">
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/NullPointerException.html" title="class or interface in java.lang" class="external-link">NullPointerException</a></code> - if <code>bytes</code> is <code>null</code></dd>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if <code>bytes</code> has wrong key size</dd>
 </dl>
 </section>

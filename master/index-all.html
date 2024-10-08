@@ -2935,6 +2935,8 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns the remainder of unread bytes of this message.</div>
 </dd>
+<dt><a href="org/drasyl/identity/IdentityPublicKey.html#getBytes()" class="member-name-link">getBytes()</a> - Method in class org.drasyl.identity.<a href="org/drasyl/identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/identity/Key.html#getBytes()" class="member-name-link">getBytes()</a> - Method in interface org.drasyl.identity.<a href="org/drasyl/identity/Key.html" title="interface in org.drasyl.identity">Key</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/plugin/groups/manager/database/jdbc/SingleConnectionWrapper.html#getCatalog()" class="member-name-link">getCatalog()</a> - Method in class org.drasyl.node.plugin.groups.manager.database.jdbc.<a href="org/drasyl/node/plugin/groups/manager/database/jdbc/SingleConnectionWrapper.html" title="class in org.drasyl.node.plugin.groups.manager.database.jdbc">SingleConnectionWrapper</a></dt>
@@ -4287,8 +4289,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">This class models an ed25519 public key that is used as node's unique overlay address.</div>
 </dd>
-<dt><a href="org/drasyl/identity/IdentityPublicKey.html#%3Cinit%3E()" class="member-name-link">IdentityPublicKey()</a> - Constructor for class org.drasyl.identity.<a href="org/drasyl/identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/DrasylConfig.Builder.html#identitySecretKey(org.drasyl.identity.IdentitySecretKey)" class="member-name-link">identitySecretKey(IdentitySecretKey)</a> - Method in class org.drasyl.node.<a href="org/drasyl/node/DrasylConfig.Builder.html" title="class in org.drasyl.node">DrasylConfig.Builder</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/identity/IdentitySecretKey.html" class="type-name-link" title="class in org.drasyl.identity">IdentitySecretKey</a> - Class in <a href="org/drasyl/identity/package-summary.html">org.drasyl.identity</a></dt>
@@ -10623,6 +10623,12 @@ the order they are declared.</div>
 <dd>
 <div class="block">Writes this header to the buffer <code>byteBuf</code>.</div>
 </dd>
+<dt><a href="org/drasyl/identity/DrasylAddress.html#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo(ByteBuf)</a> - Method in class org.drasyl.identity.<a href="org/drasyl/identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a></dt>
+<dd>
+<div class="block">Writes this public key to the buffer <code>out</code>.</div>
+</dd>
+<dt><a href="org/drasyl/identity/IdentityPublicKey.html#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo(ByteBuf)</a> - Method in class org.drasyl.identity.<a href="org/drasyl/identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/crypto/ArmHeader.html#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo(ByteBuf)</a> - Method in class org.drasyl.node.handler.crypto.<a href="org/drasyl/node/handler/crypto/ArmHeader.html" title="class in org.drasyl.node.handler.crypto">ArmHeader</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/crypto/KeyExchangeMessage.html#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo(ByteBuf)</a> - Method in class org.drasyl.node.handler.crypto.<a href="org/drasyl/node/handler/crypto/KeyExchangeMessage.html" title="class in org.drasyl.node.handler.crypto">KeyExchangeMessage</a></dt>

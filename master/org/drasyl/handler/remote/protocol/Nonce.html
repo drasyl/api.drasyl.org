@@ -242,6 +242,17 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="writeTo(io.netty.buffer.ByteBuf)">
+<h3>writeTo</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">writeTo</span><wbr><span class="parameters">(io.netty.buffer.ByteBuf&nbsp;out)</span></div>
+<div class="block">Writes this nonce to the buffer <code>out</code>.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>out</code> - writes this nonce to the given buffer</dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="randomNonce()">
 <h3>randomNonce</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="Nonce.html" title="class in org.drasyl.handler.remote.protocol">Nonce</a></span>&nbsp;<span class="element-name">randomNonce</span>()</div>
@@ -295,17 +306,6 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Throws:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/NullPointerException.html" title="class or interface in java.lang" class="external-link">NullPointerException</a></code> - if <code>bytes</code> is <code>null</code></dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="writeTo(io.netty.buffer.ByteBuf)">
-<h3>writeTo</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">writeTo</span><wbr><span class="parameters">(io.netty.buffer.ByteBuf&nbsp;out)</span></div>
-<div class="block">Writes this nonce to the buffer <code>out</code>.</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>byteBuf</code> - writes this nonce to the given buffer</dd>
 </dl>
 </section>
 </li>
