@@ -164,15 +164,20 @@ implements <a href="PublicKey.html" title="interface in org.drasyl.identity">Pub
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#of(org.drasyl.util.ImmutableByteArray)" class="member-name-link">of</a><wbr>(<a href="../util/ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a>&nbsp;bytes)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>byte[]</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toByteArray()" class="member-name-link">toByteArray</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toString()" class="member-name-link">toString</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#ofDirect(byte%5B%5D)" class="member-name-link">ofDirect</a><wbr>(byte[]&nbsp;bytes)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Converts a byte[] into a <a href="IdentityPublicKey.html" title="class in org.drasyl.identity"><code>IdentityPublicKey</code></a>.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>byte[]</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toByteArray()" class="member-name-link">toByteArray</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo</a><wbr>(io.netty.buffer.ByteBuf&nbsp;out)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toString()" class="member-name-link">toString</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#writeTo(io.netty.buffer.ByteBuf)" class="member-name-link">writeTo</a><wbr>(io.netty.buffer.ByteBuf&nbsp;out)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Writes this public key to the buffer <code>out</code>.</div>
 </div>
 </div>
@@ -314,6 +319,22 @@ implements <a href="PublicKey.html" title="interface in org.drasyl.identity">Pub
 <dd><code><a href="DrasylAddress.html#writeTo(io.netty.buffer.ByteBuf)">writeTo</a></code>&nbsp;in class&nbsp;<code><a href="DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>out</code> - writes this public key to the given buffer</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="ofDirect(byte[])">
+<h3>ofDirect</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a></span>&nbsp;<span class="element-name">ofDirect</span><wbr><span class="parameters">(byte[]&nbsp;bytes)</span></div>
+<div class="block">Converts a byte[] into a <a href="IdentityPublicKey.html" title="class in org.drasyl.identity"><code>IdentityPublicKey</code></a>.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>bytes</code> - public key</dd>
+<dt>Returns:</dt>
+<dd><a href="IdentityPublicKey.html" title="class in org.drasyl.identity"><code>IdentityPublicKey</code></a></dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/NullPointerException.html" title="class or interface in java.lang" class="external-link">NullPointerException</a></code> - if <code>key</code> is <code>null</code></dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if <code>bytes</code> has wrong key size</dd>
 </dl>
 </section>
 </li>
