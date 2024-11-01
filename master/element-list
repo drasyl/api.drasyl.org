@@ -45,6 +45,7 @@ org.drasyl.node.plugin.groups.manager
 org.drasyl.node.plugin.groups.manager.data
 org.drasyl.node.plugin.groups.manager.database
 org.drasyl.node.plugin.groups.manager.database.jdbc
+org.drasyl.serialization
 org.drasyl.util
 org.drasyl.util.internal
 org.drasyl.util.logging

@@ -111,6 +111,8 @@ loadScripts(document, 'script');</script>
 <div class="block">Contains events that inform about various states of the <a href="../../node/DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>
  (started, stopped, etc.) or overlay network events (messages, peer discovery, etc.)</div>
 </div>
+<div class="col-first even-row-color"><a href="#org.drasyl.serialization">org.drasyl.serialization</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
 </div>
 <section class="class-uses">
 <ul class="block-list">
@@ -203,9 +205,6 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color"><code><a href="../DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a></code></div>
 <div class="col-second odd-row-color"><span class="type-name-label">ChordFingerTable.</span><code><a href="../../handler/dht/chord/ChordFingerTable.html#getSuccessor()" class="member-name-link">getSuccessor</a>()</code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>static <a href="../DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a></code></div>
-<div class="col-second even-row-color"><span class="type-name-label">LocalChordNode.IdentityPublicKeyMixin.</span><code><a href="../../handler/dht/chord/LocalChordNode.IdentityPublicKeyMixin.html#of(java.lang.String)" class="member-name-link">of</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;bytes)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
 </div>
 <div class="caption"><span>Methods in <a href="../../handler/dht/chord/package-summary.html">org.drasyl.handler.dht.chord</a> that return types with arguments of type <a href="../DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a></span></div>
 <div class="summary-table three-column-summary">
@@ -1058,6 +1057,41 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color"><code>static <a href="../../node/event/Peer.html" title="class in org.drasyl.node.event">Peer</a></code></div>
 <div class="col-second odd-row-color"><span class="type-name-label">Peer.</span><code><a href="../../node/event/Peer.html#of(org.drasyl.identity.DrasylAddress)" class="member-name-link">of</a><wbr>(<a href="../DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;address)</code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="org.drasyl.serialization">
+<h2>Uses of <a href="../DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a> in <a href="../../serialization/package-summary.html">org.drasyl.serialization</a></h2>
+<div class="caption"><span>Methods in <a href="../../serialization/package-summary.html">org.drasyl.serialization</a> that return <a href="../DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code><a href="../DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">IdentityMixin.</span><code><a href="../../serialization/IdentityMixin.html#getAddress()" class="member-name-link">getAddress</a>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>static <a href="../DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">IdentityPublicKeyMixin.</span><code><a href="../../serialization/IdentityPublicKeyMixin.html#of(java.lang.String)" class="member-name-link">of</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;bytes)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+</div>
+<div class="caption"><span>Methods in <a href="../../serialization/package-summary.html">org.drasyl.serialization</a> that return types with arguments of type <a href="../DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>abstract <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>,<wbr><a href="../../handler/peers/Peer.html" title="class in org.drasyl.handler.peers">Peer</a>&gt;</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">PeersListMixin.</span><code><a href="../../serialization/PeersListMixin.html#peers()" class="member-name-link">peers</a>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+</div>
+<div class="caption"><span>Constructor parameters in <a href="../../serialization/package-summary.html">org.drasyl.serialization</a> with type arguments of type <a href="../DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier</div>
+<div class="table-header col-second">Constructor</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="../../serialization/PeersListMixin.html#%3Cinit%3E(java.util.Map)" class="member-name-link">PeersListMixin</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>,<wbr><a href="../../handler/peers/Peer.html" title="class in org.drasyl.handler.peers">Peer</a>&gt;&nbsp;peers)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
