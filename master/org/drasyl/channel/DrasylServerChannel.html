@@ -189,15 +189,8 @@ implements <a href="IdentityChannel.html" title="interface in org.drasyl.channel
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected <a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newDrasylChannel(org.drasyl.identity.DrasylAddress)" class="member-name-link">newDrasylChannel</a><wbr>(<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>io.netty.util.concurrent.Promise&lt;<a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>io.netty.channel.ChannelFuture</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#serve(org.drasyl.identity.DrasylAddress)" class="member-name-link">serve</a><wbr>(<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>io.netty.util.concurrent.Promise&lt;<a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#serve(org.drasyl.identity.DrasylAddress,io.netty.util.concurrent.Promise)" class="member-name-link">serve</a><wbr>(<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer,
- io.netty.util.concurrent.Promise&lt;<a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;&nbsp;promise)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#serve0(org.drasyl.identity.DrasylAddress)" class="member-name-link">serve0</a><wbr>(<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>io.netty.channel.socket.DatagramChannel</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#udpChannel()" class="member-name-link">udpChannel</a>()</code></div>
@@ -376,22 +369,9 @@ implements <a href="IdentityChannel.html" title="interface in org.drasyl.channel
 </section>
 </li>
 <li>
-<section class="detail" id="serve(org.drasyl.identity.DrasylAddress,io.netty.util.concurrent.Promise)">
-<h3>serve</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">io.netty.util.concurrent.Promise&lt;<a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;</span>&nbsp;<span class="element-name">serve</span><wbr><span class="parameters">(<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer,
- io.netty.util.concurrent.Promise&lt;<a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;&nbsp;promise)</span></div>
-</section>
-</li>
-<li>
-<section class="detail" id="serve0(org.drasyl.identity.DrasylAddress)">
-<h3>serve0</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a></span>&nbsp;<span class="element-name">serve0</span><wbr><span class="parameters">(<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer)</span></div>
-</section>
-</li>
-<li>
 <section class="detail" id="serve(org.drasyl.identity.DrasylAddress)">
 <h3>serve</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">io.netty.util.concurrent.Promise&lt;<a href="DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;</span>&nbsp;<span class="element-name">serve</span><wbr><span class="parameters">(<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">io.netty.channel.ChannelFuture</span>&nbsp;<span class="element-name">serve</span><wbr><span class="parameters">(<a href="../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;peer)</span></div>
 </section>
 </li>
 <li>
