@@ -25,7 +25,6 @@ org.drasyl.handler.rmi
 org.drasyl.handler.rmi.annotation
 org.drasyl.handler.rmi.message
 org.drasyl.handler.sntp
-org.drasyl.handler.stream
 org.drasyl.handler.traffic
 org.drasyl.identity
 org.drasyl.node
@@ -36,7 +35,6 @@ org.drasyl.node.handler
 org.drasyl.node.handler.crypto
 org.drasyl.node.handler.plugin
 org.drasyl.node.handler.serialization
-org.drasyl.node.handler.timeout
 org.drasyl.node.identity
 org.drasyl.node.plugin.groups.client
 org.drasyl.node.plugin.groups.client.event
