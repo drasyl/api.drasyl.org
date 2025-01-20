@@ -79,12 +79,14 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block"><code>ChannelHandler</code>s used by the <a href="../../DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>.</div>
 </div>
-<div class="col-first odd-row-color"><a href="../crypto/package-summary.html">org.drasyl.node.handler.crypto</a></div>
-<div class="col-last odd-row-color">
+<div class="col-first odd-row-color"><a href="jmh_generated/package-summary.html">org.drasyl.node.handler.serialization.jmh_generated</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><a href="../crypto/package-summary.html">org.drasyl.node.handler.crypto</a></div>
+<div class="col-last even-row-color">
 <div class="block">Contains classes necessary for encrypted peer/application communication.</div>
 </div>
-<div class="col-first even-row-color"><a href="../plugin/package-summary.html">org.drasyl.node.handler.plugin</a></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><a href="../plugin/package-summary.html">org.drasyl.node.handler.plugin</a></div>
+<div class="col-last odd-row-color">
 <div class="block">Flexible extensions of drasyl via plugins that can be loaded into the pipeline together with
  user-defined settings.</div>
 </div>
@@ -135,31 +137,35 @@ loadScripts(document, 'script');</script>
 <div class="block">A serializer based on the <a href="https://github.com/FasterXML/jackson">Jackson Library</a> for
  converting java objects to and from JSON.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="JavaSerializer.html" title="class in org.drasyl.node.handler.serialization">JavaSerializer</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="JacksonJsonSerializerBenchmark.html" title="class in org.drasyl.node.handler.serialization">JacksonJsonSerializerBenchmark</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">&nbsp;</div>
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="JavaSerializer.html" title="class in org.drasyl.node.handler.serialization">JavaSerializer</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
 <div class="block">This Serializer (de)serializes <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Serializable.html" title="class or interface in java.io" class="external-link"><code>Serializable</code></a> objects.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab2"><a href="LongSerializer.html" title="class in org.drasyl.node.handler.serialization">LongSerializer</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="LongSerializer.html" title="class in org.drasyl.node.handler.serialization">LongSerializer</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
 <div class="block">This Serializer (de)serializes <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html" title="class or interface in java.lang" class="external-link"><code>Long</code></a> objects.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="MessageSerializer.html" title="class in org.drasyl.node.handler.serialization">MessageSerializer</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="MessageSerializer.html" title="class in org.drasyl.node.handler.serialization">MessageSerializer</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
 <div class="block">This handler serializes messages to <code>ByteBuf</code> and vice versa.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab2"><a href="NullSerializer.html" title="class in org.drasyl.node.handler.serialization">NullSerializer</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="NullSerializer.html" title="class in org.drasyl.node.handler.serialization">NullSerializer</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
 <div class="block">This Serializer (de)serializes <code>null</code> only.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="ProtobufSerializer.html" title="class in org.drasyl.node.handler.serialization">ProtobufSerializer</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="ProtobufSerializer.html" title="class in org.drasyl.node.handler.serialization">ProtobufSerializer</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
 <div class="block">This Serializer (de)serializes <code>Message</code> objects.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab2"><a href="Serialization.html" title="class in org.drasyl.node.handler.serialization">Serialization</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="Serialization.html" title="class in org.drasyl.node.handler.serialization">Serialization</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
 <div class="block">Holds a <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link"><code>Map</code></a> with all available <a href="Serializer.html" title="interface in org.drasyl.node.handler.serialization"><code>Serializer</code></a>s and the classes each serializer should
  be used for.</div>
 </div>
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="SerializationBenchmark.html" title="class in org.drasyl.node.handler.serialization">SerializationBenchmark</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">&nbsp;</div>
 <div class="col-first odd-row-color class-summary class-summary-tab2"><a href="SerializedPayload.html" title="class in org.drasyl.node.handler.serialization">SerializedPayload</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab2">
 <div class="block">This class models the serialized payload of a drasyl application message.</div>
@@ -181,6 +187,8 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color class-summary class-summary-tab2">
 <div class="block">This Serializer (de)serializes <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link"><code>String</code></a> objects.</div>
 </div>
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="StringSerializerBenchmark.html" title="class in org.drasyl.node.handler.serialization">StringSerializerBenchmark</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">&nbsp;</div>
 </div>
 </div>
 </div>

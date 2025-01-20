@@ -74,12 +74,14 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">The protocol used for communication with remote peers.</div>
 </div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.node.handler.crypto">org.drasyl.node.handler.crypto</a></div>
-<div class="col-last odd-row-color">
+<div class="col-first odd-row-color"><a href="#org.drasyl.handler.remote.protocol.jmh_generated">org.drasyl.handler.remote.protocol.jmh_generated</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><a href="#org.drasyl.node.handler.crypto">org.drasyl.node.handler.crypto</a></div>
+<div class="col-last even-row-color">
 <div class="block">Contains classes necessary for encrypted peer/application communication.</div>
 </div>
-<div class="col-first even-row-color"><a href="#org.drasyl.node.handler.serialization">org.drasyl.node.handler.serialization</a></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><a href="#org.drasyl.node.handler.serialization">org.drasyl.node.handler.serialization</a></div>
+<div class="col-last odd-row-color">
 <div class="block">Serialization of java objects to byte arrays and vice versa.</div>
 </div>
 </div>
@@ -134,8 +136,12 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color">
 <div class="block">Describes a message whose content has been read completely.</div>
 </div>
-<div class="col-first even-row-color"><a href="class-use/UnarmedProtocolMessage.html#org.drasyl.handler.remote.crypto">UnarmedProtocolMessage</a></div>
+<div class="col-first even-row-color"><a href="class-use/InvalidMessageFormatException.html#org.drasyl.handler.remote.crypto">InvalidMessageFormatException</a></div>
 <div class="col-last even-row-color">
+<div class="block">This exception is thrown when reading a <a href="RemoteMessage.html" title="interface in org.drasyl.handler.remote.protocol"><code>RemoteMessage</code></a> fails due to an invalid format.</div>
+</div>
+<div class="col-first odd-row-color"><a href="class-use/UnarmedProtocolMessage.html#org.drasyl.handler.remote.crypto">UnarmedProtocolMessage</a></div>
+<div class="col-last odd-row-color">
 <div class="block">Describes an unencrypted protocol message whose only public header has been read so far.</div>
 </div>
 </div>
@@ -151,8 +157,12 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">This is an immutable object.</div>
 </div>
-<div class="col-first odd-row-color"><a href="class-use/RemoteMessage.html#org.drasyl.handler.remote.internet">RemoteMessage</a></div>
+<div class="col-first odd-row-color"><a href="class-use/InvalidMessageFormatException.html#org.drasyl.handler.remote.internet">InvalidMessageFormatException</a></div>
 <div class="col-last odd-row-color">
+<div class="block">This exception is thrown when reading a <a href="RemoteMessage.html" title="interface in org.drasyl.handler.remote.protocol"><code>RemoteMessage</code></a> fails due to an invalid format.</div>
+</div>
+<div class="col-first even-row-color"><a href="class-use/RemoteMessage.html#org.drasyl.handler.remote.internet">RemoteMessage</a></div>
+<div class="col-last even-row-color">
 <div class="block">Describes a message that is sent to remote peers via UDP/TCP.</div>
 </div>
 </div>
@@ -223,6 +233,25 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">This message is sent by a super node for NAT traversal.</div>
 </div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="org.drasyl.handler.remote.protocol.jmh_generated">
+<div class="caption"><span>Classes in <a href="package-summary.html">org.drasyl.handler.remote.protocol</a> used by <a href="jmh_generated/package-summary.html">org.drasyl.handler.remote.protocol.jmh_generated</a></span></div>
+<div class="summary-table two-column-summary">
+<div class="table-header col-first">Class</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><a href="class-use/ApplicationMessageBenchmark.html#org.drasyl.handler.remote.protocol.jmh_generated">ApplicationMessageBenchmark</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><a href="class-use/ArmedProtocolMessageBenchmark.html#org.drasyl.handler.remote.protocol.jmh_generated">ArmedProtocolMessageBenchmark</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><a href="class-use/FullReadMessageBenchmark.html#org.drasyl.handler.remote.protocol.jmh_generated">FullReadMessageBenchmark</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><a href="class-use/NonceBenchmark.html#org.drasyl.handler.remote.protocol.jmh_generated">NonceBenchmark</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><a href="class-use/PartialReadMessageBenchmark.html#org.drasyl.handler.remote.protocol.jmh_generated">PartialReadMessageBenchmark</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
