@@ -923,6 +923,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/sntp/SntpHandler.html#channelActive(io.netty.channel.ChannelHandlerContext)" class="member-name-link">channelActive(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.sntp.<a href="org/drasyl/handler/sntp/SntpHandler.html" title="class in org.drasyl.handler.sntp">SntpHandler</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/SpawnChildChannelToPeer.html#channelActive(io.netty.channel.ChannelHandlerContext)" class="member-name-link">channelActive(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.<a href="org/drasyl/handler/SpawnChildChannelToPeer.html" title="class in org.drasyl.handler">SpawnChildChannelToPeer</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/plugin/PluginsChildHandler.html#channelActive(io.netty.channel.ChannelHandlerContext)" class="member-name-link">channelActive(ChannelHandlerContext)</a> - Method in class org.drasyl.node.handler.plugin.<a href="org/drasyl/node/handler/plugin/PluginsChildHandler.html" title="class in org.drasyl.node.handler.plugin">PluginsChildHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/plugin/PluginsServerHandler.html#channelActive(io.netty.channel.ChannelHandlerContext)" class="member-name-link">channelActive(ChannelHandlerContext)</a> - Method in class org.drasyl.node.handler.plugin.<a href="org/drasyl/node/handler/plugin/PluginsServerHandler.html" title="class in org.drasyl.node.handler.plugin">PluginsServerHandler</a></dt>
@@ -4904,6 +4906,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/rmi/RmiClientHandler.html#handlerAdded(io.netty.channel.ChannelHandlerContext)" class="member-name-link">handlerAdded(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.rmi.<a href="org/drasyl/handler/rmi/RmiClientHandler.html" title="class in org.drasyl.handler.rmi">RmiClientHandler</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/SpawnChildChannelToPeer.html#handlerAdded(io.netty.channel.ChannelHandlerContext)" class="member-name-link">handlerAdded(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.<a href="org/drasyl/handler/SpawnChildChannelToPeer.html" title="class in org.drasyl.handler">SpawnChildChannelToPeer</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/plugin/groups/manager/GroupsManagerHandler.html#handlerAdded(io.netty.channel.ChannelHandlerContext)" class="member-name-link">handlerAdded(ChannelHandlerContext)</a> - Method in class org.drasyl.node.plugin.groups.manager.<a href="org/drasyl/node/plugin/groups/manager/GroupsManagerHandler.html" title="class in org.drasyl.node.plugin.groups.manager">GroupsManagerHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/connection/ConnectionHandler.html#handlerRemoved(io.netty.channel.ChannelHandlerContext)" class="member-name-link">handlerRemoved(ChannelHandlerContext)</a> - Method in class org.drasyl.handler.connection.<a href="org/drasyl/handler/connection/ConnectionHandler.html" title="class in org.drasyl.handler.connection">ConnectionHandler</a></dt>
@@ -8523,6 +8527,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Libsodium wrappers for the crypto operations of drasyl</div>
 </dd>
+<dt><a href="org/drasyl/handler/package-summary.html">org.drasyl.handler</a> - package org.drasyl.handler</dt>
+<dd>
+<div class="block">Handlers used to run a drasyl node.</div>
+</dd>
 <dt><a href="org/drasyl/handler/arq/gobackn/package-summary.html">org.drasyl.handler.arq.gobackn</a> - package org.drasyl.handler.arq.gobackn</dt>
 <dd>
 <div class="block">Codecs, Handlers, and Messages for the Stop-and-wait-ARQ protocols.</div>
@@ -11713,6 +11721,15 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/drasyl/crypto/sodium/Sodium.html#%3Cinit%3E()" class="member-name-link">Sodium()</a> - Constructor for class org.drasyl.crypto.sodium.<a href="org/drasyl/crypto/sodium/Sodium.html" title="class in org.drasyl.crypto.sodium">Sodium</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/crypto/sodium/Sodium.html#sodium_init()" class="member-name-link">sodium_init()</a> - Method in class org.drasyl.crypto.sodium.<a href="org/drasyl/crypto/sodium/Sodium.html" title="class in org.drasyl.crypto.sodium">Sodium</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/SpawnChildChannelToPeer.html" class="type-name-link" title="class in org.drasyl.handler">SpawnChildChannelToPeer</a> - Class in <a href="org/drasyl/handler/package-summary.html">org.drasyl.handler</a></dt>
+<dd>
+<div class="block">This handler spawns the creation of <a href="org/drasyl/channel/DrasylChannel.html" title="class in org.drasyl.channel"><code>DrasylChannel</code></a>s to given peers once the server channel
+ becomes active.</div>
+</dd>
+<dt><a href="org/drasyl/handler/SpawnChildChannelToPeer.html#%3Cinit%3E(java.util.Set)" class="member-name-link">SpawnChildChannelToPeer(Set&lt;DrasylAddress&gt;)</a> - Constructor for class org.drasyl.handler.<a href="org/drasyl/handler/SpawnChildChannelToPeer.html" title="class in org.drasyl.handler">SpawnChildChannelToPeer</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/drasyl/handler/SpawnChildChannelToPeer.html#%3Cinit%3E(org.drasyl.identity.IdentityPublicKey)" class="member-name-link">SpawnChildChannelToPeer(IdentityPublicKey)</a> - Constructor for class org.drasyl.handler.<a href="org/drasyl/handler/SpawnChildChannelToPeer.html" title="class in org.drasyl.handler">SpawnChildChannelToPeer</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/connection/Segment.html#srcPort()" class="member-name-link">srcPort()</a> - Method in class org.drasyl.handler.connection.<a href="org/drasyl/handler/connection/Segment.html" title="class in org.drasyl.handler.connection">Segment</a></dt>
 <dd>

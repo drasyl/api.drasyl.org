@@ -5,6 +5,7 @@ org.drasyl.crypto
 org.drasyl.crypto.jmh_generated
 org.drasyl.crypto.loader
 org.drasyl.crypto.sodium
+org.drasyl.handler
 org.drasyl.handler.arq.gobackn
 org.drasyl.handler.arq.stopandwait
 org.drasyl.handler.codec
