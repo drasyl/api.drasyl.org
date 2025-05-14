@@ -355,7 +355,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Applies this function to the given arguments.</div>
 </dd>
-<dt><a href="org/drasyl/handler/remote/protocol/ApplicationMessage.html#arm(io.netty.buffer.ByteBufAllocator,org.drasyl.crypto.Crypto,org.drasyl.crypto.sodium.SessionPair)" class="member-name-link">arm(ByteBufAllocator, Crypto, SessionPair)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/ApplicationMessage.html" title="class in org.drasyl.handler.remote.protocol">ApplicationMessage</a></dt>
+<dt><a href="org/drasyl/handler/remote/protocol/UniteMessage.html#arm(io.netty.buffer.ByteBufAllocator,org.drasyl.crypto.Crypto,org.drasyl.crypto.sodium.SessionPair)" class="member-name-link">arm(ByteBufAllocator, Crypto, SessionPair)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/UniteMessage.html" title="class in org.drasyl.handler.remote.protocol">UniteMessage</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/protocol/FullReadMessage.html#arm(io.netty.buffer.ByteBufAllocator,org.drasyl.crypto.Crypto,org.drasyl.crypto.sodium.SessionPair)" class="member-name-link">arm(ByteBufAllocator, Crypto, SessionPair)</a> - Method in interface org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/FullReadMessage.html" title="interface in org.drasyl.handler.remote.protocol">FullReadMessage</a></dt>
 <dd>
@@ -2683,7 +2683,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/jmh_generated/ByteToRemoteMessageCodecBenchmark_encode_jmhTest.html#encode_thrpt_jmhStub(org.openjdk.jmh.runner.InfraControl,org.openjdk.jmh.results.RawResults,org.openjdk.jmh.infra.BenchmarkParams,org.openjdk.jmh.infra.IterationParams,org.openjdk.jmh.infra.ThreadParams,org.openjdk.jmh.infra.Blackhole,org.openjdk.jmh.infra.Control,int,org.drasyl.handler.remote.jmh_generated.ByteToRemoteMessageCodecBenchmark_jmhType)" class="member-name-link">encode_thrpt_jmhStub(InfraControl, RawResults, BenchmarkParams, IterationParams, ThreadParams, Blackhole, Control, int, ByteToRemoteMessageCodecBenchmark_jmhType)</a> - Static method in class org.drasyl.handler.remote.jmh_generated.<a href="org/drasyl/handler/remote/jmh_generated/ByteToRemoteMessageCodecBenchmark_encode_jmhTest.html" title="class in org.drasyl.handler.remote.jmh_generated">ByteToRemoteMessageCodecBenchmark_encode_jmhTest</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/drasyl/handler/remote/protocol/ApplicationMessage.html#encodeMessage(io.netty.buffer.ByteBufAllocator)" class="member-name-link">encodeMessage(ByteBufAllocator)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/ApplicationMessage.html" title="class in org.drasyl.handler.remote.protocol">ApplicationMessage</a></dt>
+<dt><a href="org/drasyl/handler/remote/protocol/UniteMessage.html#encodeMessage(io.netty.buffer.ByteBufAllocator)" class="member-name-link">encodeMessage(ByteBufAllocator)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/UniteMessage.html" title="class in org.drasyl.handler.remote.protocol">UniteMessage</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/protocol/ArmedProtocolMessage.html#encodeMessage(io.netty.buffer.ByteBufAllocator)" class="member-name-link">encodeMessage(ByteBufAllocator)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/ArmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">ArmedProtocolMessage</a></dt>
 <dd>&nbsp;</dd>
@@ -3479,7 +3479,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/crypto/KeyExchangeMessage.html#fromApplication(io.netty.buffer.ByteBuf,io.netty.buffer.ByteBufAllocator)" class="member-name-link">fromApplication(ByteBuf, ByteBufAllocator)</a> - Static method in class org.drasyl.node.handler.crypto.<a href="org/drasyl/node/handler/crypto/KeyExchangeMessage.html" title="class in org.drasyl.node.handler.crypto">KeyExchangeMessage</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/drasyl/node/handler/serialization/BooleanSerializer.html#fromByteArray(byte%5B%5D,java.lang.Class)" class="member-name-link">fromByteArray(byte[], Class&lt;T&gt;)</a> - Method in class org.drasyl.node.handler.serialization.<a href="org/drasyl/node/handler/serialization/BooleanSerializer.html" title="class in org.drasyl.node.handler.serialization">BooleanSerializer</a></dt>
+<dt><a href="org/drasyl/node/handler/serialization/ProtobufSerializer.html#fromByteArray(byte%5B%5D,java.lang.Class)" class="member-name-link">fromByteArray(byte[], Class&lt;T&gt;)</a> - Method in class org.drasyl.node.handler.serialization.<a href="org/drasyl/node/handler/serialization/ProtobufSerializer.html" title="class in org.drasyl.node.handler.serialization">ProtobufSerializer</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/serialization/DisabledSerializer.html#fromByteArray(byte%5B%5D,java.lang.Class)" class="member-name-link">fromByteArray(byte[], Class&lt;T&gt;)</a> - Method in class org.drasyl.node.handler.serialization.<a href="org/drasyl/node/handler/serialization/DisabledSerializer.html" title="class in org.drasyl.node.handler.serialization">DisabledSerializer</a></dt>
 <dd>&nbsp;</dd>
@@ -12601,7 +12601,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/identity/KeyAgreementSecretKey.html#toByteArray()" class="member-name-link">toByteArray()</a> - Method in class org.drasyl.identity.<a href="org/drasyl/identity/KeyAgreementSecretKey.html" title="class in org.drasyl.identity">KeyAgreementSecretKey</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/drasyl/node/handler/serialization/BooleanSerializer.html#toByteArray(java.lang.Object)" class="member-name-link">toByteArray(Object)</a> - Method in class org.drasyl.node.handler.serialization.<a href="org/drasyl/node/handler/serialization/BooleanSerializer.html" title="class in org.drasyl.node.handler.serialization">BooleanSerializer</a></dt>
+<dt><a href="org/drasyl/node/handler/serialization/ProtobufSerializer.html#toByteArray(java.lang.Object)" class="member-name-link">toByteArray(Object)</a> - Method in class org.drasyl.node.handler.serialization.<a href="org/drasyl/node/handler/serialization/ProtobufSerializer.html" title="class in org.drasyl.node.handler.serialization">ProtobufSerializer</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/node/handler/serialization/DisabledSerializer.html#toByteArray(java.lang.Object)" class="member-name-link">toByteArray(Object)</a> - Method in class org.drasyl.node.handler.serialization.<a href="org/drasyl/node/handler/serialization/DisabledSerializer.html" title="class in org.drasyl.node.handler.serialization">DisabledSerializer</a></dt>
 <dd>&nbsp;</dd>
@@ -13962,7 +13962,7 @@ the order they are declared.</div>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/handler/remote/protocol/UniteMessage.html#writePrivateHeaderTo(io.netty.buffer.ByteBuf)" class="member-name-link">writePrivateHeaderTo(ByteBuf)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/UniteMessage.html" title="class in org.drasyl.handler.remote.protocol">UniteMessage</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/drasyl/handler/remote/protocol/ApplicationMessage.html#writePublicHeaderTo(io.netty.buffer.ByteBuf)" class="member-name-link">writePublicHeaderTo(ByteBuf)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/ApplicationMessage.html" title="class in org.drasyl.handler.remote.protocol">ApplicationMessage</a></dt>
+<dt><a href="org/drasyl/handler/remote/protocol/UniteMessage.html#writePublicHeaderTo(io.netty.buffer.ByteBuf)" class="member-name-link">writePublicHeaderTo(ByteBuf)</a> - Method in class org.drasyl.handler.remote.protocol.<a href="org/drasyl/handler/remote/protocol/UniteMessage.html" title="class in org.drasyl.handler.remote.protocol">UniteMessage</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/drasyl/performance/WriteThroughputDatagramChannelBenchmark.html" class="type-name-link" title="class in org.drasyl.performance">WriteThroughputDatagramChannelBenchmark</a> - Class in <a href="org/drasyl/performance/package-summary.html">org.drasyl.performance</a></dt>
 <dd>
