@@ -67,7 +67,6 @@ loadScripts(document, 'script');</script>
 <li class="circle">io.netty.channel.ChannelInitializer&lt;C&gt;
 <ul>
 <li class="circle">org.drasyl.channel.<a href="ConnectionChannelInitializer.html" class="type-name-link" title="class in org.drasyl.channel">ConnectionChannelInitializer</a></li>
-<li class="circle">org.drasyl.channel.<a href="DefaultDrasylServerChannelInitializer.html" class="type-name-link" title="class in org.drasyl.channel">DefaultDrasylServerChannelInitializer</a></li>
 </ul>
 </li>
 </ul>
@@ -81,26 +80,6 @@ loadScripts(document, 'script');</script>
 <li class="circle">org.drasyl.channel.<a href="OverlayAddressedMessage.html" class="type-name-link" title="class in org.drasyl.channel">OverlayAddressedMessage</a>&lt;M&gt;</li>
 </ul>
 </li>
-<li class="circle">io.netty.util.DefaultAttributeMap (implements io.netty.util.AttributeMap)
-<ul>
-<li class="circle">io.netty.channel.AbstractChannel (implements io.netty.channel.Channel)
-<ul>
-<li class="circle">io.netty.channel.AbstractServerChannel (implements io.netty.channel.ServerChannel)
-<ul>
-<li class="circle">org.drasyl.channel.<a href="DrasylServerChannel.html" class="type-name-link" title="class in org.drasyl.channel">DrasylServerChannel</a> (implements org.drasyl.channel.<a href="IdentityChannel.html" title="interface in org.drasyl.channel">IdentityChannel</a>)</li>
-</ul>
-</li>
-<li class="circle">org.drasyl.channel.<a href="DrasylChannel.html" class="type-name-link" title="class in org.drasyl.channel">DrasylChannel</a> (implements org.drasyl.channel.<a href="IdentityChannel.html" title="interface in org.drasyl.channel">IdentityChannel</a>)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="circle">io.netty.channel.DefaultChannelConfig (implements io.netty.channel.ChannelConfig)
-<ul>
-<li class="circle">org.drasyl.channel.<a href="DrasylServerChannelConfig.html" class="type-name-link" title="class in org.drasyl.channel">DrasylServerChannelConfig</a></li>
-</ul>
-</li>
-<li class="circle">org.drasyl.channel.<a href="DrasylChannel.DrasylChannelUnsafe.html" class="type-name-link" title="class in org.drasyl.channel">DrasylChannel.DrasylChannelUnsafe</a></li>
 <li class="circle">org.drasyl.channel.<a href="ReadBufferWaterMark.html" class="type-name-link" title="class in org.drasyl.channel">ReadBufferWaterMark</a></li>
 <li class="circle">org.drasyl.channel.<a href="VisualPipeline.html" class="type-name-link" title="class in org.drasyl.channel">VisualPipeline</a></li>
 </ul>
@@ -110,7 +89,59 @@ loadScripts(document, 'script');</script>
 <section class="hierarchy">
 <h2 title="Interface Hierarchy">Interface Hierarchy</h2>
 <ul>
-<li class="circle">org.drasyl.channel.<a href="IdentityChannel.html" class="type-name-link" title="interface in org.drasyl.channel">IdentityChannel</a></li>
+<li class="circle">io.netty.util.AttributeMap
+<ul>
+<li class="circle">io.netty.channel.Channel (also extends io.netty.channel.ChannelOutboundInvoker, java.lang.<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;T&gt;)
+<ul>
+<li class="circle">org.drasyl.channel.<a href="DrasylChannel.html" class="type-name-link" title="interface in org.drasyl.channel">DrasylChannel</a> (also extends org.drasyl.channel.<a href="IdentityChannel.html" title="interface in org.drasyl.channel">IdentityChannel</a>)</li>
+<li class="circle">io.netty.channel.ServerChannel
+<ul>
+<li class="circle">org.drasyl.channel.<a href="DrasylServerChannel.html" class="type-name-link" title="interface in org.drasyl.channel">DrasylServerChannel</a> (also extends org.drasyl.channel.<a href="IdentityChannel.html" title="interface in org.drasyl.channel">IdentityChannel</a>)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="circle">io.netty.channel.ChannelConfig
+<ul>
+<li class="circle">org.drasyl.channel.<a href="DrasylServerChannelConfig.html" class="type-name-link" title="interface in org.drasyl.channel">DrasylServerChannelConfig</a></li>
+</ul>
+</li>
+<li class="circle">io.netty.channel.ChannelOutboundInvoker
+<ul>
+<li class="circle">io.netty.channel.Channel (also extends io.netty.util.AttributeMap, java.lang.<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;T&gt;)
+<ul>
+<li class="circle">org.drasyl.channel.<a href="DrasylChannel.html" class="type-name-link" title="interface in org.drasyl.channel">DrasylChannel</a> (also extends org.drasyl.channel.<a href="IdentityChannel.html" title="interface in org.drasyl.channel">IdentityChannel</a>)</li>
+<li class="circle">io.netty.channel.ServerChannel
+<ul>
+<li class="circle">org.drasyl.channel.<a href="DrasylServerChannel.html" class="type-name-link" title="interface in org.drasyl.channel">DrasylServerChannel</a> (also extends org.drasyl.channel.<a href="IdentityChannel.html" title="interface in org.drasyl.channel">IdentityChannel</a>)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="circle">java.lang.<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html" class="type-name-link external-link" title="class or interface in java.lang">Comparable</a>&lt;T&gt;
+<ul>
+<li class="circle">io.netty.channel.Channel (also extends io.netty.util.AttributeMap, io.netty.channel.ChannelOutboundInvoker)
+<ul>
+<li class="circle">org.drasyl.channel.<a href="DrasylChannel.html" class="type-name-link" title="interface in org.drasyl.channel">DrasylChannel</a> (also extends org.drasyl.channel.<a href="IdentityChannel.html" title="interface in org.drasyl.channel">IdentityChannel</a>)</li>
+<li class="circle">io.netty.channel.ServerChannel
+<ul>
+<li class="circle">org.drasyl.channel.<a href="DrasylServerChannel.html" class="type-name-link" title="interface in org.drasyl.channel">DrasylServerChannel</a> (also extends org.drasyl.channel.<a href="IdentityChannel.html" title="interface in org.drasyl.channel">IdentityChannel</a>)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="circle">org.drasyl.channel.<a href="IdentityChannel.html" class="type-name-link" title="interface in org.drasyl.channel">IdentityChannel</a>
+<ul>
+<li class="circle">org.drasyl.channel.<a href="DrasylChannel.html" class="type-name-link" title="interface in org.drasyl.channel">DrasylChannel</a> (also extends io.netty.channel.Channel)</li>
+<li class="circle">org.drasyl.channel.<a href="DrasylServerChannel.html" class="type-name-link" title="interface in org.drasyl.channel">DrasylServerChannel</a> (also extends io.netty.channel.ServerChannel)</li>
+</ul>
+</li>
 </ul>
 </section>
 </main>

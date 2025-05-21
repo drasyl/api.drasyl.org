@@ -5,7 +5,7 @@
 <title>DrasylChannel (drasyl API Reference (0.12.0-SNAPSHOT))</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="description" content="declaration: package: org.drasyl.channel, class: DrasylChannel">
+<meta name="description" content="declaration: package: org.drasyl.channel, interface: DrasylChannel">
 <meta name="generator" content="javadoc/ClassWriterImpl">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <link rel="stylesheet" type="text/css" href="../../../script-dir/jquery-ui.min.css" title="Style">
@@ -69,38 +69,21 @@ loadScripts(document, 'script');</script>
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">org.drasyl.channel</a></div>
-<h1 title="Class DrasylChannel" class="title">Class DrasylChannel</h1>
-</div>
-<div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
-<div class="inheritance">io.netty.util.DefaultAttributeMap
-<div class="inheritance">io.netty.channel.AbstractChannel
-<div class="inheritance">org.drasyl.channel.DrasylChannel</div>
-</div>
-</div>
+<h1 title="Interface DrasylChannel" class="title">Interface DrasylChannel</h1>
 </div>
 <section class="class-description" id="class-description">
 <dl class="notes">
-<dt>All Implemented Interfaces:</dt>
-<dd><code>io.netty.channel.Channel</code>, <code>io.netty.channel.ChannelOutboundInvoker</code>, <code>io.netty.util.AttributeMap</code>, <code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;io.netty.channel.Channel&gt;</code>, <code><a href="IdentityChannel.html" title="interface in org.drasyl.channel">IdentityChannel</a></code></dd>
+<dt>All Superinterfaces:</dt>
+<dd><code>io.netty.util.AttributeMap</code>, <code>io.netty.channel.Channel</code>, <code>io.netty.channel.ChannelOutboundInvoker</code>, <code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;io.netty.channel.Channel&gt;</code>, <code><a href="IdentityChannel.html" title="interface in org.drasyl.channel">IdentityChannel</a></code></dd>
+</dl>
+<dl class="notes">
+<dt>All Known Implementing Classes:</dt>
+<dd><code><a href="rs/RustDrasylChannel.html" title="class in org.drasyl.channel.rs">RustDrasylChannel</a></code></dd>
 </dl>
 <hr>
 <div class="type-signature"><span class="annotations"><a href="../util/internal/UnstableApi.html" title="annotation in org.drasyl.util.internal">@UnstableApi</a>
-</span><span class="modifiers">public class </span><span class="element-name type-name-label">DrasylChannel</span>
-<span class="extends-implements">extends io.netty.channel.AbstractChannel
-implements <a href="IdentityChannel.html" title="interface in org.drasyl.channel">IdentityChannel</a></span></div>
-<div class="block">A virtual <code>Channel</code> for peer communication.
- <p>
- (Currently) only compatible with <code>NioEventLoop</code>.
- <p>
- Inspired by <code>LocalChannel</code>.</div>
-<dl class="notes">
-<dt>See Also:</dt>
-<dd>
-<ul class="see-list">
-<li><a href="DrasylServerChannel.html" title="class in org.drasyl.channel"><code>DrasylServerChannel</code></a></li>
-</ul>
-</dd>
-</dl>
+</span><span class="modifiers">public interface </span><span class="element-name type-name-label">DrasylChannel</span><span class="extends-implements">
+extends io.netty.channel.Channel, <a href="IdentityChannel.html" title="interface in org.drasyl.channel">IdentityChannel</a></span></div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -108,18 +91,6 @@ implements <a href="IdentityChannel.html" title="interface in org.drasyl.channel
 <li>
 <section class="nested-class-summary" id="nested-class-summary">
 <h2>Nested Class Summary</h2>
-<div class="caption"><span>Nested Classes</span></div>
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier and Type</div>
-<div class="table-header col-second">Class</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>protected class&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="DrasylChannel.DrasylChannelUnsafe.html" class="type-name-link" title="class in org.drasyl.channel">DrasylChannel.DrasylChannelUnsafe</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-</div>
-<div class="inherited-list">
-<h2 id="nested-classes-inherited-from-class-io.netty.channel.AbstractChannel">Nested classes/interfaces inherited from class&nbsp;io.netty.channel.AbstractChannel</h2>
-<code>io.netty.channel.AbstractChannel.AbstractUnsafe</code></div>
 <div class="inherited-list">
 <h2 id="nested-classes-inherited-from-class-io.netty.channel.Channel">Nested classes/interfaces inherited from interface&nbsp;io.netty.channel.Channel</h2>
 <code>io.netty.channel.Channel.Unsafe</code></div>
@@ -130,103 +101,33 @@ implements <a href="IdentityChannel.html" title="interface in org.drasyl.channel
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>io.netty.channel.ChannelConfig</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#config()" class="member-name-link">config</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#doBeginRead()" class="member-name-link">doBeginRead</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#doBind(java.net.SocketAddress)" class="member-name-link">doBind</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketAddress.html" title="class or interface in java.net" class="external-link">SocketAddress</a>&nbsp;localAddress)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#doClose()" class="member-name-link">doClose</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#doDisconnect()" class="member-name-link">doDisconnect</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#doRegister()" class="member-name-link">doRegister</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#doWrite(io.netty.channel.ChannelOutboundBuffer)" class="member-name-link">doWrite</a><wbr>(io.netty.channel.ChannelOutboundBuffer&nbsp;in)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#filterOutboundMessage(java.lang.Object)" class="member-name-link">filterOutboundMessage</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;msg)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#finishRead()" class="member-name-link">finishRead</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">This method start processing (if any) queued inbound messages.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../identity/Identity.html" title="class in org.drasyl.identity">Identity</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#identity()" class="member-name-link">identity</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isActive()" class="member-name-link">isActive</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isCompatible(io.netty.channel.EventLoop)" class="member-name-link">isCompatible</a><wbr>(io.netty.channel.EventLoop&nbsp;loop)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isDirectPathPresent()" class="member-name-link">isDirectPathPresent</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Returns <code>true</code> if remote peer is reachable via a direct path.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isOpen()" class="member-name-link">isOpen</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isReadBufferFull()" class="member-name-link">isReadBufferFull</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Returns <code>true</code> if and only if the total number of pending bytes exceed the read
- watermark of this channel.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketAddress.html" title="class or interface in java.net" class="external-link">SocketAddress</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#localAddress0()" class="member-name-link">localAddress0</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>io.netty.channel.ChannelMetadata</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#metadata()" class="member-name-link">metadata</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected io.netty.channel.AbstractChannel.AbstractUnsafe</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newUnsafe()" class="member-name-link">newUnsafe</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DrasylServerChannel.html" title="class in org.drasyl.channel">DrasylServerChannel</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#parent()" class="member-name-link">parent</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#queueRead(io.netty.buffer.ByteBuf)" class="member-name-link">queueRead</a><wbr>(io.netty.buffer.ByteBuf&nbsp;msg)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">This method places the message <code>o</code> in the queue for inbound messages to be read by
- this channel.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketAddress.html" title="class or interface in java.net" class="external-link">SocketAddress</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#remoteAddress0()" class="member-name-link">remoteAddress0</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DrasylChannel.DrasylChannelUnsafe.html" title="class in org.drasyl.channel">DrasylChannel.DrasylChannelUnsafe</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#unsafe()" class="member-name-link">unsafe</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="DrasylServerChannel.html" title="interface in org.drasyl.channel">DrasylServerChannel</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#parent()" class="member-name-link">parent</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 </div>
 </div>
 </div>
-<div class="inherited-list">
-<h3 id="methods-inherited-from-class-io.netty.channel.AbstractChannel">Methods inherited from class&nbsp;io.netty.channel.AbstractChannel</h3>
-<code>alloc, bind, bind, bytesBeforeUnwritable, bytesBeforeWritable, close, close, closeFuture, compareTo, connect, connect, connect, connect, deregister, deregister, disconnect, disconnect, doDeregister, doShutdownOutput, equals, eventLoop, flush, hashCode, id, invalidateLocalAddress, invalidateRemoteAddress, isRegistered, isWritable, localAddress, maxMessagesPerWrite, newChannelPipeline, newFailedFuture, newId, newProgressivePromise, newPromise, newSucceededFuture, pipeline, read, remoteAddress, toString, validateFileRegion, voidPromise, write, write, writeAndFlush, writeAndFlush</code></div>
-<div class="inherited-list">
-<h3 id="methods-inherited-from-class-io.netty.util.DefaultAttributeMap">Methods inherited from class&nbsp;io.netty.util.DefaultAttributeMap</h3>
-<code>attr, hasAttr</code></div>
-<div class="inherited-list">
-<h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
-<code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#clone()" title="class or interface in java.lang" class="external-link">clone</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#finalize()" title="class or interface in java.lang" class="external-link">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#getClass()" title="class or interface in java.lang" class="external-link">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#notify()" title="class or interface in java.lang" class="external-link">notify</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#notifyAll()" title="class or interface in java.lang" class="external-link">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#wait()" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#wait(long)" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#wait(long,int)" title="class or interface in java.lang" class="external-link">wait</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-io.netty.util.AttributeMap">Methods inherited from interface&nbsp;io.netty.util.AttributeMap</h3>
 <code>attr, hasAttr</code></div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-io.netty.channel.Channel">Methods inherited from interface&nbsp;io.netty.channel.Channel</h3>
+<code>alloc, bytesBeforeUnwritable, bytesBeforeWritable, closeFuture, config, eventLoop, flush, id, isActive, isOpen, isRegistered, isWritable, localAddress, metadata, pipeline, read, remoteAddress, unsafe</code></div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-io.netty.channel.ChannelOutboundInvoker">Methods inherited from interface&nbsp;io.netty.channel.ChannelOutboundInvoker</h3>
+<code>bind, bind, close, close, connect, connect, connect, connect, deregister, deregister, disconnect, disconnect, newFailedFuture, newProgressivePromise, newPromise, newSucceededFuture, voidPromise, write, write, writeAndFlush, writeAndFlush</code></div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-java.lang.Comparable">Methods inherited from interface&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a></h3>
+<code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html#compareTo(T)" title="class or interface in java.lang" class="external-link">compareTo</a></code></div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-org.drasyl.channel.IdentityChannel">Methods inherited from interface&nbsp;org.drasyl.channel.<a href="IdentityChannel.html" title="interface in org.drasyl.channel">IdentityChannel</a></h3>
+<code><a href="IdentityChannel.html#identity()">identity</a></code></div>
 </section>
 </li>
 </ul>
@@ -239,229 +140,13 @@ implements <a href="IdentityChannel.html" title="interface in org.drasyl.channel
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="newUnsafe()">
-<h3>newUnsafe</h3>
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">io.netty.channel.AbstractChannel.AbstractUnsafe</span>&nbsp;<span class="element-name">newUnsafe</span>()</div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code>newUnsafe</code>&nbsp;in class&nbsp;<code>io.netty.channel.AbstractChannel</code></dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="isCompatible(io.netty.channel.EventLoop)">
-<h3>isCompatible</h3>
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isCompatible</span><wbr><span class="parameters">(io.netty.channel.EventLoop&nbsp;loop)</span></div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code>isCompatible</code>&nbsp;in class&nbsp;<code>io.netty.channel.AbstractChannel</code></dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="identity()">
-<h3>identity</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../identity/Identity.html" title="class in org.drasyl.identity">Identity</a></span>&nbsp;<span class="element-name">identity</span>()</div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code><a href="IdentityChannel.html#identity()">identity</a></code>&nbsp;in interface&nbsp;<code><a href="IdentityChannel.html" title="interface in org.drasyl.channel">IdentityChannel</a></code></dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="localAddress0()">
-<h3>localAddress0</h3>
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketAddress.html" title="class or interface in java.net" class="external-link">SocketAddress</a></span>&nbsp;<span class="element-name">localAddress0</span>()</div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code>localAddress0</code>&nbsp;in class&nbsp;<code>io.netty.channel.AbstractChannel</code></dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="remoteAddress0()">
-<h3>remoteAddress0</h3>
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketAddress.html" title="class or interface in java.net" class="external-link">SocketAddress</a></span>&nbsp;<span class="element-name">remoteAddress0</span>()</div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code>remoteAddress0</code>&nbsp;in class&nbsp;<code>io.netty.channel.AbstractChannel</code></dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="doRegister()">
-<h3>doRegister</h3>
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">doRegister</span>()</div>
-<dl class="notes">
-<dt>Overrides:</dt>
-<dd><code>doRegister</code>&nbsp;in class&nbsp;<code>io.netty.channel.AbstractChannel</code></dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="doBind(java.net.SocketAddress)">
-<h3>doBind</h3>
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">doBind</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketAddress.html" title="class or interface in java.net" class="external-link">SocketAddress</a>&nbsp;localAddress)</span></div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code>doBind</code>&nbsp;in class&nbsp;<code>io.netty.channel.AbstractChannel</code></dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="doDisconnect()">
-<h3>doDisconnect</h3>
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">doDisconnect</span>()</div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code>doDisconnect</code>&nbsp;in class&nbsp;<code>io.netty.channel.AbstractChannel</code></dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="doClose()">
-<h3>doClose</h3>
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">doClose</span>()</div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code>doClose</code>&nbsp;in class&nbsp;<code>io.netty.channel.AbstractChannel</code></dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="doBeginRead()">
-<h3>doBeginRead</h3>
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">doBeginRead</span>()</div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code>doBeginRead</code>&nbsp;in class&nbsp;<code>io.netty.channel.AbstractChannel</code></dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="unsafe()">
-<h3>unsafe</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DrasylChannel.DrasylChannelUnsafe.html" title="class in org.drasyl.channel">DrasylChannel.DrasylChannelUnsafe</a></span>&nbsp;<span class="element-name">unsafe</span>()</div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code>unsafe</code>&nbsp;in interface&nbsp;<code>io.netty.channel.Channel</code></dd>
-<dt>Overrides:</dt>
-<dd><code>unsafe</code>&nbsp;in class&nbsp;<code>io.netty.channel.AbstractChannel</code></dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="queueRead(io.netty.buffer.ByteBuf)">
-<h3>queueRead</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">queueRead</span><wbr><span class="parameters">(io.netty.buffer.ByteBuf&nbsp;msg)</span></div>
-<div class="block">This method places the message <code>o</code> in the queue for inbound messages to be read by
- this channel. Queued messages are not processed until <a href="#finishRead()"><code>finishRead()</code></a> is called.</div>
-</section>
-</li>
-<li>
-<section class="detail" id="finishRead()">
-<h3>finishRead</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">finishRead</span>()</div>
-<div class="block">This method start processing (if any) queued inbound messages. This method ensures that
- read/write order is respected. Therefore, if channel is currently writing, these writes are
- performed first and the reads are performed afterwards.</div>
-</section>
-</li>
-<li>
 <section class="detail" id="parent()">
 <h3>parent</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DrasylServerChannel.html" title="class in org.drasyl.channel">DrasylServerChannel</a></span>&nbsp;<span class="element-name">parent</span>()</div>
+<div class="member-signature"><span class="return-type"><a href="DrasylServerChannel.html" title="interface in org.drasyl.channel">DrasylServerChannel</a></span>&nbsp;<span class="element-name">parent</span>()</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code>parent</code>&nbsp;in interface&nbsp;<code>io.netty.channel.Channel</code></dd>
-<dt>Overrides:</dt>
-<dd><code>parent</code>&nbsp;in class&nbsp;<code>io.netty.channel.AbstractChannel</code></dd>
 </dl>
-</section>
-</li>
-<li>
-<section class="detail" id="doWrite(io.netty.channel.ChannelOutboundBuffer)">
-<h3>doWrite</h3>
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">doWrite</span><wbr><span class="parameters">(io.netty.channel.ChannelOutboundBuffer&nbsp;in)</span>
-                throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Exception.html" title="class or interface in java.lang" class="external-link">Exception</a></span></div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code>doWrite</code>&nbsp;in class&nbsp;<code>io.netty.channel.AbstractChannel</code></dd>
-<dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Exception.html" title="class or interface in java.lang" class="external-link">Exception</a></code></dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="filterOutboundMessage(java.lang.Object)">
-<h3>filterOutboundMessage</h3>
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span>&nbsp;<span class="element-name">filterOutboundMessage</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;msg)</span>
-                                throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Exception.html" title="class or interface in java.lang" class="external-link">Exception</a></span></div>
-<dl class="notes">
-<dt>Overrides:</dt>
-<dd><code>filterOutboundMessage</code>&nbsp;in class&nbsp;<code>io.netty.channel.AbstractChannel</code></dd>
-<dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Exception.html" title="class or interface in java.lang" class="external-link">Exception</a></code></dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="config()">
-<h3>config</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">io.netty.channel.ChannelConfig</span>&nbsp;<span class="element-name">config</span>()</div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code>config</code>&nbsp;in interface&nbsp;<code>io.netty.channel.Channel</code></dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="isOpen()">
-<h3>isOpen</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isOpen</span>()</div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code>isOpen</code>&nbsp;in interface&nbsp;<code>io.netty.channel.Channel</code></dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="isActive()">
-<h3>isActive</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isActive</span>()</div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code>isActive</code>&nbsp;in interface&nbsp;<code>io.netty.channel.Channel</code></dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="metadata()">
-<h3>metadata</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">io.netty.channel.ChannelMetadata</span>&nbsp;<span class="element-name">metadata</span>()</div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code>metadata</code>&nbsp;in interface&nbsp;<code>io.netty.channel.Channel</code></dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="isDirectPathPresent()">
-<h3>isDirectPathPresent</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isDirectPathPresent</span>()</div>
-<div class="block">Returns <code>true</code> if remote peer is reachable via a direct path.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd><code>true</code> if remote peer is reachable via a direct path.</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="isReadBufferFull()">
-<h3>isReadBufferFull</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isReadBufferFull</span>()</div>
-<div class="block">Returns <code>true</code> if and only if the total number of pending bytes exceed the read
- watermark of this channel.</div>
 </section>
 </li>
 </ul>

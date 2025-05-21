@@ -54,14 +54,6 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Package</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><a href="#org.drasyl.handler.discovery">org.drasyl.handler.discovery</a></div>
-<div class="col-last even-row-color">
-<div class="block">Different methods to discover peers.</div>
-</div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.handler.remote.protocol">org.drasyl.handler.remote.protocol</a></div>
-<div class="col-last odd-row-color">
-<div class="block">The protocol used for communication with remote peers.</div>
-</div>
 <div class="col-first even-row-color"><a href="#org.drasyl.node">org.drasyl.node</a></div>
 <div class="col-last even-row-color">
 <div class="block">Contains <a href="../../../node/DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>.</div>
@@ -82,51 +74,6 @@ loadScripts(document, 'script');</script>
 </div>
 <section class="class-uses">
 <ul class="block-list">
-<li>
-<section class="detail" id="org.drasyl.handler.discovery">
-<h2>Uses of <a href="../Nullable.html" title="annotation in org.drasyl.util.internal">Nullable</a> in <a href="../../../handler/discovery/package-summary.html">org.drasyl.handler.discovery</a></h2>
-<div class="caption"><span>Methods in <a href="../../../handler/discovery/package-summary.html">org.drasyl.handler.discovery</a> with annotations of type <a href="../Nullable.html" title="annotation in org.drasyl.util.internal">Nullable</a></span></div>
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier and Type</div>
-<div class="table-header col-second">Method</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>abstract <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a></code></div>
-<div class="col-second even-row-color"><span class="type-name-label">AddPathAndChildrenEvent.</span><code><a href="../../../handler/discovery/AddPathAndChildrenEvent.html#getInetAddress()" class="member-name-link">getInetAddress</a>()</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>abstract <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a></code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">AddPathAndSuperPeerEvent.</span><code><a href="../../../handler/discovery/AddPathAndSuperPeerEvent.html#getInetAddress()" class="member-name-link">getInetAddress</a>()</code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>abstract <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a></code></div>
-<div class="col-second even-row-color"><span class="type-name-label">AddPathEvent.</span><code><a href="../../../handler/discovery/AddPathEvent.html#getInetAddress()" class="member-name-link">getInetAddress</a>()</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>abstract <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a></code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">PathRttEvent.</span><code><a href="../../../handler/discovery/PathRttEvent.html#getInetAddress()" class="member-name-link">getInetAddress</a>()</code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="org.drasyl.handler.remote.protocol">
-<h2>Uses of <a href="../Nullable.html" title="annotation in org.drasyl.util.internal">Nullable</a> in <a href="../../../handler/remote/protocol/package-summary.html">org.drasyl.handler.remote.protocol</a></h2>
-<div class="caption"><span>Methods in <a href="../../../handler/remote/protocol/package-summary.html">org.drasyl.handler.remote.protocol</a> with annotations of type <a href="../Nullable.html" title="annotation in org.drasyl.util.internal">Nullable</a></span></div>
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier and Type</div>
-<div class="table-header col-second">Method</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>abstract <a href="../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a></code></div>
-<div class="col-second even-row-color"><span class="type-name-label">HelloMessage.</span><code><a href="../../../handler/remote/protocol/HelloMessage.html#getRecipient()" class="member-name-link">getRecipient</a>()</code></div>
-<div class="col-last even-row-color">
-<div class="block">Returns the <a href="../../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity"><code>IdentityPublicKey</code></a> of the message recipient.</div>
-</div>
-<div class="col-first odd-row-color"><code>abstract <a href="../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a></code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">PublicHeader.</span><code><a href="../../../handler/remote/protocol/PublicHeader.html#getRecipient()" class="member-name-link">getRecipient</a>()</code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>abstract <a href="../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a></code></div>
-<div class="col-second even-row-color"><span class="type-name-label">UnarmedProtocolMessage.</span><code><a href="../../../handler/remote/protocol/UnarmedProtocolMessage.html#getRecipient()" class="member-name-link">getRecipient</a>()</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-</div>
-</section>
-</li>
 <li>
 <section class="detail" id="org.drasyl.node">
 <h2>Uses of <a href="../Nullable.html" title="annotation in org.drasyl.util.internal">Nullable</a> in <a href="../../../node/package-summary.html">org.drasyl.node</a></h2>

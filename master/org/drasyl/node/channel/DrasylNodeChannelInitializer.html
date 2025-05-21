@@ -74,7 +74,7 @@ loadScripts(document, 'script');</script>
 <div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
 <div class="inheritance">io.netty.channel.ChannelHandlerAdapter
 <div class="inheritance">io.netty.channel.ChannelInboundHandlerAdapter
-<div class="inheritance">io.netty.channel.ChannelInitializer&lt;<a href="../../channel/DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&gt;
+<div class="inheritance">io.netty.channel.ChannelInitializer&lt;<a href="../../channel/DrasylChannel.html" title="interface in org.drasyl.channel">DrasylChannel</a>&gt;
 <div class="inheritance"><a href="../../channel/ConnectionChannelInitializer.html" title="class in org.drasyl.channel">org.drasyl.channel.ConnectionChannelInitializer</a>
 <div class="inheritance">org.drasyl.node.channel.DrasylNodeChannelInitializer</div>
 </div>
@@ -91,7 +91,7 @@ loadScripts(document, 'script');</script>
 <div class="type-signature"><span class="annotations"><a href="../../util/internal/UnstableApi.html" title="annotation in org.drasyl.util.internal">@UnstableApi</a>
 </span><span class="modifiers">public class </span><span class="element-name type-name-label">DrasylNodeChannelInitializer</span>
 <span class="extends-implements">extends <a href="../../channel/ConnectionChannelInitializer.html" title="class in org.drasyl.channel">ConnectionChannelInitializer</a></span></div>
-<div class="block">Initialize child <a href="../../channel/DrasylChannel.html" title="class in org.drasyl.channel"><code>DrasylChannel</code></a>s used by <a href="../DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>.</div>
+<div class="block">Initialize child <code>JavaDrasylChannel</code>s used by <a href="../DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -148,12 +148,12 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#armStage(org.drasyl.channel.DrasylChannel)" class="member-name-link">armStage</a><wbr>(<a href="../../channel/DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#armStage(org.drasyl.channel.DrasylChannel)" class="member-name-link">armStage</a><wbr>(<a href="../../channel/DrasylChannel.html" title="interface in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">This stage arms outbound and disarms inbound messages.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#firstStage(org.drasyl.channel.DrasylChannel)" class="member-name-link">firstStage</a><wbr>(<a href="../../channel/DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#firstStage(org.drasyl.channel.DrasylChannel)" class="member-name-link">firstStage</a><wbr>(<a href="../../channel/DrasylChannel.html" title="interface in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#handshakeCompleted(io.netty.channel.ChannelHandlerContext)" class="member-name-link">handshakeCompleted</a><wbr>(io.netty.channel.ChannelHandlerContext&nbsp;ctx)</code></div>
@@ -163,15 +163,15 @@ loadScripts(document, 'script');</script>
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Throwable.html" title="class or interface in java.lang" class="external-link">Throwable</a>&nbsp;cause)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#initChannel(org.drasyl.channel.DrasylChannel)" class="member-name-link">initChannel</a><wbr>(<a href="../../channel/DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#initChannel(org.drasyl.channel.DrasylChannel)" class="member-name-link">initChannel</a><wbr>(<a href="../../channel/DrasylChannel.html" title="interface in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#lastStage(org.drasyl.channel.DrasylChannel)" class="member-name-link">lastStage</a><wbr>(<a href="../../channel/DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#lastStage(org.drasyl.channel.DrasylChannel)" class="member-name-link">lastStage</a><wbr>(<a href="../../channel/DrasylChannel.html" title="interface in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">This stage emits <a href="../event/Event.html" title="interface in org.drasyl.node.event"><code>Event</code></a>s to <code>node</code>.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#serializationStage(org.drasyl.channel.DrasylChannel)" class="member-name-link">serializationStage</a><wbr>(<a href="../../channel/DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#serializationStage(org.drasyl.channel.DrasylChannel)" class="member-name-link">serializationStage</a><wbr>(<a href="../../channel/DrasylChannel.html" title="interface in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">This stage serializes <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html" title="class or interface in java.util" class="external-link"><code>Objects</code></a> to <code>ByteBuf</code> and vice
  versa.</div>
@@ -242,7 +242,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="initChannel(org.drasyl.channel.DrasylChannel)">
 <h3>initChannel</h3>
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">initChannel</span><wbr><span class="parameters">(<a href="../../channel/DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</span>
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">initChannel</span><wbr><span class="parameters">(<a href="../../channel/DrasylChannel.html" title="interface in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</span>
                     throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Exception.html" title="class or interface in java.lang" class="external-link">Exception</a></span></div>
 <dl class="notes">
 <dt>Overrides:</dt>
@@ -276,13 +276,13 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="firstStage(org.drasyl.channel.DrasylChannel)">
 <h3>firstStage</h3>
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">firstStage</span><wbr><span class="parameters">(<a href="../../channel/DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</span></div>
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">firstStage</span><wbr><span class="parameters">(<a href="../../channel/DrasylChannel.html" title="interface in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</span></div>
 </section>
 </li>
 <li>
 <section class="detail" id="armStage(org.drasyl.channel.DrasylChannel)">
 <h3>armStage</h3>
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">armStage</span><wbr><span class="parameters">(<a href="../../channel/DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</span>
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">armStage</span><wbr><span class="parameters">(<a href="../../channel/DrasylChannel.html" title="interface in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</span>
                  throws <span class="exceptions"><a href="../../crypto/CryptoException.html" title="class in org.drasyl.crypto">CryptoException</a></span></div>
 <div class="block">This stage arms outbound and disarms inbound messages.</div>
 <dl class="notes">
@@ -294,7 +294,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="serializationStage(org.drasyl.channel.DrasylChannel)">
 <h3>serializationStage</h3>
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">serializationStage</span><wbr><span class="parameters">(<a href="../../channel/DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</span></div>
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">serializationStage</span><wbr><span class="parameters">(<a href="../../channel/DrasylChannel.html" title="interface in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</span></div>
 <div class="block">This stage serializes <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html" title="class or interface in java.util" class="external-link"><code>Objects</code></a> to <code>ByteBuf</code> and vice
  versa.</div>
 </section>
@@ -302,7 +302,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="lastStage(org.drasyl.channel.DrasylChannel)">
 <h3>lastStage</h3>
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">lastStage</span><wbr><span class="parameters">(<a href="../../channel/DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</span></div>
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">lastStage</span><wbr><span class="parameters">(<a href="../../channel/DrasylChannel.html" title="interface in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</span></div>
 <div class="block">This stage emits <a href="../event/Event.html" title="interface in org.drasyl.node.event"><code>Event</code></a>s to <code>node</code>.</div>
 </section>
 </li>

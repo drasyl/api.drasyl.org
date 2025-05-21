@@ -87,7 +87,7 @@ loadScripts(document, 'script');</script>
 <div class="type-signature"><span class="annotations"><a href="../../util/internal/UnstableApi.html" title="annotation in org.drasyl.util.internal">@UnstableApi</a>
 </span><span class="modifiers">public class </span><span class="element-name type-name-label">PeersHandler</span>
 <span class="extends-implements">extends io.netty.channel.ChannelInboundHandlerAdapter</span></div>
-<div class="block">A <code>ChannelHandler</code> that tracks all emitted <a href="../discovery/PathEvent.html" title="interface in org.drasyl.handler.discovery"><code>PathEvent</code></a>s and
+<div class="block">A <code>ChannelHandler</code> that tracks all emitted <code>PathEvent</code>s and
  generates a list of all peers retrievable through <a href="#getPeers()"><code>getPeers()</code></a>.</div>
 </section>
 <section class="summary">
@@ -128,16 +128,12 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="PeersList.html" title="class in org.drasyl.handler.peers">PeersList</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPeers()" class="member-name-link">getPeers</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#userEventTriggered(io.netty.channel.ChannelHandlerContext,java.lang.Object)" class="member-name-link">userEventTriggered</a><wbr>(io.netty.channel.ChannelHandlerContext&nbsp;ctx,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;evt)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-io.netty.channel.ChannelInboundHandlerAdapter">Methods inherited from class&nbsp;io.netty.channel.ChannelInboundHandlerAdapter</h3>
-<code>channelActive, channelInactive, channelRead, channelReadComplete, channelRegistered, channelUnregistered, channelWritabilityChanged, exceptionCaught</code></div>
+<code>channelActive, channelInactive, channelRead, channelReadComplete, channelRegistered, channelUnregistered, channelWritabilityChanged, exceptionCaught, userEventTriggered</code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-io.netty.channel.ChannelHandlerAdapter">Methods inherited from class&nbsp;io.netty.channel.ChannelHandlerAdapter</h3>
 <code>ensureNotSharable, handlerAdded, handlerRemoved, isSharable</code></div>
@@ -172,19 +168,6 @@ loadScripts(document, 'script');</script>
 <section class="method-details" id="method-detail">
 <h2>Method Details</h2>
 <ul class="member-list">
-<li>
-<section class="detail" id="userEventTriggered(io.netty.channel.ChannelHandlerContext,java.lang.Object)">
-<h3>userEventTriggered</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">userEventTriggered</span><wbr><span class="parameters">(io.netty.channel.ChannelHandlerContext&nbsp;ctx,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;evt)</span></div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code>userEventTriggered</code>&nbsp;in interface&nbsp;<code>io.netty.channel.ChannelInboundHandler</code></dd>
-<dt>Overrides:</dt>
-<dd><code>userEventTriggered</code>&nbsp;in class&nbsp;<code>io.netty.channel.ChannelInboundHandlerAdapter</code></dd>
-</dl>
-</section>
-</li>
 <li>
 <section class="detail" id="getPeers()">
 <h3>getPeers</h3>

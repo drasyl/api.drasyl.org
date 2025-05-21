@@ -64,10 +64,8 @@ loadScripts(document, 'script');</script>
 <div class="block">A virtual <code>Channel</code> that helps wrapping a series of handlers to unit test
  the handlers or use them in non-I/O context.</div>
 </div>
-<div class="col-first even-row-color"><a href="#org.drasyl.handler.remote.crypto">org.drasyl.handler.remote.crypto</a></div>
-<div class="col-last even-row-color">
-<div class="block">Contains classes necessary for encrypted protocol communication.</div>
-</div>
+<div class="col-first even-row-color"><a href="#org.drasyl.channel.rs">org.drasyl.channel.rs</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><a href="#org.drasyl.identity">org.drasyl.identity</a></div>
 <div class="col-last odd-row-color">
 <div class="block">Contains classes to manage the <a href="../Identity.html" title="class in org.drasyl.identity"><code>Identity</code></a> of the drasyl node.</div>
@@ -116,12 +114,6 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code><a href="../Identity.html" title="class in org.drasyl.identity">Identity</a></code></div>
-<div class="col-second even-row-color"><span class="type-name-label">DrasylChannel.</span><code><a href="../../channel/DrasylChannel.html#identity()" class="member-name-link">identity</a>()</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="../Identity.html" title="class in org.drasyl.identity">Identity</a></code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">DrasylServerChannel.</span><code><a href="../../channel/DrasylServerChannel.html#identity()" class="member-name-link">identity</a>()</code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code><a href="../Identity.html" title="class in org.drasyl.identity">Identity</a></code></div>
 <div class="col-second even-row-color"><span class="type-name-label">IdentityChannel.</span><code><a href="../../channel/IdentityChannel.html#identity()" class="member-name-link">identity</a>()</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 </div>
@@ -142,22 +134,18 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="org.drasyl.handler.remote.crypto">
-<h2>Uses of <a href="../Identity.html" title="class in org.drasyl.identity">Identity</a> in <a href="../../handler/remote/crypto/package-summary.html">org.drasyl.handler.remote.crypto</a></h2>
-<div class="caption"><span>Constructors in <a href="../../handler/remote/crypto/package-summary.html">org.drasyl.handler.remote.crypto</a> with parameters of type <a href="../Identity.html" title="class in org.drasyl.identity">Identity</a></span></div>
+<section class="detail" id="org.drasyl.channel.rs">
+<h2>Uses of <a href="../Identity.html" title="class in org.drasyl.identity">Identity</a> in <a href="../../channel/rs/package-summary.html">org.drasyl.channel.rs</a></h2>
+<div class="caption"><span>Methods in <a href="../../channel/rs/package-summary.html">org.drasyl.channel.rs</a> that return <a href="../Identity.html" title="class in org.drasyl.identity">Identity</a></span></div>
 <div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier</div>
-<div class="table-header col-second">Constructor</div>
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="../../handler/remote/crypto/ProtocolArmHandler.html#%3Cinit%3E(org.drasyl.identity.Identity,int)" class="member-name-link">ProtocolArmHandler</a><wbr>(<a href="../Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;myIdentity,
- int&nbsp;maxSessionsCount)</code></div>
+<div class="col-first even-row-color"><code><a href="../Identity.html" title="class in org.drasyl.identity">Identity</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">RustDrasylChannel.</span><code><a href="../../channel/rs/RustDrasylChannel.html#identity()" class="member-name-link">identity</a>()</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>&nbsp;</code></div>
-<div class="col-second odd-row-color"><code><a href="../../handler/remote/crypto/ProtocolArmHandler.html#%3Cinit%3E(org.drasyl.identity.Identity,org.drasyl.crypto.Crypto,int,java.time.Duration)" class="member-name-link">ProtocolArmHandler</a><wbr>(<a href="../Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;myIdentity,
- <a href="../../crypto/Crypto.html" title="class in org.drasyl.crypto">Crypto</a>&nbsp;crypto,
- int&nbsp;maxSessionsCount,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a>&nbsp;expireAfter)</code></div>
+<div class="col-first odd-row-color"><code><a href="../Identity.html" title="class in org.drasyl.identity">Identity</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">RustDrasylServerChannel.</span><code><a href="../../channel/rs/RustDrasylServerChannel.html#identity()" class="member-name-link">identity</a>()</code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
@@ -379,19 +367,6 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>protected </code></div>
 <div class="col-second even-row-color"><code><a href="../../node/handler/crypto/AbstractArmHandler.html#%3Cinit%3E(org.drasyl.crypto.Crypto,java.time.Duration,int,org.drasyl.identity.Identity,org.drasyl.identity.IdentityPublicKey)" class="member-name-link">AbstractArmHandler</a><wbr>(<a href="../../crypto/Crypto.html" title="class in org.drasyl.crypto">Crypto</a>&nbsp;crypto,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a>&nbsp;expireAfter,
- int&nbsp;maxAgreements,
- <a href="../Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
- <a href="../IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>&nbsp;peerIdentity)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>&nbsp;</code></div>
-<div class="col-second odd-row-color"><code><a href="../../node/handler/crypto/LongTimeArmHandler.html#%3Cinit%3E(java.time.Duration,int,org.drasyl.identity.Identity,org.drasyl.identity.IdentityPublicKey)" class="member-name-link">LongTimeArmHandler</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a>&nbsp;expireAfter,
- int&nbsp;maxAgreements,
- <a href="../Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
- <a href="../IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>&nbsp;peerIdentity)</code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="../../node/handler/crypto/LongTimeArmHandler.html#%3Cinit%3E(org.drasyl.crypto.Crypto,java.time.Duration,int,org.drasyl.identity.Identity,org.drasyl.identity.IdentityPublicKey)" class="member-name-link">LongTimeArmHandler</a><wbr>(<a href="../../crypto/Crypto.html" title="class in org.drasyl.crypto">Crypto</a>&nbsp;crypto,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a>&nbsp;expireAfter,
  int&nbsp;maxAgreements,
  <a href="../Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,

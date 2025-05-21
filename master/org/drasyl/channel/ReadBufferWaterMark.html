@@ -81,11 +81,11 @@ loadScripts(document, 'script');</script>
 <div class="block">ReadBufferWaterMark is used to set low water mark and high water mark for the read buffer.
  <p>
  If the number of bytes queued in the reads buffer exceeds the high water mark,
- <a href="DrasylChannel.html#isReadBufferFull()"><code>DrasylChannel.isReadBufferFull()</code></a> will start to return <code>true</code>.
+ <code>JavaDrasylChannel#isReadBufferFull()</code> will start to return <code>true</code>.
  <p>
  If the number of bytes queued in the read buffer exceeds the high water mark
  and then dropped down below the low water mark,
- <a href="DrasylChannel.html#isReadBufferFull()"><code>DrasylChannel.isReadBufferFull()</code></a> will start to return <code>true</code> again.
+ <code>JavaDrasylChannel#isReadBufferFull()</code> will start to return <code>true</code> again.
  <p></div>
 </section>
 <section class="summary">

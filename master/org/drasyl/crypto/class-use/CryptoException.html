@@ -62,14 +62,6 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color">
 <div class="block">Libsodium wrappers for the crypto operations of drasyl</div>
 </div>
-<div class="col-first even-row-color"><a href="#org.drasyl.handler.remote.crypto">org.drasyl.handler.remote.crypto</a></div>
-<div class="col-last even-row-color">
-<div class="block">Contains classes necessary for encrypted protocol communication.</div>
-</div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.handler.remote.internet">org.drasyl.handler.remote.internet</a></div>
-<div class="col-last odd-row-color">
-<div class="block">Discovery/Routing of peers on the internet.</div>
-</div>
 <div class="col-first even-row-color"><a href="#org.drasyl.node.channel">org.drasyl.node.channel</a></div>
 <div class="col-last even-row-color">
 <div class="block"><a href="https://netty.io/">netty</a> <code>Channel</code> for the <a href="../../node/DrasylNode.html" title="class in org.drasyl.node"><code>DrasylNode</code></a>.</div>
@@ -186,40 +178,6 @@ S extends <a href="../../identity/SecretKey.html" title="interface in org.drasyl
 </section>
 </li>
 <li>
-<section class="detail" id="org.drasyl.handler.remote.crypto">
-<h2>Uses of <a href="../CryptoException.html" title="class in org.drasyl.crypto">CryptoException</a> in <a href="../../handler/remote/crypto/package-summary.html">org.drasyl.handler.remote.crypto</a></h2>
-<div class="caption"><span>Methods in <a href="../../handler/remote/crypto/package-summary.html">org.drasyl.handler.remote.crypto</a> that throw <a href="../CryptoException.html" title="class in org.drasyl.crypto">CryptoException</a></span></div>
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier and Type</div>
-<div class="table-header col-second">Method</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>void</code></div>
-<div class="col-second even-row-color"><span class="type-name-label">ProtocolArmHandlerBenchmark.</span><code><a href="../../handler/remote/crypto/ProtocolArmHandlerBenchmark.html#setup()" class="member-name-link">setup</a>()</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>void</code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">UnarmedMessageDecoderBenchmark.</span><code><a href="../../handler/remote/crypto/UnarmedMessageDecoderBenchmark.html#setup()" class="member-name-link">setup</a>()</code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="org.drasyl.handler.remote.internet">
-<h2>Uses of <a href="../CryptoException.html" title="class in org.drasyl.crypto">CryptoException</a> in <a href="../../handler/remote/internet/package-summary.html">org.drasyl.handler.remote.internet</a></h2>
-<div class="caption"><span>Methods in <a href="../../handler/remote/internet/package-summary.html">org.drasyl.handler.remote.internet</a> that throw <a href="../CryptoException.html" title="class in org.drasyl.crypto">CryptoException</a></span></div>
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier and Type</div>
-<div class="table-header col-second">Method</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>void</code></div>
-<div class="col-second even-row-color"><span class="type-name-label">InternetDiscoveryChildrenHandlerBenchmark.</span><code><a href="../../handler/remote/internet/InternetDiscoveryChildrenHandlerBenchmark.html#setup()" class="member-name-link">setup</a>()</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>void</code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">UnconfirmedAddressResolveHandlerBenchmark.</span><code><a href="../../handler/remote/internet/UnconfirmedAddressResolveHandlerBenchmark.html#setup()" class="member-name-link">setup</a>()</code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-</div>
-</section>
-</li>
-<li>
 <section class="detail" id="org.drasyl.node.channel">
 <h2>Uses of <a href="../CryptoException.html" title="class in org.drasyl.crypto">CryptoException</a> in <a href="../../node/channel/package-summary.html">org.drasyl.node.channel</a></h2>
 <div class="caption"><span>Methods in <a href="../../node/channel/package-summary.html">org.drasyl.node.channel</a> that throw <a href="../CryptoException.html" title="class in org.drasyl.crypto">CryptoException</a></span></div>
@@ -228,7 +186,7 @@ S extends <a href="../../identity/SecretKey.html" title="interface in org.drasyl
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>protected void</code></div>
-<div class="col-second even-row-color"><span class="type-name-label">DrasylNodeChannelInitializer.</span><code><a href="../../node/channel/DrasylNodeChannelInitializer.html#armStage(org.drasyl.channel.DrasylChannel)" class="member-name-link">armStage</a><wbr>(<a href="../../channel/DrasylChannel.html" title="class in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DrasylNodeChannelInitializer.</span><code><a href="../../node/channel/DrasylNodeChannelInitializer.html#armStage(org.drasyl.channel.DrasylChannel)" class="member-name-link">armStage</a><wbr>(<a href="../../channel/DrasylChannel.html" title="interface in org.drasyl.channel">DrasylChannel</a>&nbsp;ch)</code></div>
 <div class="col-last even-row-color">
 <div class="block">This stage arms outbound and disarms inbound messages.</div>
 </div>
@@ -266,19 +224,6 @@ S extends <a href="../../identity/SecretKey.html" title="interface in org.drasyl
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>protected </code></div>
 <div class="col-second even-row-color"><code><a href="../../node/handler/crypto/AbstractArmHandler.html#%3Cinit%3E(org.drasyl.crypto.Crypto,java.time.Duration,int,org.drasyl.identity.Identity,org.drasyl.identity.IdentityPublicKey)" class="member-name-link">AbstractArmHandler</a><wbr>(<a href="../Crypto.html" title="class in org.drasyl.crypto">Crypto</a>&nbsp;crypto,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a>&nbsp;expireAfter,
- int&nbsp;maxAgreements,
- <a href="../../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
- <a href="../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>&nbsp;peerIdentity)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>&nbsp;</code></div>
-<div class="col-second odd-row-color"><code><a href="../../node/handler/crypto/LongTimeArmHandler.html#%3Cinit%3E(java.time.Duration,int,org.drasyl.identity.Identity,org.drasyl.identity.IdentityPublicKey)" class="member-name-link">LongTimeArmHandler</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a>&nbsp;expireAfter,
- int&nbsp;maxAgreements,
- <a href="../../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,
- <a href="../../identity/IdentityPublicKey.html" title="class in org.drasyl.identity">IdentityPublicKey</a>&nbsp;peerIdentity)</code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="../../node/handler/crypto/LongTimeArmHandler.html#%3Cinit%3E(org.drasyl.crypto.Crypto,java.time.Duration,int,org.drasyl.identity.Identity,org.drasyl.identity.IdentityPublicKey)" class="member-name-link">LongTimeArmHandler</a><wbr>(<a href="../Crypto.html" title="class in org.drasyl.crypto">Crypto</a>&nbsp;crypto,
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a>&nbsp;expireAfter,
  int&nbsp;maxAgreements,
  <a href="../../identity/Identity.html" title="class in org.drasyl.identity">Identity</a>&nbsp;identity,

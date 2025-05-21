@@ -62,12 +62,8 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color">
 <div class="block">Libsodium wrappers for the crypto operations of drasyl</div>
 </div>
-<div class="col-first even-row-color"><a href="#org.drasyl.handler.remote.protocol">org.drasyl.handler.remote.protocol</a></div>
+<div class="col-first even-row-color"><a href="#org.drasyl.node.handler.crypto">org.drasyl.node.handler.crypto</a></div>
 <div class="col-last even-row-color">
-<div class="block">The protocol used for communication with remote peers.</div>
-</div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.node.handler.crypto">org.drasyl.node.handler.crypto</a></div>
-<div class="col-last odd-row-color">
 <div class="block">Contains classes necessary for encrypted peer/application communication.</div>
 </div>
 </div>
@@ -145,55 +141,6 @@ S extends <a href="../../../identity/SecretKey.html" title="interface in org.dra
 <div class="col-second even-row-color"><span class="type-name-label">SessionPair.</span><code><a href="../SessionPair.html#of(org.drasyl.util.ImmutableByteArray,org.drasyl.util.ImmutableByteArray)" class="member-name-link">of</a><wbr>(<a href="../../../util/ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a>&nbsp;rx,
  <a href="../../../util/ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a>&nbsp;tx)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="org.drasyl.handler.remote.protocol">
-<h2>Uses of <a href="../SessionPair.html" title="class in org.drasyl.crypto.sodium">SessionPair</a> in <a href="../../../handler/remote/protocol/package-summary.html">org.drasyl.handler.remote.protocol</a></h2>
-<div class="caption"><span>Methods in <a href="../../../handler/remote/protocol/package-summary.html">org.drasyl.handler.remote.protocol</a> with parameters of type <a href="../SessionPair.html" title="class in org.drasyl.crypto.sodium">SessionPair</a></span></div>
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier and Type</div>
-<div class="table-header col-second">Method</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code><a href="../../../handler/remote/protocol/ArmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">ArmedProtocolMessage</a></code></div>
-<div class="col-second even-row-color"><span class="type-name-label">FullReadMessage.</span><code><a href="../../../handler/remote/protocol/FullReadMessage.html#arm(io.netty.buffer.ByteBufAllocator,org.drasyl.crypto.Crypto,org.drasyl.crypto.sodium.SessionPair)" class="member-name-link">arm</a><wbr>(io.netty.buffer.ByteBufAllocator&nbsp;alloc,
- <a href="../../Crypto.html" title="class in org.drasyl.crypto">Crypto</a>&nbsp;cryptoInstance,
- <a href="../SessionPair.html" title="class in org.drasyl.crypto.sodium">SessionPair</a>&nbsp;sessionPair)</code></div>
-<div class="col-last even-row-color">
-<div class="block">Returns an armed version (<a href="../../../handler/remote/protocol/ArmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol"><code>ArmedProtocolMessage</code></a>) of this message for sending it
- through untrustworthy channels.</div>
-</div>
-<div class="col-first odd-row-color"><code><a href="../../../handler/remote/protocol/ArmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">ArmedProtocolMessage</a></code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">UnarmedProtocolMessage.</span><code><a href="../../../handler/remote/protocol/UnarmedProtocolMessage.html#arm(io.netty.buffer.ByteBufAllocator,org.drasyl.crypto.Crypto,org.drasyl.crypto.sodium.SessionPair)" class="member-name-link">arm</a><wbr>(io.netty.buffer.ByteBufAllocator&nbsp;alloc,
- <a href="../../Crypto.html" title="class in org.drasyl.crypto">Crypto</a>&nbsp;cryptoInstance,
- <a href="../SessionPair.html" title="class in org.drasyl.crypto.sodium">SessionPair</a>&nbsp;sessionPair)</code></div>
-<div class="col-last odd-row-color">
-<div class="block">Returns an armed version (<a href="../../../handler/remote/protocol/ArmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol"><code>ArmedProtocolMessage</code></a>) of this message.</div>
-</div>
-<div class="col-first even-row-color"><code><a href="../../../handler/remote/protocol/ArmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">ArmedProtocolMessage</a></code></div>
-<div class="col-second even-row-color"><span class="type-name-label">UnarmedProtocolMessage.</span><code><a href="../../../handler/remote/protocol/UnarmedProtocolMessage.html#armAndRelease(io.netty.buffer.ByteBufAllocator,org.drasyl.crypto.Crypto,org.drasyl.crypto.sodium.SessionPair)" class="member-name-link">armAndRelease</a><wbr>(io.netty.buffer.ByteBufAllocator&nbsp;alloc,
- <a href="../../Crypto.html" title="class in org.drasyl.crypto">Crypto</a>&nbsp;cryptoInstance,
- <a href="../SessionPair.html" title="class in org.drasyl.crypto.sodium">SessionPair</a>&nbsp;sessionPair)</code></div>
-<div class="col-last even-row-color">
-<div class="block">Returns an armed version (<a href="../../../handler/remote/protocol/ArmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol"><code>ArmedProtocolMessage</code></a>) of this message and then releases
- this message.</div>
-</div>
-<div class="col-first odd-row-color"><code><a href="../../../handler/remote/protocol/FullReadMessage.html" title="interface in org.drasyl.handler.remote.protocol">FullReadMessage</a>&lt;?&gt;</code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">ArmedProtocolMessage.</span><code><a href="../../../handler/remote/protocol/ArmedProtocolMessage.html#disarm(io.netty.buffer.ByteBufAllocator,org.drasyl.crypto.Crypto,org.drasyl.crypto.sodium.SessionPair)" class="member-name-link">disarm</a><wbr>(io.netty.buffer.ByteBufAllocator&nbsp;alloc,
- <a href="../../Crypto.html" title="class in org.drasyl.crypto">Crypto</a>&nbsp;cryptoInstance,
- <a href="../SessionPair.html" title="class in org.drasyl.crypto.sodium">SessionPair</a>&nbsp;sessionPair)</code></div>
-<div class="col-last odd-row-color">
-<div class="block">Returns a disarmed version (<a href="../../../handler/remote/protocol/FullReadMessage.html" title="interface in org.drasyl.handler.remote.protocol"><code>FullReadMessage</code></a>) of this message.</div>
-</div>
-<div class="col-first even-row-color"><code><a href="../../../handler/remote/protocol/FullReadMessage.html" title="interface in org.drasyl.handler.remote.protocol">FullReadMessage</a>&lt;?&gt;</code></div>
-<div class="col-second even-row-color"><span class="type-name-label">ArmedProtocolMessage.</span><code><a href="../../../handler/remote/protocol/ArmedProtocolMessage.html#disarmAndRelease(io.netty.buffer.ByteBufAllocator,org.drasyl.crypto.Crypto,org.drasyl.crypto.sodium.SessionPair)" class="member-name-link">disarmAndRelease</a><wbr>(io.netty.buffer.ByteBufAllocator&nbsp;alloc,
- <a href="../../Crypto.html" title="class in org.drasyl.crypto">Crypto</a>&nbsp;cryptoInstance,
- <a href="../SessionPair.html" title="class in org.drasyl.crypto.sodium">SessionPair</a>&nbsp;sessionPair)</code></div>
-<div class="col-last even-row-color">
-<div class="block">Returns a disarmed version (<a href="../../../handler/remote/protocol/FullReadMessage.html" title="interface in org.drasyl.handler.remote.protocol"><code>FullReadMessage</code></a>) of this message and then releases this
- message.</div>
-</div>
 </div>
 </section>
 </li>

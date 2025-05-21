@@ -59,6 +59,12 @@ loadScripts(document, 'script');</script>
 <div class="block"><a href="https://netty.io/">netty</a> <code>Channel</code> for the drasyl overlay
  network.</div>
 </div>
+<div class="col-first odd-row-color"><a href="#org.drasyl.channel.rs">org.drasyl.channel.rs</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><a href="#org.drasyl.channel.rs.loader">org.drasyl.channel.rs.loader</a></div>
+<div class="col-last even-row-color">
+<div class="block">Helper to load resources from (nested) JARs or file system</div>
+</div>
 <div class="col-first odd-row-color"><a href="#org.drasyl.crypto.loader">org.drasyl.crypto.loader</a></div>
 <div class="col-last odd-row-color">
 <div class="block">Helper to load resources from (nested) JARs or file system</div>
@@ -75,34 +81,16 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">Connection-oriented communication with peers.</div>
 </div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.handler.discovery">org.drasyl.handler.discovery</a></div>
+<div class="col-first odd-row-color"><a href="#org.drasyl.handler.monitoring">org.drasyl.handler.monitoring</a></div>
 <div class="col-last odd-row-color">
-<div class="block">Different methods to discover peers.</div>
-</div>
-<div class="col-first even-row-color"><a href="#org.drasyl.handler.monitoring">org.drasyl.handler.monitoring</a></div>
-<div class="col-last even-row-color">
 <div class="block">Logs channel events/messages for monitoring purpose.</div>
 </div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.handler.peers">org.drasyl.handler.peers</a></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><a href="#org.drasyl.handler.peers">org.drasyl.handler.peers</a></div>
+<div class="col-last even-row-color">
 <div class="block">Information about peers.</div>
 </div>
-<div class="col-first even-row-color"><a href="#org.drasyl.handler.remote">org.drasyl.handler.remote</a></div>
-<div class="col-last even-row-color">
-<div class="block">Handlers used to communicate with remote nodes.</div>
-</div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.handler.remote.internet">org.drasyl.handler.remote.internet</a></div>
-<div class="col-last odd-row-color">
-<div class="block">Discovery/Routing of peers on the internet.</div>
-</div>
-<div class="col-first even-row-color"><a href="#org.drasyl.handler.remote.protocol">org.drasyl.handler.remote.protocol</a></div>
-<div class="col-last even-row-color">
-<div class="block">The protocol used for communication with remote peers.</div>
-</div>
-<div class="col-first odd-row-color"><a href="#org.drasyl.handler.remote.tcp">org.drasyl.handler.remote.tcp</a></div>
-<div class="col-last odd-row-color">
-<div class="block">Contains the pipeline handlers for TCP fallback connections.</div>
-</div>
+<div class="col-first odd-row-color"><a href="#org.drasyl.handler.remote.protocol">org.drasyl.handler.remote.protocol</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-first even-row-color"><a href="#org.drasyl.handler.rmi">org.drasyl.handler.rmi</a></div>
 <div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><a href="#org.drasyl.identity">org.drasyl.identity</a></div>
@@ -182,6 +170,32 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="org.drasyl.channel.rs">
+<div class="caption"><span>Classes in <a href="package-summary.html">org.drasyl.util.internal</a> used by <a href="../../channel/rs/package-summary.html">org.drasyl.channel.rs</a></span></div>
+<div class="summary-table two-column-summary">
+<div class="table-header col-first">Class</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><a href="class-use/UnstableApi.html#org.drasyl.channel.rs">UnstableApi</a></div>
+<div class="col-last even-row-color">
+<div class="block">Indicates a public API that can change at any time (even in minor/bugfix releases).</div>
+</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="org.drasyl.channel.rs.loader">
+<div class="caption"><span>Classes in <a href="package-summary.html">org.drasyl.util.internal</a> used by <a href="../../channel/rs/loader/package-summary.html">org.drasyl.channel.rs.loader</a></span></div>
+<div class="summary-table two-column-summary">
+<div class="table-header col-first">Class</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><a href="class-use/UnstableApi.html#org.drasyl.channel.rs.loader">UnstableApi</a></div>
+<div class="col-last even-row-color">
+<div class="block">Indicates a public API that can change at any time (even in minor/bugfix releases).</div>
+</div>
+</div>
+</section>
+</li>
+<li>
 <section class="detail" id="org.drasyl.crypto.loader">
 <div class="caption"><span>Classes in <a href="package-summary.html">org.drasyl.util.internal</a> used by <a href="../../crypto/loader/package-summary.html">org.drasyl.crypto.loader</a></span></div>
 <div class="summary-table two-column-summary">
@@ -234,24 +248,6 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="org.drasyl.handler.discovery">
-<div class="caption"><span>Classes in <a href="package-summary.html">org.drasyl.util.internal</a> used by <a href="../../handler/discovery/package-summary.html">org.drasyl.handler.discovery</a></span></div>
-<div class="summary-table two-column-summary">
-<div class="table-header col-first">Class</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><a href="class-use/Nullable.html#org.drasyl.handler.discovery">Nullable</a></div>
-<div class="col-last even-row-color">
-<div class="block">A common annotation to declare that annotated elements can be <code>null</code> under some
- circumstance.</div>
-</div>
-<div class="col-first odd-row-color"><a href="class-use/UnstableApi.html#org.drasyl.handler.discovery">UnstableApi</a></div>
-<div class="col-last odd-row-color">
-<div class="block">Indicates a public API that can change at any time (even in minor/bugfix releases).</div>
-</div>
-</div>
-</section>
-</li>
-<li>
 <section class="detail" id="org.drasyl.handler.monitoring">
 <div class="caption"><span>Classes in <a href="package-summary.html">org.drasyl.util.internal</a> used by <a href="../../handler/monitoring/package-summary.html">org.drasyl.handler.monitoring</a></span></div>
 <div class="summary-table two-column-summary">
@@ -278,32 +274,6 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="org.drasyl.handler.remote">
-<div class="caption"><span>Classes in <a href="package-summary.html">org.drasyl.util.internal</a> used by <a href="../../handler/remote/package-summary.html">org.drasyl.handler.remote</a></span></div>
-<div class="summary-table two-column-summary">
-<div class="table-header col-first">Class</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><a href="class-use/UnstableApi.html#org.drasyl.handler.remote">UnstableApi</a></div>
-<div class="col-last even-row-color">
-<div class="block">Indicates a public API that can change at any time (even in minor/bugfix releases).</div>
-</div>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="org.drasyl.handler.remote.internet">
-<div class="caption"><span>Classes in <a href="package-summary.html">org.drasyl.util.internal</a> used by <a href="../../handler/remote/internet/package-summary.html">org.drasyl.handler.remote.internet</a></span></div>
-<div class="summary-table two-column-summary">
-<div class="table-header col-first">Class</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><a href="class-use/UnstableApi.html#org.drasyl.handler.remote.internet">UnstableApi</a></div>
-<div class="col-last even-row-color">
-<div class="block">Indicates a public API that can change at any time (even in minor/bugfix releases).</div>
-</div>
-</div>
-</section>
-</li>
-<li>
 <section class="detail" id="org.drasyl.handler.remote.protocol">
 <div class="caption"><span>Classes in <a href="package-summary.html">org.drasyl.util.internal</a> used by <a href="../../handler/remote/protocol/package-summary.html">org.drasyl.handler.remote.protocol</a></span></div>
 <div class="summary-table two-column-summary">
@@ -313,26 +283,8 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">A common annotation to declare that annotated elements cannot be <code>null</code>.</div>
 </div>
-<div class="col-first odd-row-color"><a href="class-use/Nullable.html#org.drasyl.handler.remote.protocol">Nullable</a></div>
+<div class="col-first odd-row-color"><a href="class-use/UnstableApi.html#org.drasyl.handler.remote.protocol">UnstableApi</a></div>
 <div class="col-last odd-row-color">
-<div class="block">A common annotation to declare that annotated elements can be <code>null</code> under some
- circumstance.</div>
-</div>
-<div class="col-first even-row-color"><a href="class-use/UnstableApi.html#org.drasyl.handler.remote.protocol">UnstableApi</a></div>
-<div class="col-last even-row-color">
-<div class="block">Indicates a public API that can change at any time (even in minor/bugfix releases).</div>
-</div>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="org.drasyl.handler.remote.tcp">
-<div class="caption"><span>Classes in <a href="package-summary.html">org.drasyl.util.internal</a> used by <a href="../../handler/remote/tcp/package-summary.html">org.drasyl.handler.remote.tcp</a></span></div>
-<div class="summary-table two-column-summary">
-<div class="table-header col-first">Class</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><a href="class-use/UnstableApi.html#org.drasyl.handler.remote.tcp">UnstableApi</a></div>
-<div class="col-last even-row-color">
 <div class="block">Indicates a public API that can change at any time (even in minor/bugfix releases).</div>
 </div>
 </div>

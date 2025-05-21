@@ -59,9 +59,7 @@ loadScripts(document, 'script');</script>
 <div class="block">Classes for crypto-related operations.</div>
 </div>
 <div class="col-first odd-row-color"><a href="#org.drasyl.handler.remote.protocol">org.drasyl.handler.remote.protocol</a></div>
-<div class="col-last odd-row-color">
-<div class="block">The protocol used for communication with remote peers.</div>
-</div>
+<div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-first even-row-color"><a href="#org.drasyl.node.handler.crypto">org.drasyl.node.handler.crypto</a></div>
 <div class="col-last even-row-color">
 <div class="block">Contains classes necessary for encrypted peer/application communication.</div>
@@ -108,12 +106,6 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>abstract <a href="../Nonce.html" title="class in org.drasyl.handler.remote.protocol">Nonce</a></code></div>
-<div class="col-second even-row-color"><span class="type-name-label">PublicHeader.</span><code><a href="../PublicHeader.html#getNonce()" class="member-name-link">getNonce</a>()</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="../Nonce.html" title="class in org.drasyl.handler.remote.protocol">Nonce</a></code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">RemoteMessage.</span><code><a href="../RemoteMessage.html#getNonce()" class="member-name-link">getNonce</a>()</code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-first even-row-color"><code>static <a href="../Nonce.html" title="class in org.drasyl.handler.remote.protocol">Nonce</a></code></div>
 <div class="col-second even-row-color"><span class="type-name-label">Nonce.</span><code><a href="../Nonce.html#of(byte%5B%5D)" class="member-name-link">of</a><wbr>(byte[]&nbsp;bytes)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
@@ -127,111 +119,6 @@ loadScripts(document, 'script');</script>
 <div class="col-second odd-row-color"><span class="type-name-label">Nonce.</span><code><a href="../Nonce.html#randomNonce()" class="member-name-link">randomNonce</a>()</code></div>
 <div class="col-last odd-row-color">
 <div class="block">Static factory to retrieve a randomly generated <a href="../Nonce.html" title="class in org.drasyl.handler.remote.protocol"><code>Nonce</code></a>.</div>
-</div>
-</div>
-<div class="caption"><span>Methods in <a href="../package-summary.html">org.drasyl.handler.remote.protocol</a> with parameters of type <a href="../Nonce.html" title="class in org.drasyl.handler.remote.protocol">Nonce</a></span></div>
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier and Type</div>
-<div class="table-header col-second">Method</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>static <a href="../AcknowledgementMessage.html" title="class in org.drasyl.handler.remote.protocol">AcknowledgementMessage</a></code></div>
-<div class="col-second even-row-color"><span class="type-name-label">AcknowledgementMessage.</span><code><a href="../AcknowledgementMessage.html#of(org.drasyl.handler.remote.protocol.HopCount,boolean,int,org.drasyl.handler.remote.protocol.Nonce,org.drasyl.identity.DrasylAddress,org.drasyl.identity.DrasylAddress,org.drasyl.identity.ProofOfWork,long)" class="member-name-link">of</a><wbr>(<a href="../HopCount.html" title="class in org.drasyl.handler.remote.protocol">HopCount</a>&nbsp;hopCount,
- boolean&nbsp;isArmed,
- int&nbsp;networkId,
- <a href="../Nonce.html" title="class in org.drasyl.handler.remote.protocol">Nonce</a>&nbsp;nonce,
- <a href="../../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;recipient,
- <a href="../../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;sender,
- <a href="../../../../identity/ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;proofOfWork,
- long&nbsp;time)</code></div>
-<div class="col-last even-row-color">
-<div class="block">Creates new acknowledgement message.</div>
-</div>
-<div class="col-first odd-row-color"><code>static <a href="../ApplicationMessage.html" title="class in org.drasyl.handler.remote.protocol">ApplicationMessage</a></code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">ApplicationMessage.</span><code><a href="../ApplicationMessage.html#of(org.drasyl.handler.remote.protocol.HopCount,boolean,int,org.drasyl.handler.remote.protocol.Nonce,org.drasyl.identity.DrasylAddress,org.drasyl.identity.DrasylAddress,org.drasyl.identity.ProofOfWork,io.netty.buffer.ByteBuf)" class="member-name-link">of</a><wbr>(<a href="../HopCount.html" title="class in org.drasyl.handler.remote.protocol">HopCount</a>&nbsp;hopCount,
- boolean&nbsp;isArmed,
- int&nbsp;networkId,
- <a href="../Nonce.html" title="class in org.drasyl.handler.remote.protocol">Nonce</a>&nbsp;nonce,
- <a href="../../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;recipient,
- <a href="../../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;sender,
- <a href="../../../../identity/ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;proofOfWork,
- io.netty.buffer.ByteBuf&nbsp;payload)</code></div>
-<div class="col-last odd-row-color">
-<div class="block">Creates new application message.</div>
-</div>
-<div class="col-first even-row-color"><code>static <a href="../ArmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">ArmedProtocolMessage</a></code></div>
-<div class="col-second even-row-color"><span class="type-name-label">ArmedProtocolMessage.</span><code><a href="../ArmedProtocolMessage.html#of(org.drasyl.handler.remote.protocol.Nonce,org.drasyl.handler.remote.protocol.HopCount,int,org.drasyl.identity.DrasylAddress,org.drasyl.identity.DrasylAddress,org.drasyl.identity.ProofOfWork,io.netty.buffer.ByteBuf)" class="member-name-link">of</a><wbr>(<a href="../Nonce.html" title="class in org.drasyl.handler.remote.protocol">Nonce</a>&nbsp;nonce,
- <a href="../HopCount.html" title="class in org.drasyl.handler.remote.protocol">HopCount</a>&nbsp;hopCount,
- int&nbsp;networkId,
- <a href="../../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;recipient,
- <a href="../../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;sender,
- <a href="../../../../identity/ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;proofOfWork,
- io.netty.buffer.ByteBuf&nbsp;bytes)</code></div>
-<div class="col-last even-row-color">
-<div class="block">Creates an armed message.</div>
-</div>
-<div class="col-first odd-row-color"><code>static <a href="../HelloMessage.html" title="class in org.drasyl.handler.remote.protocol">HelloMessage</a></code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">HelloMessage.</span><code><a href="../HelloMessage.html#of(org.drasyl.handler.remote.protocol.HopCount,boolean,int,org.drasyl.handler.remote.protocol.Nonce,org.drasyl.identity.DrasylAddress,org.drasyl.identity.DrasylAddress,org.drasyl.identity.ProofOfWork,long,long,org.drasyl.identity.IdentitySecretKey,java.util.Set)" class="member-name-link">of</a><wbr>(<a href="../HopCount.html" title="class in org.drasyl.handler.remote.protocol">HopCount</a>&nbsp;hopCount,
- boolean&nbsp;isArmed,
- int&nbsp;networkId,
- <a href="../Nonce.html" title="class in org.drasyl.handler.remote.protocol">Nonce</a>&nbsp;nonce,
- <a href="../../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;recipient,
- <a href="../../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;sender,
- <a href="../../../../identity/ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;proofOfWork,
- long&nbsp;time,
- long&nbsp;childrenTime,
- <a href="../../../../identity/IdentitySecretKey.html" title="class in org.drasyl.identity">IdentitySecretKey</a>&nbsp;secretKey,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;endpoints)</code></div>
-<div class="col-last odd-row-color">
-<div class="block">Creates new <a href="../HelloMessage.html" title="class in org.drasyl.handler.remote.protocol"><code>HelloMessage</code></a>.</div>
-</div>
-<div class="col-first even-row-color"><code>static <a href="../HelloMessage.html" title="class in org.drasyl.handler.remote.protocol">HelloMessage</a></code></div>
-<div class="col-second even-row-color"><span class="type-name-label">HelloMessage.</span><code><a href="../HelloMessage.html#of(org.drasyl.handler.remote.protocol.HopCount,boolean,int,org.drasyl.handler.remote.protocol.Nonce,org.drasyl.identity.DrasylAddress,org.drasyl.identity.DrasylAddress,org.drasyl.identity.ProofOfWork,long,long,org.drasyl.util.ImmutableByteArray,java.util.Set)" class="member-name-link">of</a><wbr>(<a href="../HopCount.html" title="class in org.drasyl.handler.remote.protocol">HopCount</a>&nbsp;hopCount,
- boolean&nbsp;isArmed,
- int&nbsp;networkId,
- <a href="../Nonce.html" title="class in org.drasyl.handler.remote.protocol">Nonce</a>&nbsp;nonce,
- <a href="../../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;recipient,
- <a href="../../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;sender,
- <a href="../../../../identity/ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;proofOfWork,
- long&nbsp;time,
- long&nbsp;childrenTime,
- <a href="../../../../util/ImmutableByteArray.html" title="class in org.drasyl.util">ImmutableByteArray</a>&nbsp;signature,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;endpoints)</code></div>
-<div class="col-last even-row-color">
-<div class="block">Creates a new <a href="../HelloMessage.html" title="class in org.drasyl.handler.remote.protocol"><code>HelloMessage</code></a>.</div>
-</div>
-<div class="col-first odd-row-color"><code>static <a href="../PublicHeader.html" title="class in org.drasyl.handler.remote.protocol">PublicHeader</a></code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">PublicHeader.</span><code><a href="../PublicHeader.html#of(org.drasyl.handler.remote.protocol.HopCount,boolean,int,org.drasyl.handler.remote.protocol.Nonce,org.drasyl.identity.DrasylAddress,org.drasyl.identity.DrasylAddress,org.drasyl.identity.ProofOfWork)" class="member-name-link">of</a><wbr>(<a href="../HopCount.html" title="class in org.drasyl.handler.remote.protocol">HopCount</a>&nbsp;hopCount,
- boolean&nbsp;isArmed,
- int&nbsp;networkId,
- <a href="../Nonce.html" title="class in org.drasyl.handler.remote.protocol">Nonce</a>&nbsp;nonce,
- <a href="../../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;recipient,
- <a href="../../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;sender,
- <a href="../../../../identity/ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;proofOfWork)</code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>static <a href="../UnarmedProtocolMessage.html" title="class in org.drasyl.handler.remote.protocol">UnarmedProtocolMessage</a></code></div>
-<div class="col-second even-row-color"><span class="type-name-label">UnarmedProtocolMessage.</span><code><a href="../UnarmedProtocolMessage.html#of(org.drasyl.handler.remote.protocol.HopCount,boolean,int,org.drasyl.handler.remote.protocol.Nonce,org.drasyl.identity.DrasylAddress,org.drasyl.identity.DrasylAddress,org.drasyl.identity.ProofOfWork,io.netty.buffer.ByteBuf)" class="member-name-link">of</a><wbr>(<a href="../HopCount.html" title="class in org.drasyl.handler.remote.protocol">HopCount</a>&nbsp;hopCount,
- boolean&nbsp;isArmed,
- int&nbsp;networkId,
- <a href="../Nonce.html" title="class in org.drasyl.handler.remote.protocol">Nonce</a>&nbsp;nonce,
- <a href="../../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;recipient,
- <a href="../../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;sender,
- <a href="../../../../identity/ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;proofOfWork,
- io.netty.buffer.ByteBuf&nbsp;bytes)</code></div>
-<div class="col-last even-row-color">
-<div class="block">Creates an unarmed message.</div>
-</div>
-<div class="col-first odd-row-color"><code>static <a href="../UniteMessage.html" title="class in org.drasyl.handler.remote.protocol">UniteMessage</a></code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">UniteMessage.</span><code><a href="../UniteMessage.html#of(org.drasyl.handler.remote.protocol.HopCount,boolean,int,org.drasyl.handler.remote.protocol.Nonce,org.drasyl.identity.DrasylAddress,org.drasyl.identity.DrasylAddress,org.drasyl.identity.ProofOfWork,org.drasyl.identity.DrasylAddress,java.util.Set)" class="member-name-link">of</a><wbr>(<a href="../HopCount.html" title="class in org.drasyl.handler.remote.protocol">HopCount</a>&nbsp;hopCount,
- boolean&nbsp;isArmed,
- int&nbsp;networkId,
- <a href="../Nonce.html" title="class in org.drasyl.handler.remote.protocol">Nonce</a>&nbsp;nonce,
- <a href="../../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;recipient,
- <a href="../../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;sender,
- <a href="../../../../identity/ProofOfWork.html" title="class in org.drasyl.identity">ProofOfWork</a>&nbsp;proofOfWork,
- <a href="../../../../identity/DrasylAddress.html" title="class in org.drasyl.identity">DrasylAddress</a>&nbsp;address,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html" title="class or interface in java.net" class="external-link">InetSocketAddress</a>&gt;&nbsp;endpoints)</code></div>
-<div class="col-last odd-row-color">
-<div class="block">Creates new unit message.</div>
 </div>
 </div>
 </section>
