@@ -131,174 +131,179 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_bind(long,byte%5B%5D)" class="member-name-link">drasyl_node_bind</a><wbr>(long&nbsp;optsAddr,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_generate_identity(byte%5B%5D,byte%5B%5D,byte%5B%5D)" class="member-name-link">drasyl_generate_identity</a><wbr>(byte[]&nbsp;secretKey,
+ byte[]&nbsp;publicKey,
+ byte[]&nbsp;proofOfWork)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_bind(long,byte%5B%5D)" class="member-name-link">drasyl_node_bind</a><wbr>(long&nbsp;optsAddr,
  byte[]&nbsp;bindAddr)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_bind_free(long)" class="member-name-link">drasyl_node_bind_free</a><wbr>(long&nbsp;bindAddr)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_arm_messages(long)" class="member-name-link">drasyl_node_opts_arm_messages</a><wbr>(long&nbsp;optsAddr)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_arm_messages(long,boolean)" class="member-name-link">drasyl_node_opts_builder_arm_messages</a><wbr>(long&nbsp;builderAddr,
- boolean&nbsp;armMessages)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_build(long,byte%5B%5D)" class="member-name-link">drasyl_node_opts_builder_build</a><wbr>(long&nbsp;builderAddr,
- byte[]&nbsp;optAddr)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_free(long)" class="member-name-link">drasyl_node_opts_builder_free</a><wbr>(long&nbsp;builderAddr)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_hello_max_age(long,long)" class="member-name-link">drasyl_node_opts_builder_hello_max_age</a><wbr>(long&nbsp;builderAddr,
- long&nbsp;helloMaxAge)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_hello_timeout(long,long)" class="member-name-link">drasyl_node_opts_builder_hello_timeout</a><wbr>(long&nbsp;builderAddr,
- long&nbsp;helloTimeout)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_housekeeping_interval(long,long)" class="member-name-link">drasyl_node_opts_builder_housekeeping_interval</a><wbr>(long&nbsp;builderAddr,
- long&nbsp;housekeepingDelay)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_id(long,byte%5B%5D,int)" class="member-name-link">drasyl_node_opts_builder_id</a><wbr>(long&nbsp;builderAddr,
- byte[]&nbsp;sk,
- int&nbsp;pow)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_max_peers(long,long)" class="member-name-link">drasyl_node_opts_builder_max_peers</a><wbr>(long&nbsp;builderAddr,
- long&nbsp;maxPeers)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_message_sink(long,long)" class="member-name-link">drasyl_node_opts_builder_message_sink</a><wbr>(long&nbsp;builderAddr,
- long&nbsp;recvBufTxAddr)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_min_pow_difficulty(long,byte)" class="member-name-link">drasyl_node_opts_builder_min_pow_difficulty</a><wbr>(long&nbsp;builderAddr,
- byte&nbsp;minPowDifficulty)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_network_id(long,int)" class="member-name-link">drasyl_node_opts_builder_network_id</a><wbr>(long&nbsp;builderAddr,
- int&nbsp;networkId)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static long</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_new()" class="member-name-link">drasyl_node_opts_builder_new</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_process_unites(long,boolean)" class="member-name-link">drasyl_node_opts_builder_process_unites</a><wbr>(long&nbsp;builderAddr,
- boolean&nbsp;processUnites)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_super_peers(long,java.lang.String)" class="member-name-link">drasyl_node_opts_builder_super_peers</a><wbr>(long&nbsp;builderAddr,
- <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;superPeers)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_udp_port(long,int)" class="member-name-link">drasyl_node_opts_builder_udp_port</a><wbr>(long&nbsp;builderAddr,
- int&nbsp;udpPort)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_udp_port_none(long)" class="member-name-link">drasyl_node_opts_builder_udp_port_none</a><wbr>(long&nbsp;builderAddr)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_free(long)" class="member-name-link">drasyl_node_opts_free</a><wbr>(long&nbsp;builderAddr)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static long</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_hello_max_age(long)" class="member-name-link">drasyl_node_opts_hello_max_age</a><wbr>(long&nbsp;optsAddr)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static long</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_hello_timeout(long)" class="member-name-link">drasyl_node_opts_hello_timeout</a><wbr>(long&nbsp;optsAddr)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static long</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_housekeeping_interval(long)" class="member-name-link">drasyl_node_opts_housekeeping_interval</a><wbr>(long&nbsp;optsAddr)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static long</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_max_peers(long)" class="member-name-link">drasyl_node_opts_max_peers</a><wbr>(long&nbsp;optsAddr)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static byte</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_min_pow_difficulty(long)" class="member-name-link">drasyl_node_opts_min_pow_difficulty</a><wbr>(long&nbsp;optsAddr)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_mtu(long)" class="member-name-link">drasyl_node_opts_mtu</a><wbr>(long&nbsp;optsAddr)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_network_id(long)" class="member-name-link">drasyl_node_opts_network_id</a><wbr>(long&nbsp;optsAddr)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_bind_free(long)" class="member-name-link">drasyl_node_bind_free</a><wbr>(long&nbsp;bindAddr)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_process_unites(long)" class="member-name-link">drasyl_node_opts_process_unites</a><wbr>(long&nbsp;optsAddr)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_arm_messages(long)" class="member-name-link">drasyl_node_opts_arm_messages</a><wbr>(long&nbsp;optsAddr)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_udp_port(long)" class="member-name-link">drasyl_node_opts_udp_port</a><wbr>(long&nbsp;optsAddr)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_arm_messages(long,boolean)" class="member-name-link">drasyl_node_opts_builder_arm_messages</a><wbr>(long&nbsp;builderAddr,
+ boolean&nbsp;armMessages)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_peers_list(long,byte%5B%5D)" class="member-name-link">drasyl_node_peers_list</a><wbr>(long&nbsp;bindAddr,
- byte[]&nbsp;peersListAddr)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_build(long,byte%5B%5D)" class="member-name-link">drasyl_node_opts_builder_build</a><wbr>(long&nbsp;builderAddr,
+ byte[]&nbsp;optAddr)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_send_to(long,byte%5B%5D,byte%5B%5D,long)" class="member-name-link">drasyl_node_send_to</a><wbr>(long&nbsp;bindAddr,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_free(long)" class="member-name-link">drasyl_node_opts_builder_free</a><wbr>(long&nbsp;builderAddr)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_hello_max_age(long,long)" class="member-name-link">drasyl_node_opts_builder_hello_max_age</a><wbr>(long&nbsp;builderAddr,
+ long&nbsp;helloMaxAge)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_hello_timeout(long,long)" class="member-name-link">drasyl_node_opts_builder_hello_timeout</a><wbr>(long&nbsp;builderAddr,
+ long&nbsp;helloTimeout)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_housekeeping_interval(long,long)" class="member-name-link">drasyl_node_opts_builder_housekeeping_interval</a><wbr>(long&nbsp;builderAddr,
+ long&nbsp;housekeepingDelay)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_id(long,byte%5B%5D,int)" class="member-name-link">drasyl_node_opts_builder_id</a><wbr>(long&nbsp;builderAddr,
+ byte[]&nbsp;sk,
+ int&nbsp;pow)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_max_peers(long,long)" class="member-name-link">drasyl_node_opts_builder_max_peers</a><wbr>(long&nbsp;builderAddr,
+ long&nbsp;maxPeers)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_message_sink(long,long)" class="member-name-link">drasyl_node_opts_builder_message_sink</a><wbr>(long&nbsp;builderAddr,
+ long&nbsp;recvBufTxAddr)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_min_pow_difficulty(long,byte)" class="member-name-link">drasyl_node_opts_builder_min_pow_difficulty</a><wbr>(long&nbsp;builderAddr,
+ byte&nbsp;minPowDifficulty)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_network_id(long,int)" class="member-name-link">drasyl_node_opts_builder_network_id</a><wbr>(long&nbsp;builderAddr,
+ int&nbsp;networkId)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static long</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_new()" class="member-name-link">drasyl_node_opts_builder_new</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_process_unites(long,boolean)" class="member-name-link">drasyl_node_opts_builder_process_unites</a><wbr>(long&nbsp;builderAddr,
+ boolean&nbsp;processUnites)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_super_peers(long,java.lang.String)" class="member-name-link">drasyl_node_opts_builder_super_peers</a><wbr>(long&nbsp;builderAddr,
+ <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;superPeers)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_udp_port(long,int)" class="member-name-link">drasyl_node_opts_builder_udp_port</a><wbr>(long&nbsp;builderAddr,
+ int&nbsp;udpPort)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_builder_udp_port_none(long)" class="member-name-link">drasyl_node_opts_builder_udp_port_none</a><wbr>(long&nbsp;builderAddr)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_free(long)" class="member-name-link">drasyl_node_opts_free</a><wbr>(long&nbsp;builderAddr)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static long</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_hello_max_age(long)" class="member-name-link">drasyl_node_opts_hello_max_age</a><wbr>(long&nbsp;optsAddr)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static long</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_hello_timeout(long)" class="member-name-link">drasyl_node_opts_hello_timeout</a><wbr>(long&nbsp;optsAddr)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static long</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_housekeeping_interval(long)" class="member-name-link">drasyl_node_opts_housekeeping_interval</a><wbr>(long&nbsp;optsAddr)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static long</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_max_peers(long)" class="member-name-link">drasyl_node_opts_max_peers</a><wbr>(long&nbsp;optsAddr)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static byte</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_min_pow_difficulty(long)" class="member-name-link">drasyl_node_opts_min_pow_difficulty</a><wbr>(long&nbsp;optsAddr)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_mtu(long)" class="member-name-link">drasyl_node_opts_mtu</a><wbr>(long&nbsp;optsAddr)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_network_id(long)" class="member-name-link">drasyl_node_opts_network_id</a><wbr>(long&nbsp;optsAddr)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_process_unites(long)" class="member-name-link">drasyl_node_opts_process_unites</a><wbr>(long&nbsp;optsAddr)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_opts_udp_port(long)" class="member-name-link">drasyl_node_opts_udp_port</a><wbr>(long&nbsp;optsAddr)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_peers_list(long,byte%5B%5D)" class="member-name-link">drasyl_node_peers_list</a><wbr>(long&nbsp;bindAddr,
+ byte[]&nbsp;peersListAddr)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_send_to(long,byte%5B%5D,byte%5B%5D,long)" class="member-name-link">drasyl_node_send_to</a><wbr>(long&nbsp;bindAddr,
  byte[]&nbsp;recipient,
  byte[]&nbsp;buf,
  long&nbsp;bufLen)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_udp_port(long)" class="member-name-link">drasyl_node_udp_port</a><wbr>(long&nbsp;bindAddr)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_peers_list_peer_pk(long,int,byte%5B%5D)" class="member-name-link">drasyl_peers_list_peer_pk</a><wbr>(long&nbsp;peersAddr,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_node_udp_port(long)" class="member-name-link">drasyl_node_udp_port</a><wbr>(long&nbsp;bindAddr)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_peers_list_peer_pk(long,int,byte%5B%5D)" class="member-name-link">drasyl_peers_list_peer_pk</a><wbr>(long&nbsp;peersAddr,
  int&nbsp;index,
  byte[]&nbsp;pkAddr)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_peers_list_peer_reachable(long,int)" class="member-name-link">drasyl_peers_list_peer_reachable</a><wbr>(long&nbsp;peersAddr,
+ int&nbsp;index)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_peers_list_peer_reachable(long,int)" class="member-name-link">drasyl_peers_list_peer_reachable</a><wbr>(long&nbsp;peersAddr,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_peers_list_peer_super_peer(long,int)" class="member-name-link">drasyl_peers_list_peer_super_peer</a><wbr>(long&nbsp;peersAddr,
  int&nbsp;index)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_peers_list_peer_super_peer(long,int)" class="member-name-link">drasyl_peers_list_peer_super_peer</a><wbr>(long&nbsp;peersAddr,
- int&nbsp;index)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_peers_list_peers(long,byte%5B%5D)" class="member-name-link">drasyl_peers_list_peers</a><wbr>(long&nbsp;peersListAddr,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_peers_list_peers(long,byte%5B%5D)" class="member-name-link">drasyl_peers_list_peers</a><wbr>(long&nbsp;peersListAddr,
  byte[]&nbsp;peersAddr)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_peers_list_peers_free(long)" class="member-name-link">drasyl_peers_list_peers_free</a><wbr>(long&nbsp;peersAddr)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static long</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_peers_list_peers_len(long)" class="member-name-link">drasyl_peers_list_peers_len</a><wbr>(long&nbsp;peersAddr)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_recv_buf_free(long)" class="member-name-link">drasyl_recv_buf_free</a><wbr>(long&nbsp;recvBufAddr)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_recv_buf_len(long)" class="member-name-link">drasyl_recv_buf_len</a><wbr>(long&nbsp;bindAddr)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_peers_list_peers_free(long)" class="member-name-link">drasyl_peers_list_peers_free</a><wbr>(long&nbsp;peersAddr)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static long</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_recv_buf_new(long)" class="member-name-link">drasyl_recv_buf_new</a><wbr>(long&nbsp;recvBufCap)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_peers_list_peers_len(long)" class="member-name-link">drasyl_peers_list_peers_len</a><wbr>(long&nbsp;peersAddr)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_recv_buf_recv(long,long,byte%5B%5D,byte%5B%5D,long)" class="member-name-link">drasyl_recv_buf_recv</a><wbr>(long&nbsp;bindAddr,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_recv_buf_free(long)" class="member-name-link">drasyl_recv_buf_free</a><wbr>(long&nbsp;recvBufAddr)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_recv_buf_len(long)" class="member-name-link">drasyl_recv_buf_len</a><wbr>(long&nbsp;bindAddr)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static long</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_recv_buf_new(long)" class="member-name-link">drasyl_recv_buf_new</a><wbr>(long&nbsp;recvBufCap)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_recv_buf_recv(long,long,byte%5B%5D,byte%5B%5D,long)" class="member-name-link">drasyl_recv_buf_recv</a><wbr>(long&nbsp;bindAddr,
  long&nbsp;channelAddr,
  byte[]&nbsp;sender,
  byte[]&nbsp;buf,
  long&nbsp;bufLen)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static long</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_recv_buf_rx(long)" class="member-name-link">drasyl_recv_buf_rx</a><wbr>(long&nbsp;recvBufAddr)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static long</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_recv_buf_tx(long)" class="member-name-link">drasyl_recv_buf_tx</a><wbr>(long&nbsp;recvBufAddr)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_recv_buf_rx(long)" class="member-name-link">drasyl_recv_buf_rx</a><wbr>(long&nbsp;recvBufAddr)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_version()" class="member-name-link">drasyl_version</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static long</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_recv_buf_tx(long)" class="member-name-link">drasyl_recv_buf_tx</a><wbr>(long&nbsp;recvBufAddr)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#ensureSuccess(int)" class="member-name-link">ensureSuccess</a><wbr>(int&nbsp;resultCode)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#drasyl_version()" class="member-name-link">drasyl_version</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#register()" class="member-name-link">register</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#ensureSuccess(int)" class="member-name-link">ensureSuccess</a><wbr>(int&nbsp;resultCode)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#register()" class="member-name-link">register</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -403,6 +408,14 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="drasyl_version()">
 <h3>drasyl_version</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">drasyl_version</span>()</div>
+</section>
+</li>
+<li>
+<section class="detail" id="drasyl_generate_identity(byte[],byte[],byte[])">
+<h3>drasyl_generate_identity</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">drasyl_generate_identity</span><wbr><span class="parameters">(byte[]&nbsp;secretKey,
+ byte[]&nbsp;publicKey,
+ byte[]&nbsp;proofOfWork)</span></div>
 </section>
 </li>
 <li>
